@@ -3161,7 +3161,13 @@ function App() {
   const initialTips = [
     { id: 1, name: "Minh Anh", school: "ĐHQG", tip: "Nên dùng email trường để đăng ký JetBrains và GitHub trước khi tốt nghiệp, bạn được cộng tới 1 năm Pro miễn phí." },
     { id: 2, name: "Thành Đạt", school: "Bách Khoa", tip: "Voucher GrabStudent liên kết thẳng với bản đồ di chuyển, kích hoạt bằng ảnh chụp thẻ sinh viên chỉ mất 5 phút." },
-    { id: 3, name: "Khánh Linh", school: "FTU", tip: "Figma Pro Education yêu cầu upload thẻ học sinh, hãy chụp rõ logo trường và hạn dùng để được duyệt nhanh nhất." }
+    { id: 3, name: "Khánh Linh", school: "FTU", tip: "Figma Pro Education yêu cầu upload thẻ học sinh, hãy chụp rõ logo trường và hạn dùng để được duyệt nhanh nhất." },
+    { id: 4, name: "Quốc Bảo", school: "UIT", tip: "Đăng ký GitHub Student Pack qua email trường, bạn sẽ được tặng luôn gói v0.dev Pro và Canva Pro để làm bài tập lớn cực kỳ xịn sò." },
+    { id: 5, name: "Hoàng Nam", school: "ĐH Bách Khoa", tip: "Vé tàu hỏa VNR được giảm 10% quanh năm. Lúc mua vé trực tuyến nhớ nhập mã số thẻ sinh viên và mang theo thẻ + CCCD khi ra ga check-in." },
+    { id: 6, name: "Hải Yến", school: "ĐH Y Dược HCMC", tip: "Nên đi cạo vôi răng và nhổ răng khôn tại Nha khoa Parkway hoặc Nha khoa Kim, họ giảm đến 50% cho sinh viên và được trả góp niềng răng 0%." },
+    { id: 7, name: "Minh Huy", school: "ĐH FPT", tip: "Cursor Pro đã ngưng cấp tự động qua mail .edu, tuy nhiên hãy tham gia các sự kiện on-campus hoặc webinar do Cursor tổ chức để lấy code Pro 1 năm free nhé!" },
+    { id: 8, name: "Hồng Vân", school: "ĐH Sư Phạm", tip: "Khi đăng ký thi TOEIC/TOEFL tại IIG để nhận giảm giá đến 450k, nhớ mang theo thẻ sinh viên chính quy có dấu giáp lai rõ ràng và còn thời hạn." },
+    { id: 9, name: "Thảo Vy", school: "ĐH Ngoại Thương", tip: "Dùng email trường đăng ký Notion Pro và Notion Education Plan miễn phí. Lưu trữ tài liệu học tập, slide bài giảng không giới hạn dung lượng luôn." }
   ];
   const [tips, setTips] = useState(initialTips);
 
@@ -3672,8 +3678,8 @@ function App() {
             </div>
 
             {/* Box 2: Contribute Card Lớn Riêng Biệt */}
-            <div className="lg:col-span-6 bg-white border-2 border-swiss-dark p-8 flex flex-col justify-between h-[380px] rounded-2xl shadow-[0_15px_45px_rgba(0,0,0,0.06)] relative overflow-hidden group hover:shadow-[0_20px_55px_rgba(0,0,0,0.1)] transition-shadow duration-300">
-              <div className="absolute top-0 right-0 w-24 h-24 border-l-2 border-b-2 border-swiss-dark pointer-events-none"></div>
+            <div className="lg:col-span-6 bg-white border-2 border-swiss-dark p-6 sm:p-8 flex flex-col justify-between min-h-[380px] lg:h-[380px] rounded-2xl shadow-[0_15px_45px_rgba(0,0,0,0.06)] relative overflow-hidden group hover:shadow-[0_20px_55px_rgba(0,0,0,0.1)] transition-shadow duration-300">
+              <div className="absolute top-4 right-4 font-mono text-sm text-swiss-gray pointer-events-none select-none font-bold">[+]</div>
               
               <div className="space-y-4">
                 <div className="text-[10.5px] font-mono uppercase tracking-[0.2em] text-swiss-dark border-b-2 border-swiss-dark pb-2 font-bold flex items-center gap-2">
