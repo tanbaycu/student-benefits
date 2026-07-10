@@ -4087,6 +4087,26 @@ function App() {
   const totalLifetimeSavings = totalYearlySavings * customMultiplier;
   const progressPercentage = Math.min((totalLifetimeSavings / customSavingsGoal) * 100, 100);
 
+  const getPaginationRange = (current, total) => {
+    const range = [];
+    const delta = 1;
+    for (let i = 1; i <= total; i++) {
+      if (i === 1 || i === total || (i >= current - delta && i <= current + delta)) {
+        range.push(i);
+      } else if (i === current - delta - 1 || i === current + delta + 1) {
+        range.push("...");
+      }
+    }
+    const uniqueRange = [];
+    let prev = null;
+    for (const item of range) {
+      if (item === "..." && prev === "...") continue;
+      uniqueRange.push(item);
+      prev = item;
+    }
+    return uniqueRange;
+  };
+
   const themes = [
     { id: "Theme 1", name: "THEME 01 / TECH & SOFTWARE" },
     { id: "Theme 2", name: "THEME 02 / ACADEMIA & GROWTH" },
@@ -4416,10 +4436,41 @@ function App() {
 
           {/* Phân trang (Pagination) Swiss style tối giản */}
           {totalPages > 1 && (
-            <div className="mt-12 flex justify-center items-center gap-2 border-t border-swiss-border pt-8">
-              <span className="text-[10px] font-mono text-swiss-gray uppercase tracking-widest mr-4">Trang:</span>
-              {[...Array(totalPages)].map((_, i) => {
-                const pageNum = i + 1;
+            <div className="mt-12 flex flex-wrap justify-center items-center gap-1.5 sm:gap-2 border-t border-swiss-border pt-8">
+              <span className="text-[10px] font-mono text-swiss-gray uppercase tracking-widest mr-2 sm:mr-4">Trang:</span>
+              
+              {/* Nút Trước (Prev) */}
+              <button
+                type="button"
+                disabled={currentPage === 1}
+                onClick={() => {
+                  if (currentPage > 1) {
+                    setIsListLoading(true);
+                    setCurrentPage(currentPage - 1);
+                    setTimeout(() => {
+                      setIsListLoading(false);
+                      const element = document.getElementById("explore");
+                      if(element) element.scrollIntoView({ behavior: "smooth" });
+                    }, 250);
+                  }
+                }}
+                className={`swiss-pressable-sm w-9 h-9 flex items-center justify-center text-xs font-mono border rounded-lg transition-all ${
+                  currentPage === 1 
+                    ? 'opacity-40 cursor-not-allowed bg-swiss-light border-swiss-border text-swiss-gray' 
+                    : 'bg-white hover:bg-swiss-light border-swiss-border text-swiss-dark'
+                }`}
+              >
+                &lt;
+              </button>
+
+              {getPaginationRange(currentPage, totalPages).map((pageNum, i) => {
+                if (pageNum === "...") {
+                  return (
+                    <span key={`dots-${i}`} className="w-9 h-9 flex items-center justify-center text-xs font-mono text-swiss-gray">
+                      ...
+                    </span>
+                  );
+                }
                 return (
                   <button
                     key={pageNum}
@@ -4443,6 +4494,30 @@ function App() {
                   </button>
                 );
               })}
+
+              {/* Nút Sau (Next) */}
+              <button
+                type="button"
+                disabled={currentPage === totalPages}
+                onClick={() => {
+                  if (currentPage < totalPages) {
+                    setIsListLoading(true);
+                    setCurrentPage(currentPage + 1);
+                    setTimeout(() => {
+                      setIsListLoading(false);
+                      const element = document.getElementById("explore");
+                      if(element) element.scrollIntoView({ behavior: "smooth" });
+                    }, 250);
+                  }
+                }}
+                className={`swiss-pressable-sm w-9 h-9 flex items-center justify-center text-xs font-mono border rounded-lg transition-all ${
+                  currentPage === totalPages 
+                    ? 'opacity-40 cursor-not-allowed bg-swiss-light border-swiss-border text-swiss-gray' 
+                    : 'bg-white hover:bg-swiss-light border-swiss-border text-swiss-dark'
+                }`}
+              >
+                &gt;
+              </button>
             </div>
           )}
         </div>
