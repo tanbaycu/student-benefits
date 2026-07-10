@@ -4456,10 +4456,10 @@ function App() {
             HỢP TÁC XÃ TIẾT KIỆM SINH VIÊN
           </h2>
           
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          <div className="grid grid-cols-12 gap-8 items-stretch">
             
             {/* Box 1: The Collective Vault */}
-            <div className="lg:col-span-6 bg-swiss-dark text-white p-8 border border-swiss-dark flex flex-col justify-between h-[380px] relative overflow-hidden group rounded-2xl shadow-lg">
+            <div className="col-span-12 lg:col-span-6 bg-swiss-dark text-white p-8 border border-swiss-dark flex flex-col justify-between h-[380px] relative overflow-hidden group rounded-2xl shadow-lg">
               <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-swiss-blue/15 rounded-full blur-3xl group-hover:bg-swiss-blue/25 transition-all duration-700 pointer-events-none"></div>
               <div className="absolute -top-20 -left-20 w-64 h-64 bg-swiss-red/10 rounded-full blur-3xl group-hover:bg-swiss-red/20 transition-all duration-700 pointer-events-none"></div>
 
@@ -4507,7 +4507,7 @@ function App() {
             </div>
 
             {/* Box 2: Contribute Card Lớn Riêng Biệt */}
-            <div className="lg:col-span-6 bg-white border-2 border-swiss-dark p-6 sm:p-8 flex flex-col justify-between min-h-[380px] lg:h-[380px] rounded-2xl shadow-[0_15px_45px_rgba(0,0,0,0.06)] relative overflow-hidden group hover:shadow-[0_20px_55px_rgba(0,0,0,0.1)] transition-shadow duration-300">
+            <div className="col-span-12 lg:col-span-6 bg-white border-2 border-swiss-dark p-6 sm:p-8 flex flex-col justify-between min-h-[380px] lg:h-[380px] rounded-2xl shadow-[0_15px_45px_rgba(0,0,0,0.06)] relative overflow-hidden group hover:shadow-[0_20px_55px_rgba(0,0,0,0.1)] transition-shadow duration-300">
               <div className="absolute top-4 right-4 font-mono text-sm text-swiss-gray pointer-events-none select-none font-bold">[+]</div>
               
               <div className="space-y-4">
