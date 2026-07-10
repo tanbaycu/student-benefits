@@ -50,7 +50,7 @@ export function LifetimePlanner({
             <div className="w-12 h-1 bg-swiss-border rounded-full mx-auto mt-3 shrink-0"></div>
 
             {/* Header */}
-            <div className="flex items-center justify-between border-b border-swiss-border px-8 py-4 bg-white shrink-0">
+            <div className="flex items-center justify-between border-b border-swiss-border px-4 sm:px-8 py-4 bg-white shrink-0">
               <div className="flex items-center gap-3">
                 <div className="p-2 bg-swiss-dark text-white rounded-xl shadow-sm">
                   <Sliders size={18} />
@@ -75,10 +75,10 @@ export function LifetimePlanner({
             </div>
 
             {/* Main Content Area - Bố cục bento sạch sẽ không đường viền lồng nhau */}
-            <div className="flex-1 p-8 overflow-y-auto grid grid-cols-1 lg:grid-cols-12 gap-8 scrollbar-thin">
+            <div className="flex-1 p-4 sm:p-8 overflow-y-auto grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 scrollbar-thin">
               
               {/* Left Column: Calculator (col-span-5) */}
-              <div className="lg:col-span-5 flex flex-col gap-6">
+              <div className="lg:col-span-5 flex flex-col gap-5 sm:gap-6">
                 
                 {/* Estimated savings bento */}
                 <div className="bg-swiss-dark text-white p-6 relative overflow-hidden flex flex-col justify-between h-44 shadow-md rounded-2xl shrink-0">
@@ -158,8 +158,8 @@ export function LifetimePlanner({
               </div>
 
               {/* Right Column: Selected list flat - Loại bỏ viền ngoài thô kệch */}
-              <div className="lg:col-span-7 bg-white p-6 flex flex-col justify-between h-full overflow-hidden rounded-2xl border border-swiss-border shadow-sm">
-                <div className="flex-1 flex flex-col overflow-hidden">
+              <div className="lg:col-span-7 bg-white p-4 sm:p-6 flex flex-col justify-between rounded-2xl border border-swiss-border shadow-sm min-h-[380px] lg:h-full lg:overflow-hidden">
+                <div className="flex-1 flex flex-col lg:overflow-hidden">
                   <div className="text-[10px] font-mono uppercase tracking-widest text-swiss-dark border-b border-swiss-border pb-2 mb-4 font-bold flex justify-between">
                     <span>[C] CHI TIẾT ƯU ĐÃI ĐÃ LƯU ({myPlan.length})</span>
                     <span>ƯỚC TÍNH: ~${totalYearlySavings}/NĂM</span>
@@ -238,7 +238,7 @@ export function LifetimePlanner({
 
             {/* Footer Actions */}
             {myPlan.length > 0 && (
-              <div className="border-t border-swiss-border p-6 flex gap-4 bg-white shrink-0">
+              <div className="border-t border-swiss-border p-4 sm:p-6 flex gap-3 bg-white shrink-0">
                 <button 
                   type="button"
                   onClick={() => setIsExportModalOpen(true)}

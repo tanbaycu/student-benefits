@@ -2297,10 +2297,10 @@ function App() {
     <div className="min-h-screen bg-[#fafafa] flex flex-col pt-28 selection:bg-swiss-blue selection:text-white">
       
       {/* 1. FLOATING HEADER */}
-      <header className="fixed top-4 left-1/2 -translate-x-1/2 max-w-7xl w-[calc(100%-2rem)] bg-white/80 backdrop-blur-md border border-swiss-border shadow-[0_8px_30px_rgba(0,0,0,0.03)] rounded-full px-6 py-3.5 z-[70] flex justify-between items-center transition-all duration-300">
-        <div className="flex items-center gap-3">
+      <header className="fixed top-4 left-1/2 -translate-x-1/2 max-w-7xl w-[calc(100%-2rem)] bg-white/80 backdrop-blur-md border border-swiss-border shadow-[0_8px_30px_rgba(0,0,0,0.03)] rounded-full px-4 sm:px-6 py-2.5 sm:py-3.5 z-[70] flex justify-between items-center transition-all duration-300">
+        <div className="flex items-center gap-2 sm:gap-3">
           <SwissLogo />
-          <span className="font-roboto font-black text-lg tracking-tighter uppercase text-swiss-dark">
+          <span className="font-roboto font-black text-xs xs:text-sm sm:text-base md:text-lg tracking-tighter uppercase text-swiss-dark">
             STUDENT BENEFITS
           </span>
         </div>
@@ -2324,7 +2324,7 @@ function App() {
           <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-swiss-red mb-5 inline-block font-semibold">
             ✦ EXCLUSIVE VERIFIED LIFETIME REVENUE
           </span>
-          <h1 className="font-roboto font-black text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.9] tracking-tighter text-swiss-dark uppercase flex flex-col gap-1.5">
+          <h1 className="font-roboto font-black text-3xl xs:text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.9] tracking-tighter text-swiss-dark uppercase flex flex-col gap-1.5">
             <div className="overflow-hidden h-[1.1em] flex items-center">
               <motion.div 
                 initial={{ y: "100%" }} 
@@ -2469,7 +2469,7 @@ function App() {
                 key={loc}
                 type="button"
                 onClick={() => handleLocationChange(loc)}
-                className={`swiss-pressable-sm px-3 py-2.5 text-center text-xs font-mono uppercase tracking-wider ${
+                className={`swiss-pressable-sm px-1.5 xs:px-3 py-2 sm:py-2.5 text-center text-[10px] xs:text-xs font-mono uppercase tracking-wider ${
                   selectedLocation === loc 
                     ? 'bg-swiss-dark text-white' 
                     : 'text-swiss-dark hover:bg-swiss-light'
