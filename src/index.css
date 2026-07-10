@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --color-swiss-blue: #0044ff;
+  --color-swiss-blue-hover: #0033cc;
+  --color-swiss-red: #ff3333;
+  --color-swiss-dark: #0a0a0a;
+  --color-swiss-light: #f7f7f7;
+  --color-swiss-gray: #707070;
+  --color-swiss-border: rgba(0, 0, 0, 0.08);
+  --ease-swiss-out: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Base styles override */
+body {
+  background-color: #fafafa;
+  color: #0d0d0d;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom transitions */
+.swiss-transition {
+  transition: all 250ms var(--ease-swiss-out);
+}
+
+.swiss-pressable {
+  transition: transform 150ms var(--ease-swiss-out), background-color 150ms var(--ease-swiss-out), border-color 150ms var(--ease-swiss-out), color 150ms var(--ease-swiss-out);
+}
+.swiss-pressable:active {
+  transform: scale(0.97);
+}
+
+.swiss-pressable-sm {
+  transition: transform 120ms var(--ease-swiss-out), background-color 120ms var(--ease-swiss-out), border-color 120ms var(--ease-swiss-out);
+}
+.swiss-pressable-sm:active {
+  transform: scale(0.98);
+}
+
+/* Custom utility for swiss border gridlines */
+.swiss-grid-line {
+  border-color: var(--color-swiss-border);
+}
+
+/* Thin horizontal line resembling a printing press border */
+.swiss-line {
+  height: 1px;
+  background-color: var(--color-swiss-border);
+  width: 100%;
+}
+
+/* Custom scrollbar to keep it minimal */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Accent cursor point or dots */
+.swiss-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-swiss-red);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Kinetic ticker styling */
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-33.33333%, 0, 0);
+  }
+}
+
+.ticker-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker-content {
+  display: inline-block;
+  animation: ticker 25s linear infinite;
+}
+
+.ticker-content:hover {
+  animation-play-state: paused;
+}
+
+/* Skeleton loader shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease infinite;
+}
+
+/* Dedicated Live Activity Monitor Ticker */
+.live-ticker-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.live-ticker-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 3rem;
+  animation: live-ticker-slide 28s linear infinite;
+}
+
+.live-ticker-content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes live-ticker-slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+
