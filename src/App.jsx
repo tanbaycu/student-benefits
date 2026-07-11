@@ -392,8 +392,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "12 giờ trước",
     savings: 120,
-    link: "https://www.grab.com/vn/blog/grabstudent/",
-    requirements: "Chụp ảnh thẻ sinh viên và chứng minh thư tải lên ứng dụng Grab.",
+    link: "https://www.grab.com/vn/blog/grabstudent-bi-kip-tiet-kiem-khi-di-hoc-cung-grab/",
+    requirements: "Mở app Grab trên điện thoại -> Vào mục 'Thử thách' (Challenges) hoặc 'Ưu đãi' (Rewards) để đăng ký gói sinh viên; hoặc xác thực qua MoMo Student Pass bằng thẻ sinh viên.",
     isHot: true
   },
   {
@@ -452,8 +452,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "5 phút trước",
     savings: 100,
-    link: "https://www.vietnamairlines.com/vn/vi/plan-book/special-offers/youth-student",
-    requirements: "Đăng ký Lotusmiles, tham gia LotuStudents qua việc tải lên Thẻ sinh viên hoặc Giấy báo nhập học.",
+    link: "https://www.vietnamairlines.com/vn/vi/lotusmiles/enroll-lotusmiles",
+    requirements: "Đăng ký hội viên Bông Sen Vàng (Lotusmiles) -> Đăng nhập -> Vào mục 'LotuSociety' ở trang cá nhân -> Chọn ưu đãi 'Học sinh, sinh viên' và tải thẻ sinh viên lên để kích hoạt.",
     isHot: true
   },
   {
