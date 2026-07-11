@@ -183,7 +183,7 @@ const BENEFITS_DATA = [
     updatedAt: "1 ngày trước",
     savings: 500,
     link: "https://fptarena.edu.vn/",
-    requirements: "Chuyên môn nghệ thuật và thẻ học sinh còn thời hạn.",
+    requirements: "Liên hệ bộ phận tuyển sinh của FPT Arena và xuất trình thẻ sinh viên/giấy báo nhập học để áp dụng học bổng học tập.",
     isHot: true
   },
   {
@@ -483,7 +483,7 @@ const BENEFITS_DATA = [
     updatedAt: "1 ngày trước",
     savings: 90,
     link: "https://www.xanhsm.com/",
-    requirements: "Nhập mã số sinh viên và hình ảnh thẻ sinh viên để kích hoạt trên ứng dụng.",
+    requirements: "Đăng ký xác thực tài khoản học sinh/sinh viên trực tiếp trên ứng dụng Xanh SM bằng cách chụp ảnh thẻ sinh viên.",
     isHot: true
   },
   {
@@ -498,7 +498,7 @@ const BENEFITS_DATA = [
     updatedAt: "Vừa xong",
     savings: 80,
     link: "https://cellphones.com.vn/s-student/",
-    requirements: "Xác thực thông quan ứng dụng Smember hoặc trực tiếp tại quầy bằng thẻ sinh viên.",
+    requirements: "Đăng ký trực tuyến trên website CellphoneS (mục S-Student) bằng email trường/thẻ sinh viên, hoặc mang thẻ sinh viên và CCCD qua cửa hàng để kích hoạt giảm giá trực tiếp.",
     isHot: true
   },
   {
@@ -528,7 +528,7 @@ const BENEFITS_DATA = [
     updatedAt: "2 giờ trước",
     savings: 50,
     link: "https://www.starbucks.vn/",
-    requirements: "Thẻ sinh viên cứng còn hiệu lực xuất trình cho nhân viên thu ngân.",
+    requirements: "Xuất trình thẻ học sinh/sinh viên khi gọi món trực tiếp tại các cửa hàng Starbucks Việt Nam để áp dụng ưu đãi theo mùa (nếu có).",
     isHot: true
   },
   {
@@ -542,8 +542,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 50,
-    link: "https://fptshop.com.vn",
-    requirements: "Đăng ký thông tin học sinh/sinh viên trên trang web FPT Shop và xác thực tại cửa hàng.",
+    link: "https://fptshop.com.vn/",
+    requirements: "Mang theo thẻ học sinh/sinh viên kèm CCCD chính chủ đến các cửa hàng FPT Shop toàn quốc khi mua laptop, máy tính bảng để nhận chiết khấu học đường.",
     isHot: true
   },
   {
@@ -557,8 +557,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "8 giờ trước",
     savings: 45,
-    link: "https://www.lottecinemavn.com",
-    requirements: "Thẻ học sinh/sinh viên cứng xuất trình trực tiếp cho nhân viên bán vé.",
+    link: "https://www.lottecinemavn.com/",
+    requirements: "Xuất trình thẻ học sinh/sinh viên kèm CCCD chính chủ trực tiếp tại quầy vé của Lotte Cinema để mua vé xem phim với giá ưu đãi U22.",
     isHot: true
   },
   {
@@ -573,7 +573,7 @@ const BENEFITS_DATA = [
     updatedAt: "6 giờ trước",
     savings: 40,
     link: "https://www.cgv.vn/default/news-offers",
-    requirements: "Xuất trình thẻ sinh viên kèm CCCD chính chủ tại quầy vé.",
+    requirements: "Xuất trình thẻ học sinh/sinh viên và CCCD tại quầy vé của CGV để mua vé phim giá U22 (áp dụng cho hội viên CGV dưới 22 tuổi).",
     isHot: true
   },
   {
@@ -588,7 +588,7 @@ const BENEFITS_DATA = [
     updatedAt: "1 ngày trước",
     savings: 40,
     link: "https://www.highlandscoffee.com.vn/",
-    requirements: "Xuất trình thẻ sinh viên cứng cho nhân viên order tại quầy.",
+    requirements: "Xuất trình thẻ học sinh/sinh viên chính chủ tại quầy thanh toán của Highlands Coffee để mua các combo đồ uống kèm bánh ngọt với giá ưu đãi.",
     isHot: true
   },
   {
@@ -633,7 +633,7 @@ const BENEFITS_DATA = [
     updatedAt: "Vừa xong",
     savings: 30,
     link: "https://www.vietjetair.com",
-    requirements: "Đặt vé trực tuyến trong khung giờ vàng hoặc điền mã ưu đãi theo mùa.",
+    requirements: "Nhập mã ưu đãi sinh viên trong các đợt chiến dịch trên website đặt vé của Vietjet Air, và xuất trình thẻ sinh viên khi làm thủ tục check-in tại sân bay.",
     isHot: true
   },
   {
@@ -1547,8 +1547,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 150,
-    link: "https://nhakhoaparkway.com",
-    requirements: "Đăng ký qua link sự kiện trường học hoặc xuất trình thẻ sinh viên tại phòng khám.",
+    link: "https://nhakhoaparkway.com/",
+    requirements: "Đặt lịch hẹn tư vấn trực tuyến và xuất trình thẻ học sinh/sinh viên chính thức khi đến phòng khám để được áp dụng giảm giá niềng răng hoặc chăm sóc răng.",
     isHot: false
   },
   {
@@ -1743,7 +1743,7 @@ const BENEFITS_DATA = [
     updatedAt: "Vừa xong",
     savings: 125,
     link: "http://timbus.vn/",
-    requirements: "Đăng ký thẻ vé tháng trực tuyến tại Timbus.vn hoặc trực tiếp tại điểm bán vé, yêu cầu dán ảnh và có xác nhận của trường học.",
+    requirements: "Nộp tờ khai đăng ký làm thẻ xe buýt tháng HSSV (có dấu xác nhận của trường) kèm 2 ảnh 3x4 tại các điểm bán vé xe buýt ở Hà Nội.",
     isHot: false
   },
   {
@@ -1832,8 +1832,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 120,
-    link: "https://nhakhoaparis.vn",
-    requirements: "Đăng ký khám qua website hoặc tại phòng khám và xuất trình thẻ sinh viên.",
+    link: "https://nhakhoaparis.vn/",
+    requirements: "Đặt lịch hẹn khám trực tuyến và xuất trình thẻ sinh viên tại phòng khám để nhận ưu đãi lấy cao răng, nhổ răng khôn hoặc niềng răng dành riêng cho sinh viên.",
     isHot: false
   },
   {
@@ -2102,8 +2102,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 100,
-    link: "https://nhakhoakim.com",
-    requirements: "Đăng ký lịch khám qua hotline/website và mang theo thẻ sinh viên.",
+    link: "https://nhakhoakim.com/",
+    requirements: "Đặt lịch khám qua hotline/website và xuất trình thẻ sinh viên chính thức tại quầy tiếp đón của Nha khoa Kim để nhận chiết khấu điều trị.",
     isHot: false
   },
   {
@@ -2268,7 +2268,7 @@ const BENEFITS_DATA = [
     updatedAt: "Vừa xong",
     savings: 85,
     link: "http://buyttphcm.com.vn/",
-    requirements: "Xuất trình thẻ học sinh, sinh viên còn hiệu lực khi mua vé trực tiếp trên xe hoặc đăng ký thẻ xe buýt định danh.",
+    requirements: "Xuất trình thẻ học sinh/sinh viên còn hiệu lực trực tiếp cho tiếp viên khi lên xe buýt tại TP.HCM để mua vé xe buýt đồng giá ưu đãi.",
     isHot: false
   },
   {
@@ -2357,8 +2357,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "1 ngày trước",
     savings: 80,
-    link: "https://be.com.vn",
-    requirements: "Xác thực bằng cách upload hình ảnh thẻ sinh viên lên phần BeStudent trong app.",
+    link: "https://be.com.vn/",
+    requirements: "Đăng ký tham gia câu lạc bộ sinh viên BeStudent trực tiếp trên ứng dụng di động Be bằng cách chụp ảnh thẻ sinh viên để nhận gói coupon di chuyển hàng tuần.",
     isHot: false
   },
   {
@@ -2552,8 +2552,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 65,
-    link: "http://timbus.vn",
-    requirements: "Đăng ký thẻ tháng trực tiếp tại quầy hoặc online có dấu xác nhận của trường đại học.",
+    link: "http://timbus.vn/",
+    requirements: "Đến trực tiếp điểm làm thẻ xe buýt tháng của Transerco Hà Nội, nộp thẻ học sinh/sinh viên để được áp dụng gói vé tháng ưu đãi một tuyến hoặc liên tuyến.",
     isHot: false
   },
   {
@@ -2793,7 +2793,7 @@ const BENEFITS_DATA = [
     updatedAt: "2 ngày trước",
     savings: 50,
     link: "https://dominos.vn/",
-    requirements: "Xuất trình thẻ sinh viên khi nhận hàng hoặc ăn trực tiếp tại nhà hàng.",
+    requirements: "Xuất trình thẻ học sinh/sinh viên khi mua pizza trực tiếp tại cửa hàng Domino's Pizza Việt Nam để nhận combo giảm giá đặc biệt.",
     isHot: false
   },
   {
@@ -2928,7 +2928,7 @@ const BENEFITS_DATA = [
     updatedAt: "Vừa xong",
     savings: 48,
     link: "https://vinaphone.com.vn/",
-    requirements: "Đăng ký qua cú pháp SMS DK YOLO100M gửi 888 đối với SIM sinh viên hoặc thuê bao thuộc danh sách ưu đãi.",
+    requirements: "Mang CCCD kèm thẻ học sinh/sinh viên còn hiệu lực đến các điểm giao dịch của VinaPhone toàn quốc để đăng ký sim sinh viên chính chủ.",
     isHot: false
   },
   {
@@ -2943,7 +2943,7 @@ const BENEFITS_DATA = [
     updatedAt: "Vừa xong",
     savings: 48,
     link: "https://mobifone.vn/",
-    requirements: "Soạn tin nhắn ON MXH100 gửi 9084 bằng SIM sinh viên Q-Student đã kích hoạt.",
+    requirements: "Đăng ký chính chủ sim sinh viên tại các cửa hàng giao dịch MobiFone toàn quốc bằng cách xuất trình CCCD và thẻ sinh viên.",
     isHot: false
   },
   {
@@ -2957,8 +2957,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 45,
-    link: "http://buyttphcm.com.vn",
-    requirements: "Xuất trình thẻ sinh viên cho tiếp viên hoặc quét mã định danh qua ứng dụng MultiGo/VNeID.",
+    link: "http://buyttphcm.com.vn/",
+    requirements: "Xuất trình thẻ học sinh/sinh viên khi lên xe buýt tại TP.HCM để mua vé lượt đồng giá ưu đãi trực tiếp từ nhân viên bán vé.",
     isHot: false
   },
   {
@@ -3002,8 +3002,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 40,
-    link: "https://vus.edu.vn",
-    requirements: "Đăng ký trực tuyến hoặc trực tiếp và mang theo thẻ sinh viên khi nhập học.",
+    link: "https://vus.edu.vn/",
+    requirements: "Liên hệ tư vấn viên tại các cơ sở Anh văn Hội Việt Mỹ (VUS) và xuất trình thẻ sinh viên để được áp dụng giảm học phí hoặc tặng học bổng.",
     isHot: false
   },
   {
@@ -3093,7 +3093,7 @@ const BENEFITS_DATA = [
     updatedAt: "Vừa xong",
     savings: 36,
     link: "https://vietteltelecom.vn/",
-    requirements: "Xác thực trực tiếp qua ứng dụng My Viettel hoặc mang CCCD ra cửa hàng Viettel để kích hoạt.",
+    requirements: "Mang theo thẻ học sinh/sinh viên (từ 14 đến 22 tuổi) kèm CCCD đến cửa hàng Viettel để đăng ký sim chính chủ hoặc đổi gói cước qua app MyViettel.",
     isHot: false
   },
   {
@@ -3153,7 +3153,7 @@ const BENEFITS_DATA = [
     updatedAt: "12 giờ trước",
     savings: 30,
     link: "https://phuclong.com.vn/",
-    requirements: "Xuất trình thẻ sinh viên chính chủ khi thanh toán tại quầy.",
+    requirements: "Xuất trình thẻ học sinh/sinh viên chính chủ tại quầy thanh toán của Phúc Long khi mua đồ uống để nhận ưu đãi combo hoặc giảm giá theo chương trình.",
     isHot: false
   },
   {
@@ -3182,8 +3182,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 30,
-    link: "https://www.bambooairways.com",
-    requirements: "Đăng ký hội viên Bamboo Club và cập nhật thông tin thẻ sinh viên.",
+    link: "https://www.bambooairways.com/",
+    requirements: "Chọn hạng vé HSSV khi đặt vé trực tuyến hoặc mua vé tại phòng vé chính thức của Bamboo Airways, xuất trình thẻ sinh viên khi làm thủ tục bay.",
     isHot: false
   },
   {
@@ -3228,7 +3228,7 @@ const BENEFITS_DATA = [
     updatedAt: "Vừa xong",
     savings: 30,
     link: "https://dsvn.vn/",
-    requirements: "Xuất trình thẻ sinh viên chính thức hoặc giấy báo nhập học (cho tân sinh viên) tại ga khi mua vé và khi lên tàu.",
+    requirements: "Mua vé trực tiếp tại ga tàu hoặc đặt trực tuyến qua website dsvn.vn (chọn đối tượng Sinh viên), xuất trình thẻ sinh viên chính chủ kèm giấy tờ tùy thân khi lên tàu.",
     isHot: false
   },
   {
@@ -3242,8 +3242,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 30,
-    link: "https://hoanghamobile.com",
-    requirements: "Đăng ký thành viên Hoàng Hà Edu qua website hoặc tại quầy bằng thẻ HSSV.",
+    link: "https://hoanghamobile.com/",
+    requirements: "Mang thẻ sinh viên còn hiệu lực và CCCD qua hệ thống cửa hàng Hoàng Hà Mobile để đăng ký chương trình Hoàng Hà Edu và nhận ưu đãi giảm giá.",
     isHot: false
   },
   {
@@ -3332,8 +3332,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 25,
-    link: "https://didongviet.vn",
-    requirements: "Xuất trình thẻ sinh viên chính chủ và CCCD tại quầy thu ngân khi mua hàng.",
+    link: "https://didongviet.vn/",
+    requirements: "Xuất trình thẻ học sinh/sinh viên và CCCD tại các cửa hàng Di Động Việt để được giảm giá trực tiếp khi mua điện thoại, phụ kiện công nghệ.",
     isHot: false
   },
   {
@@ -3347,8 +3347,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 25,
-    link: "https://thepizzacompany.vn",
-    requirements: "Mua mang về hoặc đặt trực tuyến qua website/hotline chính thức.",
+    link: "https://thepizzacompany.vn/",
+    requirements: "Xuất trình thẻ sinh viên/học sinh trực tiếp tại cửa hàng The Pizza Company để áp dụng menu combo HSSV đồng giá cực kỳ ưu đãi.",
     isHot: false
   },
   {
@@ -3453,7 +3453,7 @@ const BENEFITS_DATA = [
     updatedAt: "Vừa xong",
     savings: 24,
     link: "https://vietteltelecom.vn/",
-    requirements: "Đăng ký trực tiếp trên My Viettel hoặc qua cú pháp SMS đối với thuê bao HSSV hợp lệ.",
+    requirements: "Đăng ký chính chủ sim sinh viên tại các cửa hàng Viettel trên toàn quốc bằng cách cung cấp thẻ sinh viên và CCCD.",
     isHot: false
   },
   {
@@ -3557,8 +3557,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 20,
-    link: "https://pizzahut.vn",
-    requirements: "Đăng ký thành viên Hut Rewards qua email/số điện thoại để đặt combo.",
+    link: "https://pizzahut.vn/",
+    requirements: "Xuất trình thẻ học sinh/sinh viên khi gọi món trực tiếp tại nhà hàng Pizza Hut để áp dụng ưu đãi giảm giá combo sinh viên.",
     isHot: false
   },
   {
@@ -3572,8 +3572,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 20,
-    link: "https://thenewgym.vn",
-    requirements: "Đăng ký tại CLB và xuất trình thẻ sinh viên để kích hoạt ưu đãi.",
+    link: "https://thenewgym.vn/",
+    requirements: "Mang theo thẻ học sinh/sinh viên khi đăng ký gói tập trực tiếp tại các cơ sở của The New Gym để được giảm giá phí hội viên tháng.",
     isHot: false
   },
   {
@@ -3677,8 +3677,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 18,
-    link: "https://www.betacinemas.vn",
-    requirements: "Xuất trình Thẻ học sinh/sinh viên hoặc CCCD/VNeID tại quầy vé.",
+    link: "https://www.betacinemas.vn/",
+    requirements: "Xuất trình thẻ học sinh/sinh viên kèm CCCD tại quầy vé Beta Cinemas để mua vé xem phim đồng giá U22 (áp dụng cả ngày thường).",
     isHot: false
   },
   {
@@ -3692,8 +3692,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 18,
-    link: "https://www.bhdstar.vn",
-    requirements: "Xuất trình CCCD/VNeID, thẻ HSSV hoặc mặc đồng phục học sinh khi mua vé trực tiếp tại quầy.",
+    link: "https://www.bhdstar.vn/",
+    requirements: "Xuất trình thẻ học sinh/sinh viên chính chủ tại quầy vé BHD Star để nhận ưu đãi giá vé xem phim thành viên U22.",
     isHot: false
   },
   {
@@ -3707,8 +3707,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 18,
-    link: "https://www.galaxycine.vn",
-    requirements: "Xuất trình Thẻ HSSV hoặc CCCD/VNeID tại rạp để đối chiếu độ tuổi trước khi vào phòng chiếu.",
+    link: "https://www.galaxycine.vn/",
+    requirements: "Xuất trình thẻ học sinh/sinh viên tại quầy vé Galaxy Cinema để áp dụng chương trình ưu đãi giá vé xem phim đồng giá U22.",
     isHot: false
   },
   {
@@ -3737,8 +3737,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 18,
-    link: "https://online.iigvietnam.com",
-    requirements: "Đăng ký thi online và xuất trình thẻ sinh viên chính quy còn hiệu lực kèm CCCD tại văn phòng IIG.",
+    link: "https://online.iigvietnam.com/",
+    requirements: "Đăng ký dự thi TOEIC/TOEFL trực tuyến qua website IIG và tải lên thẻ sinh viên còn hiệu lực để được áp dụng lệ phí thi ưu đãi cho sinh viên.",
     isHot: false
   },
   {
@@ -3798,7 +3798,7 @@ const BENEFITS_DATA = [
     updatedAt: "Vừa xong",
     savings: 16,
     link: "https://cake.vn/",
-    requirements: "Đăng ký và định danh trực tuyến eKYC qua app Cake trong 2 phút.",
+    requirements: "Tải ứng dụng Cake by VPBank, thực hiện mở tài khoản trực tuyến (eKYC) bằng CCCD và chọn loại tài khoản/thẻ liên kết dành cho sinh viên.",
     isHot: false
   },
   {
@@ -3857,8 +3857,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 15,
-    link: "https://popeyes.vn",
-    requirements: "Áp dụng mã giảm giá trên website/app Popeyes hoặc mua trực tiếp tại quầy.",
+    link: "https://popeyes.vn/",
+    requirements: "Xuất trình thẻ học sinh/sinh viên còn hiệu lực tại quầy thu ngân của Popeyes khi đặt hàng để áp dụng combo gà rán sinh viên giá rẻ.",
     isHot: false
   },
   {
@@ -3917,8 +3917,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 12,
-    link: "https://texaschicken.com.vn",
-    requirements: "Chọn các combo giá trị dành cho HSSV trực tiếp tại quầy order.",
+    link: "https://texaschicken.com.vn/",
+    requirements: "Xuất trình thẻ học sinh/sinh viên khi mua hàng trực tiếp tại quầy thanh toán của Texas Chicken để nhận ưu đãi giảm giá combo gà rán.",
     isHot: false
   },
   {
@@ -3933,7 +3933,7 @@ const BENEFITS_DATA = [
     updatedAt: "Vừa xong",
     savings: 12,
     link: "https://mobiedu.vn/",
-    requirements: "Soạn tin nhắn ON MA30 gửi 9084 bằng thuê bao HSSV để nhận tài khoản VIP.",
+    requirements: "Đăng ký gói cước trực tuyến trên trang mobiedu.vn hoặc qua tin nhắn điện thoại bằng tài khoản thuê bao học sinh/sinh viên.",
     isHot: false
   },
   {
@@ -3948,7 +3948,7 @@ const BENEFITS_DATA = [
     updatedAt: "Vừa xong",
     savings: 12,
     link: "https://www.tnex.com.vn/",
-    requirements: "Đăng ký tài khoản online qua eKYC trên ứng dụng TNEX và cung cấp minh chứng thẻ sinh viên.",
+    requirements: "Đăng ký mở tài khoản ngân hàng số TNEX trực tiếp trên app điện thoại bằng CCCD và chọn gói ưu đãi thẻ dành cho sinh viên.",
     isHot: false
   },
   {
@@ -3963,7 +3963,7 @@ const BENEFITS_DATA = [
     updatedAt: "Vừa xong",
     savings: 12,
     link: "https://timo.vn/",
-    requirements: "Đăng ký eKYC trên ứng dụng Timo hoặc đến trực tiếp Timo Hangout để nhận thẻ vật lý.",
+    requirements: "Mở tài khoản Timo trực tuyến qua app bằng CCCD (eKYC) và nhận thẻ Timo ATM miễn phí ship để tham gia các ưu đãi chiết khấu học tập.",
     isHot: false
   },
   {
@@ -4037,8 +4037,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 10,
-    link: "https://www.lotteria.vn",
-    requirements: "Đăng ký thành viên ứng dụng Lotteria (thẻ RIA) và gọi món combo HSSV tại quầy.",
+    link: "https://www.lotteria.vn/",
+    requirements: "Xuất trình thẻ học sinh/sinh viên tại quầy thu ngân của Lotteria để mua các combo gà rán HSSV đồng giá siêu tiết kiệm.",
     isHot: false
   },
   {
@@ -4112,8 +4112,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 8,
-    link: "https://www.kfcvietnam.com.vn",
-    requirements: "Chọn menu combo ăn trưa tại quầy hoặc đặt trên ứng dụng KFC Việt Nam.",
+    link: "https://www.kfcvietnam.com.vn/",
+    requirements: "Xuất trình thẻ học sinh/sinh viên tại quầy thanh toán của KFC để mua combo gà rán HSSV với giá ưu đãi đặc biệt.",
     isHot: false
   },
   {
@@ -4127,8 +4127,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 8,
-    link: "https://jollibee.com.vn",
-    requirements: "Mua trực tiếp tại quầy hoặc nhận voucher ưu đãi từ các sự kiện trường học.",
+    link: "https://jollibee.com.vn/",
+    requirements: "Xuất trình thẻ học sinh/sinh viên trực tiếp tại quầy thu ngân của Jollibee khi mua sắm để được áp dụng combo học đường giảm giá.",
     isHot: false
   },
   {
@@ -4142,8 +4142,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 6,
-    link: "http://damsenwaterpark.com.vn",
-    requirements: "Xuất trình thẻ sinh viên hoặc mua vé theo đoàn liên kết.",
+    link: "http://damsenwaterpark.com.vn/",
+    requirements: "Mua vé vào cổng trực tiếp tại quầy vé Công viên nước Đầm Sen và xuất trình thẻ học sinh/sinh viên chính chủ để được giảm giá vé.",
     isHot: false
   },
   {
@@ -4157,8 +4157,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 5,
-    link: "https://suoitien.vn",
-    requirements: "Xuất trình thẻ sinh viên tại quầy vé hoặc tham gia theo đoàn trường.",
+    link: "https://suoitien.vn/",
+    requirements: "Mua vé vào cổng trực tiếp tại quầy vé Khu du lịch Suối Tiên và xuất trình thẻ học sinh/sinh viên còn hạn để nhận ưu đãi giảm giá vé.",
     isHot: false
   },
   {
@@ -4187,8 +4187,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 0.8,
-    link: "https://www.dinhdoclap.gov.vn",
-    requirements: "Xuất trình thẻ sinh viên gốc tại quầy bán vé trực tiếp của di tích.",
+    link: "https://www.dinhdoclap.gov.vn/",
+    requirements: "Mua vé tham quan trực tiếp tại quầy bán vé của Dinh Độc Lập và xuất trình thẻ học sinh/sinh viên để giảm 50% giá vé vào cổng.",
     isHot: false
   },
   {
@@ -4202,8 +4202,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 0.8,
-    link: "http://www.baotangchungtichchientranh.vn",
-    requirements: "Xuất trình thẻ sinh viên của trường đại học/cao đẳng tại quầy vé.",
+    link: "http://www.baotangchungtichchientranh.vn/",
+    requirements: "Mua vé vào cổng trực tiếp tại quầy vé và xuất trình thẻ học sinh/sinh viên để được áp dụng mức giảm giá vé tham quan theo quy định.",
     isHot: false
   },
   {
@@ -4217,8 +4217,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 0.8,
-    link: "https://vnfam.vn",
-    requirements: "Xuất trình thẻ sinh viên còn hạn tại quầy vé.",
+    link: "https://vnfam.vn/",
+    requirements: "Mua vé tham quan trực tiếp tại quầy vé Bảo tàng Mỹ thuật Việt Nam và xuất trình thẻ sinh viên để nhận mức giảm giá vé.",
     isHot: false
   },
   {
@@ -4232,8 +4232,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 0.8,
-    link: "http://www.vme.org.vn",
-    requirements: "Xuất trình thẻ sinh viên còn hiệu lực tại cổng bán vé.",
+    link: "http://www.vme.org.vn/",
+    requirements: "Xuất trình thẻ học sinh/sinh viên tại quầy bán vé của Bảo tàng Dân tộc học Việt Nam để mua vé tham quan với giá ưu đãi.",
     isHot: false
   },
   {
@@ -4247,8 +4247,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 0.8,
-    link: "http://baotangphunu.org.vn",
-    requirements: "Xuất trình thẻ sinh viên của trường đại học, cao đẳng, trung cấp.",
+    link: "http://baotangphunu.org.vn/",
+    requirements: "Mua vé trực tiếp tại quầy vé Bảo tàng Phụ nữ Việt Nam và xuất trình thẻ học sinh/sinh viên để nhận chiết khấu giảm giá vé.",
     isHot: false
   },
   {
@@ -4262,8 +4262,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 0.6,
-    link: "http://vanmieu.gov.vn",
-    requirements: "Xuất trình thẻ sinh viên tại quầy bán vé trực tiếp.",
+    link: "http://vanmieu.gov.vn/",
+    requirements: "Xuất trình thẻ học sinh/sinh viên và CCCD trực tiếp tại quầy bán vé của di tích Văn Miếu Quốc Tử Giám để được giảm 50% giá vé vào cổng.",
     isHot: false
   },
   {
@@ -4277,8 +4277,8 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 0.6,
-    link: "http://hoangthanhthanglong.com",
-    requirements: "Xuất trình thẻ sinh viên tại quầy vé di tích.",
+    link: "http://hoangthanhthanglong.com/",
+    requirements: "Mua vé tham quan trực tiếp tại quầy bán vé khu di sản Hoàng thành Thăng Long và xuất trình thẻ học sinh/sinh viên để được giảm 50% giá vé.",
     isHot: false
   }
 ];
