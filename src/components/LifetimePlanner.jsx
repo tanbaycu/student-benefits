@@ -158,7 +158,7 @@ export function LifetimePlanner({
               </div>
 
               {/* Right Column: Selected list flat - Loại bỏ viền ngoài thô kệch */}
-              <div className="lg:col-span-7 bg-white p-4 sm:p-6 flex flex-col justify-between rounded-2xl border border-swiss-border shadow-sm min-h-[380px] lg:h-full lg:overflow-hidden">
+              <div className="lg:col-span-7 bg-white p-4 sm:p-6 flex flex-col justify-between rounded-2xl border border-swiss-border shadow-sm min-h-[280px] lg:h-full lg:overflow-hidden">
                 <div className="flex-1 flex flex-col lg:overflow-hidden">
                   <div className="text-[10px] font-mono uppercase tracking-widest text-swiss-dark border-b border-swiss-border pb-2 mb-4 font-bold flex justify-between">
                     <span>[C] CHI TIẾT ƯU ĐÃI ĐÃ LƯU ({myPlan.length})</span>

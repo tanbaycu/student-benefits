@@ -3307,6 +3307,14 @@ const BENEFITS_DATA = [
     id: "b226",
     title: "iMazing Education Program",
     category: "Tech & Software",
+    value: "Giảm giá 30% bản quyền phần mềm",
+    description: "Công cụ quản lý thiết bị iOS (iPhone, iPad) chuyên nghiệp thay thế iTunes, hỗ trợ sao lưu, chuyển dữ liệu và quản lý file tối ưu.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: false,
+    updatedAt: "Vừa xong",
+    savings: 15,
+    link: "https://imazing.com/",
     requirements: "Xác thực học sinh qua cổng SheerID, Student Beans hoặc UNiDAYS trực tiếp tại trang cửa hàng."
   },
   {
@@ -4219,7 +4227,7 @@ function InteractiveStudentCard() {
 
   return (
     <div 
-      className="relative w-full max-w-sm h-56 mx-auto cursor-pointer select-none [perspective:1000px]"
+      className="relative w-full max-w-sm aspect-[1.586/1] mx-auto cursor-pointer select-none [perspective:1000px]"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
@@ -4456,10 +4464,10 @@ function App() {
         matchesLocation = benefit.scope === selectedLocation;
       }
 
-      const matchesSearch = benefit.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                            benefit.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                            benefit.value.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                            benefit.requirements.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesSearch = (benefit.title || "").toLowerCase().includes(searchQuery.toLowerCase()) ||
+                            (benefit.description || "").toLowerCase().includes(searchQuery.toLowerCase()) ||
+                            (benefit.value || "").toLowerCase().includes(searchQuery.toLowerCase()) ||
+                            (benefit.requirements || "").toLowerCase().includes(searchQuery.toLowerCase());
       
       return matchesTheme && matchesLocation && matchesSearch;
     });
