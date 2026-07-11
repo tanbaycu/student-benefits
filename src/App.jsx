@@ -4502,6 +4502,19 @@ function App() {
   const [myPlan, setMyPlan] = useState([]);
   const [isPlannerOpen, setIsPlannerOpen] = useState(false);
   const [isListLoading, setIsListLoading] = useState(false);
+
+  // Real-time clock (Hanoi Time) for Awwwards-style premium header
+  const [currentTime, setCurrentTime] = useState("");
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      const options = { timeZone: 'Asia/Ho_Chi_Minh', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+      setCurrentTime(new Intl.DateTimeFormat('vi-VN', options).format(now));
+    };
+    updateTime();
+    const interval = setInterval(updateTime, 1000);
+    return () => clearInterval(interval);
+  }, []);
   
   // Customizations for Plan
   const [customMultiplier, setCustomMultiplier] = useState(1); 
@@ -4670,24 +4683,86 @@ function App() {
     <div className="min-h-screen bg-[#fafafa] flex flex-col pt-28 selection:bg-swiss-blue selection:text-white">
       
       {/* 1. FLOATING HEADER */}
-      <header className="fixed top-4 left-1/2 -translate-x-1/2 max-w-7xl w-[calc(100%-2rem)] bg-white/80 backdrop-blur-md border border-swiss-border shadow-[0_8px_30px_rgba(0,0,0,0.03)] rounded-full px-4 sm:px-6 py-2.5 sm:py-3.5 z-[70] flex justify-between items-center transition-all duration-300">
-        <div className="flex items-center gap-2 sm:gap-3">
-          <SwissLogo />
-          <span className="font-roboto font-black text-xs xs:text-sm sm:text-base md:text-lg tracking-tighter uppercase text-swiss-dark">
-            STUDENT BENEFITS
-          </span>
+      <header className="fixed top-4 left-1/2 -translate-x-1/2 max-w-7xl w-[calc(100%-2rem)] bg-white/85 backdrop-blur-lg border border-swiss-border shadow-[0_12px_40px_rgba(0,0,0,0.04)] rounded-full px-3.5 sm:px-6 py-2.5 z-[70] flex justify-between items-center transition-all duration-300 gap-4">
+        {/* Left Zone: Logo & Status */}
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          <div className="group cursor-pointer">
+            <svg 
+              className="w-9 h-9 sm:w-10 sm:h-10 shrink-0 transition-transform duration-500 ease-[0.16,1,0.3,1] group-hover:rotate-[90deg]" 
+              viewBox="0 0 40 40" 
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="40" height="40" rx="20" fill="#0a0a0a"/>
+              <rect x="23" y="5" width="12" height="12" rx="6" fill="#ff3333"/>
+              <rect x="5" y="23" width="12" height="12" rx="6" fill="#0044ff"/>
+              <path d="M20 12V28M12 20H28" stroke="white" strokeWidth="3" strokeLinecap="round"/>
+            </svg>
+          </div>
+          <div className="flex flex-col">
+            <span className="font-roboto font-black text-xs xs:text-sm sm:text-base tracking-tighter uppercase text-swiss-dark leading-none">
+              STUDENT BENEFITS
+            </span>
+            <span className="text-[8px] font-mono text-swiss-gray uppercase tracking-widest leading-none mt-1.5 hidden xs:block">
+              by tanbaycu · 2026/27
+            </span>
+          </div>
         </div>
 
-        {/* Floating Kit capsule button */}
-        <div className="flex items-center gap-2">
-          <button 
-            type="button"
-            onClick={() => setIsPlannerOpen(true)}
-            className="swiss-pressable flex items-center gap-2 border border-swiss-dark bg-swiss-dark text-white px-5 py-2 text-xs font-mono uppercase tracking-widest hover:bg-swiss-blue hover:border-swiss-blue rounded-full active:scale-95 shadow-sm"
-          >
-            <Sliders size={13} />
-            Kit ({myPlan.length})
-          </button>
+        {/* Center Zone: Deep Navigation & Current Active Indicator (Chỉ hiển thị trên md trở lên) */}
+        <nav className="hidden md:flex items-center gap-1.5 bg-swiss-light/80 border border-swiss-border p-1 rounded-full">
+          {themes.map((theme) => {
+            const isActive = selectedTheme === theme.id;
+            const shortName = theme.name.includes("TECH") ? "TECH" : theme.name.includes("ACADEMIA") ? "GROWTH" : "LIFE";
+            const num = theme.name.includes("TECH") ? "01" : theme.name.includes("ACADEMIA") ? "02" : "03";
+            return (
+              <button
+                key={theme.id}
+                type="button"
+                onClick={() => {
+                  setSelectedTheme(theme.id);
+                  const listEl = document.getElementById("explore");
+                  if (listEl) {
+                    listEl.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }
+                }}
+                className={`px-3.5 py-1.5 rounded-full text-[10px] font-mono uppercase tracking-wider transition-all duration-300 flex items-center gap-1.5 ${
+                  isActive 
+                    ? "bg-white text-swiss-dark font-bold shadow-sm border border-swiss-border/50" 
+                    : "text-swiss-gray hover:text-swiss-dark"
+                }`}
+              >
+                {isActive && <span className="w-1.5 h-1.5 rounded-full bg-swiss-red animate-ping" />}
+                <span>{num} / {shortName}</span>
+              </button>
+            );
+          })}
+        </nav>
+
+        {/* Right Zone: Live Clock & Dynamic Savings Capsule */}
+        <div className="flex items-center gap-3 shrink-0">
+          {/* Live Clock (Hanoi Time) */}
+          {currentTime && (
+            <div className="hidden lg:flex flex-col items-end justify-center font-mono text-[9px] text-swiss-gray leading-none">
+              <span className="text-[7px] uppercase tracking-widest text-swiss-gray/60 mb-0.5">HANOI TIME</span>
+              <span className="font-bold text-swiss-dark">{currentTime}</span>
+            </div>
+          )}
+
+          {/* Dynamic Savings Capsule */}
+          <div className="flex items-center bg-swiss-light border border-swiss-border rounded-full p-0.5 shadow-sm">
+            <span className="hidden sm:inline-block font-mono text-[9px] text-swiss-gray uppercase tracking-widest px-3 font-semibold">
+              SAVED: <span className="text-swiss-blue font-bold">${totalYearlySavings}/yr</span>
+            </span>
+            <button 
+              type="button"
+              onClick={() => setIsPlannerOpen(true)}
+              className="swiss-pressable flex items-center gap-1.5 bg-swiss-dark text-white hover:bg-swiss-blue hover:text-white px-4 py-2 text-xs font-mono uppercase tracking-widest rounded-full active:scale-95 transition-all shadow-sm font-bold"
+            >
+              <Sliders size={12} />
+              Kit ({myPlan.length})
+            </button>
+          </div>
         </div>
       </header>
 
