@@ -182,7 +182,7 @@ const BENEFITS_DATA = [
     lifetime: true,
     updatedAt: "1 ngày trước",
     savings: 500,
-    link: "https://www.fpt-arena.edu.vn/",
+    link: "https://fptarena.edu.vn/",
     requirements: "Chuyên môn nghệ thuật và thẻ học sinh còn thời hạn.",
     isHot: true
   },
@@ -212,7 +212,7 @@ const BENEFITS_DATA = [
     lifetime: true,
     updatedAt: "8 giờ trước",
     savings: 399,
-    link: "https://www.coursera.org/for-university-students",
+    link: "https://www.coursera.org/student",
     requirements: "Đăng ký thông qua chương trình liên kết của trường đại học đối tác.",
     isHot: true
   },
@@ -287,7 +287,7 @@ const BENEFITS_DATA = [
     lifetime: true,
     updatedAt: "Vừa xong",
     savings: 240,
-    link: "https://www.anthropic.com/claude/education",
+    link: "https://www.anthropic.com/news/claude-edu",
     requirements: "Đăng nhập Single Sign-On (SSO) qua cổng thông tin hoặc email của trường đại học đối tác.",
     isHot: true
   },
@@ -347,7 +347,7 @@ const BENEFITS_DATA = [
     lifetime: true,
     updatedAt: "5 ngày trước",
     savings: 180,
-    link: "https://www.edx.org/financial-assistance",
+    link: "https://www.edx.org/",
     requirements: "Đăng ký học dạng Audit (miễn phí), sau đó nộp đơn xin hỗ trợ tài chính trình bày rõ hoàn cảnh.",
     isHot: true
   },
@@ -392,7 +392,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "12 giờ trước",
     savings: 120,
-    link: "https://www.grab.com/vn/grabstudent/",
+    link: "https://www.grab.com/vn/blog/grabstudent/",
     requirements: "Chụp ảnh thẻ sinh viên và chứng minh thư tải lên ứng dụng Grab.",
     isHot: true
   },
@@ -452,7 +452,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "5 phút trước",
     savings: 100,
-    link: "https://www.vietnamairlines.com/vi/lotusociety/lotustudents",
+    link: "https://www.vietnamairlines.com/vn/vi/plan-book/special-offers/youth-student",
     requirements: "Đăng ký Lotusmiles, tham gia LotuStudents qua việc tải lên Thẻ sinh viên hoặc Giấy báo nhập học.",
     isHot: true
   },
@@ -497,7 +497,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 80,
-    link: "https://cellphones.com.vn/s-student",
+    link: "https://cellphones.com.vn/s-student/",
     requirements: "Xác thực thông quan ứng dụng Smember hoặc trực tiếp tại quầy bằng thẻ sinh viên.",
     isHot: true
   },
@@ -512,7 +512,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "12 giờ trước",
     savings: 75,
-    link: "https://www.amazon.com/prime-student",
+    link: "https://www.amazon.com/joinstudent",
     requirements: "Email sinh viên trường hoặc bảng điểm chứng minh đang đi học.",
     isHot: true
   },
@@ -572,7 +572,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "6 giờ trước",
     savings: 40,
-    link: "https://www.cgv.vn/default/newsoffer/cgv-u22/",
+    link: "https://www.cgv.vn/default/news-offers",
     requirements: "Xuất trình thẻ sinh viên kèm CCCD chính chủ tại quầy vé.",
     isHot: true
   },
@@ -662,7 +662,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 9600,
-    link: "https://www.hubspot.com/education-partner-program",
+    link: "https://www.hubspot.com/academy/education-partner-program",
     requirements: "Đăng ký thông qua lời mời từ giảng viên tham gia chương trình HubSpot EPP của trường.",
     isHot: false
   },
@@ -932,7 +932,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 360,
-    link: "https://retool.com/education",
+    link: "https://retool.com/retool-for-students",
     requirements: "Đăng ký tài khoản và nộp đơn qua trang giáo dục bằng email đuôi trường học (.edu).",
     isHot: false
   },
@@ -1052,7 +1052,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 299,
-    link: "https://basecamp.com/about/discounts",
+    link: "https://basecamp.com/discounts",
     requirements: "Tạo tài khoản Basecamp mới bằng email trường học, sau đó gửi email tới bộ phận hỗ trợ của Basecamp kèm thông tin chứng minh đang đi học.",
     isHot: false
   },
@@ -1202,7 +1202,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "3 giờ trước",
     savings: 200,
-    link: "https://www.emirates.com/student-discount/",
+    link: "https://www.emirates.com/vn/vietnamese/special-offers/student-special-fares/",
     requirements: "Áp dụng mã promo code STUDENT khi đặt vé và xuất trình thẻ sinh viên hoặc email trường khi check-in.",
     isHot: false
   },
@@ -1217,7 +1217,7 @@ const BENEFITS_DATA = [
     lifetime: true,
     updatedAt: "1 ngày trước",
     savings: 200,
-    link: "https://www.mongodb.com/academia/students",
+    link: "https://www.mongodb.com/academia",
     requirements: "Kích hoạt thông qua GitHub Student Developer Pack.",
     isHot: false
   },
@@ -1352,7 +1352,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 180,
-    link: "https://www.wix.com/about/student-discount",
+    link: "https://www.wix.com/students",
     requirements: "Xác thực tình trạng sinh viên thông qua Student Beans.",
     isHot: false
   },
@@ -1442,7 +1442,7 @@ const BENEFITS_DATA = [
     lifetime: true,
     updatedAt: "1 ngày trước",
     savings: 150,
-    link: "https://www.samsung.com/vn/multistore/campus_vietnam/",
+    link: "https://www.samsung.com/vn/offer/student-discount/",
     requirements: "Đăng nhập cổng Samsung Student Vietnam bằng email giáo dục.",
     isHot: false
   },
@@ -1472,7 +1472,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "2 giờ trước",
     savings: 150,
-    link: "https://www.singaporeair.com/en_UK/sg/plan-travel/local-promotions/student-privileges/",
+    link: "https://www.singaporeair.com/en_UK/sg/plan-travel/local-promotions/student-privilege/",
     requirements: "Xác minh tài khoản KrisFlyer qua cổng SheerID bằng thẻ sinh viên hoặc giấy xác nhận nhập học.",
     isHot: false
   },
@@ -2192,7 +2192,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "4 ngày trước",
     savings: 90,
-    link: "https://www.skillshare.com/en/membership/student",
+    link: "https://www.skillshare.com/",
     requirements: "Đăng ký bằng email đuôi giáo dục hợp lệ.",
     isHot: false
   },
@@ -2447,7 +2447,7 @@ const BENEFITS_DATA = [
     lifetime: true,
     updatedAt: "Vừa xong",
     savings: 76,
-    link: "https://obsidian.md/discount",
+    link: "https://obsidian.md/pricing",
     requirements: "Đăng ký qua email .edu hoặc gửi minh chứng học tập khác tới hỗ trợ của Obsidian.",
     isHot: false
   },
@@ -2522,7 +2522,7 @@ const BENEFITS_DATA = [
     lifetime: true,
     updatedAt: "Vừa xong",
     savings: 69,
-    link: "https://www.git-tower.com/pricing/education",
+    link: "https://www.git-tower.com/pricing",
     requirements: "Kích hoạt thông qua GitHub Student Developer Pack hoặc đăng ký bằng email .edu.",
     isHot: false
   },
@@ -2627,7 +2627,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "6 ngày trước",
     savings: 60,
-    link: "https://evernote.com/student-discount",
+    link: "https://evernote.com/",
     requirements: "Xác thực trạng thái học sinh sinh viên thông qua cổng UNiDAYS.",
     isHot: false
   },
@@ -2777,7 +2777,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "2 ngày trước",
     savings: 50,
-    link: "https://www.nike.com/student-discount",
+    link: "https://www.nike.com/help/a/student-discount",
     requirements: "Xác minh trạng thái sinh viên thông qua cổng SheerID.",
     isHot: false
   },
@@ -2882,7 +2882,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 50,
-    link: "https://www.atlassian.com/software/bitbucket/academic",
+    link: "https://www.atlassian.com/software/bitbucket/pricing",
     requirements: "Đăng ký tài khoản Bitbucket bằng email học thuật (.edu) hoặc liên kết thông qua cổng phần mềm giáo dục của trường.",
     isHot: false
   },
@@ -2927,7 +2927,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 48,
-    link: "https://vnpt.com.vn/",
+    link: "https://vinaphone.com.vn/",
     requirements: "Đăng ký qua cú pháp SMS DK YOLO100M gửi 888 đối với SIM sinh viên hoặc thuê bao thuộc danh sách ưu đãi.",
     isHot: false
   },
@@ -3137,7 +3137,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "5 ngày trước",
     savings: 30,
-    link: "https://www.babbel.com/student-discount",
+    link: "https://www.babbel.com/",
     requirements: "Xác minh tư cách học sinh sinh viên qua dịch vụ đối tác.",
     isHot: false
   },
@@ -3152,7 +3152,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "12 giờ trước",
     savings: 30,
-    link: "https://phuc-long.com.vn/",
+    link: "https://phuclong.com.vn/",
     requirements: "Xuất trình thẻ sinh viên chính chủ khi thanh toán tại quầy.",
     isHot: false
   },
@@ -3197,7 +3197,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 30,
-    link: "https://www.flixbus.com/student-discount",
+    link: "https://www.flixbus.com/",
     requirements: "Xác thực qua hệ thống UNiDAYS, Student Beans hoặc thẻ ISIC.",
     isHot: false
   },
@@ -3407,7 +3407,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "4 ngày trước",
     savings: 24,
-    link: "https://www.roboform.com/promotions/college-students",
+    link: "https://www.roboform.com/student-discount",
     requirements: "Xác thực trạng thái sinh viên bằng email đuôi trường học.",
     isHot: false
   },
@@ -3812,7 +3812,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "6 ngày trước",
     savings: 15,
-    link: "https://aeropress.com/pages/student-discount",
+    link: "https://aeropress.com/",
     requirements: "Xác minh tư cách học sinh sinh viên qua dịch vụ đối tác.",
     isHot: false
   },
@@ -3977,7 +3977,7 @@ const BENEFITS_DATA = [
     lifetime: false,
     updatedAt: "Vừa xong",
     savings: 12,
-    link: "https://medium.com/discount",
+    link: "https://medium.com/membership",
     requirements: "Đăng ký và xác thực tài khoản thông qua cổng liên kết UNiDAYS.",
     isHot: false
   },
@@ -4097,7 +4097,7 @@ const BENEFITS_DATA = [
     lifetime: true,
     updatedAt: "Vừa xong",
     savings: 9,
-    link: "https://www.literatureandlatte.com/scrivener/purchase",
+    link: "https://www.literatureandlatte.com/store",
     requirements: "Lựa chọn phiên bản 'Educational Licence' tại trang thanh toán.",
     isHot: false
   },
