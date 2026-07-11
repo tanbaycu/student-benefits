@@ -4,7 +4,7 @@
 
 * **Tác giả / Creator:** **tanbaycu**
 * **Trạng thái hệ thống:** Hoạt động 24/7/365
-* **Số lượng ưu đãi hiện tại:** **256+ Quyền lợi đã được xác thực** (Cập nhật liên tục tính đến năm 2026)
+* **Số lượng ưu đãi hiện tại:** **286+ Quyền lợi đã được xác thực** (Cập nhật liên tục tính đến năm 2026)
 
 ---
 
@@ -21,7 +21,7 @@ Chi phí học tập, phần mềm và sinh hoạt luôn là một gánh nặng 
 
 ## ✨ Tính Năng Nổi Bật
 
-1. **256+ Ưu Đãi Sinh Viên Thực Tế**:
+1. **286+ Ưu Đãi Sinh Viên Thực Tế**:
    * Được phân loại khoa học thành 3 Theme Bento Grid:
      * **THEME 01 / TECH & SOFTWARE**: Các công cụ lập trình, thiết kế, AI, cơ sở dữ liệu (GitHub Pack, Figma, Notion, JetBrains, Cursor Pro, Claude, ChatGPT Edu, Unity, Datadog...).
      * **THEME 02 / ACADEMIA & GROWTH**: Các khóa học, tạp chí khoa học và giáo dục trực tuyến (Coursera, Udemy, edX, Bloomberg, Financial Times, Harvard Business Review...).
