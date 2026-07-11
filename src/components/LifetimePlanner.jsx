@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 import { 
   Sliders, 
@@ -25,6 +26,17 @@ export function LifetimePlanner({
   setIsExportModalOpen,
   setMyPlan
 }) {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -40,6 +52,7 @@ export function LifetimePlanner({
 
           {/* Modal FULL WIDTH, bo tròn góc trên, tối ưu hóa CSS cho GPU (will-change-transform) */}
           <motion.div
+            data-lenis-prevent
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             exit={{ y: "100%" }}

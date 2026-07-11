@@ -132,7 +132,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 3rem;
-  animation: live-ticker-slide 28s linear infinite;
+  animation: live-ticker-slide 75s linear infinite;
 }
 
 .live-ticker-content:hover {
