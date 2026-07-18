@@ -5139,31 +5139,31 @@ function App() {
   const [isListLoading, setIsListLoading] = useState(false);
 
   // ── Collective Savings Vault — live state từ Cloudflare Worker ────────────
+  // ── Collective Savings Vault — live state từ Cloudflare Worker ────────────
   const WORKER_URL = "https://savings-counter.tranminhtan4953.workers.dev";
   const WS_URL     = "wss://savings-counter.tranminhtan4953.workers.dev/ws";
 
-  const [globalSavings, setGlobalSavings]       = useState(1248500); // Premium initial fallback amount
-  const [connectedUsers, setConnectedUsers]      = useState(142);     // Realistic default active users
+  const [globalSavings, setGlobalSavings]       = useState(4563);   // Real server synced fallback
+  const [connectedUsers, setConnectedUsers]      = useState(1);      // Active users
   const [wsConnected, setWsConnected]            = useState(false);
+  const [isSyncedWithServer, setIsSyncedWithServer] = useState(false); // HTTP REST / WS Sync status
   const [wsConnecting, setWsConnecting]          = useState(true);
   const wsRef = useRef(null);
 
-  // Kết nối WebSocket — Tích hợp Exponential Backoff Reconnect và Simulation Fallback để tránh spam console
+  // Kết nối Hybrid: Thử WebSocket trước, đồng thời chạy HTTP REST Polling (/current) làm fallback chính xác 100%
   useEffect(() => {
     let ws = null;
     let reconnectTimer = null;
+    let pollingInterval = null;
     let simulationTimer = null;
     let unmounted = false;
-    let reconnectAttempts = 0;
 
-    // Bắt đầu mô phỏng tăng trưởng tài chính khi mất kết nối máy chủ
+    // Bắt đầu mô phỏng tăng trưởng tài chính khi mất kết nối máy chủ hoàn toàn
     function startSimulation() {
       if (simulationTimer) return;
       simulationTimer = setInterval(() => {
-        if (!unmounted) {
-          // Tăng ngẫu nhiên từ $5 đến $25 mỗi 4 giây mô phỏng giao dịch thực tế
+        if (!unmounted && !isSyncedWithServer && !wsConnected) {
           setGlobalSavings(prev => prev + Math.floor(Math.random() * 20) + 5);
-          // Biến động nhẹ số lượng thành viên trực tuyến
           setConnectedUsers(prev => {
             const delta = Math.random() > 0.5 ? 1 : -1;
             const next = prev + delta;
@@ -5180,12 +5180,45 @@ function App() {
       }
     }
 
-    function connect() {
+    // 1. Hàm HTTP REST Polling đồng bộ trực tiếp từ Cloudflare Worker /current
+    async function fetchServerData() {
       if (unmounted) return;
-      
-      setWsConnecting(true);
+      try {
+        const res = await fetch(`${WORKER_URL}/current`, { cache: "no-store" });
+        if (res.ok) {
+          const data = await res.json();
+          if (data.globalSavings !== undefined) {
+            setGlobalSavings(data.globalSavings);
+            // Nếu có kết nối online thật từ server, ưu tiên hiển thị ít nhất 1 người dùng
+            setConnectedUsers(data.connectedUsers > 0 ? data.connectedUsers : 1);
+            setIsSyncedWithServer(true);
+            setWsConnecting(false);
+            stopSimulation();
+            return true;
+          }
+        }
+      } catch (err) {
+        // Silent fail — chuyển qua simulation nếu hoàn toàn ngắt mạng
+      }
+      return false;
+    }
 
-      // Cleanup instance WebSocket cũ trước khi khởi tạo kết nối mới
+    // Lần đầu fetch REST ngay lập tức
+    fetchServerData().then(success => {
+      if (!success && !wsConnected) startSimulation();
+    });
+
+    // HTTP Polling định kỳ mỗi 4 giây để đồng bộ dữ liệu thật từ Cloudflare Worker
+    pollingInterval = setInterval(() => {
+      fetchServerData().then(success => {
+        if (!success && !wsConnected) startSimulation();
+      });
+    }, 4000);
+
+    // 2. Thử thiết lập WebSocket kết nối nâng cao
+    function connectWS() {
+      if (unmounted) return;
+
       if (ws) {
         ws.onopen = null;
         ws.onmessage = null;
@@ -5194,61 +5227,46 @@ function App() {
         try { ws.close(); } catch (e) {}
       }
 
-      ws = new WebSocket(WS_URL);
-      wsRef.current = ws;
+      try {
+        ws = new WebSocket(WS_URL);
+        wsRef.current = ws;
 
-      ws.onopen = () => {
-        if (unmounted) return;
-        setWsConnected(true);
-        setWsConnecting(false);
-        reconnectAttempts = 0; // Reset số lần thử lại
-        stopSimulation();
-      };
+        ws.onopen = () => {
+          if (unmounted) return;
+          setWsConnected(true);
+          setIsSyncedWithServer(true);
+          setWsConnecting(false);
+          stopSimulation();
+        };
 
-      ws.onmessage = (evt) => {
-        if (unmounted) return;
-        try {
-          const data = JSON.parse(evt.data);
-          if (data.globalSavings !== undefined) setGlobalSavings(data.globalSavings);
-          if (data.connectedUsers !== undefined) setConnectedUsers(data.connectedUsers);
-        } catch { /* ignore malformed */ }
-      };
+        ws.onmessage = (evt) => {
+          if (unmounted) return;
+          try {
+            const data = JSON.parse(evt.data);
+            if (data.globalSavings !== undefined) setGlobalSavings(data.globalSavings);
+            if (data.connectedUsers !== undefined) setConnectedUsers(data.connectedUsers);
+          } catch { /* ignore malformed */ }
+        };
 
-      ws.onclose = () => {
-        if (unmounted) return;
+        ws.onclose = () => {
+          if (unmounted) return;
+          setWsConnected(false);
+        };
+
+        ws.onerror = () => {
+          try { ws.close(); } catch (e) {}
+        };
+      } catch (err) {
         setWsConnected(false);
-        setWsConnecting(false);
-        
-        // Kích hoạt mô phỏng ngoại tuyến để đảm bảo trải nghiệm UI/UX không gián đoạn
-        startSimulation();
-
-        // Exponential Backoff: Thử lại chậm dần sau 2s, 5s, 10s, 20s, tối đa 30s để tránh spam DDOS
-        reconnectAttempts++;
-        const delay = Math.min(2000 * Math.pow(1.8, reconnectAttempts), 30000);
-        
-        reconnectTimer = setTimeout(connect, delay);
-      };
-
-      ws.onerror = () => {
-        // Chỉ đóng WebSocket, sự kiện onclose sẽ tự kích hoạt reconnect
-        try { ws.close(); } catch (e) {}
-      };
+      }
     }
 
-    // Khởi chạy kết nối WebSocket
-    connect();
-
-    // Gửi tín hiệu Ping mỗi 25 giây để duy trì kết nối qua Cloudflare Router
-    const pingInterval = setInterval(() => {
-      if (wsRef.current?.readyState === WebSocket.OPEN) {
-        wsRef.current.send("ping");
-      }
-    }, 25000);
+    connectWS();
 
     return () => {
       unmounted = true;
       clearTimeout(reconnectTimer);
-      clearInterval(pingInterval);
+      clearInterval(pollingInterval);
       stopSimulation();
       if (ws) {
         ws.onopen = null;
@@ -5260,13 +5278,25 @@ function App() {
     };
   }, []);
 
-  // Helper: POST amount lên worker (fire-and-forget, WS sẽ broadcast lại)
+  // Helper: POST amount lên worker (khi user thêm/bớt Kit) và ngay lập tức refresh REST data
   const workerPost = (endpoint, amount) => {
     fetch(`${WORKER_URL}${endpoint}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ amount }),
-    }).catch(() => { /* silent fail — WS state vẫn đúng */ });
+    })
+      .then(() => {
+        // Tải lại số dư thực từ Worker sau 300ms
+        setTimeout(() => {
+          fetch(`${WORKER_URL}/current`, { cache: "no-store" })
+            .then(res => res.json())
+            .then(data => {
+              if (data.globalSavings !== undefined) setGlobalSavings(data.globalSavings);
+            })
+            .catch(() => {});
+        }, 300);
+      })
+      .catch(() => { /* silent fail */ });
   };
   // ─────────────────────────────────────────────────────────────────────────
 
@@ -6014,20 +6044,20 @@ function App() {
                   </div>
                   {/* Live / Reconnecting / Simulated badge */}
                   <span className={`flex items-center gap-1.5 text-[9px] font-mono uppercase tracking-wider px-2 py-0.5 rounded-full border ${
-                    wsConnected 
+                    (wsConnected || isSyncedWithServer)
                       ? "border-emerald-500/40 text-emerald-400 bg-emerald-500/10" 
                       : wsConnecting 
                         ? "border-yellow-400/40 text-yellow-400 bg-yellow-400/10"
                         : "border-swiss-blue/40 text-swiss-blue bg-swiss-blue/10"
                   }`}>
                     <span className={`w-1.5 h-1.5 rounded-full ${
-                      wsConnected 
+                      (wsConnected || isSyncedWithServer)
                         ? "bg-emerald-500 animate-pulse" 
                         : wsConnecting 
                           ? "bg-yellow-400 animate-ping"
                           : "bg-swiss-blue"
                     }`}></span>
-                    {wsConnected ? "LIVE" : wsConnecting ? "CONNECTING" : "SIMULATED"}
+                    {(wsConnected || isSyncedWithServer) ? "LIVE" : wsConnecting ? "CONNECTING" : "SIMULATED"}
                   </span>
                 </div>
                 <p className="text-xs text-swiss-gray leading-relaxed font-sans max-w-md">
@@ -6070,20 +6100,20 @@ function App() {
                   </span>
                   {/* WS status dot */}
                   <span className={`inline-flex items-center gap-1 text-[9px] font-mono uppercase tracking-wider ${
-                    wsConnected 
+                    (wsConnected || isSyncedWithServer)
                       ? "text-emerald-400" 
                       : wsConnecting 
                         ? "text-yellow-400" 
                         : "text-swiss-blue"
                   }`}>
                     <span className={`w-1.5 h-1.5 rounded-full ${
-                      wsConnected 
+                      (wsConnected || isSyncedWithServer)
                         ? "bg-emerald-500 animate-pulse" 
                         : wsConnecting 
                           ? "bg-yellow-400 animate-ping"
                           : "bg-swiss-blue"
                     }`}></span>
-                    {wsConnected ? "LIVE" : wsConnecting ? "RECONNECTING" : "SIMULATED"}
+                    {(wsConnected || isSyncedWithServer) ? "LIVE" : wsConnecting ? "RECONNECTING" : "SIMULATED"}
                   </span>
                 </div>
               </div>
