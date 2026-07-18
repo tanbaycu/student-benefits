@@ -863,6 +863,21 @@ const BENEFITS_DATA = [
   },
   {
     id: "b048",
+    title: "Intuit QuickBooks for Students",
+    category: "Tech & Software",
+    value: "Miễn Phí 12 Tháng Gói Online Plus",
+    description: "Phần mềm kế toán, quản lý tài chính và thuế hàng đầu thế giới dành cho sinh viên ngành tài chính, kinh tế thực hành.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: false,
+    updatedAt: "Vừa xong",
+    savings: 600,
+    link: "https://www.intuit.com/partners/education-program/",
+    requirements: "Xác thực trạng thái sinh viên khối ngành kinh tế bằng email trường học thông qua cổng Intuit Education.",
+    isHot: false
+  },
+  {
+    id: "b049",
     title: "Intel Developer Program",
     category: "Tech & Software",
     value: "Free OneAPI Toolkits & DevCloud Access",
@@ -877,7 +892,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b049",
+    id: "b050",
     title: "O'Reilly for Higher Education (Library Access)",
     category: "Education",
     value: "Miễn phí truy cập qua thư viện trường liên kết",
@@ -892,7 +907,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b050",
+    id: "b051",
     title: "Apple Pro Apps Bundle",
     category: "Tech & Software",
     value: "Bộ 5 phần mềm sáng tạo giá chỉ $199",
@@ -907,7 +922,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b051",
+    id: "b052",
     title: "Wall Street Journal Student",
     category: "Education",
     value: "Đồng Giá $4/Tháng (Giảm 90%)",
@@ -922,7 +937,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b052",
+    id: "b053",
     title: "Retool for Students",
     category: "Tech & Software",
     value: "Giảm 100% gói Team hoặc Business",
@@ -937,7 +952,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b053",
+    id: "b054",
     title: "Axure RP Prototyping",
     category: "Tech & Software",
     value: "Bản Quyền Axure RP Team Miễn Phí",
@@ -952,7 +967,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b054",
+    id: "b055",
     title: "BrowserStack Student Package",
     category: "Tech & Software",
     value: "Miễn phí 1 năm gói Live & Automate",
@@ -967,7 +982,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b055",
+    id: "b056",
     title: "Sentry for Education",
     category: "Tech & Software",
     value: "Miễn phí gói Team (50k errors/month)",
@@ -982,7 +997,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b056",
+    id: "b057",
     title: "Datacamp for Education",
     category: "Tech & Software",
     value: "Miễn Phí Học Data Science",
@@ -997,7 +1012,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b057",
+    id: "b058",
     title: "Bloomberg Student Access",
     category: "Education",
     value: "Thuê bao Digital chỉ $9.99/tháng",
@@ -1012,7 +1027,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b058",
+    id: "b059",
     title: "Shapr3D for Education",
     category: "Tech & Software",
     value: "Miễn phí bản quyền 1 năm (gia hạn hàng năm)",
@@ -1027,7 +1042,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b059",
+    id: "b060",
     title: "Shapr3D Educational License",
     category: "Tech & Software",
     value: "Miễn phí 1 năm Shapr3D Pro",
@@ -1042,7 +1057,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b060",
+    id: "b061",
     title: "Basecamp for Education Premium",
     category: "Tech & Software",
     value: "Miễn phí tài khoản Basecamp Premium",
@@ -1057,7 +1072,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b061",
+    id: "b062",
     title: "Rive Education Plan",
     category: "Tech & Software",
     value: "Cấp tài khoản giáo dục miễn phí/ưu đãi",
@@ -1072,7 +1087,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b062",
+    id: "b063",
     title: "DBeaver Academic License",
     category: "Tech & Software",
     value: "Miễn phí bản quyền DBeaver Enterprise Edition",
@@ -1087,7 +1102,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b063",
+    id: "b064",
     title: "Marvelous Designer Student Plan",
     category: "Tech & Software",
     value: "Đăng ký sinh viên chỉ $8.25/tháng (giảm 70%)",
@@ -1102,7 +1117,22 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b064",
+    id: "b065",
+    title: "Kiro AI IDE Student Program",
+    category: "Tech & Software",
+    value: "1,000 Free Credits/Tháng Trong 1 Năm",
+    description: "Môi trường lập trình tích hợp AI (agentic IDE) thế hệ mới từ AWS, hỗ trợ spec-driven development, viết test và refactor code tự động.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: false,
+    updatedAt: "Vừa xong",
+    savings: 240,
+    link: "https://kiro.dev/students",
+    requirements: "Đăng ký tài khoản Kiro bằng email đại học (.edu) và hoàn tất xác minh trạng thái sinh viên qua cổng SheerID.",
+    isHot: false
+  },
+  {
+    id: "b066",
     title: "v0.dev Pro Education Plan",
     category: "Tech & Software",
     value: "Tài khoản Pro v0 Miễn Phí",
@@ -1117,7 +1147,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b065",
+    id: "b067",
     title: "Superhuman Email Client",
     category: "Tech & Software",
     value: "Giảm Giá 67% Gói Premium Mail",
@@ -1132,7 +1162,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b066",
+    id: "b068",
     title: "Airtable Student Offer",
     category: "Tech & Software",
     value: "Miễn Phí Gói Airtable Team",
@@ -1147,7 +1177,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b067",
+    id: "b069",
     title: "Financial Times (FT) Student",
     category: "Education",
     value: "Giảm giá 50% gói Digital",
@@ -1162,7 +1192,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b068",
+    id: "b070",
     title: "GitLab Ultimate for Education",
     category: "Tech & Software",
     value: "Miễn phí bản quyền cao cấp nhất GitLab Ultimate",
@@ -1177,7 +1207,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b069",
+    id: "b071",
     title: "Qatar Airways Student Club",
     category: "Travel & Transport",
     value: "Giảm 10% - 20% + Tặng 10kg Hành Lý",
@@ -1192,7 +1222,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b070",
+    id: "b072",
     title: "Emirates Student Discount",
     category: "Travel & Transport",
     value: "Giảm Đến 10% + Tặng 10kg Hành Lý",
@@ -1207,7 +1237,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b071",
+    id: "b073",
     title: "MongoDB Atlas for Students",
     category: "Tech & Software",
     value: "Tặng $50 Cloud Credit + Free Certification",
@@ -1222,7 +1252,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b072",
+    id: "b074",
     title: "DigitalOcean Student Cloud Credit",
     category: "Tech & Software",
     value: "Tặng $200 Cloud Credit miễn phí",
@@ -1237,7 +1267,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b073",
+    id: "b075",
     title: "Avid Pro Tools Education",
     category: "Tech & Software",
     value: "Bản quyền Pro Tools Studio chỉ $99/năm",
@@ -1252,7 +1282,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b074",
+    id: "b076",
     title: "Oracle Academy Cloud Program",
     category: "Tech & Software",
     value: "Miễn phí Oracle Cloud Free Tier & tài nguyên Academy",
@@ -1267,7 +1297,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b075",
+    id: "b077",
     title: "Frontend Masters Student Access",
     category: "Education",
     value: "Miễn Phí 6 Tháng Premium Access",
@@ -1282,7 +1312,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b076",
+    id: "b078",
     title: "Miro for Education Standard",
     category: "Tech & Software",
     value: "Miễn phí bản quyền Education (thời hạn 2 năm)",
@@ -1297,7 +1327,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b077",
+    id: "b079",
     title: "Framer No-Code Website Builder",
     category: "Tech & Software",
     value: "Miễn Phí Gói Basic Plan 1 Năm",
@@ -1312,7 +1342,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b078",
+    id: "b080",
     title: "The New York Times Student",
     category: "Education",
     value: "Miễn Phí Academic / Giảm Còn $2/tháng",
@@ -1327,7 +1357,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b079",
+    id: "b081",
     title: "Postman Student Program",
     category: "Tech & Software",
     value: "Miễn phí Postman Premium",
@@ -1342,7 +1372,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b080",
+    id: "b082",
     title: "Wix Website Student Plan",
     category: "Tech & Software",
     value: "Giảm 50% Gói Premium Năm",
@@ -1357,7 +1387,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b081",
+    id: "b083",
     title: "Ableton Live Education",
     category: "Tech & Software",
     value: "Giảm 40% giá mua bản quyền Ableton Live",
@@ -1372,7 +1402,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b082",
+    id: "b084",
     title: "CorelDraw Education Edition",
     category: "Tech & Software",
     value: "Giảm giá tới 75% bản quyền chính thức",
@@ -1387,7 +1417,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b083",
+    id: "b085",
     title: "Affinity Suite for Education",
     category: "Tech & Software",
     value: "Bản Quyền Affinity V2 Miễn Phí",
@@ -1402,7 +1432,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b084",
+    id: "b086",
     title: "Heroku Student Hobby Tier",
     category: "Tech & Software",
     value: "Tặng $13/tháng Cloud Credit (12 tháng)",
@@ -1417,7 +1447,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b085",
+    id: "b087",
     title: "Moqups for Education",
     category: "Tech & Software",
     value: "Miễn phí tài khoản Pro 1 năm",
@@ -1432,7 +1462,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b086",
+    id: "b088",
     title: "Samsung Student Offers",
     category: "Tech & Software",
     value: "Giảm Giá Đến 30% Thiết Bị",
@@ -1447,7 +1477,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b087",
+    id: "b089",
     title: "ISIC International Student Card",
     category: "Travel & Transport",
     value: "Thẻ Ưu Đãi Du Lịch Toàn Cầu",
@@ -1462,7 +1492,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b088",
+    id: "b090",
     title: "Singapore Airlines Student Privileges",
     category: "Travel & Transport",
     value: "Giảm 10% Khứ Hồi / Tặng 40kg Hành Lý",
@@ -1477,7 +1507,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b089",
+    id: "b091",
     title: "Codecademy Student Pro",
     category: "Education",
     value: "Giảm 50% Gói Membership Năm",
@@ -1492,7 +1522,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b090",
+    id: "b092",
     title: "Pluralsight Premium Offer",
     category: "Education",
     value: "Truy Cập Free qua Microsoft Dev Essentials",
@@ -1507,7 +1537,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b091",
+    id: "b093",
     title: "Educative.io Student Access Program",
     category: "Education",
     value: "Miễn phí 6 tháng học thử hơn 60 khóa học lập trình",
@@ -1522,7 +1552,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b092",
+    id: "b094",
     title: "Turkish Airlines Student Club",
     category: "Travel & Transport",
     value: "Giảm Giá Đến 20% + 40kg Ký Gửi Free",
@@ -1537,7 +1567,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b093",
+    id: "b095",
     title: "Nha khoa Parkway Student Teeth Care",
     category: "Lifestyle",
     value: "Giảm dịch vụ chỉnh nha & Cạo vôi tới 50%",
@@ -1552,7 +1582,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b094",
+    id: "b096",
     title: "Swiss Travel Pass Youth",
     category: "Travel & Transport",
     value: "Giảm giá 30% vé tàu hỏa Thụy Sĩ",
@@ -1567,7 +1597,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b095",
+    id: "b097",
     title: "Mathematica Student Edition / WolframAlpha Pro Student",
     category: "Tech & Software",
     value: "Giảm giá 30%–60% (hoặc miễn phí qua trường liên kết)",
@@ -1582,7 +1612,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b096",
+    id: "b098",
     title: "Brilliant.org for Educators & Students",
     category: "Education",
     value: "Free Premium cho học sinh K-12",
@@ -1597,7 +1627,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b097",
+    id: "b099",
     title: "Mural for Education Workspace",
     category: "Tech & Software",
     value: "Miễn phí gói tài khoản Education đầy đủ tính năng",
@@ -1612,7 +1642,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b098",
+    id: "b100",
     title: "Proto.io Student Discount",
     category: "Tech & Software",
     value: "Giảm 50% mọi gói thuê bao dịch vụ",
@@ -1627,7 +1657,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b099",
+    id: "b101",
     title: "The Economist Student",
     category: "Education",
     value: "Giảm Giá 75% Thuê Bao Digital",
@@ -1642,7 +1672,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b100",
+    id: "b102",
     title: "Cathay Pacific Student Offer",
     category: "Travel & Transport",
     value: "Giảm tới 10% vé + Tặng hành lý + Đổi ngày free",
@@ -1657,7 +1687,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b101",
+    id: "b103",
     title: "EVA Air Student Tickets",
     category: "Travel & Transport",
     value: "Giảm giá vé bay + Tặng thêm hành lý ký gửi",
@@ -1672,7 +1702,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b102",
+    id: "b104",
     title: "ANA Student Exclusive Deals",
     category: "Travel & Transport",
     value: "Giảm giá vé bay + Tặng thêm hành lý miễn cước",
@@ -1687,7 +1717,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b103",
+    id: "b105",
     title: "Etihad Airways Student Discount",
     category: "Travel & Transport",
     value: "Giảm tới 10% Economy / 5% Business + Thêm hành lý",
@@ -1702,7 +1732,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b104",
+    id: "b106",
     title: "Squarespace Portfolio Store",
     category: "Tech & Software",
     value: "Giảm Giá 50% Năm Đầu Chi Tiết",
@@ -1717,7 +1747,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b105",
+    id: "b107",
     title: "Asana for Students",
     category: "Tech & Software",
     value: "Miễn phí 12 tháng gói Asana Premium",
@@ -1732,7 +1762,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b106",
+    id: "b108",
     title: "Vé xe buýt Hà Nội dành cho HSSV (Thẻ tháng)",
     category: "Lifestyle",
     value: "Vé tháng ưu tiên 70.000đ (1 tuyến) hoặc 140.000đ (liên tuyến)",
@@ -1747,7 +1777,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b107",
+    id: "b109",
     title: "Termius Student Premium",
     category: "Tech & Software",
     value: "Tài khoản Termius Premium Miễn Phí",
@@ -1762,7 +1792,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b108",
+    id: "b110",
     title: "Sketch for Students",
     category: "Tech & Software",
     value: "Bản Quyền Sketch Hỗ Trợ 100%",
@@ -1777,7 +1807,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b109",
+    id: "b111",
     title: "Whimsical Visual Workspace",
     category: "Tech & Software",
     value: "Miễn Phí Nâng Cấp Gói Pro",
@@ -1792,7 +1822,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b110",
+    id: "b112",
     title: "Coda All-in-One Docs",
     category: "Tech & Software",
     value: "Miễn Phí Nâng Cấp Gói Coda Pro",
@@ -1807,7 +1837,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b111",
+    id: "b113",
     title: "Lufthansa Student Fares",
     category: "Travel & Transport",
     value: "Giảm giá vé + Tặng hành lý phụ + Đổi vé linh hoạt",
@@ -1822,7 +1852,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b112",
+    id: "b114",
     title: "Nha khoa Paris Orthodontics",
     category: "Lifestyle",
     value: "Trả góp niềng răng 0% & Ưu đãi",
@@ -1837,7 +1867,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b113",
+    id: "b115",
     title: "Zed Editor Education Program",
     category: "Tech & Software",
     value: "Miễn phí Zed Pro trong 1 năm & AI credits",
@@ -1852,7 +1882,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b114",
+    id: "b116",
     title: "StudentUniverse",
     category: "Travel & Transport",
     value: "Giảm tới 30% vé máy bay & khách sạn",
@@ -1867,7 +1897,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b115",
+    id: "b117",
     title: "Sunsama Student Discount",
     category: "Lifestyle",
     value: "Giảm giá 50% phí dịch vụ hàng tháng",
@@ -1882,7 +1912,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b116",
+    id: "b118",
     title: "Akiflow Student Discount",
     category: "Lifestyle",
     value: "Giảm giá tới 50% gói dịch vụ Premium",
@@ -1897,7 +1927,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b117",
+    id: "b119",
     title: "Balsamiq Cloud Student License",
     category: "Tech & Software",
     value: "Miễn Phí 1 Năm Cloud License",
@@ -1912,7 +1942,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b118",
+    id: "b120",
     title: "Spline 3D Education",
     category: "Tech & Software",
     value: "Miễn phí/Giảm giá gói Spline Pro",
@@ -1927,7 +1957,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b119",
+    id: "b121",
     title: "The Washington Post Academic",
     category: "Education",
     value: "Gói Academic chỉ $1 mỗi 4 tuần",
@@ -1942,7 +1972,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b120",
+    id: "b122",
     title: "Microsoft Azure for Students",
     category: "Tech & Software",
     value: "Tặng $100 Annual Credit + Dịch Vụ Free",
@@ -1957,7 +1987,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b121",
+    id: "b123",
     title: "AWS Educate Portal",
     category: "Tech & Software",
     value: "Miễn Phí Cloud Labs & AWS Credits",
@@ -1972,7 +2002,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b122",
+    id: "b124",
     title: "Apple Store Education",
     category: "Tech & Software",
     value: "Giá Học Tập Cho Mac & iPad + Giảm 10% AppleCare+",
@@ -1987,7 +2017,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b123",
+    id: "b125",
     title: "Dell University Student Discount",
     category: "Tech & Software",
     value: "Giảm Thêm Đến 10% Cho Laptop & PC",
@@ -2002,7 +2032,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b124",
+    id: "b126",
     title: "HP Student Store",
     category: "Tech & Software",
     value: "Giảm Giá Lên Đến 40% Thiết Bị HP",
@@ -2017,7 +2047,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b125",
+    id: "b127",
     title: "Microsoft Store Student",
     category: "Tech & Software",
     value: "Giảm Tới 10% Surface & Phụ Kiện",
@@ -2032,7 +2062,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b126",
+    id: "b128",
     title: "Razer Education Program",
     category: "Tech & Software",
     value: "Giảm 15% Phụ Kiện & 5% Laptop",
@@ -2047,7 +2077,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b127",
+    id: "b129",
     title: "Japan Airlines Sky Mate",
     category: "Travel & Transport",
     value: "Giảm tới 50% vé bay nội địa Nhật sát giờ",
@@ -2062,7 +2092,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b128",
+    id: "b130",
     title: "Eurail Youth Pass",
     category: "Travel & Transport",
     value: "Giảm giá tới 25% vé tàu Eurail Pass",
@@ -2077,7 +2107,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b129",
+    id: "b131",
     title: "Marvel App Student Discount",
     category: "Tech & Software",
     value: "Giảm 70% các gói thuê bao năm",
@@ -2092,7 +2122,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b130",
+    id: "b132",
     title: "Nha khoa Kim Student Program",
     category: "Lifestyle",
     value: "Trả góp chỉnh nha 0% & Giảm giá",
@@ -2107,7 +2137,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b131",
+    id: "b133",
     title: "FL Studio Academic Edition",
     category: "Tech & Software",
     value: "Signature Bundle Academic Edition giá $199",
@@ -2122,7 +2152,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b132",
+    id: "b134",
     title: "EndNote Academic License",
     category: "Education",
     value: "Bản quyền trọn đời giá sinh viên đặc biệt",
@@ -2137,7 +2167,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b133",
+    id: "b135",
     title: "Linode (Akamai) Cloud Credit",
     category: "Tech & Software",
     value: "Miễn phí $100 Cloud Credits sử dụng trong 60 ngày",
@@ -2152,7 +2182,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b134",
+    id: "b136",
     title: "Linear Project Manager",
     category: "Tech & Software",
     value: "Miễn Phí Linear Premium Workspace",
@@ -2167,7 +2197,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b135",
+    id: "b137",
     title: "Lucidchart for Education",
     category: "Tech & Software",
     value: "Miễn phí gói Educational nâng cao",
@@ -2182,7 +2212,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b136",
+    id: "b138",
     title: "Skillshare Student Plan",
     category: "Education",
     value: "Giảm Giá 50% Membership",
@@ -2197,7 +2227,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b137",
+    id: "b139",
     title: "Loom Screen Recorder",
     category: "Tech & Software",
     value: "Giảm Đến 75% Gói Loom Education",
@@ -2212,7 +2242,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b138",
+    id: "b140",
     title: "Replit Core Student Discount",
     category: "Tech & Software",
     value: "Giảm 50% Gói Replit Core",
@@ -2227,7 +2257,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b139",
+    id: "b141",
     title: "Roam Research Scholars Program",
     category: "Education",
     value: "Giảm giá 50% phí dịch vụ hàng tháng",
@@ -2242,7 +2272,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b140",
+    id: "b142",
     title: "Trello Classroom License & Premium",
     category: "Tech & Software",
     value: "Miễn phí Classroom License hoặc giảm 75% Premium",
@@ -2257,7 +2287,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b141",
+    id: "b143",
     title: "Vé xe buýt TP.HCM dành cho HSSV",
     category: "Lifestyle",
     value: "Đồng giá vé lượt 3.000đ hoặc miễn phí một số tuyến",
@@ -2272,7 +2302,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b142",
+    id: "b144",
     title: "Duolingo Schools / Classroom",
     category: "Education",
     value: "Đặc Quyền Super Duolingo Miễn Phí",
@@ -2287,7 +2317,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b143",
+    id: "b145",
     title: "Scribd Student Subscription",
     category: "Education",
     value: "Giảm Phí Thuê Bao ($4.99/tháng)",
@@ -2302,7 +2332,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b144",
+    id: "b146",
     title: "Overleaf Student Plan",
     category: "Education",
     value: "Giảm Giá Gói LaTeX Collaborator",
@@ -2317,7 +2347,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b145",
+    id: "b147",
     title: "MockFlow Education",
     category: "Tech & Software",
     value: "Giảm 50% giá các gói dịch vụ",
@@ -2332,7 +2362,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b146",
+    id: "b148",
     title: "Intellect Premium Program",
     category: "Lifestyle",
     value: "Miễn Phí 1 Năm App Tâm Lý",
@@ -2347,7 +2377,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b147",
+    id: "b149",
     title: "BeStudent Commuting Pack",
     category: "Travel & Transport",
     value: "Giảm 20% beBike & beCar",
@@ -2362,7 +2392,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b148",
+    id: "b150",
     title: "NordVPN Student Discount",
     category: "Tech & Software",
     value: "Giảm Giá Đến 60-70% + Tháng Free",
@@ -2377,7 +2407,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b149",
+    id: "b151",
     title: "Lenovo Student Store",
     category: "Tech & Software",
     value: "Giảm Giá Thêm Tới 10% Thiết Bị",
@@ -2392,7 +2422,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b150",
+    id: "b152",
     title: "ASUS Store Student",
     category: "Tech & Software",
     value: "Ưu Đãi Giá Giáo Dục Zenbook & ROG",
@@ -2407,7 +2437,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b151",
+    id: "b153",
     title: "ExpressVPN Student Discount",
     category: "Tech & Software",
     value: "Giảm tới 80% + Tặng thêm 3-4 tháng free",
@@ -2422,7 +2452,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b152",
+    id: "b154",
     title: "Rosetta Stone Student Discount",
     category: "Education",
     value: "Giảm giá đến 50% học ngoại ngữ",
@@ -2437,7 +2467,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b153",
+    id: "b155",
     title: "Obsidian Sync/Publish",
     category: "Tech & Software",
     value: "Giảm 40% Dịch Vụ Đồng Bộ",
@@ -2452,7 +2482,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b154",
+    id: "b156",
     title: "Vultr Student Cloud Credits",
     category: "Tech & Software",
     value: "Miễn phí $50–$100 tín dụng đám mây Vultr VPS",
@@ -2467,7 +2497,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b155",
+    id: "b157",
     title: "Deezer Student Premium",
     category: "Lifestyle",
     value: "Giảm Giá 50% Gói Premium",
@@ -2482,7 +2512,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b156",
+    id: "b158",
     title: "MUBI Cinema Student",
     category: "Lifestyle",
     value: "Giảm Giá 40% Hàng Tháng",
@@ -2497,7 +2527,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b157",
+    id: "b159",
     title: "Hulu Student Discount",
     category: "Lifestyle",
     value: "Gói Hulu (With Ads) Chỉ $1.99/tháng",
@@ -2512,7 +2542,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b158",
+    id: "b160",
     title: "Tower Git Client",
     category: "Tech & Software",
     value: "Bản Quyền Tower Pro Miễn Phí",
@@ -2527,7 +2557,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b159",
+    id: "b161",
     title: "Tidal Student Music",
     category: "Lifestyle",
     value: "Giảm Giá 50% Hifi Lossless",
@@ -2542,7 +2572,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b160",
+    id: "b162",
     title: "Hanoi Student Monthly Bus Pass",
     category: "Travel & Transport",
     value: "Vé tháng 1 tuyến 70K, liên tuyến 140K",
@@ -2557,7 +2587,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b161",
+    id: "b163",
     title: "Calm Sleep & Meditation",
     category: "Lifestyle",
     value: "Giảm 60% Gói Premium",
@@ -2572,7 +2602,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b162",
+    id: "b164",
     title: "Apple Music & TV+ Bundle",
     category: "Lifestyle",
     value: "Giảm Phí 50% + Tặng Kèm Apple TV+",
@@ -2587,7 +2617,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b163",
+    id: "b165",
     title: "Adidas Student Offer",
     category: "Lifestyle",
     value: "Giảm Giá 15% Trực Tuyến",
@@ -2602,7 +2632,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b164",
+    id: "b166",
     title: "Bootstrap Studio Student License",
     category: "Tech & Software",
     value: "Bản Quyền Miễn Phí Cho Sinh Viên",
@@ -2617,7 +2647,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b165",
+    id: "b167",
     title: "Evernote Student Discount",
     category: "Tech & Software",
     value: "Giảm Giá 50% Evernote Personal",
@@ -2632,7 +2662,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b166",
+    id: "b168",
     title: "Headspace Mental Health",
     category: "Lifestyle",
     value: "Thuê Bao Học Đường $9.99/Năm (Giảm 85%)",
@@ -2647,7 +2677,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b167",
+    id: "b169",
     title: "Proton Unlimited Student",
     category: "Tech & Software",
     value: "Giảm 50% Gói Proton Unlimited",
@@ -2662,7 +2692,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b168",
+    id: "b170",
     title: "Dashlane Premium for Students",
     category: "Tech & Software",
     value: "Miễn phí 1 năm Dashlane Premium",
@@ -2677,7 +2707,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b169",
+    id: "b171",
     title: "Peacock Student Discount",
     category: "Lifestyle",
     value: "Peacock Premium Chỉ $5.99/tháng",
@@ -2692,7 +2722,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b170",
+    id: "b172",
     title: "SoundCloud Go+ Student Plan",
     category: "Lifestyle",
     value: "Giảm 50% Gói Premium Music",
@@ -2707,7 +2737,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b171",
+    id: "b173",
     title: "Craft.do Education Plan",
     category: "Tech & Software",
     value: "Miễn phí gói Pro hoàn chỉnh",
@@ -2722,7 +2752,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b172",
+    id: "b174",
     title: "Harvard Business Review Student",
     category: "Education",
     value: "Giảm giá 50% gói Digital/Print",
@@ -2737,7 +2767,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b173",
+    id: "b175",
     title: "LeetCode Premium Student Discount",
     category: "Education",
     value: "Giảm giá gói Premium hàng năm còn $99/năm",
@@ -2752,7 +2782,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b174",
+    id: "b176",
     title: "GitKraken Client Pro",
     category: "Tech & Software",
     value: "Miễn Phí Bản Quyền GitKraken Pro",
@@ -2767,7 +2797,22 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b175",
+    id: "b177",
+    title: "Parallels Desktop for Students",
+    category: "Tech & Software",
+    value: "Giảm Giá 50% Bản Quyền Hằng Năm",
+    description: "Phần mềm giả lập chạy hệ điều hành Windows song song trên máy Mac mượt mà không cần reboot dành cho học tập và đồ họa.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: false,
+    updatedAt: "Vừa xong",
+    savings: 50,
+    link: "https://www.parallels.com/landingpage/pd/education/",
+    requirements: "Xác thực trạng thái học tập qua cổng OnTheHub hoặc email trường để nhận license key giảm giá 50%.",
+    isHot: false
+  },
+  {
+    id: "b178",
     title: "Nike Student Discount",
     category: "Lifestyle",
     value: "Giảm Giá 10% Đơn Hàng",
@@ -2782,7 +2827,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b176",
+    id: "b179",
     title: "Domino's Pizza Student Deal",
     category: "Food & Dining",
     value: "Ưu Đãi Giảm Giá 30%",
@@ -2797,7 +2842,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b177",
+    id: "b180",
     title: "Amtrak Train Discount",
     category: "Travel & Transport",
     value: "Giảm Giá 15% Vé Tàu Hoả",
@@ -2812,7 +2857,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b178",
+    id: "b181",
     title: "Logitech Student Store",
     category: "Tech & Software",
     value: "Giảm Giá 25% Chuột & Bàn Phím",
@@ -2827,7 +2872,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b179",
+    id: "b182",
     title: "Paramount+ Student Offer",
     category: "Lifestyle",
     value: "Giảm Giá 50% Mọi Gói Cước",
@@ -2842,7 +2887,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b180",
+    id: "b183",
     title: "Expedia Student Discount",
     category: "Travel & Transport",
     value: "Giảm từ 8% đến 10% đặt phòng khách sạn",
@@ -2857,7 +2902,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b181",
+    id: "b184",
     title: ".TECH Domains for Students",
     category: "Tech & Software",
     value: "Miễn phí đăng ký tên miền .tech 1 năm & SSL",
@@ -2872,7 +2917,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b182",
+    id: "b185",
     title: "Bitbucket Cloud Academic Plan",
     category: "Tech & Software",
     value: "Miễn phí gói Academic không giới hạn cộng tác viên",
@@ -2887,7 +2932,22 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b183",
+    id: "b186",
+    title: "Shodan Academic Membership",
+    category: "Tech & Software",
+    value: "Nâng Cấp Member Trọn Đời Miễn Phí",
+    description: "Công cụ tìm kiếm các thiết bị kết nối internet dành cho nhà nghiên cứu bảo mật và sinh viên công nghệ thông tin học tập.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: true,
+    updatedAt: "Vừa xong",
+    savings: 49,
+    link: "https://www.shodan.io/",
+    requirements: "Đăng ký tài khoản Shodan bằng email đại học/học thuật để tự động kích hoạt nâng cấp Academic Membership trọn đời.",
+    isHot: false
+  },
+  {
+    id: "b187",
     title: "Flinto for Mac",
     category: "Tech & Software",
     value: "Giảm 50% giá bản quyền phần mềm",
@@ -2902,7 +2962,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b184",
+    id: "b188",
     title: "Readwise Reader Student",
     category: "Tech & Software",
     value: "Giảm Giá 50% Mọi Gói Thuê Bao",
@@ -2917,7 +2977,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b185",
+    id: "b189",
     title: "VinaPhone YOLO100M Student Pack",
     category: "Travel & Transport",
     value: "1GB data/ngày & Free YouTube/TikTok/FB",
@@ -2932,7 +2992,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b186",
+    id: "b190",
     title: "MobiFone MXH100 Combo",
     category: "Travel & Transport",
     value: "1GB data/ngày & Free Social Media",
@@ -2947,7 +3007,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b187",
+    id: "b191",
     title: "HCMC Student Bus Ticket",
     category: "Travel & Transport",
     value: "Vé lượt 3K hoặc miễn phí trọn gói",
@@ -2962,7 +3022,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b188",
+    id: "b192",
     title: "ClickUp Academic Discount",
     category: "Tech & Software",
     value: "Giảm giá đặc biệt cho gói trả phí",
@@ -2977,7 +3037,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b189",
+    id: "b193",
     title: "CyberGhost Student Discount",
     category: "Tech & Software",
     value: "Giảm tới 84% + Tặng thêm tháng free",
@@ -2992,7 +3052,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b190",
+    id: "b194",
     title: "VUS Student Study Support",
     category: "Education",
     value: "Học bổng bán phần & Trả góp học phí 0%",
@@ -3007,7 +3067,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b191",
+    id: "b195",
     title: "Levi's Student Discount",
     category: "Lifestyle",
     value: "Giảm giá 15% khi mua sắm online",
@@ -3022,7 +3082,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b192",
+    id: "b196",
     title: "Klook Travel Activities",
     category: "Lifestyle",
     value: "Giảm Giá Đến 18% Đặt Tour & Vé",
@@ -3037,7 +3097,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b193",
+    id: "b197",
     title: "Cacoo Education Plan",
     category: "Tech & Software",
     value: "Giảm 50% gói dịch vụ nhóm (Team Plan)",
@@ -3052,7 +3112,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b194",
+    id: "b198",
     title: "MindMeister for Education",
     category: "Tech & Software",
     value: "Giảm 50% chi phí các gói trả phí",
@@ -3067,7 +3127,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b195",
+    id: "b199",
     title: "Raycast Pro Student Program",
     category: "Tech & Software",
     value: "Giảm giá 50% gói Raycast Pro",
@@ -3082,7 +3142,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b196",
+    id: "b200",
     title: "Viettel GIC90N Student Package",
     category: "Travel & Transport",
     value: "1GB data/ngày & Free TikTok/FB",
@@ -3097,7 +3157,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b197",
+    id: "b201",
     title: "Under Armour Student Discount",
     category: "Lifestyle",
     value: "Giảm giá 15%–20% đồ thể thao",
@@ -3112,7 +3172,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b198",
+    id: "b202",
     title: "Scrintal for Education",
     category: "Education",
     value: "Giảm giá 30% gói dịch vụ Pro",
@@ -3127,7 +3187,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b199",
+    id: "b203",
     title: "Babbel Language Learning",
     category: "Education",
     value: "Giảm Giá 65% Cho Học Ngoại Ngữ",
@@ -3142,7 +3202,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b200",
+    id: "b204",
     title: "Phuc Long Tea & Coffee Student Offer",
     category: "Food & Dining",
     value: "Giảm Giá 10% Hóa Đơn",
@@ -3157,7 +3217,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b201",
+    id: "b205",
     title: "Grammarly Writing Assistant",
     category: "Tech & Software",
     value: "Giảm Giá 20% Gói Grammarly Pro",
@@ -3172,7 +3232,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b202",
+    id: "b206",
     title: "Bamboo Airways Student Promo",
     category: "Travel & Transport",
     value: "Vé ưu đãi từ 99,000 VND",
@@ -3187,7 +3247,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b203",
+    id: "b207",
     title: "FlixBus Intercity Discount",
     category: "Travel & Transport",
     value: "Giảm Giá 10% - 15% Vé Xe Khách",
@@ -3202,7 +3262,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b204",
+    id: "b208",
     title: "TablePlus Student License",
     category: "Tech & Software",
     value: "Giảm 50% bản quyền phần mềm",
@@ -3217,7 +3277,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b205",
+    id: "b209",
     title: "Vé tàu hỏa Đường sắt Việt Nam (VNR)",
     category: "Lifestyle",
     value: "Giảm 10% giá vé tàu trên tất cả đoàn tàu khách",
@@ -3232,7 +3292,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b206",
+    id: "b210",
     title: "Hoàng Hà Mobile HSSV (Hoàng Hà Edu)",
     category: "Tech & Software",
     value: "Giảm giá đặc quyền & Trả góp 0%",
@@ -3247,7 +3307,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b207",
+    id: "b211",
     title: "ASOS Student Discount",
     category: "Lifestyle",
     value: "Giảm giá 10% đơn hàng thời trang",
@@ -3262,7 +3322,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b208",
+    id: "b212",
     title: "Ray-Ban Student Discount",
     category: "Lifestyle",
     value: "Giảm giá 20% kính mắt chính hãng",
@@ -3277,7 +3337,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b209",
+    id: "b213",
     title: "MasterClass Online Lessons",
     category: "Education",
     value: "Giảm Giá 15% Thuê Bao Năm",
@@ -3292,7 +3352,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b210",
+    id: "b214",
     title: "WolframAlpha Pro Student",
     category: "Education",
     value: "Giảm Giá 30% Bản Pro",
@@ -3307,7 +3367,22 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b211",
+    id: "b215",
+    title: "Cinestar C'Student Member",
+    category: "Lifestyle",
+    value: "Vé Xem Phim Đồng Giá Từ 45K - 49K",
+    description: "Ưu đãi giá vé xem phim 2D đồng giá cực tốt cho HSSV và thành viên U22 tại tất cả hệ thống rạp Cinestar toàn quốc.",
+    scope: "Vietnam",
+    location: "Việt Nam",
+    lifetime: false,
+    updatedAt: "Vừa xong",
+    savings: 25,
+    link: "https://cinestar.com.vn/",
+    requirements: "Xuất trình thẻ học sinh/sinh viên hoặc căn cước công dân (dưới 22 tuổi) tại quầy vé khi thanh toán trực tiếp.",
+    isHot: false
+  },
+  {
+    id: "b216",
     title: "Nova Editor (by Panic)",
     category: "Tech & Software",
     value: "Giảm 25% bản quyền phần mềm macOS",
@@ -3322,7 +3397,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b212",
+    id: "b217",
     title: "Di Động Việt Student Deal",
     category: "Tech & Software",
     value: "Giảm thêm 100K - 1.000K",
@@ -3337,7 +3412,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b213",
+    id: "b218",
     title: "The Pizza Company Student Combo",
     category: "Lifestyle",
     value: "Mua 1 Tặng 1 Thứ 3 & Thứ 4",
@@ -3352,7 +3427,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b214",
+    id: "b219",
     title: "Hostelworld Student Discount",
     category: "Travel & Transport",
     value: "Giảm giá 7% cho mọi đặt phòng hostel",
@@ -3367,7 +3442,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b215",
+    id: "b220",
     title: "Dr. Martens Student Discount",
     category: "Lifestyle",
     value: "Giảm giá 10%–15% giày da/boots",
@@ -3382,7 +3457,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b216",
+    id: "b221",
     title: "Hostinger Student Discount",
     category: "Tech & Software",
     value: "Giảm giá thêm 10%–25% trên giá khuyến mãi gốc",
@@ -3397,7 +3472,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b217",
+    id: "b222",
     title: "RoboForm Password Manager",
     category: "Tech & Software",
     value: "Miễn Phí 1 Năm Bản Pro",
@@ -3412,7 +3487,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b218",
+    id: "b223",
     title: "Setapp Suite for Mac & iOS",
     category: "Tech & Software",
     value: "Giảm Giá 20% Thuê Bao Năm",
@@ -3427,7 +3502,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b219",
+    id: "b224",
     title: "XMind Education Plan",
     category: "Tech & Software",
     value: "Giảm 40% giá mua bản quyền",
@@ -3442,7 +3517,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b220",
+    id: "b225",
     title: "Viettel GIC70N Student Pack",
     category: "Travel & Transport",
     value: "1GB data/ngày & Free Mydio",
@@ -3457,7 +3532,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b221",
+    id: "b226",
     title: "Perlego Student Library Discount",
     category: "Education",
     value: "Giảm giá 25% gói đọc sách học thuật",
@@ -3472,7 +3547,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b222",
+    id: "b227",
     title: "Converse Student Discount",
     category: "Lifestyle",
     value: "Giảm giá 15% đơn hàng giày",
@@ -3487,7 +3562,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b223",
+    id: "b228",
     title: "Puma Student Discount",
     category: "Lifestyle",
     value: "Giảm giá 10%–20% giày thể thao",
@@ -3502,7 +3577,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b224",
+    id: "b229",
     title: "New Balance Student Discount",
     category: "Lifestyle",
     value: "Giảm giá 10%–15% giày sneaker",
@@ -3517,7 +3592,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b225",
+    id: "b230",
     title: "Booking.com Student Deals",
     category: "Travel & Transport",
     value: "Hoàn Tiền 4% + Đặc Quyền Genius",
@@ -3532,7 +3607,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b226",
+    id: "b231",
     title: "United Airlines Young Traveler",
     category: "Travel & Transport",
     value: "Giảm 5% giá vé máy bay",
@@ -3547,7 +3622,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b227",
+    id: "b232",
     title: "Pizza Hut Vietnam Group Student Deal",
     category: "Lifestyle",
     value: "Giảm 40% combo nhóm & BOGO",
@@ -3562,7 +3637,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b228",
+    id: "b233",
     title: "The New Gym Student Membership",
     category: "Lifestyle",
     value: "Chỉ từ 299K/tháng, không hợp đồng",
@@ -3577,7 +3652,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b229",
+    id: "b234",
     title: "Generator Hostels Student Discount",
     category: "Travel & Transport",
     value: "Giảm giá 10% khi đặt phòng trực tiếp",
@@ -3592,7 +3667,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b230",
+    id: "b235",
     title: "National Express Student Discount",
     category: "Travel & Transport",
     value: "Giảm từ 10% - 20% giá vé xe khách liên tỉnh",
@@ -3607,7 +3682,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b231",
+    id: "b236",
     title: "CleanMyMac Education Discount",
     category: "Tech & Software",
     value: "Giảm giá 30% bản quyền phần mềm tối ưu",
@@ -3622,7 +3697,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b232",
+    id: "b237",
     title: "H&M Student Offer",
     category: "Lifestyle",
     value: "Giảm giá 10% đơn hàng online",
@@ -3637,7 +3712,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b233",
+    id: "b238",
     title: "Gymshark Student Discount",
     category: "Lifestyle",
     value: "Giảm giá 10% đồ thể thao gym",
@@ -3652,7 +3727,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b234",
+    id: "b239",
     title: "Crocs Student Discount",
     category: "Lifestyle",
     value: "Giảm giá 15%–20% giày Crocs",
@@ -3667,7 +3742,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b235",
+    id: "b240",
     title: "Beta Cinemas (Vietnam)",
     category: "Lifestyle",
     value: "Vé xem phim đồng giá từ 40,000 VND",
@@ -3682,7 +3757,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b236",
+    id: "b241",
     title: "BHD Star Cineplex (Vietnam)",
     category: "Lifestyle",
     value: "Vé U22 từ 48,000 VND",
@@ -3697,7 +3772,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b237",
+    id: "b242",
     title: "Galaxy Cinema (Vietnam)",
     category: "Lifestyle",
     value: "Vé U22 đồng giá từ 45,000 VND",
@@ -3712,7 +3787,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b238",
+    id: "b243",
     title: "Keeper Security Student",
     category: "Tech & Software",
     value: "Giảm 50% dịch vụ lưu trữ mật khẩu Unlimited",
@@ -3727,7 +3802,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b239",
+    id: "b244",
     title: "IIG Việt Nam TOEIC/TOEFL Registration",
     category: "Education",
     value: "Giảm lệ phí thi & Tiết kiệm đến 450K",
@@ -3742,7 +3817,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b240",
+    id: "b245",
     title: "Ulysses writing app",
     category: "Education",
     value: "Gói sinh viên ưu đãi đặc biệt $10.99/6 tháng",
@@ -3757,7 +3832,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b241",
+    id: "b246",
     title: "Vans Student Discount",
     category: "Lifestyle",
     value: "Giảm giá 10%–15% giày Vans",
@@ -3772,7 +3847,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b242",
+    id: "b247",
     title: "Champion Student Discount",
     category: "Lifestyle",
     value: "Giảm giá 10%–20% quần áo",
@@ -3787,7 +3862,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b243",
+    id: "b248",
     title: "Cake by VPBank Student Card",
     category: "Lifestyle",
     value: "Free Cake Mastercard & Cashback",
@@ -3802,7 +3877,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b244",
+    id: "b249",
     title: "AeroPress Coffee Student",
     category: "Food & Dining",
     value: "Giảm Giá 10% Cho Máy Pha Cafe",
@@ -3817,7 +3892,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b245",
+    id: "b250",
     title: "Namecheap NC.ME (Namecheap for Education)",
     category: "Tech & Software",
     value: "Miễn phí tên miền .me trong 1 năm & SSL",
@@ -3832,7 +3907,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b246",
+    id: "b251",
     title: "RapidAPI Client (formerly Paw)",
     category: "Tech & Software",
     value: "Giảm 30% bản quyền cá nhân",
@@ -3847,7 +3922,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b247",
+    id: "b252",
     title: "Popeyes Vietnam Student Combo",
     category: "Lifestyle",
     value: "Combo Siêu No từ 89K",
@@ -3862,7 +3937,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b248",
+    id: "b253",
     title: "iMazing Education Program",
     category: "Tech & Software",
     value: "Giảm giá 30% bản quyền phần mềm",
@@ -3877,7 +3952,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b249",
+    id: "b254",
     title: "Name.com Education Domain Program",
     category: "Tech & Software",
     value: "Miễn phí đăng ký tên miền 1 năm & SSL miễn phí",
@@ -3892,7 +3967,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b250",
+    id: "b255",
     title: "Morgen Calendar Pro Discount",
     category: "Lifestyle",
     value: "Giảm 25% trọn đời gói Morgen Pro",
@@ -3907,7 +3982,22 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b251",
+    id: "b256",
+    title: "CleanMyMac X Student Discount",
+    category: "Tech & Software",
+    value: "Giảm Giá 30% Bản Quyền Tiêu Chuẩn",
+    description: "Công cụ tối ưu hóa, dọn dẹp hệ thống và bảo mật tốt nhất cho hệ điều hành macOS của hãng MacPaw giúp máy tính chạy mượt mà.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: false,
+    updatedAt: "Vừa xong",
+    savings: 12,
+    link: "https://macpaw.com/student-discount",
+    requirements: "Gửi địa chỉ email sinh viên (.edu) qua trang ưu đãi của MacPaw để nhận mã giảm giá 30% trực tiếp.",
+    isHot: false
+  },
+  {
+    id: "b257",
     title: "Texas Chicken Student Deal",
     category: "Lifestyle",
     value: "Combo 45K & Refill nước ngọt",
@@ -3922,7 +4012,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b252",
+    id: "b258",
     title: "MobiFone MA30 Education Pack",
     category: "Education",
     value: "Free VIP mobiEdu & mobiStudy",
@@ -3937,7 +4027,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b253",
+    id: "b259",
     title: "TNEX Digital Bank Student",
     category: "Lifestyle",
     value: "5 Không trọn đời & Quản lý chi tiêu",
@@ -3952,7 +4042,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b254",
+    id: "b260",
     title: "Timo Digital Bank Spend Pots",
     category: "Lifestyle",
     value: "Free Debit Card & Hũ chi tiêu",
@@ -3967,7 +4057,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b255",
+    id: "b261",
     title: "Medium Student Membership",
     category: "Education",
     value: "Giảm giá 25% gói Monthly/Annual",
@@ -3982,7 +4072,22 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b256",
+    id: "b262",
+    title: "Shopee Sinh Viên (Shopee Student Club)",
+    category: "Lifestyle",
+    value: "Miễn Phí 12 Tháng Gói Shopee VIP",
+    description: "Gói hội viên độc quyền cho học sinh sinh viên giúp nhận voucher freeship hằng ngày, giảm giá độc quyền 9/9, 11/11 và Canva Pro miễn phí 3 tháng.",
+    scope: "Vietnam",
+    location: "Việt Nam / Online",
+    lifetime: false,
+    updatedAt: "Vừa xong",
+    savings: 10,
+    link: "https://shopee.vn/",
+    requirements: "Xác thực bằng email trường học (.edu.vn) và nhập mã OTP trực tiếp trên trang chủ Shopee Sinh Viên tại ứng dụng Shopee di động.",
+    isHot: false
+  },
+  {
+    id: "b263",
     title: "AlgoExpert Discount",
     category: "Education",
     value: "Giảm 10% + Luyện tập 20 câu hỏi free",
@@ -3997,7 +4102,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b257",
+    id: "b264",
     title: "Mockplus for Students",
     category: "Tech & Software",
     value: "Miễn phí 1 tháng gói Pro cao cấp",
@@ -4012,7 +4117,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b258",
+    id: "b265",
     title: "MindNode Plus Discount",
     category: "Tech & Software",
     value: "Giảm giá tới 50% gói dịch vụ năm",
@@ -4027,7 +4132,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b259",
+    id: "b266",
     title: "Lotteria Việt Nam Combo HSSV",
     category: "Lifestyle",
     value: "Giảm 20-30% cho set ăn",
@@ -4042,7 +4147,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b260",
+    id: "b267",
     title: "TickTick Task Manager",
     category: "Tech & Software",
     value: "Giảm 25% Gói Premium Năm",
@@ -4057,7 +4162,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b261",
+    id: "b268",
     title: "Bear App Markdown Notes",
     category: "Tech & Software",
     value: "Giảm Giá 30% Gói Bear Pro",
@@ -4072,7 +4177,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b262",
+    id: "b269",
     title: "Surfshark Student Discount",
     category: "Tech & Software",
     value: "Giảm thêm 15% trên các gói khuyến mãi",
@@ -4087,7 +4192,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b263",
+    id: "b270",
     title: "Scrivener Academic License",
     category: "Education",
     value: "Giảm giá giấy phép trọn đời vĩnh viễn",
@@ -4102,7 +4207,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b264",
+    id: "b271",
     title: "KFC Việt Nam Student Combo",
     category: "Lifestyle",
     value: "Combo trưa từ 42.000 VND",
@@ -4117,7 +4222,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b265",
+    id: "b272",
     title: "Jollibee Việt Nam Combo Học Đường",
     category: "Lifestyle",
     value: "Set ăn đặc biệt từ 45.000 VND",
@@ -4132,7 +4237,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b266",
+    id: "b273",
     title: "Đầm Sen Cultural Park Discount",
     category: "Lifestyle",
     value: "Giảm 50% giá vé trọn gói",
@@ -4147,7 +4252,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b267",
+    id: "b274",
     title: "Suối Tiên Theme Park Offer",
     category: "Lifestyle",
     value: "Vé trọn gói sinh viên từ 180K",
@@ -4162,7 +4267,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b268",
+    id: "b275",
     title: "Goodnotes 6 Student Plan",
     category: "Education",
     value: "Giảm giá 10% gói thuê bao năm",
@@ -4177,7 +4282,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b269",
+    id: "b276",
     title: "Dinh Độc Lập Student Ticket",
     category: "Lifestyle",
     value: "Giảm 50% giá vé (chỉ 20K)",
@@ -4192,7 +4297,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b270",
+    id: "b277",
     title: "War Remnants Museum Ticket",
     category: "Lifestyle",
     value: "Giảm 50% giá vé (chỉ 20K)",
@@ -4207,7 +4312,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b271",
+    id: "b278",
     title: "Vietnam National Museum of Fine Arts",
     category: "Lifestyle",
     value: "Giảm 50% giá vé (chỉ 20K)",
@@ -4222,7 +4327,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b272",
+    id: "b279",
     title: "Bảo tàng Dân tộc học Ticket",
     category: "Lifestyle",
     value: "Giảm 50% giá vé (chỉ 20K)",
@@ -4237,7 +4342,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b273",
+    id: "b280",
     title: "Bảo tàng Phụ nữ Việt Nam Ticket",
     category: "Lifestyle",
     value: "Giảm 50% giá vé (chỉ 20K)",
@@ -4252,7 +4357,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b274",
+    id: "b281",
     title: "Văn Miếu Quốc Tử Giám Ticket",
     category: "Lifestyle",
     value: "Giảm 50% giá vé (chỉ 15K)",
@@ -4267,7 +4372,7 @@ const BENEFITS_DATA = [
     isHot: false
   },
   {
-    id: "b275",
+    id: "b282",
     title: "Hoàng thành Thăng Long Ticket",
     category: "Lifestyle",
     value: "Giảm 50% giá vé (chỉ 15K)",
