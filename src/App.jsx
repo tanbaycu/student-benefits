@@ -38,6 +38,29 @@ import {
 } from 'developer-icons'
 import { LifetimePlanner } from './components/LifetimePlanner'
 
+// Hàm tính "X ngày trước" động từ ISO date string (YYYY-MM-DD)
+// Tự động cập nhật mỗi khi render — không cần hardcode text thủ công
+function timeAgo(dateStr) {
+  if (!dateStr) return "";
+  const now = new Date();
+  const past = new Date(dateStr + "T00:00:00+07:00"); // Hanoi timezone
+  const diffMs = now - past;
+  const diffMins = Math.floor(diffMs / 60000);
+  const diffHours = Math.floor(diffMs / 3600000);
+  const diffDays = Math.floor(diffMs / 86400000);
+  const diffWeeks = Math.floor(diffDays / 7);
+  const diffMonths = Math.floor(diffDays / 30);
+  const diffYears = Math.floor(diffDays / 365);
+
+  if (diffMins < 1)    return "Vừa xong";
+  if (diffMins < 60)   return `${diffMins} phút trước`;
+  if (diffHours < 24)  return `${diffHours} giờ trước`;
+  if (diffDays < 7)    return `${diffDays} ngày trước`;
+  if (diffWeeks < 5)   return `${diffWeeks} tuần trước`;
+  if (diffMonths < 12) return `${diffMonths} tháng trước`;
+  return `${diffYears} năm trước`;
+}
+
 // Logo SVG tối giản cực kỳ "peak" - Thiết kế Bauhaus Swiss Grid phẳng
 const SwissLogo = () => (
   <svg className="w-10 h-10 shrink-0 transition-transform duration-300 hover:rotate-6" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -165,10 +188,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 680,
     link: "https://www.autodesk.com/education/edu-software/overview",
     requirements: "Tạo tài khoản Autodesk bằng email trường học và xác thực trạng thái sinh viên qua hệ thống SheerID.",
+    dealType: "free",
     isHot: true
   },
   {
@@ -180,10 +204,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Đà Nẵng (Việt Nam)",
     lifetime: true,
-    updatedAt: "1 ngày trước",
+    updatedDate: "2026-07-17",
     savings: 500,
     link: "https://fptarena.edu.vn/",
     requirements: "Liên hệ bộ phận tuyển sinh của FPT Arena và xuất trình thẻ sinh viên/giấy báo nhập học để áp dụng học bổng học tập.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -195,10 +220,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "10 phút trước",
+    updatedDate: "2026-07-18",
     savings: 500,
     link: "https://www.mathworks.com/academia/tah-support-program/students.html",
     requirements: "Đăng ký tài khoản MathWorks bằng email trường (.edu) hoặc xác minh tư cách sinh viên.",
+    dealType: "free",
     isHot: true
   },
   {
@@ -210,10 +236,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "8 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 399,
     link: "https://www.coursera.org/student",
     requirements: "Đăng ký thông qua chương trình liên kết của trường đại học đối tác.",
+    dealType: "free",
     isHot: true
   },
   {
@@ -225,10 +252,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "2 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 384,
     link: "https://www.adobe.com/creativecloud/buy/students.html",
     requirements: "Thẻ sinh viên hoặc email đuôi giáo dục khi đăng ký.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -240,10 +268,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 300,
     link: "https://www.solidworks.com/solution/job-functions/students",
     requirements: "Đăng ký qua cổng SolidWorks Student với email .edu hoặc thẻ sinh viên.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -255,10 +284,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "2 tuần trước",
+    updatedDate: "2026-07-04",
     savings: 299,
     link: "https://www.jetbrains.com/academy/",
     requirements: "Xác thực thông qua JetBrains Account đã liên kết giấy phép sinh viên JetBrains Student License.",
+    dealType: "free",
     isHot: true
   },
   {
@@ -270,10 +300,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 240,
     link: "https://www.cursor.com/students",
     requirements: "Đăng ký tham gia các sự kiện on-campus hoặc webinar giáo dục do Cursor tổ chức.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -285,10 +316,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 240,
     link: "https://www.anthropic.com/news/claude-edu",
     requirements: "Đăng nhập Single Sign-On (SSO) qua cổng thông tin hoặc email của trường đại học đối tác.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -300,10 +332,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 240,
     link: "https://openai.com/chatgpt/edu/",
     requirements: "Đăng nhập bằng email trường do trường học liên kết đối tác cung cấp.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -315,10 +348,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "3 phút trước",
+    updatedDate: "2026-07-18",
     savings: 200,
     link: "https://education.github.com/pack",
     requirements: "Email trường (.edu) hoặc thẻ sinh viên/giấy xác nhận nhập học.",
+    dealType: "free",
     isHot: true
   },
   {
@@ -330,10 +364,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "15 phút trước",
+    updatedDate: "2026-07-18",
     savings: 180,
     link: "https://www.figma.com/education/students/",
     requirements: "Thẻ sinh viên cứng hoặc tài liệu học tập có đóng dấu của trường.",
+    dealType: "free",
     isHot: true
   },
   {
@@ -345,10 +380,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "5 ngày trước",
+    updatedDate: "2026-07-13",
     savings: 180,
     link: "https://www.edx.org/",
     requirements: "Đăng ký học dạng Audit (miễn phí), sau đó nộp đơn xin hỗ trợ tài chính trình bày rõ hoàn cảnh.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -360,10 +396,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "8 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 120,
     link: "https://www.canva.com/education/",
     requirements: "Thẻ sinh viên hoặc email do trường học cấp.",
+    dealType: "free",
     isHot: true
   },
   {
@@ -375,10 +412,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "3 ngày trước",
+    updatedDate: "2026-07-15",
     savings: 120,
     link: "https://www.udemy.com/",
     requirements: "Xác thực thông qua cổng liên kết của trường học.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -390,10 +428,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Hà Nội (Việt Nam)",
     lifetime: false,
-    updatedAt: "12 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 120,
     link: "https://www.grab.com/vn/blog/grabstudent-bi-kip-tiet-kiem-khi-di-hoc-cung-grab/",
     requirements: "Mở app Grab trên điện thoại -> Vào mục 'Thử thách' (Challenges) hoặc 'Ưu đãi' (Rewards) để đăng ký gói sinh viên; hoặc xác thực qua MoMo Student Pass bằng thẻ sinh viên.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -405,10 +444,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "4 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 120,
     link: "https://www.perplexity.ai",
     requirements: "Xác thực trạng thái học tập qua cổng SheerID tích hợp trong phần cài đặt Perplexity bằng email .edu.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -420,10 +460,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 109,
     link: "https://www.ynab.com/college",
     requirements: "Xác thực trạng thái sinh viên đại học hoặc sau đại học thông qua hệ thống SheerID.",
+    dealType: "free",
     isHot: true
   },
   {
@@ -435,10 +476,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "2 ngày trước",
+    updatedDate: "2026-07-16",
     savings: 100,
     link: "https://www.microsoft.com/vi-vn/education/products/office",
     requirements: "Đăng ký bằng tài khoản email trường do cơ sở giáo dục cấp.",
+    dealType: "free",
     isHot: true
   },
   {
@@ -450,10 +492,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "5 phút trước",
+    updatedDate: "2026-07-18",
     savings: 100,
     link: "https://www.vietnamairlines.com/vn/vi/lotusmiles/enroll-lotusmiles",
     requirements: "Đăng ký hội viên Bông Sen Vàng (Lotusmiles) -> Đăng nhập -> Vào mục 'LotuSociety' ở trang cá nhân -> Chọn ưu đãi 'Học sinh, sinh viên' và tải thẻ sinh viên lên để kích hoạt.",
+    dealType: "free",
     isHot: true
   },
   {
@@ -465,10 +508,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "1 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 96,
     link: "https://www.notion.so/product/notion-for-education",
     requirements: "Xác thực trực tiếp bằng email sinh viên trường liên kết.",
+    dealType: "free",
     isHot: true
   },
   {
@@ -480,10 +524,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam (Toàn quốc)",
     lifetime: false,
-    updatedAt: "1 ngày trước",
+    updatedDate: "2026-07-17",
     savings: 90,
     link: "https://www.xanhsm.com/",
     requirements: "Đăng ký xác thực tài khoản học sinh/sinh viên trực tiếp trên ứng dụng Xanh SM bằng cách chụp ảnh thẻ sinh viên.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -495,10 +540,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 80,
     link: "https://cellphones.com.vn/s-student/",
     requirements: "Đăng ký trực tuyến trên website CellphoneS (mục S-Student) bằng email trường/thẻ sinh viên, hoặc mang thẻ sinh viên và CCCD qua cửa hàng để kích hoạt giảm giá trực tiếp.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -510,10 +556,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "12 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 75,
     link: "https://www.amazon.com/joinstudent",
     requirements: "Email sinh viên trường hoặc bảng điểm chứng minh đang đi học.",
+    dealType: "free",
     isHot: true
   },
   {
@@ -525,10 +572,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Hồ Chí Minh (Việt Nam)",
     lifetime: false,
-    updatedAt: "2 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 50,
     link: "https://www.starbucks.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên khi gọi món trực tiếp tại các cửa hàng Starbucks Việt Nam để áp dụng ưu đãi theo mùa (nếu có).",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -540,10 +588,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 50,
     link: "https://fptshop.com.vn/",
     requirements: "Mang theo thẻ học sinh/sinh viên kèm CCCD chính chủ đến các cửa hàng FPT Shop toàn quốc khi mua laptop, máy tính bảng để nhận chiết khấu học đường.",
+    dealType: "free",
     isHot: true
   },
   {
@@ -555,10 +604,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam (Toàn quốc)",
     lifetime: false,
-    updatedAt: "8 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 45,
     link: "https://www.lottecinemavn.com/",
     requirements: "Xuất trình thẻ học sinh/sinh viên kèm CCCD chính chủ trực tiếp tại quầy vé của Lotte Cinema để mua vé xem phim với giá ưu đãi U22.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -570,10 +620,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam (Toàn quốc)",
     lifetime: false,
-    updatedAt: "6 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 40,
     link: "https://www.cgv.vn/default/news-offers",
     requirements: "Xuất trình thẻ học sinh/sinh viên và CCCD tại quầy vé của CGV để mua vé phim giá U22 (áp dụng cho hội viên CGV dưới 22 tuổi).",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -585,10 +636,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam (Toàn quốc)",
     lifetime: false,
-    updatedAt: "1 ngày trước",
+    updatedDate: "2026-07-17",
     savings: 40,
     link: "https://www.highlandscoffee.com.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên chính chủ tại quầy thanh toán của Highlands Coffee để mua các combo đồ uống kèm bánh ngọt với giá ưu đãi.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -600,10 +652,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "15 phút trước",
+    updatedDate: "2026-07-18",
     savings: 36,
     link: "https://www.spotify.com/vn-vi/student/",
     requirements: "Xác thực thông qua cổng SheerID bằng ảnh chụp thẻ sinh viên.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -615,10 +668,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "1 ngày trước",
+    updatedDate: "2026-07-17",
     savings: 30,
     link: "https://www.youtube.com/premium/student",
     requirements: "Xác thực SheerID bằng thẻ sinh viên cứng hoặc bảng điểm.",
+    dealType: "discount",
     isHot: true
   },
   {
@@ -630,10 +684,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 30,
     link: "https://www.vietjetair.com",
     requirements: "Nhập mã ưu đãi sinh viên trong các đợt chiến dịch trên website đặt vé của Vietjet Air, và xuất trình thẻ sinh viên khi làm thủ tục check-in tại sân bay.",
+    dealType: "free",
     isHot: true
   },
   {
@@ -645,10 +700,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 18,
     link: "https://1password.com/",
     requirements: "Kích hoạt qua GitHub Student Developer Pack hoặc Student App Centre.",
+    dealType: "free",
     isHot: true
   },
   {
@@ -660,10 +716,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 9600,
     link: "https://www.hubspot.com/academy/education-partner-program",
     requirements: "Đăng ký thông qua lời mời từ giảng viên tham gia chương trình HubSpot EPP của trường.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -675,10 +732,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 7100,
     link: "https://newrelic.com",
     requirements: "Kết nối tài khoản New Relic cá nhân với tài khoản học sinh GitHub Education.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -690,10 +748,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 2000,
     link: "https://unity.com",
     requirements: "Đăng ký tài khoản Unity và xác thực trạng thái học sinh thông qua cổng đối tác.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -705,10 +764,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 2000,
     link: "https://education.bentley.com/",
     requirements: "Đăng ký tài khoản trên cổng Bentley Education sử dụng email học thuật (.edu) và nhập thông tin trường học.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -720,10 +780,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 2000,
     link: "https://unity.com/products/unity-student",
     requirements: "Xác thực trạng thái học sinh, sinh viên thông qua GitHub Student Developer Pack hoặc qua SheerID.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -735,10 +796,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 1920,
     link: "https://www.sidefx.com",
     requirements: "Xác thực trạng thái sinh viên thông qua cổng đối tác Proxi.ID khi tiến hành thanh toán.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -750,10 +812,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 1800,
     link: "https://www.datadoghq.com",
     requirements: "Đăng ký qua cổng đối tác GitHub Student Developer Pack bằng email trường học.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -765,10 +828,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "3 ngày trước",
+    updatedDate: "2026-07-15",
     savings: 1500,
     link: "https://www.altium.com/education/students",
     requirements: "Xác thực email đuôi trường (.edu) hoặc tải tài liệu học tập qua cổng Altium Education.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -780,10 +844,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 1500,
     link: "https://www.onshape.com/en/education/",
     requirements: "Đăng ký tài khoản Onshape Education bằng email học thuật (.edu) và thông tin trường học.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -795,10 +860,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 1139,
     link: "https://www.maxon.net",
     requirements: "Xác thực thông qua hệ thống SheerID với thẻ sinh viên và bảng điểm học tập còn hiệu lực.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -810,10 +876,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 900,
     link: "https://siemens.com/solid-edge-student",
     requirements: "Đăng ký bằng email học thuật (.edu) hoặc cung cấp tài liệu chứng minh đang đi học trên cổng phần mềm giáo dục của Siemens.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -825,10 +892,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 900,
     link: "https://www.intel.com/content/www/us/en/developer/tools/oneapi/commercial-availability.html#academic",
     requirements: "Đăng ký tài khoản Intel Developer Zone bằng email trường học và khai báo thông tin học tập.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -840,10 +908,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 840,
     link: "https://www.tableau.com/academic/students",
     requirements: "Điền form đăng ký sử dụng email học thuật (.edu) và xác thực danh tính sinh viên qua hệ thống SheerID.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -855,10 +924,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "4 ngày trước",
+    updatedDate: "2026-07-14",
     savings: 750,
     link: "https://www.ansys.com/academic/students",
     requirements: "Đăng ký và tải trực tiếp từ cổng ANSYS Academic dành cho sinh viên.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -870,10 +940,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 600,
     link: "https://www.intuit.com/partners/education-program/",
     requirements: "Xác thực trạng thái sinh viên khối ngành kinh tế bằng email trường học thông qua cổng Intuit Education.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -885,10 +956,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "1 tuần trước",
+    updatedDate: "2026-07-11",
     savings: 500,
     link: "https://www.intel.com/content/www/us/en/developer/topic-solutions/academic/overview.html",
     requirements: "Đăng ký bằng email giáo dục qua cổng học thuật của Intel.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -900,10 +972,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 499,
     link: "https://www.acm.org/membership/student",
     requirements: "Đăng nhập bằng email học thuật (.edu) của trường đại học có liên kết hoặc đăng ký hội viên sinh viên ACM.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -915,10 +988,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 430,
     link: "https://www.apple.com",
     requirements: "Mua trực tiếp trên Apple Store Education và xác thực qua hệ thống UNiDAYS.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -930,10 +1004,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 419,
     link: "https://wsj.com/student",
     requirements: "Xác thực trực tiếp trên cổng wsj.com/student bằng email sinh viên trường liên kết hoặc SheerID.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -945,10 +1020,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 360,
     link: "https://retool.com/retool-for-students",
     requirements: "Đăng ký tài khoản và nộp đơn qua trang giáo dục bằng email đuôi trường học (.edu).",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -960,10 +1036,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 348,
     link: "https://www.axure.com/edu",
     requirements: "Đăng ký thông qua Axure Student Portal bằng cách upload thẻ sinh viên hoặc bảng điểm.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -975,10 +1052,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 348,
     link: "https://www.browserstack.com",
     requirements: "Xác thực thông qua tài khoản gói GitHub Student Developer Pack.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -990,10 +1068,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 348,
     link: "https://sentry.io/education/",
     requirements: "Liên kết tài khoản Sentry cá nhân với GitHub Student Developer Pack đã xác thực.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1005,10 +1084,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "3 ngày trước",
+    updatedDate: "2026-07-15",
     savings: 300,
     link: "https://www.datacamp.com/groups/education",
     requirements: "Đăng ký thông qua tài khoản lớp học được giảng viên bảo trợ.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1020,10 +1100,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 300,
     link: "https://www.bloomberg.com/",
     requirements: "Xác thực trạng thái sinh viên thông qua liên kết đối tác Student Beans.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1035,10 +1116,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 300,
     link: "https://www.shapr3d.com/pricing",
     requirements: "Đăng ký tài khoản Shapr3D bằng email học thuật (.edu), gửi đơn xin cấp phép EDU kèm theo thẻ sinh viên hoặc bảng điểm hợp lệ.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1050,10 +1132,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 299,
     link: "https://www.shapr3d.com/education",
     requirements: "Đăng ký qua email trường .edu và upload thẻ sinh viên hoặc bảng điểm hợp lệ.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1065,10 +1148,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 299,
     link: "https://basecamp.com/discounts",
     requirements: "Tạo tài khoản Basecamp mới bằng email trường học, sau đó gửi email tới bộ phận hỗ trợ của Basecamp kèm thông tin chứng minh đang đi học.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1080,10 +1164,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 288,
     link: "https://rive.app",
     requirements: "Gửi email trực tiếp đến support@rive.app với thông tin dự án học tập/coursework và thẻ sinh viên.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1095,10 +1180,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 250,
     link: "https://dbeaver.com",
     requirements: "Đăng ký trực tuyến bằng email giáo dục và gửi minh chứng học tập hợp lệ qua cổng học thuật của DBeaver.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1110,10 +1196,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 250,
     link: "https://www.marvelousdesigner.com",
     requirements: "Xác thực trạng thái học tập trực tiếp bằng email trường học (.edu) hoặc thẻ học sinh.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1125,10 +1212,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 240,
     link: "https://kiro.dev/students",
     requirements: "Đăng ký tài khoản Kiro bằng email đại học (.edu) và hoàn tất xác minh trạng thái sinh viên qua cổng SheerID.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1140,10 +1228,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "20 phút trước",
+    updatedDate: "2026-07-18",
     savings: 240,
     link: "https://v0.dev/",
     requirements: "Xác thực tài khoản Vercel thông qua email đuôi trường học (.edu) của sinh viên.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1155,10 +1244,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 240,
     link: "https://superhuman.com/",
     requirements: "Gửi email yêu cầu đến hello@superhuman.com bằng email sinh viên trường học.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1170,10 +1260,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 240,
     link: "https://www.airtable.com/education",
     requirements: "Đăng ký qua email .edu và nộp đơn đăng ký trực tiếp trên trang web Airtable.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1185,10 +1276,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 234,
     link: "https://sub.ft.com/spa-student",
     requirements: "Xác minh thông tin học sinh sinh viên qua cổng đăng ký học tập của FT hoặc email trường.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1200,10 +1292,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 228,
     link: "https://about.gitlab.com/solutions/education/",
     requirements: "Điền đơn đăng ký thông qua chương trình GitLab for Education, yêu cầu xác thực bằng email trường và tài liệu chứng minh đang đi học.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1215,10 +1308,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "1 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 200,
     link: "https://www.qatarairways.com/en/student-club.html",
     requirements: "Đăng ký online bằng email .edu, thẻ sinh viên hoặc Visa du học / Thư nhập học.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1230,10 +1324,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "3 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 200,
     link: "https://www.emirates.com/vn/vietnamese/special-offers/student-special-fares/",
     requirements: "Áp dụng mã promo code STUDENT khi đặt vé và xuất trình thẻ sinh viên hoặc email trường khi check-in.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1245,10 +1340,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "1 ngày trước",
+    updatedDate: "2026-07-17",
     savings: 200,
     link: "https://www.mongodb.com/academia",
     requirements: "Kích hoạt thông qua GitHub Student Developer Pack.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1260,10 +1356,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "1 ngày trước",
+    updatedDate: "2026-07-17",
     savings: 200,
     link: "https://www.digitalocean.com/github-students",
     requirements: "Kích hoạt qua GitHub Student Developer Pack.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1275,10 +1372,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 200,
     link: "https://www.avid.com",
     requirements: "Xác thực trạng thái học tập qua cổng Proxi.id bằng email nhà trường hoặc thẻ sinh viên.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1290,10 +1388,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 200,
     link: "https://academy.oracle.com/",
     requirements: "Đăng ký thông qua tài khoản Oracle Academy do trường đại học của sinh viên liên kết cung cấp.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1305,10 +1404,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "5 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 195,
     link: "https://frontendmasters.com/welcome/github-student-developers/",
     requirements: "Liên kết và kích hoạt thông qua GitHub Student Developer Pack.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1320,10 +1420,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 192,
     link: "https://miro.com/education/",
     requirements: "Đăng ký bằng email trường học (.edu) và gửi thông tin xác nhận qua cổng đăng ký Miro Education.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1335,10 +1436,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 180,
     link: "https://www.framer.com/education/",
     requirements: "Đăng ký tài khoản Framer bằng email trường học và điền đơn xin học tập trực tuyến.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1350,10 +1452,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 180,
     link: "https://accessnyt.com/",
     requirements: "Xác minh thông qua cổng accessnyt.com bằng email giáo dục của trường đại học.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1365,10 +1468,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 180,
     link: "https://www.postman.com/student-program/",
     requirements: "Xác thực qua email trường .edu hoặc cung cấp minh chứng học tập khác.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1380,10 +1484,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 180,
     link: "https://www.wix.com/students",
     requirements: "Xác thực tình trạng sinh viên thông qua Student Beans.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1395,10 +1500,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 180,
     link: "https://www.ableton.com",
     requirements: "Tải tài liệu chứng minh là học sinh/sinh viên toàn thời gian hoặc bán thời gian lên trang xác thực Ableton.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1410,10 +1516,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 170,
     link: "https://www.coreldraw.com",
     requirements: "Xác thực trạng thái học sinh thông qua cổng SheerID hoặc cung cấp thẻ học sinh trực tiếp.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1425,10 +1532,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 165,
     link: "https://affinity.serif.com/education/",
     requirements: "Kích hoạt thông qua tài khoản Canva for Education được trường học phê duyệt.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1440,10 +1548,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "2 ngày trước",
+    updatedDate: "2026-07-16",
     savings: 156,
     link: "https://www.heroku.com/github-students",
     requirements: "Đăng ký qua GitHub Student Developer Pack.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1455,10 +1564,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 156,
     link: "https://moqups.com",
     requirements: "Tạo tài khoản bằng email giáo dục của trường và gửi email yêu cầu kích hoạt đến bộ phận hỗ trợ Moqups.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1470,10 +1580,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: true,
-    updatedAt: "1 ngày trước",
+    updatedDate: "2026-07-17",
     savings: 150,
     link: "https://www.samsung.com/vn/offer/student-discount/",
     requirements: "Đăng nhập cổng Samsung Student Vietnam bằng email giáo dục.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1485,10 +1596,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "2 ngày trước",
+    updatedDate: "2026-07-16",
     savings: 150,
     link: "https://www.isic.org/",
     requirements: "Cung cấp ảnh chụp thẻ sinh viên chính chủ còn hạn sử dụng để làm thẻ ISIC.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1500,10 +1612,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "2 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 150,
     link: "https://www.singaporeair.com/en_UK/sg/plan-travel/local-promotions/student-privilege/",
     requirements: "Xác minh tài khoản KrisFlyer qua cổng SheerID bằng thẻ sinh viên hoặc giấy xác nhận nhập học.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1515,10 +1628,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "4 ngày trước",
+    updatedDate: "2026-07-14",
     savings: 150,
     link: "https://www.codecademy.com/student-center",
     requirements: "Xác minh tư cách sinh viên qua dịch vụ đối tác SheerID.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1530,10 +1644,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "5 ngày trước",
+    updatedDate: "2026-07-13",
     savings: 150,
     link: "https://visualstudio.microsoft.com/dev-essentials/",
     requirements: "Đăng ký tài khoản Microsoft Dev Essentials và kích hoạt ưu đãi Pluralsight.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1545,10 +1660,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 150,
     link: "https://www.educative.io/github-students",
     requirements: "Đăng nhập bằng tài khoản GitHub đã được xác thực trạng thái sinh viên qua GitHub Student Developer Pack.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1560,10 +1676,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 150,
     link: "https://www.turkishairlines.com/en-int/miles-and-smiles/student/",
     requirements: "Đăng ký thành viên Miles&Smiles và gửi hồ sơ chứng minh sinh viên qua form hỗ trợ.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1575,10 +1692,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 150,
     link: "https://nhakhoaparkway.com/",
     requirements: "Đặt lịch hẹn tư vấn trực tuyến và xuất trình thẻ học sinh/sinh viên chính thức khi đến phòng khám để được áp dụng giảm giá niềng răng hoặc chăm sóc răng.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1590,10 +1708,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 150,
     link: "https://www.sbb.ch",
     requirements: "Xác minh độ tuổi từ 16 - 24 bằng hộ chiếu khi mua vé trực tuyến hoặc trực tiếp tại ga.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1605,10 +1724,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 150,
     link: "https://www.wolfram.com/mathematica/pricing/",
     requirements: "Đăng nhập/Xác thực qua Student Beans hoặc sử dụng email giáo dục (.edu) đăng ký qua cổng phần mềm của trường liên kết.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1620,10 +1740,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 149,
     link: "https://brilliant.org/educators/",
     requirements: "Giáo viên K-12 nộp đơn xin tài khoản lớp học và thêm học sinh của mình vào danh sách.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1635,10 +1756,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 144,
     link: "https://www.mural.co/education",
     requirements: "Đăng ký tài khoản trên trang Mural Education bằng email giáo dục (.edu) hoặc cung cấp bằng chứng nhập học.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1650,10 +1772,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 144,
     link: "https://proto.io",
     requirements: "Liên hệ hỗ trợ trực tuyến của Proto.io từ địa chỉ email trường để nhận ưu đãi giáo dục.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1665,10 +1788,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 140,
     link: "https://www.economist.com/",
     requirements: "Xác thực qua cổng Student Beans hoặc thẻ sinh viên quốc tế ISIC.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1680,10 +1804,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 140,
     link: "https://www.cathaypacific.com",
     requirements: "Xác minh bằng Thẻ sinh viên quốc tế (ISIC), visa du học, hoặc Thư mời nhập học khi làm thủ tục check-in.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1695,10 +1820,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 140,
     link: "https://www.evaair.com",
     requirements: "Xuất trình Thẻ sinh viên quốc tế (ISIC), visa học tập hoặc giấy báo nhập học tại sân bay.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1710,10 +1836,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 140,
     link: "https://www.ana.co.jp",
     requirements: "Yêu cầu đăng ký thành viên ANA Mileage Club và xác minh bằng thẻ sinh viên hoặc thư nhập học bằng tiếng Anh.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1725,10 +1852,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 140,
     link: "https://www.etihad.com",
     requirements: "Đăng ký qua cổng xác thực đối tác Student Beans.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1740,10 +1868,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 138,
     link: "https://www.squarespace.com/students",
     requirements: "Xác thực tình trạng sinh viên thông qua Student Beans.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1755,10 +1884,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 132,
     link: "https://asana.com",
     requirements: "Đăng ký qua trang Asana for Students bằng email trường đại học.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1770,10 +1900,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Hà Nội",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 125,
     link: "http://timbus.vn/",
     requirements: "Nộp tờ khai đăng ký làm thẻ xe buýt tháng HSSV (có dấu xác nhận của trường) kèm 2 ảnh 3x4 tại các điểm bán vé xe buýt ở Hà Nội.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1785,10 +1916,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "8 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 120,
     link: "https://termius.com/education",
     requirements: "Đăng ký thông qua GitHub Student Developer Pack.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1800,10 +1932,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 120,
     link: "https://www.sketch.com/education/",
     requirements: "Gửi biểu mẫu yêu cầu qua Sketch Education Store kèm thẻ sinh viên còn hạn.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1815,10 +1948,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 120,
     link: "https://whimsical.com/education",
     requirements: "Điền biểu mẫu yêu cầu trên trang Whimsical bằng tài khoản email .edu.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1830,10 +1964,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 120,
     link: "https://coda.io/pricing",
     requirements: "Xác thực trực tiếp trên trang Coda Pricing thông qua email giáo dục.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1845,10 +1980,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 120,
     link: "https://www.lufthansa.com",
     requirements: "Xác minh trạng thái học tập trực tuyến thông qua cổng liên kết UNiDAYS hoặc Student Beans.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1860,10 +1996,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 120,
     link: "https://nhakhoaparis.vn/",
     requirements: "Đặt lịch hẹn khám trực tuyến và xuất trình thẻ sinh viên tại phòng khám để nhận ưu đãi lấy cao răng, nhổ răng khôn hoặc niềng răng dành riêng cho sinh viên.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1875,10 +2012,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 120,
     link: "https://zed.dev/education",
     requirements: "Đăng nhập bằng tài khoản GitHub (trên 30 ngày tuổi) và xác thực email trường học.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1890,10 +2028,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 120,
     link: "https://www.studentuniverse.com",
     requirements: "Xác thực thẻ sinh viên quốc tế hoặc giấy tờ chứng minh đang theo học tại trường đại học.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1905,10 +2044,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 120,
     link: "https://sunsama.com",
     requirements: "Gửi email yêu cầu giảm giá học sinh tới support@sunsama.com bằng email trường.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1920,10 +2060,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 114,
     link: "https://akiflow.com",
     requirements: "Gửi email yêu cầu ưu đãi giáo dục tới đội ngũ hỗ trợ của Akiflow kèm email trường.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1935,10 +2076,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "6 ngày trước",
+    updatedDate: "2026-07-12",
     savings: 108,
     link: "https://balsamiq.com/wireframes/cloud/sales/classroom/",
     requirements: "Gửi email yêu cầu đến Balsamiq kèm theo minh chứng học sinh sinh viên hiện tại hoặc email .edu.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1950,10 +2092,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 108,
     link: "https://spline.design",
     requirements: "Đăng ký tài khoản và điền thông tin xác thực tại trang Spline Education bằng email trường học.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1965,10 +2108,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 107,
     link: "https://www.washingtonpost.com/subscribe/signup/academic",
     requirements: "Xác thực trạng thái học tập qua cổng SheerID tích hợp tại trang đăng ký.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -1980,10 +2124,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "2 ngày trước",
+    updatedDate: "2026-07-16",
     savings: 100,
     link: "https://azure.microsoft.com/en-us/free/students/",
     requirements: "Đăng ký trực tiếp bằng email đuôi giáo dục (.edu) của trường đại học.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -1995,10 +2140,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "3 ngày trước",
+    updatedDate: "2026-07-15",
     savings: 100,
     link: "https://aws.amazon.com/education/awseducate/",
     requirements: "Đăng ký bằng email trường học. Quyết định phê duyệt trong vòng vài ngày.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2010,10 +2156,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 100,
     link: "https://www.apple.com/us-edu/store",
     requirements: "Xác thực trạng thái sinh viên trực tuyến bằng tài khoản UNiDAYS hoặc cung cấp minh chứng học tập khi mua trực tiếp.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2025,10 +2172,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 100,
     link: "https://www.dell.com/en-us/lp/dell-university",
     requirements: "Xác thực trực tiếp bằng email trường (.edu) hoặc qua cổng UNiDAYS/Student Beans.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2040,10 +2188,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 100,
     link: "https://www.hp.com/us-en/shop/cv/hp-education-store",
     requirements: "Đăng ký tài khoản HP Store bằng email giáo dục (.edu) hợp lệ.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2055,10 +2204,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 100,
     link: "https://www.microsoft.com/en-us/store/b/education",
     requirements: "Đăng nhập bằng tài khoản Microsoft cá nhân và xác thực email trường học.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2070,10 +2220,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 100,
     link: "https://www.razer.com/education",
     requirements: "Xác thực thông qua UNiDAYS, Student Beans hoặc bằng email trường học.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2085,10 +2236,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 100,
     link: "https://www.jal.co.jp",
     requirements: "Đăng ký tài khoản JAL Mileage Bank và xác thực thông tin ngày sinh/thẻ sinh viên.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2100,10 +2252,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 100,
     link: "https://www.eurail.com",
     requirements: "Xác thực độ tuổi trực tiếp bằng hộ chiếu khi mua vé trực tuyến (không cần thẻ sinh viên).",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2115,10 +2268,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 100,
     link: "https://marvelapp.com",
     requirements: "Xác thực tư cách sinh viên thông qua cổng đối tác Student Beans.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2130,10 +2284,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 100,
     link: "https://nhakhoakim.com/",
     requirements: "Đặt lịch khám qua hotline/website và xuất trình thẻ sinh viên chính thức tại quầy tiếp đón của Nha khoa Kim để nhận chiết khấu điều trị.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2145,10 +2300,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 100,
     link: "https://www.image-line.com",
     requirements: "Xác thực giấy tờ nhập học thông qua nhà phân phối phần mềm âm nhạc được ủy quyền ( Thomann).",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2160,10 +2316,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 100,
     link: "https://endnote.com",
     requirements: "Xác thực trạng thái học thuật qua cổng Proxi.id bằng thẻ sinh viên hoặc email trường.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2175,10 +2332,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 100,
     link: "https://www.linode.com/",
     requirements: "Đăng ký tài khoản mới trên trang chính thức của Akamai Cloud và xác thực phương thức thanh toán hợp lệ.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2190,10 +2348,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 96,
     link: "https://linear.app/",
     requirements: "Đăng ký workspace Linear bằng địa chỉ email sinh viên trường học.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2205,10 +2364,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 96,
     link: "https://www.lucidchart.com/pages/use-case/education",
     requirements: "Đăng ký và xác thực thông qua email trường .edu.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2220,10 +2380,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "4 ngày trước",
+    updatedDate: "2026-07-14",
     savings: 90,
     link: "https://www.skillshare.com/",
     requirements: "Đăng ký bằng email đuôi giáo dục hợp lệ.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2235,10 +2396,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 90,
     link: "https://www.loom.com/education",
     requirements: "Xác minh thông qua Atlassian Portal / Goodstack bằng email đuôi nhà trường.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2250,10 +2412,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 90,
     link: "https://replit.com/edu",
     requirements: "Đăng ký bằng email trường học và liên kết tài khoản github học tập.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2265,10 +2428,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 90,
     link: "https://roamresearch.com",
     requirements: "Nộp đơn đăng ký chương trình học giả (dành cho người dưới 22 tuổi hoặc nghiên cứu viên).",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2280,10 +2444,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 90,
     link: "https://www.atlassian.com/solutions/survey/classroom-license-request#/",
     requirements: "Đăng ký yêu cầu Classroom License qua cổng Atlassian và xác thực thông tin học tập qua tổ chức xác thực Percent.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2295,10 +2460,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "TP. Hồ Chí Minh",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 85,
     link: "http://buyttphcm.com.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên còn hiệu lực trực tiếp cho tiếp viên khi lên xe buýt tại TP.HCM để mua vé xe buýt đồng giá ưu đãi.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2310,10 +2476,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "1 tuần trước",
+    updatedDate: "2026-07-11",
     savings: 84,
     link: "https://schools.duolingo.com/",
     requirements: "Đăng ký lớp học do giáo viên/giảng viên tạo lập bằng mã tham gia (Class code).",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2325,10 +2492,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "2 tuần trước",
+    updatedDate: "2026-07-04",
     savings: 84,
     link: "https://www.scribd.com/promo/student",
     requirements: "Xác thực trạng thái sinh viên qua cổng SheerID.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2340,10 +2508,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 84,
     link: "https://www.overleaf.com/user/subscription/plans",
     requirements: "Đăng ký với email trường .edu hoặc cung cấp minh chứng học tập.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2355,10 +2524,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 84,
     link: "https://www.mockflow.com",
     requirements: "Xác thực trạng thái học tập qua cổng giáo dục MockFlow sử dụng email trường học.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2370,10 +2540,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "2 ngày trước",
+    updatedDate: "2026-07-16",
     savings: 80,
     link: "https://www.intellect.co/",
     requirements: "Tài khoản đăng ký bằng email đuôi trường liên kết đối tác.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2385,10 +2556,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam (Toàn quốc)",
     lifetime: false,
-    updatedAt: "1 ngày trước",
+    updatedDate: "2026-07-17",
     savings: 80,
     link: "https://be.com.vn/",
     requirements: "Đăng ký tham gia câu lạc bộ sinh viên BeStudent trực tiếp trên ứng dụng di động Be bằng cách chụp ảnh thẻ sinh viên để nhận gói coupon di chuyển hàng tuần.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2400,10 +2572,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "1 tuần trước",
+    updatedDate: "2026-07-11",
     savings: 80,
     link: "https://nordvpn.com/student-discount/",
     requirements: "Xác minh qua cổng Youth Discount, Student Beans hoặc SheerID bằng thẻ sinh viên/email trường.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2415,10 +2588,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 80,
     link: "https://www.lenovo.com/us/en/student/",
     requirements: "Xác minh qua cổng ID.me hoặc UNiDAYS khi thanh toán trong giỏ hàng.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2430,10 +2604,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 80,
     link: "https://www.asus.com/us/store/",
     requirements: "Đăng ký thành viên ASUS bằng email sinh viên trường học.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2445,10 +2620,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 80,
     link: "https://www.expressvpn.com",
     requirements: "Xác minh bằng email giáo dục qua cổng liên kết Student Beans hoặc UNiDAYS.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2460,10 +2636,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 80,
     link: "https://www.rosettastone.com/",
     requirements: "Xác thực trạng thái học sinh sinh viên qua cổng đối tác Student Beans.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2475,10 +2652,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 76,
     link: "https://obsidian.md/pricing",
     requirements: "Đăng ký qua email .edu hoặc gửi minh chứng học tập khác tới hỗ trợ của Obsidian.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2490,10 +2668,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 75,
     link: "https://education.github.com/pack",
     requirements: "Đăng nhập bằng tài khoản GitHub Student Developer Pack để lấy mã coupon hoặc liên kết kích hoạt của Vultr.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2505,10 +2684,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 72,
     link: "https://www.deezer.com/en/offers/student",
     requirements: "Xác thực tài khoản UNiDAYS bằng thẻ sinh viên hoặc email giáo dục.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2520,10 +2700,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 72,
     link: "https://mubi.com/student",
     requirements: "Đăng ký qua mubi.com/student bằng địa chỉ email trường học hợp lệ.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2535,10 +2716,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 72,
     link: "https://www.hulu.com/student",
     requirements: "Xác thực qua SheerID (yêu cầu học sinh tại trường đại học/cao đẳng).",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2550,10 +2732,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 69,
     link: "https://www.git-tower.com/pricing",
     requirements: "Kích hoạt thông qua GitHub Student Developer Pack hoặc đăng ký bằng email .edu.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2565,10 +2748,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 66,
     link: "https://tidal.com/pricing",
     requirements: "Xác minh thông qua cổng SheerID bằng tài liệu minh chứng học tập.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2580,10 +2764,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 65,
     link: "http://timbus.vn/",
     requirements: "Đến trực tiếp điểm làm thẻ xe buýt tháng của Transerco Hà Nội, nộp thẻ học sinh/sinh viên để được áp dụng gói vé tháng ưu đãi một tuyến hoặc liên tuyến.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2595,10 +2780,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 61,
     link: "https://www.calm.com/",
     requirements: "Xác thực trạng thái sinh viên thông qua Student Beans hoặc Amazon Prime Student.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2610,10 +2796,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "1 ngày trước",
+    updatedDate: "2026-07-17",
     savings: 60,
     link: "https://www.apple.com/apple-music/#student",
     requirements: "Xác thực tài khoản UNiDAYS thông qua thẻ sinh viên hoặc email trường.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2625,10 +2812,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "3 ngày trước",
+    updatedDate: "2026-07-15",
     savings: 60,
     link: "https://www.adidas.com/us/student-discount",
     requirements: "Xác thực thẻ học sinh/sinh viên qua hệ thống UNiDAYS.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2640,10 +2828,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "12 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 60,
     link: "https://bootstrapstudio.io/pages/student-license",
     requirements: "Đăng ký qua cổng Bootstrap Studio Education bằng email trường hoặc thẻ sinh viên.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2655,10 +2844,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "6 ngày trước",
+    updatedDate: "2026-07-12",
     savings: 60,
     link: "https://evernote.com/",
     requirements: "Xác thực trạng thái học sinh sinh viên thông qua cổng UNiDAYS.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2670,10 +2860,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 60,
     link: "https://www.headspace.com/studentplan",
     requirements: "Xác minh trực tiếp trạng thái sinh viên qua cổng SheerID tích hợp trên Headspace.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2685,10 +2876,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 60,
     link: "https://proton.me/student",
     requirements: "Xác thực tình trạng sinh viên qua hệ thống Student Beans.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2700,10 +2892,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 60,
     link: "https://www.dashlane.com/students",
     requirements: "Đăng ký và xác thực qua email sinh viên .edu.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2715,10 +2908,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 60,
     link: "https://www.peacocktv.com/student",
     requirements: "Xác thực tình trạng sinh viên qua SheerID.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2730,10 +2924,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 60,
     link: "https://www.soundcloud.com",
     requirements: "Xác thực thông qua cổng SheerID.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2745,10 +2940,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 60,
     link: "https://www.craft.do",
     requirements: "Đăng ký tài khoản mới hoặc đổi email tài khoản hiện tại sang email trường học để tự động kích hoạt.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2760,10 +2956,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 60,
     link: "https://hbr.org/",
     requirements: "Đăng ký bằng địa chỉ email đuôi giáo dục (.edu) hoặc cung cấp minh chứng học tập.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2775,10 +2972,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 60,
     link: "https://leetcode.com/student/",
     requirements: "Đăng ký tham gia sự kiện 'Back-to-School' bằng email của trường đại học (.edu) khi đạt tối thiểu 50 người đăng ký cùng trường.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2790,10 +2988,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "6 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 59,
     link: "https://www.gitkraken.com/student-resources",
     requirements: "Đăng ký thông qua GitHub Student Developer Pack.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2805,10 +3004,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 50,
     link: "https://www.parallels.com/landingpage/pd/education/",
     requirements: "Xác thực trạng thái học tập qua cổng OnTheHub hoặc email trường để nhận license key giảm giá 50%.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2820,10 +3020,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "2 ngày trước",
+    updatedDate: "2026-07-16",
     savings: 50,
     link: "https://www.nike.com/help/a/student-discount",
     requirements: "Xác minh trạng thái sinh viên thông qua cổng SheerID.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2835,10 +3036,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam (Toàn quốc)",
     lifetime: false,
-    updatedAt: "2 ngày trước",
+    updatedDate: "2026-07-16",
     savings: 50,
     link: "https://dominos.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên khi mua pizza trực tiếp tại cửa hàng Domino's Pizza Việt Nam để nhận combo giảm giá đặc biệt.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2850,10 +3052,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 50,
     link: "https://www.amtrak.com/student-discounts",
     requirements: "Đặt vé trước ít nhất 1 ngày và xuất trình thẻ sinh viên hợp lệ khi soát vé trên tàu.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2865,10 +3068,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 50,
     link: "https://www.logitech.com",
     requirements: "Xác thực qua tài khoản UNiDAYS hoặc Student Beans.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2880,10 +3084,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 50,
     link: "https://www.paramountplus.com/account/edu/",
     requirements: "Xác thực tình trạng sinh viên qua SheerID.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2895,10 +3100,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 50,
     link: "https://www.expedia.com",
     requirements: "Xác thực trạng thái sinh viên qua ID.me hoặc cổng Student Beans.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2910,10 +3116,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 50,
     link: "https://get.tech/github-student-pack",
     requirements: "Đăng nhập bằng tài khoản GitHub Student Developer Pack để lấy mã giảm giá hoặc liên kết kích hoạt.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2925,10 +3132,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 50,
     link: "https://www.atlassian.com/software/bitbucket/pricing",
     requirements: "Đăng ký tài khoản Bitbucket bằng email học thuật (.edu) hoặc liên kết thông qua cổng phần mềm giáo dục của trường.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2940,10 +3148,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 49,
     link: "https://www.shodan.io/",
     requirements: "Đăng ký tài khoản Shodan bằng email đại học/học thuật để tự động kích hoạt nâng cấp Academic Membership trọn đời.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -2955,10 +3164,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 49,
     link: "https://www.flinto.com",
     requirements: "Gửi hình ảnh thẻ sinh viên hoặc thời khóa biểu học tập học kỳ hiện tại qua trang mua hàng giáo dục của Flinto.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2970,10 +3180,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 48,
     link: "https://readwise.io",
     requirements: "Gửi email đăng ký tới hello@readwise.io bằng email trường học hoặc gửi minh chứng học tập.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -2985,10 +3196,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 48,
     link: "https://vinaphone.com.vn/",
     requirements: "Mang CCCD kèm thẻ học sinh/sinh viên còn hiệu lực đến các điểm giao dịch của VinaPhone toàn quốc để đăng ký sim sinh viên chính chủ.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -3000,10 +3212,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 48,
     link: "https://mobifone.vn/",
     requirements: "Đăng ký chính chủ sim sinh viên tại các cửa hàng giao dịch MobiFone toàn quốc bằng cách xuất trình CCCD và thẻ sinh viên.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -3015,10 +3228,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 45,
     link: "http://buyttphcm.com.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên khi lên xe buýt tại TP.HCM để mua vé lượt đồng giá ưu đãi trực tiếp từ nhân viên bán vé.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -3030,10 +3244,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 42,
     link: "https://clickup.com",
     requirements: "Điền đơn đăng ký chương trình học thuật trực tiếp trên trang chủ ClickUp.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3045,10 +3260,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 40,
     link: "https://www.cyberghostvpn.com",
     requirements: "Xác thực tư cách sinh viên thông qua Student Beans hoặc UNiDAYS.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -3060,10 +3276,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 40,
     link: "https://vus.edu.vn/",
     requirements: "Liên hệ tư vấn viên tại các cơ sở Anh văn Hội Việt Mỹ (VUS) và xuất trình thẻ sinh viên để được áp dụng giảm học phí hoặc tặng học bổng.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3075,10 +3292,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 37,
     link: "https://www.levi.com/",
     requirements: "Xác minh trạng thái sinh viên qua cổng SheerID để nhận mã giảm giá một lần.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3090,10 +3308,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 36,
     link: "https://www.klook.com/",
     requirements: "Xác minh qua Student Beans hoặc UNiDAYS tùy theo khu vực địa lý.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3105,10 +3324,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 36,
     link: "https://cacoo.com",
     requirements: "Đăng ký trực tiếp qua trang Cacoo dành cho giáo dục.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3120,10 +3340,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 36,
     link: "https://www.mindmeister.com",
     requirements: "Đăng ký tài khoản cơ bản rồi gửi yêu cầu nâng cấp kèm minh chứng học tập qua cổng hỗ trợ.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3135,10 +3356,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 36,
     link: "https://raycast.com/student-program",
     requirements: "Nộp biểu mẫu đăng ký chương trình sinh viên với thông tin email và bằng chứng đang theo học.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3150,10 +3372,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 36,
     link: "https://vietteltelecom.vn/",
     requirements: "Mang theo thẻ học sinh/sinh viên (từ 14 đến 22 tuổi) kèm CCCD đến cửa hàng Viettel để đăng ký sim chính chủ hoặc đổi gói cước qua app MyViettel.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -3165,10 +3388,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 35,
     link: "https://www.underarmour.com/",
     requirements: "Xác thực tài khoản sinh viên qua UNiDAYS để nhận mã giảm giá.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3180,10 +3404,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 32,
     link: "https://www.scrintal.com",
     requirements: "Đăng ký và thanh toán tài khoản bằng email đuôi nhà trường đại học hoặc cao đẳng.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3195,10 +3420,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "5 ngày trước",
+    updatedDate: "2026-07-13",
     savings: 30,
     link: "https://www.babbel.com/",
     requirements: "Xác minh tư cách học sinh sinh viên qua dịch vụ đối tác.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3210,10 +3436,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam (Toàn quốc)",
     lifetime: false,
-    updatedAt: "12 giờ trước",
+    updatedDate: "2026-07-18",
     savings: 30,
     link: "https://phuclong.com.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên chính chủ tại quầy thanh toán của Phúc Long khi mua đồ uống để nhận ưu đãi combo hoặc giảm giá theo chương trình.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3225,10 +3452,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 30,
     link: "https://www.grammarly.com/",
     requirements: "Xác thực tình trạng sinh viên qua SheerID hoặc email giáo dục (.edu).",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3240,10 +3468,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 30,
     link: "https://www.bambooairways.com/",
     requirements: "Chọn hạng vé HSSV khi đặt vé trực tuyến hoặc mua vé tại phòng vé chính thức của Bamboo Airways, xuất trình thẻ sinh viên khi làm thủ tục bay.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3255,10 +3484,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 30,
     link: "https://www.flixbus.com/",
     requirements: "Xác thực qua hệ thống UNiDAYS, Student Beans hoặc thẻ ISIC.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3270,10 +3500,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 30,
     link: "https://tableplus.com",
     requirements: "Gửi email yêu cầu đến đội ngũ hỗ trợ của TablePlus bằng email trường học kèm thẻ sinh viên.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3285,10 +3516,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam / Toàn quốc",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 30,
     link: "https://dsvn.vn/",
     requirements: "Mua vé trực tiếp tại ga tàu hoặc đặt trực tuyến qua website dsvn.vn (chọn đối tượng Sinh viên), xuất trình thẻ sinh viên chính chủ kèm giấy tờ tùy thân khi lên tàu.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3300,10 +3532,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 30,
     link: "https://hoanghamobile.com/",
     requirements: "Mang thẻ sinh viên còn hiệu lực và CCCD qua hệ thống cửa hàng Hoàng Hà Mobile để đăng ký chương trình Hoàng Hà Edu và nhận ưu đãi giảm giá.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3315,10 +3548,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 30,
     link: "https://www.asos.com/",
     requirements: "Xác minh tư cách sinh viên thông qua cổng SheerID tích hợp trên website ASOS.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3330,10 +3564,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 30,
     link: "https://www.ray-ban.com/",
     requirements: "Xác minh tư cách học sinh sinh viên qua hệ thống UNiDAYS.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3345,10 +3580,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 27,
     link: "https://www.masterclass.com/",
     requirements: "Xác minh tình trạng học tập thông qua Student Beans hoặc UNiDAYS.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3360,10 +3596,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 26,
     link: "https://www.wolframalpha.com/pro/",
     requirements: "Xác minh qua cổng Student Beans hoặc UNiDAYS.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3375,10 +3612,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 25,
     link: "https://cinestar.com.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên hoặc căn cước công dân (dưới 22 tuổi) tại quầy vé khi thanh toán trực tiếp.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3390,10 +3628,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 25,
     link: "https://nova.app",
     requirements: "Gửi liên hệ hoặc email bằng hòm thư giáo dục của trường học để nhận mã giảm giá.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3405,10 +3644,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 25,
     link: "https://didongviet.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên và CCCD tại các cửa hàng Di Động Việt để được giảm giá trực tiếp khi mua điện thoại, phụ kiện công nghệ.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3420,10 +3660,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 25,
     link: "https://thepizzacompany.vn/",
     requirements: "Xuất trình thẻ sinh viên/học sinh trực tiếp tại cửa hàng The Pizza Company để áp dụng menu combo HSSV đồng giá cực kỳ ưu đãi.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -3435,10 +3676,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 25,
     link: "https://www.hostelworld.com",
     requirements: "Xác thực trạng thái học tập thông qua Student Beans, UNiDAYS hoặc mã giảm giá từ thẻ ISIC.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3450,10 +3692,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 25,
     link: "https://www.drmartens.com/",
     requirements: "Xác minh và lấy mã ưu đãi thông qua cổng đối tác UNiDAYS.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3465,10 +3708,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 25,
     link: "https://www.hostinger.com/student-discount",
     requirements: "Xác thực trạng thái sinh viên thông qua tài khoản Student Beans để nhận mã giảm giá đặc biệt.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3480,10 +3724,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "4 ngày trước",
+    updatedDate: "2026-07-14",
     savings: 24,
     link: "https://www.roboform.com/student-discount",
     requirements: "Xác thực trạng thái sinh viên bằng email đuôi trường học.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -3495,10 +3740,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 24,
     link: "https://setapp.com/",
     requirements: "Đăng ký tài khoản Setapp bằng địa chỉ email sinh viên (.edu).",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3510,10 +3756,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 24,
     link: "https://xmind.app",
     requirements: "Đăng ký mua bản quyền giáo dục bằng cách tải lên thẻ sinh viên hoặc biên lai đóng học phí.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3525,10 +3772,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 24,
     link: "https://vietteltelecom.vn/",
     requirements: "Đăng ký chính chủ sim sinh viên tại các cửa hàng Viettel trên toàn quốc bằng cách cung cấp thẻ sinh viên và CCCD.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -3540,10 +3788,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 24,
     link: "https://www.perlego.com/",
     requirements: "Xác thực trạng thái sinh viên thông qua tài khoản Student Beans hoặc UNiDAYS để nhận mã giảm giá.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3555,10 +3804,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 22,
     link: "https://www.converse.com/",
     requirements: "Xác minh thông tin học sinh sinh viên qua cổng SheerID để nhận mã promo code.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3570,10 +3820,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 22,
     link: "https://www.puma.com/",
     requirements: "Đăng nhập và xác thực tài khoản qua cổng UNiDAYS hoặc Student Beans.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3585,10 +3836,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 22,
     link: "https://www.newbalance.com/",
     requirements: "Xác thực tài khoản học sinh sinh viên qua UNiDAYS hoặc Student Beans tùy khu vực.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3600,10 +3852,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 20,
     link: "https://www.booking.com/",
     requirements: "Truy cập thông qua link liên kết của cổng Student Beans hoặc UNiDAYS.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3615,10 +3868,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 20,
     link: "https://www.united.com",
     requirements: "Yêu cầu là thành viên MileagePlus từ 18 đến 23 tuổi và thực hiện đặt vé trực tiếp trên App United.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3630,10 +3884,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 20,
     link: "https://pizzahut.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên khi gọi món trực tiếp tại nhà hàng Pizza Hut để áp dụng ưu đãi giảm giá combo sinh viên.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3645,10 +3900,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 20,
     link: "https://thenewgym.vn/",
     requirements: "Mang theo thẻ học sinh/sinh viên khi đăng ký gói tập trực tiếp tại các cơ sở của The New Gym để được giảm giá phí hội viên tháng.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3660,10 +3916,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 20,
     link: "https://staygenerator.com",
     requirements: "Nhập mã thẻ ISIC và thông tin xác thực khi tiến hành đặt phòng trên staygenerator.com.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3675,10 +3932,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 20,
     link: "https://www.nationalexpress.com",
     requirements: "Xác thực thông qua tài khoản UNiDAYS, Student Beans hoặc TOTUM khi tiến hành đặt vé online.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3690,10 +3948,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 20,
     link: "https://macpaw.com",
     requirements: "Xác thực email sinh viên đuôi trường học hoặc gửi thư trực tiếp cho education@macpaw.com.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3705,10 +3964,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 20,
     link: "https://www.hm.com/",
     requirements: "Xác thực tài khoản học sinh sinh viên qua UNiDAYS hoặc Student Beans để lấy mã.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3720,10 +3980,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 20,
     link: "https://www.gymshark.com/",
     requirements: "Đăng nhập và xác minh trạng thái sinh viên qua hệ thống Student Beans.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3735,10 +3996,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 20,
     link: "https://www.crocs.com/",
     requirements: "Xác minh thông tin học sinh sinh viên qua UNiDAYS, Student Beans hoặc ID.me.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3750,10 +4012,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 18,
     link: "https://www.betacinemas.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên kèm CCCD tại quầy vé Beta Cinemas để mua vé xem phim đồng giá U22 (áp dụng cả ngày thường).",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3765,10 +4028,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 18,
     link: "https://www.bhdstar.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên chính chủ tại quầy vé BHD Star để nhận ưu đãi giá vé xem phim thành viên U22.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3780,10 +4044,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 18,
     link: "https://www.galaxycine.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên tại quầy vé Galaxy Cinema để áp dụng chương trình ưu đãi giá vé xem phim đồng giá U22.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3795,10 +4060,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 18,
     link: "https://www.keepersecurity.com",
     requirements: "Xác thực thông qua cổng đối tác Student Beans.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3810,10 +4076,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 18,
     link: "https://online.iigvietnam.com/",
     requirements: "Đăng ký dự thi TOEIC/TOEFL trực tuyến qua website IIG và tải lên thẻ sinh viên còn hiệu lực để được áp dụng lệ phí thi ưu đãi cho sinh viên.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3825,10 +4092,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 18,
     link: "https://ulysses.app",
     requirements: "Xác thực thẻ sinh viên cứng hoặc giấy tờ học tập trực tiếp từ giao diện ứng dụng.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3840,10 +4108,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 18,
     link: "https://www.vans.com/",
     requirements: "Xác minh trạng thái sinh viên qua SheerID (US) hoặc UNiDAYS/Student Beans (UK/Global).",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3855,10 +4124,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 18,
     link: "https://www.champion.com/",
     requirements: "Xác minh tư cách sinh viên thông qua UNiDAYS, Student Beans hoặc ID.me.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3870,10 +4140,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 16,
     link: "https://cake.vn/",
     requirements: "Tải ứng dụng Cake by VPBank, thực hiện mở tài khoản trực tuyến (eKYC) bằng CCCD và chọn loại tài khoản/thẻ liên kết dành cho sinh viên.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -3885,10 +4156,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "6 ngày trước",
+    updatedDate: "2026-07-12",
     savings: 15,
     link: "https://aeropress.com/",
     requirements: "Xác minh tư cách học sinh sinh viên qua dịch vụ đối tác.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3900,10 +4172,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 15,
     link: "https://nc.me/",
     requirements: "Đăng ký trực tiếp bằng email trường (.edu) hoặc kết nối qua GitHub Student Developer Pack.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -3915,10 +4188,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 15,
     link: "https://paw.cloud",
     requirements: "Đăng ký trực tuyến và tải lên minh chứng đăng ký học tập hoặc thẻ sinh viên.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3930,10 +4204,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 15,
     link: "https://popeyes.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên còn hiệu lực tại quầy thu ngân của Popeyes khi đặt hàng để áp dụng combo gà rán sinh viên giá rẻ.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3945,10 +4220,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 15,
     link: "https://imazing.com/",
     requirements: "Xác thực học sinh qua cổng SheerID, Student Beans hoặc UNiDAYS trực tiếp tại trang cửa hàng.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -3960,10 +4236,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 15,
     link: "https://www.name.com/partner/github-students",
     requirements: "Đăng nhập bằng tài khoản GitHub học sinh/sinh viên đã được phê duyệt trong GitHub Student Developer Pack.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -3975,10 +4252,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 13,
     link: "https://www.morgen.so",
     requirements: "Liên hệ đội ngũ hỗ trợ của Morgen bằng email đuôi trường học để được áp dụng mã giảm giá.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -3990,10 +4268,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 12,
     link: "https://macpaw.com/student-discount",
     requirements: "Gửi địa chỉ email sinh viên (.edu) qua trang ưu đãi của MacPaw để nhận mã giảm giá 30% trực tiếp.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4005,10 +4284,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 12,
     link: "https://texaschicken.com.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên khi mua hàng trực tiếp tại quầy thanh toán của Texas Chicken để nhận ưu đãi giảm giá combo gà rán.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4020,10 +4300,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 12,
     link: "https://mobiedu.vn/",
     requirements: "Đăng ký gói cước trực tuyến trên trang mobiedu.vn hoặc qua tin nhắn điện thoại bằng tài khoản thuê bao học sinh/sinh viên.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -4035,10 +4316,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 12,
     link: "https://www.tnex.com.vn/",
     requirements: "Đăng ký mở tài khoản ngân hàng số TNEX trực tiếp trên app điện thoại bằng CCCD và chọn gói ưu đãi thẻ dành cho sinh viên.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -4050,10 +4332,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 12,
     link: "https://timo.vn/",
     requirements: "Mở tài khoản Timo trực tuyến qua app bằng CCCD (eKYC) và nhận thẻ Timo ATM miễn phí ship để tham gia các ưu đãi chiết khấu học tập.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -4065,10 +4348,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 12,
     link: "https://medium.com/membership",
     requirements: "Đăng ký và xác thực tài khoản thông qua cổng liên kết UNiDAYS.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4080,10 +4364,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 10,
     link: "https://shopee.vn/",
     requirements: "Xác thực bằng email trường học (.edu.vn) và nhập mã OTP trực tiếp trên trang chủ Shopee Sinh Viên tại ứng dụng Shopee di động.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -4095,10 +4380,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 10,
     link: "https://www.algoexpert.io",
     requirements: "Xác thực thông qua cổng kết nối GitHub Student Developer Pack.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -4110,10 +4396,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 10,
     link: "https://www.mockplus.com",
     requirements: "Điền thông tin vào mẫu đăng ký chương trình giáo dục Mockplus bằng email giáo dục.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -4125,10 +4412,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 10,
     link: "https://mindnode.com",
     requirements: "Gửi email yêu cầu ưu đãi giáo dục bằng hòm thư trường học tới bộ phận hỗ trợ MindNode.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4140,10 +4428,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 10,
     link: "https://www.lotteria.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên tại quầy thu ngân của Lotteria để mua các combo gà rán HSSV đồng giá siêu tiết kiệm.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4155,10 +4444,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 9,
     link: "https://ticktick.com/education",
     requirements: "Đăng ký qua trang TickTick Education bằng email trường học.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4170,10 +4460,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 9,
     link: "https://bear.app/",
     requirements: "Liên hệ bộ phận hỗ trợ khách hàng của Bear và cung cấp email trường hoặc thẻ sinh viên.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4185,10 +4476,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 9,
     link: "https://www.surfshark.com",
     requirements: "Đăng nhập và xác thực tài khoản qua cổng Student Beans.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4200,10 +4492,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: true,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 9,
     link: "https://www.literatureandlatte.com/store",
     requirements: "Lựa chọn phiên bản 'Educational Licence' tại trang thanh toán.",
+    dealType: "free",
     isHot: false
   },
   {
@@ -4215,10 +4508,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 8,
     link: "https://www.kfcvietnam.com.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên tại quầy thanh toán của KFC để mua combo gà rán HSSV với giá ưu đãi đặc biệt.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4230,10 +4524,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 8,
     link: "https://jollibee.com.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên trực tiếp tại quầy thu ngân của Jollibee khi mua sắm để được áp dụng combo học đường giảm giá.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4245,10 +4540,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 6,
     link: "http://damsenwaterpark.com.vn/",
     requirements: "Mua vé vào cổng trực tiếp tại quầy vé Công viên nước Đầm Sen và xuất trình thẻ học sinh/sinh viên chính chủ để được giảm giá vé.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4260,10 +4556,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 5,
     link: "https://suoitien.vn/",
     requirements: "Mua vé vào cổng trực tiếp tại quầy vé Khu du lịch Suối Tiên và xuất trình thẻ học sinh/sinh viên còn hạn để nhận ưu đãi giảm giá vé.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4275,10 +4572,11 @@ const BENEFITS_DATA = [
     scope: "Global",
     location: "Toàn cầu / Online",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 1,
     link: "https://www.goodnotes.com/",
     requirements: "Xác minh trạng thái học sinh sinh viên thông qua cổng Student Beans.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4290,10 +4588,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 0.8,
     link: "https://www.dinhdoclap.gov.vn/",
     requirements: "Mua vé tham quan trực tiếp tại quầy bán vé của Dinh Độc Lập và xuất trình thẻ học sinh/sinh viên để giảm 50% giá vé vào cổng.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4305,10 +4604,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 0.8,
     link: "http://www.baotangchungtichchientranh.vn/",
     requirements: "Mua vé vào cổng trực tiếp tại quầy vé và xuất trình thẻ học sinh/sinh viên để được áp dụng mức giảm giá vé tham quan theo quy định.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4320,10 +4620,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 0.8,
     link: "https://vnfam.vn/",
     requirements: "Mua vé tham quan trực tiếp tại quầy vé Bảo tàng Mỹ thuật Việt Nam và xuất trình thẻ sinh viên để nhận mức giảm giá vé.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4335,10 +4636,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 0.8,
     link: "http://www.vme.org.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên tại quầy bán vé của Bảo tàng Dân tộc học Việt Nam để mua vé tham quan với giá ưu đãi.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4350,10 +4652,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 0.8,
     link: "http://baotangphunu.org.vn/",
     requirements: "Mua vé trực tiếp tại quầy vé Bảo tàng Phụ nữ Việt Nam và xuất trình thẻ học sinh/sinh viên để nhận chiết khấu giảm giá vé.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4365,10 +4668,11 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 0.6,
     link: "http://vanmieu.gov.vn/",
     requirements: "Xuất trình thẻ học sinh/sinh viên và CCCD trực tiếp tại quầy bán vé của di tích Văn Miếu Quốc Tử Giám để được giảm 50% giá vé vào cổng.",
+    dealType: "discount",
     isHot: false
   },
   {
@@ -4380,11 +4684,221 @@ const BENEFITS_DATA = [
     scope: "Vietnam",
     location: "Việt Nam",
     lifetime: false,
-    updatedAt: "Vừa xong",
+    updatedDate: "2026-07-18",
     savings: 0.6,
     link: "http://hoangthanhthanglong.com/",
     requirements: "Mua vé tham quan trực tiếp tại quầy bán vé khu di sản Hoàng thành Thăng Long và xuất trình thẻ học sinh/sinh viên để được giảm 50% giá vé.",
+    dealType: "discount",
     isHot: false
+  },
+  // ===== NEW BENEFITS: JULY 2026 =====
+  {
+    id: "b283",
+    title: "Apple Back to School 2026 — Việt Nam",
+    category: "Tech & Software",
+    value: "Tặng kèm bộ 4 AirTag (2nd gen) khi mua Mac/iPad",
+    description: "Chương trình Back to School 2026 vừa ra mắt tại Việt Nam từ 16/7/2026. Khi mua MacBook Air, MacBook Pro, iPad Air hoặc iPad Pro qua Apple Education Store, sinh viên được tặng kèm bộ 4 AirTag thế hệ 2 (trị giá ~1.6 triệu VNĐ) hoàn toàn miễn phí. Ưu đãi chạy đến 27/8/2026.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: false,
+    updatedDate: "2026-07-18",
+    savings: 70,
+    link: "https://www.apple.com/vn-edu/shop",
+    requirements: "Mua qua Apple Education Store bằng địa chỉ email đại học hoặc xác thực qua UNiDAYS. Áp dụng cho sinh viên, phụ huynh mua cho con và giảng viên đang dạy học. Chương trình kết thúc 27/8/2026.",
+    dealType: "free",
+    isHot: true
+  },
+  {
+    id: "b284",
+    title: "Notion AI Add-on for Students",
+    category: "Tech & Software",
+    value: "Giảm 50% phí Notion AI (add-on riêng)",
+    description: "Ngoài gói Notion Plus miễn phí (đã có trong dữ liệu), sinh viên còn được giảm thêm 50% phí tính năng Notion AI — trợ lý viết lách, tóm tắt tài liệu và brainstorm tích hợp sẵn trong workspace. Đây là add-on tính phí riêng chưa bao gồm trong gói Plus.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: true,
+    updatedDate: "2026-07-18",
+    savings: 50,
+    link: "https://www.notion.so/product/notion-for-education",
+    requirements: "Xác thực email trường học (.edu) qua trang Notion for Education để kích hoạt miễn phí Notion Plus. Sau đó mua add-on Notion AI trong settings workspace để hưởng giảm giá 50%.",
+    dealType: "discount",
+    isHot: true
+  },
+  {
+    id: "b285",
+    title: "Grammarly Pro Student Discount",
+    category: "Tech & Software",
+    value: "Giảm 25–40% gói Grammarly Pro năm",
+    description: "Công cụ kiểm tra ngữ pháp, sửa văn phong và hỗ trợ viết học thuật dùng AI hàng đầu thế giới. Sinh viên được giảm 25% qua UNiDAYS, 20% qua Student Beans hoặc tới 40% qua SheerID. Một số trường có license miễn phí cho toàn trường.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: false,
+    updatedDate: "2026-07-18",
+    savings: 90,
+    link: "https://www.grammarly.com/students",
+    requirements: "Xác thực tài khoản UNiDAYS hoặc Student Beans bằng thẻ sinh viên để nhận mã giảm giá. Ngoài ra có thể xác thực qua SheerID (support.grammarly.com) để nhận ưu đãi 40%.",
+    dealType: "discount",
+    isHot: true
+  },
+  {
+    id: "b286",
+    title: "QuillBot Writing Suite Student",
+    category: "Tech & Software",
+    value: "Giảm 25% gói Premium hàng năm",
+    description: "Nền tảng viết học thuật 7-in-1 gồm paraphrase AI, kiểm tra ngữ pháp, tóm tắt văn bản, tạo trích dẫn tự động và ghi chú nghiên cứu — được hàng triệu sinh viên trên thế giới tin dùng để viết luận và bài báo.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: false,
+    updatedDate: "2026-07-18",
+    savings: 30,
+    link: "https://quillbot.com/",
+    requirements: "Xác thực tài khoản UNiDAYS bằng thẻ sinh viên tại trang UNiDAYS đối tác QuillBot để lấy mã giảm 25%. Áp dụng cho gói Premium hàng năm và gói 6 tháng.",
+    dealType: "discount",
+    isHot: true
+  },
+  {
+    id: "b287",
+    title: "Babbel Student Language Learning",
+    category: "Education",
+    value: "Giảm 65% gói 3 tháng (chỉ ~$5/tháng)",
+    description: "Ứng dụng học ngôn ngữ số 1 thế giới với hơn 10 triệu người dùng. Babbel dạy hội thoại thực tế qua các bài học 10–15 phút được xây dựng bởi hơn 150 chuyên gia ngôn ngữ. Sinh viên nhận ưu đãi 65% cho gói 3 tháng đầu qua UNiDAYS.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: false,
+    updatedDate: "2026-07-18",
+    savings: 45,
+    link: "https://welcome.babbel.com/en/student-discount/",
+    requirements: "Tạo tài khoản UNiDAYS và xác thực thẻ sinh viên để nhận link giảm 65% (gói 3 tháng) hoặc 50%+ cho gói 12 tháng. Sinh viên quốc tế cũng có thể xác thực qua Student Beans.",
+    dealType: "discount",
+    isHot: true
+  },
+  {
+    id: "b288",
+    title: "Otter.ai Pro Student & Teacher Program",
+    category: "Tech & Software",
+    value: "Giảm 20% gói Pro (~$6.66/tháng)",
+    description: "Công cụ ghi chép và phiên âm bài giảng tự động bằng AI theo thời gian thực. Otter.ai giúp sinh viên ghi âm toàn bộ bài giảng, tự tạo tóm tắt, highlight từ khóa và tìm kiếm theo nội dung sau khi học xong.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: false,
+    updatedDate: "2026-07-18",
+    savings: 40,
+    link: "https://otter.ai/education",
+    requirements: "Đăng ký tài khoản Otter.ai bằng email trường học (.edu) và xác thực trạng thái sinh viên/giảng viên qua trang Help Center của Otter.ai. Giảm giá áp dụng cho gói Pro hàng tháng và hàng năm.",
+    dealType: "discount",
+    isHot: false
+  },
+  {
+    id: "b289",
+    title: "Wordtune AI Writing Assistant",
+    category: "Tech & Software",
+    value: "Giảm 30% gói Advanced/Unlimited",
+    description: "Công cụ viết lại câu và đoạn văn bằng AI được thiết kế bởi các giáo sư, giúp sinh viên diễn đạt ý tưởng rõ ràng hơn, viết lại luận điểm và hoàn thiện bài viết học thuật nhanh hơn mà vẫn giữ nguyên ý nghĩa gốc.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: false,
+    updatedDate: "2026-07-18",
+    savings: 30,
+    link: "https://www.wordtune.com/",
+    requirements: "Xác thực tài khoản UNiDAYS bằng thẻ sinh viên tại trang UNiDAYS đối tác Wordtune, hoặc liên hệ trực tiếp đội hỗ trợ Wordtune bằng email trường để nhận mã 30% off.",
+    dealType: "discount",
+    isHot: false
+  },
+  {
+    id: "b290",
+    title: "Evernote Advanced Student Discount",
+    category: "Tech & Software",
+    value: "Giảm 40% gói Evernote Advanced năm",
+    description: "Evernote Advanced cung cấp đồng bộ không giới hạn thiết bị, tìm kiếm nội dung trong ảnh và PDF, lịch kết nối sự kiện và upload không giới hạn — lý tưởng để tổ chức tài liệu học tập toàn diện.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: false,
+    updatedDate: "2026-07-18",
+    savings: 50,
+    link: "https://evernote.com/intl/en/unidays",
+    requirements: "Xác thực tài khoản UNiDAYS và truy cập trang ưu đãi Evernote trên UNiDAYS để nhận mã giảm 40% cho gói Advanced hàng năm. Chỉ áp dụng cho người dùng mới chưa có gói trả phí.",
+    dealType: "discount",
+    isHot: false
+  },
+  {
+    id: "b291",
+    title: "Medium Student Membership",
+    category: "Education",
+    value: "Giảm 25% gói Medium Membership 1 năm",
+    description: "Truy cập không giới hạn hàng triệu bài viết chuyên sâu về công nghệ, khởi nghiệp, khoa học và kỹ năng mềm từ các chuyên gia và nhà báo hàng đầu trên Medium. Phù hợp cho sinh viên muốn cập nhật kiến thức thực tế ngoài giáo trình.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: false,
+    updatedDate: "2026-07-18",
+    savings: 30,
+    link: "https://medium.com/membership",
+    requirements: "Xác thực tài khoản UNiDAYS bằng thẻ sinh viên và truy cập trang Medium trên UNiDAYS để lấy mã giảm 25% cho gói membership 1 năm đầu tiên.",
+    dealType: "discount",
+    isHot: false
+  },
+  {
+    id: "b292",
+    title: "Knowt AI Flashcard & Study Tool",
+    category: "Education",
+    value: "Miễn phí toàn bộ — Thay thế Quizlet không giới hạn",
+    description: "Ứng dụng học tập AI thế hệ mới #1 thay thế Quizlet, hoàn toàn miễn phí. Knowt tự động tạo flashcard từ ghi chú, PDF bài giảng hoặc video bài học chỉ trong 30 giây. Có Spaced Repetition, chế độ Learn và tính năng hỏi đáp AI (Kai) tích hợp.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: true,
+    updatedDate: "2026-07-18",
+    savings: 36,
+    link: "https://knowt.com/",
+    requirements: "Đăng ký tài khoản miễn phí tại knowt.com bằng email bất kỳ. Không cần xác thực sinh viên, không giới hạn số lượng flashcard và bộ thẻ. Tham gia bằng mã lớp học từ giảng viên để dùng tính năng classroom.",
+    dealType: "free",
+    isHot: true
+  },
+  {
+    id: "b293",
+    title: "Krater AI — Multi-model Student Bundle",
+    category: "Tech & Software",
+    value: "Giảm 15% thêm (~$6.38/tháng) — 350+ AI models",
+    description: "Krater AI gộp 350+ mô hình AI bao gồm GPT-5.5, Claude Sonnet/Opus 4.6, Gemini 3.1 Pro, các model hình ảnh, video, giọng nói vào 1 gói duy nhất. Sinh viên nhận thêm 15% giảm giá không cần xác thực, không cần email trường — áp dụng tự động khi thanh toán.",
+    scope: "Global",
+    location: "Toàn cầu / Online",
+    lifetime: false,
+    updatedDate: "2026-07-18",
+    savings: 30,
+    link: "https://krater.ai/",
+    requirements: "Truy cập trang krater.ai/students và nhấn nút 'Claim Discount' — mã giảm 15% được áp dụng tự động vào giỏ hàng, không cần nhập email trường hay xác thực thẻ sinh viên.",
+    dealType: "discount",
+    isHot: false
+  },
+  {
+    id: "b294",
+    title: "Decree 179 — Học bổng ngành STEM chiến lược",
+    category: "Education",
+    value: "3.7–5.5 triệu VNĐ/tháng học bổng ngân sách nhà nước",
+    description: "Nghị định 179/2026/NĐ-CP (hiệu lực từ tháng 7/2026) quy định học bổng ngân sách nhà nước hàng tháng cho sinh viên tài năng: ngành vi mạch bán dẫn/khoa học cơ bản nhận 4.2 triệu/tháng, ngành kỹ thuật chiến lược nhận 3.7 triệu/tháng, nhóm tài năng đặc biệt nhận 5.5 triệu/tháng.",
+    scope: "Vietnam",
+    location: "Việt Nam",
+    lifetime: false,
+    updatedDate: "2026-07-18",
+    savings: 660,
+    link: "https://www.vietnam.vn/en/nghi-dinh-179-2026-nd-cp-cu-hich-moi-cho-mua-tuyen-sinh",
+    requirements: "Đăng ký nguyện vọng vào các ngành vi mạch bán dẫn, khoa học cơ bản hoặc công nghệ chiến lược theo danh mục được Bộ GD&ĐT phê duyệt theo Nghị định 179/2026. Nộp hồ sơ xin học bổng qua cổng tuyển sinh của trường sau khi nhập học.",
+    dealType: "discount",
+    isHot: true
+  },
+  {
+    id: "b295",
+    title: "Sách giáo khoa miễn phí 2026–2027",
+    category: "Education",
+    value: "Miễn phí 100% sách giáo khoa năm học 2026–2027",
+    description: "Từ năm học 2026–2027, TP.HCM, Đà Nẵng (Hoa Vang), Quảng Ninh và Cà Mau là 4 địa phương đầu tiên cả nước cung cấp miễn phí toàn bộ sách giáo khoa cho học sinh. Tiết kiệm từ 500.000–2.000.000 VNĐ/năm học.",
+    scope: "Vietnam",
+    location: "Việt Nam",
+    lifetime: false,
+    updatedDate: "2026-07-18",
+    savings: 90,
+    link: "https://www.vietnam.vn/en/tu-nam-hoc-2026-2027-4-dia-phuong-dau-tien-ca-nuoc-mien-phi-sach-giao-khoa",
+    requirements: "Học sinh đang theo học tại các trường công lập tại TP.HCM, Đà Nẵng (Hoa Vang), Quảng Ninh hoặc Cà Mau đăng ký nhận sách miễn phí qua trường vào đầu năm học 2026–2027.",
+    dealType: "free",
+    isHot: true
   }
 ];
 
@@ -4410,7 +4924,12 @@ const REALTIME_ACTIVITIES = [
   "Craft.do Notes: Đã cấp quyền sử dụng miễn phí tài khoản Craft Pro",
   "KFC Việt Nam: Đã phục vụ 180 combo gà rán Nanban HSSV buổi trưa nay",
   "Dinh Độc Lập: Đã xuất 45 vé tham quan di tích lịch sử giảm 50% cho thẻ sinh viên",
-  "GrabStudent Pack: Ưu đãi 20% các chuyến đi Grab và giao đồ ăn hàng tháng"
+  "GrabStudent Pack: Ưu đãi 20% các chuyến đi Grab và giao đồ ăn hàng tháng",
+  "Apple Back to School VN: Đã tặng 4-pack AirTag 2nd gen cho sinh viên mua MacBook Pro",
+  "Grammarly Pro: Kích hoạt giảm 40% qua SheerID cho sinh viên ĐH Hà Nội",
+  "Knowt AI: Tạo tự động 120 flashcard từ file PDF bài giảng Xác suất thống kê",
+  "Babbel Student: Kích hoạt giảm 65% gói 3 tháng ngôn ngữ Nhật cho sinh viên HUTECH",
+  "Decree 179: Đã xác nhận học bổng 4.2tr/tháng cho sinh viên ngành vi mạch bán dẫn"
 ];
 
 // Phân nhóm Theme lớn cho các ưu đãi học tập/di chuyển/tech
@@ -4600,13 +5119,93 @@ function SkeletonCard() {
   );
 }
 
+// ── AnimatedCounter — spring-animated số, nhảy mượt khi globalSavings thay đổi ──
+function AnimatedCounter({ value, prefix = "", suffix = "", className = "" }) {
+  const spring = useSpring(value, { stiffness: 60, damping: 18, mass: 0.8 });
+  const display = useTransform(spring, (v) =>
+    `${prefix}${Math.round(v).toLocaleString("en-US")}${suffix}`
+  );
+  useEffect(() => { spring.set(value); }, [spring, value]);
+  return <motion.span className={className}>{display}</motion.span>;
+}
+
 function App() {
   const [selectedTheme, setSelectedTheme] = useState("Theme 1"); // Theme 1, 2, 3 selection
   const [selectedLocation, setSelectedLocation] = useState("All");
+  const [selectedDealType, setSelectedDealType] = useState("All"); // "All" | "free" | "discount"
   const [searchQuery, setSearchQuery] = useState("");
   const [myPlan, setMyPlan] = useState([]);
   const [isPlannerOpen, setIsPlannerOpen] = useState(false);
   const [isListLoading, setIsListLoading] = useState(false);
+
+  // ── Collective Savings Vault — live state từ Cloudflare Worker ────────────
+  const WORKER_URL = "https://savings-counter.tranminhtan4953.workers.dev";
+  const WS_URL     = "wss://savings-counter.tranminhtan4953.workers.dev/ws";
+
+  const [globalSavings, setGlobalSavings]       = useState(0);
+  const [connectedUsers, setConnectedUsers]      = useState(0);
+  const [wsConnected, setWsConnected]            = useState(false);
+  const wsRef = useRef(null);
+
+  // Kết nối WebSocket — tự reconnect khi bị đứt
+  useEffect(() => {
+    let ws;
+    let reconnectTimer;
+    let unmounted = false;
+
+    function connect() {
+      ws = new WebSocket(WS_URL);
+      wsRef.current = ws;
+
+      ws.onopen = () => {
+        if (!unmounted) setWsConnected(true);
+      };
+
+      ws.onmessage = (evt) => {
+        try {
+          const data = JSON.parse(evt.data);
+          if (data.globalSavings !== undefined) setGlobalSavings(data.globalSavings);
+          if (data.connectedUsers !== undefined) setConnectedUsers(data.connectedUsers);
+        } catch { /* ignore malformed */ }
+      };
+
+      ws.onclose = () => {
+        if (!unmounted) {
+          setWsConnected(false);
+          // Reconnect sau 3 giây
+          reconnectTimer = setTimeout(connect, 3000);
+        }
+      };
+
+      ws.onerror = () => ws.close();
+    }
+
+    connect();
+
+    // Ping mỗi 25s để giữ connection qua Cloudflare idle timeout
+    const pingInterval = setInterval(() => {
+      if (wsRef.current?.readyState === WebSocket.OPEN) {
+        wsRef.current.send("ping");
+      }
+    }, 25000);
+
+    return () => {
+      unmounted = true;
+      clearTimeout(reconnectTimer);
+      clearInterval(pingInterval);
+      ws?.close();
+    };
+  }, []);
+
+  // Helper: POST amount lên worker (fire-and-forget, WS sẽ broadcast lại)
+  const workerPost = (endpoint, amount) => {
+    fetch(`${WORKER_URL}${endpoint}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ amount }),
+    }).catch(() => { /* silent fail — WS state vẫn đúng */ });
+  };
+  // ─────────────────────────────────────────────────────────────────────────
 
   // Real-time clock (Hanoi Time) for Awwwards-style premium header
   const [currentTime, setCurrentTime] = useState("");
@@ -4633,7 +5232,7 @@ function App() {
   // Reset page when switching theme, location or starting a search query
   useEffect(() => {
     setCurrentPage(1);
-  }, [selectedTheme, selectedLocation, searchQuery]);
+  }, [selectedTheme, selectedLocation, searchQuery, selectedDealType]);
 
   // Initialize Lenis smooth scroll
   useEffect(() => {
@@ -4697,23 +5296,33 @@ function App() {
   }, []);
 
   // Performance Peak: memoize filtered list by Theme and Search parameters
+  // Sort theo updatedDate mới nhất lên đầu — tính động từ ISO date string
   const filteredBenefits = useMemo(() => {
-    return BENEFITS_DATA.filter(benefit => {
-      const matchesTheme = getThemeForBenefit(benefit) === selectedTheme;
-      
-      let matchesLocation = true;
-      if (selectedLocation !== "All") {
-        matchesLocation = benefit.scope === selectedLocation;
-      }
+    return BENEFITS_DATA
+      .filter(benefit => {
+        const matchesTheme = getThemeForBenefit(benefit) === selectedTheme;
+        
+        let matchesLocation = true;
+        if (selectedLocation !== "All") {
+          matchesLocation = benefit.scope === selectedLocation;
+        }
 
-      const matchesSearch = (benefit.title || "").toLowerCase().includes(searchQuery.toLowerCase()) ||
-                            (benefit.description || "").toLowerCase().includes(searchQuery.toLowerCase()) ||
-                            (benefit.value || "").toLowerCase().includes(searchQuery.toLowerCase()) ||
-                            (benefit.requirements || "").toLowerCase().includes(searchQuery.toLowerCase());
-      
-      return matchesTheme && matchesLocation && matchesSearch;
-    });
-  }, [selectedTheme, selectedLocation, searchQuery]);
+        const matchesSearch = (benefit.title || "").toLowerCase().includes(searchQuery.toLowerCase()) ||
+                              (benefit.description || "").toLowerCase().includes(searchQuery.toLowerCase()) ||
+                              (benefit.value || "").toLowerCase().includes(searchQuery.toLowerCase()) ||
+                              (benefit.requirements || "").toLowerCase().includes(searchQuery.toLowerCase());
+
+        const matchesDealType = selectedDealType === "All" || benefit.dealType === selectedDealType;
+        
+        return matchesTheme && matchesLocation && matchesSearch && matchesDealType;
+      })
+      .sort((a, b) => {
+        // Mới hơn (date lớn hơn) lên trước
+        const da = a.updatedDate ? new Date(a.updatedDate) : new Date(0);
+        const db = b.updatedDate ? new Date(b.updatedDate) : new Date(0);
+        return db - da;
+      });
+  }, [selectedTheme, selectedLocation, searchQuery, selectedDealType]);
 
   // Paginated chunk calculation
   const paginatedBenefits = useMemo(() => {
@@ -4741,11 +5350,18 @@ function App() {
   const addToPlan = (benefit) => {
     if (!myPlan.some(item => item.id === benefit.id)) {
       setMyPlan([...myPlan, { ...benefit, note: "", targetYear: 1 }]);
+      // Broadcast lên Worker — tất cả user khác thấy số nhảy ngay
+      workerPost("/increment", benefit.savings || 0);
     }
   };
 
   const removeFromPlan = (id) => {
+    const item = myPlan.find(i => i.id === id);
     setMyPlan(myPlan.filter(item => item.id !== id));
+    if (item) {
+      // Trừ lại savings khi remove
+      workerPost("/decrement", item.savings || 0);
+    }
   };
 
   const updatePlanItem = (id, fields) => {
@@ -5012,7 +5628,7 @@ function App() {
         </div>
 
         {/* Filter Locations / Scope Grid */}
-        <div className="mb-12">
+        <div className="mb-6">
           <div className="text-[10px] font-mono uppercase tracking-widest text-swiss-gray mb-3">
             [02] THEO ĐỊA LÝ / PHẠM VI ÁP DỤNG
           </div>
@@ -5034,10 +5650,53 @@ function App() {
           </div>
         </div>
 
+        {/* Filter Deal Type */}
+        <div className="mb-12">
+          <div className="text-[10px] font-mono uppercase tracking-widest text-swiss-gray mb-3">
+            [03] THEO LOẠI ƯU ĐÃI
+          </div>
+          <div className="flex gap-2 flex-wrap">
+            {[
+              { key: "All",      label: "Tất cả",          icon: "◈" },
+              { key: "free",     label: "FREE — Miễn phí", icon: "✦" },
+              { key: "discount", label: "DISCOUNT — Giảm giá", icon: "%" },
+            ].map(({ key, label, icon }) => (
+              <button
+                key={key}
+                type="button"
+                onClick={() => {
+                  setIsListLoading(true);
+                  setSelectedDealType(key);
+                  setTimeout(() => setIsListLoading(false), 350);
+                }}
+                className={`swiss-pressable-sm flex items-center gap-2 px-4 py-2 text-[11px] font-mono uppercase tracking-wider border rounded-full transition-all font-bold ${
+                  selectedDealType === key
+                    ? key === "free"
+                      ? "bg-emerald-600 text-white border-emerald-600 shadow-sm"
+                      : key === "discount"
+                      ? "bg-swiss-blue text-white border-swiss-blue shadow-sm"
+                      : "bg-swiss-dark text-white border-swiss-dark shadow-sm"
+                    : "bg-white text-swiss-gray border-swiss-border hover:border-swiss-dark hover:text-swiss-dark"
+                }`}
+              >
+                <span>{icon}</span>
+                {label}
+                {key !== "All" && (
+                  <span className={`text-[9px] px-1.5 py-0.5 rounded font-black ${
+                    selectedDealType === key ? "bg-white/20" : "bg-swiss-light"
+                  }`}>
+                    {BENEFITS_DATA.filter(b => b.dealType === key).length}
+                  </span>
+                )}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Benefits Grid */}
         <div>
           <div className="text-[10px] font-mono uppercase tracking-widest text-swiss-gray mb-6 flex justify-between items-center border-b border-swiss-border pb-2">
-            <span>[03] DANH SÁCH CHI TIẾT ƯU ĐÃI ({filteredBenefits.length} MỤC - TRANG {currentPage} / {totalPages || 1})</span>
+            <span>[04] DANH SÁCH CHI TIẾT ƯU ĐÃI ({filteredBenefits.length} MỤC - TRANG {currentPage} / {totalPages || 1})</span>
             <span>CẬP NHẬT TỰ ĐỘNG 24/7</span>
           </div>
 
@@ -5079,6 +5738,16 @@ function App() {
                       </div>
                       
                       <div className="flex items-center gap-1.5">
+                        {/* Deal Type Badge */}
+                        {benefit.dealType === "free" ? (
+                          <span className="inline-flex items-center gap-1 bg-emerald-50 text-emerald-700 text-[10px] font-mono px-2 py-0.5 uppercase font-black rounded tracking-wide shrink-0 border border-emerald-200">
+                            ✦ FREE
+                          </span>
+                        ) : (
+                          <span className="inline-flex items-center gap-1 bg-swiss-blue/10 text-swiss-blue text-[10px] font-mono px-2 py-0.5 uppercase font-black rounded tracking-wide shrink-0 border border-swiss-blue/20">
+                            % DISC
+                          </span>
+                        )}
                         {benefit.isHot && (
                           <span className="inline-flex items-center gap-1 bg-swiss-red/10 text-swiss-red text-[10px] font-mono px-2 py-0.5 uppercase font-black rounded tracking-wide shadow-sm shrink-0 border border-swiss-red/20 animate-pulse">
                             ✦ HOT
@@ -5124,7 +5793,7 @@ function App() {
                         <div className="flex justify-between items-center text-[10px] font-mono text-swiss-gray">
                           <span className="flex items-center gap-1">
                             <Clock size={12} />
-                            {benefit.updatedAt}
+                            {timeAgo(benefit.updatedDate)}
                           </span>
                           <span className="font-bold text-swiss-dark">
                             TIẾT KIỆM: ~${benefit.savings}/năm
@@ -5276,8 +5945,15 @@ function App() {
               <div className="absolute -top-20 -left-20 w-64 h-64 bg-swiss-red/10 rounded-full blur-3xl group-hover:bg-swiss-red/20 transition-all duration-700 pointer-events-none"></div>
 
               <div className="space-y-4 relative z-10">
-                <div className="flex items-center gap-2 text-swiss-gray font-mono text-[10.2px] uppercase tracking-[0.2em]">
-                  <Users size={16} className="text-swiss-blue" /> COLLECTIVE SAVINGS VAULT
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2 text-swiss-gray font-mono text-[10.2px] uppercase tracking-[0.2em]">
+                    <Users size={16} className="text-swiss-blue" /> COLLECTIVE SAVINGS VAULT
+                  </div>
+                  {/* Live / Reconnecting badge */}
+                  <span className={`flex items-center gap-1.5 text-[9px] font-mono uppercase tracking-wider px-2 py-0.5 rounded-full border ${wsConnected ? "border-emerald-500/40 text-emerald-400 bg-emerald-500/10" : "border-yellow-400/40 text-yellow-400 bg-yellow-400/10"}`}>
+                    <span className={`w-1.5 h-1.5 rounded-full ${wsConnected ? "bg-emerald-500 animate-pulse" : "bg-yellow-400"}`}></span>
+                    {wsConnected ? "LIVE" : "CONNECTING"}
+                  </span>
                 </div>
                 <p className="text-xs text-swiss-gray leading-relaxed font-sans max-w-md">
                   Tổng lượng tài chính trọn đời tích lũy dự kiến từ toàn bộ các thành viên tham gia cấu hình Kit. Dữ liệu live từ máy chủ giáo dục.
@@ -5309,12 +5985,20 @@ function App() {
               </div>
 
               <div className="relative z-10 border-t border-white/10 pt-4 mt-auto">
+                {/* Live global savings — spring-animated, updates real-time via WebSocket */}
                 <div className="font-roboto font-black text-5xl tracking-tighter text-white leading-none">
-                  $1,845,920
+                  <AnimatedCounter value={globalSavings} prefix="$" />
                 </div>
-                <span className="text-[9.5px] font-mono text-swiss-gray uppercase tracking-widest block mt-2">
-                  34,200+ Sinh viên hoạt động trực tuyến toàn cầu
-                </span>
+                <div className="flex items-center gap-3 mt-2 flex-wrap">
+                  <span className="text-[9.5px] font-mono text-swiss-gray uppercase tracking-widest">
+                    {connectedUsers > 0 ? `${connectedUsers} người đang online` : "Đang kết nối..."}
+                  </span>
+                  {/* WS status dot */}
+                  <span className={`inline-flex items-center gap-1 text-[9px] font-mono uppercase tracking-wider ${wsConnected ? "text-emerald-400" : "text-yellow-400"}`}>
+                    <span className={`w-1.5 h-1.5 rounded-full ${wsConnected ? "bg-emerald-500 animate-pulse" : "bg-yellow-400"}`}></span>
+                    {wsConnected ? "LIVE" : "RECONNECTING"}
+                  </span>
+                </div>
               </div>
             </div>
 

@@ -1,0 +1,25 @@
+{
+  // Cloudflare Worker config cho Collective Savings Counter
+  "name": "savings-counter",
+  "main": "src/index.ts",
+  "compatibility_date": "2024-09-23",
+  "compatibility_flags": ["nodejs_compat"],
+
+  // Durable Objects binding — lưu global savings state
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "SAVINGS_COUNTER",
+        "class_name": "SavingsCounter"
+      }
+    ]
+  },
+
+  // Migration dùng new_sqlite_classes cho Cloudflare free plan
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["SavingsCounter"]
+    }
+  ]
+}
