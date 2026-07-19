@@ -18,7 +18,16 @@ import {
   Sliders,
   Users,
   PaperPlaneRight,
-  Chat
+  Chat,
+  Command,
+  SpeakerHigh,
+  SpeakerSimpleSlash,
+  CurrencyCircleDollar,
+  Lightning,
+  Code,
+  PaintBrush,
+  Briefcase,
+  Heart
 } from '@phosphor-icons/react'
 import Lenis from 'lenis'
 // Import trực tiếp các component icon từ package developer-icons đã cài đặt
@@ -37,6 +46,124 @@ import {
   Bootstrap5
 } from 'developer-icons'
 import { LifetimePlanner } from './components/LifetimePlanner'
+
+// Web Audio API Synthesizer — âm thanh tương tác Tactile 0-byte asset
+class SoundFX {
+  static ctx = null;
+  static isMuted = false;
+
+  static init() {
+    if (!this.ctx && typeof window !== 'undefined') {
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      if (AudioCtx) this.ctx = new AudioCtx();
+    }
+  }
+
+  static playClick() {
+    if (this.isMuted) return;
+    try {
+      this.init();
+      if (!this.ctx) return;
+      if (this.ctx.state === 'suspended') this.ctx.resume();
+      
+      const osc = this.ctx.createOscillator();
+      const gain = this.ctx.createGain();
+      
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(600, this.ctx.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(200, this.ctx.currentTime + 0.04);
+      
+      gain.gain.setValueAtTime(0.12, this.ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + 0.04);
+      
+      osc.connect(gain);
+      gain.connect(this.ctx.destination);
+      
+      osc.start();
+      osc.stop(this.ctx.currentTime + 0.04);
+    } catch { /* silent fail */ }
+  }
+
+  static playSuccess() {
+    if (this.isMuted) return;
+    try {
+      this.init();
+      if (!this.ctx) return;
+      if (this.ctx.state === 'suspended') this.ctx.resume();
+      
+      const now = this.ctx.currentTime;
+      const osc = this.ctx.createOscillator();
+      const gain = this.ctx.createGain();
+      
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(523.25, now); // C5
+      osc.frequency.setValueAtTime(659.25, now + 0.06); // E5
+      osc.frequency.setValueAtTime(783.99, now + 0.12); // G5
+      
+      gain.gain.setValueAtTime(0.15, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+      
+      osc.connect(gain);
+      gain.connect(this.ctx.destination);
+      
+      osc.start();
+      osc.stop(now + 0.25);
+    } catch { /* silent fail */ }
+  }
+}
+
+// Multi-Currency Converter Helper (USD ↔ VNĐ)
+const VND_RATE = 25400;
+function formatMoney(usdAmount, currency = 'USD') {
+  const amount = Number(usdAmount) || 0;
+  if (currency === 'VND') {
+    const vnd = amount * VND_RATE;
+    if (vnd >= 1000000000) {
+      return `${(vnd / 1000000000).toFixed(2)} tỷ ₫`;
+    }
+    if (vnd >= 1000000) {
+      return `${(vnd / 1000000).toFixed(1)} triệu ₫`;
+    }
+    return `${vnd.toLocaleString('vi-VN')} ₫`;
+  }
+  return `$${amount.toLocaleString('en-US')}`;
+}
+
+// Smart Preset Bundles (Combo 1-Click theo ngành học)
+const PRESET_BUNDLES = [
+  {
+    id: "bundle_dev",
+    name: "DEV & CS STACK",
+    icon: Code,
+    color: "bg-swiss-blue text-white",
+    description: "Bộ công cụ lập trình đỉnh cao dành cho sinh viên IT & Khoa Học Máy Tính",
+    matchKeywords: ["github", "jetbrains", "kiro", "cursor", "supabase", "termius", "mongodb", "postman"]
+  },
+  {
+    id: "bundle_design",
+    name: "CREATIVE & DESIGN",
+    icon: PaintBrush,
+    color: "bg-swiss-red text-white",
+    description: "Combo sáng tạo cho sinh viên ngành Thiết Kế Đồ Họa, UI/UX và Truyền Thông",
+    matchKeywords: ["figma", "canva", "adobe", "spline", "axure", "craft", "sketch"]
+  },
+  {
+    id: "bundle_business",
+    name: "BUSINESS & FINTECH",
+    icon: Briefcase,
+    color: "bg-swiss-dark text-white",
+    description: "Gói công cụ ghi chú, kế toán và tài chính chuyên nghiệp cho sinh viên Kinh Tế",
+    matchKeywords: ["notion", "quickbooks", "microsoft", "financial times", "tableplus", "grammarly"]
+  },
+  {
+    id: "bundle_life",
+    name: "LIFESTYLE & TRAVEL",
+    icon: Heart,
+    color: "bg-emerald-600 text-white",
+    description: "Ưu đãi giải trí, phim ảnh, di chuyển và F&B hàng ngày cho sinh viên Việt Nam",
+    matchKeywords: ["spotify", "youtube", "apple music", "grabstudent", "vietnam airlines", "cinestar"]
+  }
+];
 
 // Hàm tính "X ngày trước" động từ ISO date string (YYYY-MM-DD)
 // Tự động cập nhật mỗi khi render — không cần hardcode text thủ công
@@ -5138,6 +5265,30 @@ function App() {
   const [isPlannerOpen, setIsPlannerOpen] = useState(false);
   const [isListLoading, setIsListLoading] = useState(false);
 
+  // Currency & Sound FX & Command Palette States
+  const [currency, setCurrency] = useState('USD'); // 'USD' | 'VND'
+  const [isMuted, setIsMuted] = useState(false);
+  const [isCmdPaletteOpen, setIsCmdPaletteOpen] = useState(false);
+  const [cmdQuery, setCmdQuery] = useState('');
+
+  // Synchronize SoundFX muted state
+  useEffect(() => {
+    SoundFX.isMuted = isMuted;
+  }, [isMuted]);
+
+  // Command Palette Shortcut Listener (Ctrl + K / Cmd + K)
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        SoundFX.playClick();
+        setIsCmdPaletteOpen(prev => !prev);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   // Contribute & Toast Notification State
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [toastMessage, setToastMessage] = useState(null);
@@ -5145,6 +5296,26 @@ function App() {
   const showToast = (msg) => {
     setToastMessage(msg);
     setTimeout(() => setToastMessage(null), 4500);
+  };
+
+  // Helper: Apply Preset Bundle to Kit (1-Click Preset)
+  const applyPresetBundle = (bundle) => {
+    SoundFX.playSuccess();
+    const matched = BENEFITS_DATA.filter(b => {
+      const title = (b.title || '').toLowerCase();
+      const desc = (b.description || '').toLowerCase();
+      return bundle.matchKeywords.some(kw => title.includes(kw) || desc.includes(kw));
+    });
+
+    if (matched.length === 0) return;
+
+    setMyPlan(prev => {
+      const existingIds = new Set(prev.map(item => item.id));
+      const toAdd = matched.filter(b => !existingIds.has(b.id));
+      return [...prev, ...toAdd];
+    });
+
+    showToast(`✦ ĐÃ THÊM COMBO [${bundle.name}] (${matched.length} ƯU ĐÃI) VÀO KIT!`);
   };
 
   // ── Collective Savings Vault — live state từ Cloudflare Worker ────────────
@@ -5506,12 +5677,16 @@ function App() {
     <div className="min-h-screen bg-[#fafafa] flex flex-col pt-28 selection:bg-swiss-blue selection:text-white">
       
       {/* 1. FLOATING HEADER */}
-      <header className="fixed top-4 left-1/2 -translate-x-1/2 max-w-7xl w-[calc(100%-2rem)] bg-white/85 backdrop-blur-lg border border-swiss-border shadow-[0_12px_40px_rgba(0,0,0,0.04)] rounded-full px-3.5 sm:px-6 py-2.5 z-[70] flex justify-between items-center transition-all duration-300 gap-4">
+      {/* 1. FLOATING HEADER */}
+      <header className="fixed top-4 left-1/2 -translate-x-1/2 max-w-7xl w-[calc(100%-2rem)] bg-white/85 backdrop-blur-lg border border-swiss-border shadow-[0_12px_40px_rgba(0,0,0,0.04)] rounded-full px-3 sm:px-6 py-2.5 z-[70] flex justify-between items-center transition-all duration-300 gap-2.5 sm:gap-4">
         {/* Left Zone: Logo & Status */}
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-          <div className="group cursor-pointer">
+          <div 
+            onClick={() => SoundFX.playClick()}
+            className="group cursor-pointer"
+          >
             <svg 
-              className="w-9 h-9 sm:w-10 sm:h-10 shrink-0 transition-transform duration-500 ease-[0.16,1,0.3,1] group-hover:rotate-[90deg]" 
+              className="w-8 h-8 sm:w-10 sm:h-10 shrink-0 transition-transform duration-500 ease-[0.16,1,0.3,1] group-hover:rotate-[90deg]" 
               viewBox="0 0 40 40" 
               fill="none" 
               xmlns="http://www.w3.org/2000/svg"
@@ -5532,7 +5707,7 @@ function App() {
           </div>
         </div>
 
-        {/* Center Zone: Deep Navigation & Current Active Indicator (Chỉ hiển thị trên md trở lên) */}
+        {/* Center Zone: Deep Navigation & Current Active Indicator */}
         <nav className="hidden md:flex items-center gap-1.5 bg-swiss-light/80 border border-swiss-border p-1 rounded-full">
           {themes.map((theme) => {
             const isActive = selectedTheme === theme.id;
@@ -5543,6 +5718,7 @@ function App() {
                 key={theme.id}
                 type="button"
                 onClick={() => {
+                  SoundFX.playClick();
                   setSelectedTheme(theme.id);
                   const listEl = document.getElementById("explore");
                   if (listEl) {
@@ -5562,25 +5738,62 @@ function App() {
           })}
         </nav>
 
-        {/* Right Zone: Live Clock & Dynamic Savings Capsule */}
-        <div className="flex items-center gap-3 shrink-0">
-          {/* Live Clock (Hanoi Time) */}
-          {currentTime && (
-            <div className="hidden lg:flex flex-col items-end justify-center font-mono text-[9px] text-swiss-gray leading-none">
-              <span className="text-[7px] uppercase tracking-widest text-swiss-gray/60 mb-0.5">HANOI TIME</span>
-              <span className="font-bold text-swiss-dark">{currentTime}</span>
-            </div>
-          )}
+        {/* Right Zone: Interactive Control Bar & Capsule */}
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          {/* Quick Command Palette Button (Ctrl + K) */}
+          <button
+            type="button"
+            onClick={() => {
+              SoundFX.playClick();
+              setIsCmdPaletteOpen(true);
+            }}
+            title="Mở tìm kiếm nhanh (Ctrl + K)"
+            className="hidden sm:flex items-center gap-1.5 bg-swiss-light/80 hover:bg-swiss-light border border-swiss-border px-2.5 py-1.5 rounded-full text-[10px] font-mono text-swiss-gray uppercase tracking-wider transition-all"
+          >
+            <Command size={12} className="text-swiss-dark" />
+            <span className="hidden lg:inline">Ctrl + K</span>
+          </button>
+
+          {/* Multi-Currency Toggle Button (USD / VNĐ) */}
+          <button
+            type="button"
+            onClick={() => {
+              SoundFX.playClick();
+              setCurrency(prev => prev === 'USD' ? 'VND' : 'USD');
+              showToast(`✦ ĐÃ ĐỔI ĐƠN VỊ TIỀN TỆ SANG [${currency === 'USD' ? 'VNĐ' : 'USD'}]`);
+            }}
+            title="Đổi đơn vị tiền tệ USD ↔ VNĐ"
+            className="flex items-center gap-1 bg-white hover:bg-swiss-light border border-swiss-border px-2.5 py-1.5 rounded-full text-[10px] font-mono text-swiss-dark font-bold tracking-wider transition-all shadow-2xs"
+          >
+            <CurrencyCircleDollar size={13} className="text-swiss-blue" />
+            <span>{currency}</span>
+          </button>
+
+          {/* Web Audio Mute / Unmute Toggle */}
+          <button
+            type="button"
+            onClick={() => {
+              setIsMuted(prev => !prev);
+              if (isMuted) SoundFX.playClick();
+            }}
+            title={isMuted ? "Bật âm thanh tương tác" : "Tắt âm thanh tương tác"}
+            className="p-1.5 rounded-full border border-swiss-border bg-white text-swiss-dark hover:bg-swiss-light transition-all"
+          >
+            {isMuted ? <SpeakerSimpleSlash size={13} /> : <SpeakerHigh size={13} className="text-swiss-red" />}
+          </button>
 
           {/* Dynamic Savings Capsule */}
           <div className="flex items-center bg-swiss-light border border-swiss-border rounded-full p-0.5 shadow-sm">
             <span className="hidden sm:inline-block font-mono text-[9px] text-swiss-gray uppercase tracking-widest px-3 font-semibold">
-              SAVED: <span className="text-swiss-blue font-bold">${totalYearlySavings}/yr</span>
+              SAVED: <span className="text-swiss-blue font-bold">{formatMoney(totalYearlySavings, currency)}/yr</span>
             </span>
             <button 
               type="button"
-              onClick={() => setIsPlannerOpen(true)}
-              className="swiss-pressable flex items-center gap-1.5 bg-swiss-dark text-white hover:bg-swiss-blue hover:text-white px-4 py-2 text-xs font-mono uppercase tracking-widest rounded-full active:scale-95 transition-all shadow-sm font-bold"
+              onClick={() => {
+                SoundFX.playClick();
+                setIsPlannerOpen(true);
+              }}
+              className="swiss-pressable flex items-center gap-1.5 bg-swiss-dark text-white hover:bg-swiss-blue hover:text-white px-3.5 sm:px-4 py-2 text-xs font-mono uppercase tracking-widest rounded-full active:scale-95 transition-all shadow-sm font-bold"
             >
               <Sliders size={12} />
               Kit ({myPlan.length})
@@ -5703,6 +5916,49 @@ function App() {
           </div>
           <div className="font-mono text-xs text-swiss-gray flex items-center justify-between border border-swiss-border bg-white px-5 py-2.5 gap-4 rounded-full">
             <span>DỮ LIỆU ĐANG LỌC: <strong>{filteredBenefits.length}</strong> / <strong>{BENEFITS_DATA.length}</strong> CODES</span>
+          </div>
+        </div>
+
+        {/* Smart Preset Bundles (Combo 1-Click theo ngành học) */}
+        <div className="mb-10 p-5 sm:p-6 bg-white border-2 border-swiss-dark rounded-2xl shadow-sm">
+          <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest font-bold text-swiss-dark">
+              <Lightning size={16} className="text-swiss-red" />
+              <span>✦ SMART PRESET BUNDLES / COMBO 1-CLICK THEO NGÀNH HỌC</span>
+            </div>
+            <span className="text-[10.5px] font-mono text-swiss-gray">
+              * Bấm để thêm nhanh toàn bộ gói vào Kit tiết kiệm của bạn
+            </span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+            {PRESET_BUNDLES.map((bundle) => {
+              const IconComp = bundle.icon;
+              return (
+                <button
+                  key={bundle.id}
+                  type="button"
+                  onClick={() => applyPresetBundle(bundle)}
+                  className="swiss-pressable text-left p-4 border border-swiss-border hover:border-swiss-dark rounded-xl bg-swiss-light/40 hover:bg-white transition-all flex flex-col justify-between group h-36"
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className={`p-2 rounded-lg text-xs ${bundle.color}`}>
+                        <IconComp size={16} />
+                      </span>
+                      <span className="text-[9.5px] font-mono text-swiss-blue group-hover:underline font-bold">
+                        + ADD COMBO
+                      </span>
+                    </div>
+                    <h4 className="font-roboto font-black text-sm uppercase text-swiss-dark tracking-tight">
+                      {bundle.name}
+                    </h4>
+                    <p className="text-[10.5px] font-sans text-swiss-gray line-clamp-2 mt-1 leading-snug">
+                      {bundle.description}
+                    </p>
+                  </div>
+                </button>
+              );
+            })}
           </div>
         </div>
 
@@ -6407,6 +6663,96 @@ function App() {
                 >
                   ĐÓNG
                 </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* Command Palette Modal (Ctrl + K) */}
+      <AnimatePresence>
+        {isCmdPaletteOpen && (
+          <div className="fixed inset-0 z-[200] flex items-start justify-center pt-20 px-4 bg-black/60 backdrop-blur-md">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: -20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: -20 }}
+              transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              className="bg-white border-2 border-swiss-dark max-w-2xl w-full rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[75vh]"
+            >
+              {/* Search Header */}
+              <div className="p-4 border-b border-swiss-border flex items-center gap-3 bg-swiss-light/50">
+                <MagnifyingGlass size={20} className="text-swiss-gray shrink-0" />
+                <input
+                  type="text"
+                  autoFocus
+                  value={cmdQuery}
+                  onChange={(e) => setCmdQuery(e.target.value)}
+                  placeholder="Tìm ưu đãi, AI tools, hãng bay... (bấm ESC để đóng)"
+                  className="w-full bg-transparent border-none outline-none font-mono text-sm text-swiss-dark placeholder:text-swiss-gray"
+                />
+                <button
+                  type="button"
+                  onClick={() => setIsCmdPaletteOpen(false)}
+                  className="p-1 rounded text-swiss-gray hover:text-swiss-dark hover:bg-swiss-light transition-colors text-xs font-mono border border-swiss-border px-2 shrink-0 font-bold"
+                >
+                  ESC
+                </button>
+              </div>
+
+              {/* Quick Results List */}
+              <div className="p-3 overflow-y-auto flex-1 divide-y divide-swiss-border/60">
+                {BENEFITS_DATA.filter(b => {
+                  if (!cmdQuery.trim()) return b.isHot;
+                  const q = cmdQuery.toLowerCase();
+                  return (b.title || '').toLowerCase().includes(q) ||
+                         (b.description || '').toLowerCase().includes(q) ||
+                         (b.category || '').toLowerCase().includes(q);
+                }).slice(0, 10).map((benefit) => (
+                  <div
+                    key={benefit.id}
+                    onClick={() => {
+                      SoundFX.playClick();
+                      addToPlan(benefit);
+                      setIsCmdPaletteOpen(false);
+                      showToast(`✦ ĐÃ THÊM [${benefit.title}] VÀO KIT!`);
+                    }}
+                    className="p-3 hover:bg-swiss-light/80 rounded-xl cursor-pointer transition-colors flex items-center justify-between gap-4 group"
+                  >
+                    <div>
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="font-roboto font-bold text-xs text-swiss-dark group-hover:text-swiss-blue transition-colors">
+                          {benefit.title}
+                        </span>
+                        {benefit.isHot && (
+                          <span className="text-[9px] font-mono text-swiss-red bg-swiss-red/10 px-1.5 py-0.5 rounded uppercase font-bold">
+                            ✦ HOT
+                          </span>
+                        )}
+                        <span className="text-[9px] font-mono text-swiss-gray uppercase">
+                          {benefit.category}
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-swiss-gray font-sans line-clamp-1">
+                        {benefit.description}
+                      </p>
+                    </div>
+                    <div className="text-right shrink-0">
+                      <span className="text-xs font-mono font-bold text-swiss-blue block">
+                        {formatMoney(benefit.savings, currency)}
+                      </span>
+                      <span className="text-[9px] font-mono text-swiss-gray uppercase group-hover:text-swiss-dark font-bold">
+                        + ADD TO KIT
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Footer shortcuts */}
+              <div className="p-3 bg-swiss-light border-t border-swiss-border flex items-center justify-between text-[10px] font-mono text-swiss-gray">
+                <span>✦ Nhấp vào ưu đãi để thêm vào Kit tiết kiệm</span>
+                <span className="font-bold text-swiss-dark">{BENEFITS_DATA.length} Ưu Đãi Đã Xác Thực</span>
               </div>
             </motion.div>
           </div>
