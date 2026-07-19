@@ -893,8 +893,9 @@ function App() {
     setTimeout(() => setIsListLoading(false), 450);
   };
 
-  // Handle Location click with Skeleton loading
+  // Handle Scope Location click (Global / Vietnam / All) — chỉ áp dụng lọc ưu đãi + Skeleton loading
   const handleLocationChange = (loc) => {
+    SoundFX.playClick();
     setIsListLoading(true);
     setSelectedLocation(loc);
     setTimeout(() => setIsListLoading(false), 450);
