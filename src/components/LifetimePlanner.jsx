@@ -10,6 +10,18 @@ import {
   Sparkle
 } from '@phosphor-icons/react'
 
+const VND_RATE = 25400;
+function formatMoney(usdAmount, currency = 'USD') {
+  const amount = Number(usdAmount) || 0;
+  if (currency === 'VND') {
+    const vnd = amount * VND_RATE;
+    if (vnd >= 1000000000) return `${(vnd / 1000000000).toFixed(2)} tỷ ₫`;
+    if (vnd >= 1000000) return `${(vnd / 1000000).toFixed(1)} triệu ₫`;
+    return `${vnd.toLocaleString('vi-VN')} ₫`;
+  }
+  return `$${amount.toLocaleString('en-US')}`;
+}
+
 export function LifetimePlanner({
   isOpen,
   onClose,
@@ -24,7 +36,8 @@ export function LifetimePlanner({
   totalYearlySavings,
   progressPercentage,
   setIsExportModalOpen,
-  setMyPlan
+  setMyPlan,
+  currency = 'USD'
 }) {
   useEffect(() => {
     if (isOpen) {

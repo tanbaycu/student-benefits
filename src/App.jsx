@@ -6658,6 +6658,7 @@ function App() {
         progressPercentage={progressPercentage}
         setIsExportModalOpen={setIsExportModalOpen}
         setMyPlan={setMyPlan}
+        currency={currency}
       />
 
       {/* 6. Custom Modal Export */}
