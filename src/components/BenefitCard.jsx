@@ -7,7 +7,7 @@ import {
   Sparkle, 
   IdentificationCard 
 } from '@phosphor-icons/react'
-import { BrandIcon, formatMoney, timeAgo } from '../utils/helpers'
+import { BrandIcon, formatMoney, timeAgo, getBenefitLocalized } from '../utils/helpers'
 
 // Skeleton Card loader
 export function SkeletonCard() {
@@ -31,7 +31,7 @@ export function SkeletonCard() {
 }
 
 export function BenefitCard({
-  benefit,
+  benefit: rawBenefit,
   globalIndex,
   isInPlan,
   addToPlan,
@@ -40,6 +40,8 @@ export function BenefitCard({
   lang,
   t
 }) {
+  const benefit = getBenefitLocalized(rawBenefit, lang);
+
   return (
     <div className="border border-swiss-border bg-white hover:border-swiss-dark hover:shadow-[0_15px_30px_rgba(0,0,0,0.05)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group relative rounded-xl overflow-hidden">
       {/* Top Bar */}
@@ -134,9 +136,19 @@ export function BenefitCard({
               : 'bg-white hover:bg-swiss-dark hover:text-white text-swiss-dark'
           }`}
         >
-          {isInPlan ? t.removeFromKit : t.addToKit}
+          {isInPlan ? (
+            <>{t.removeFromKit} <Trash size={13} /></>
+          ) : (
+            <>{t.addToKit} <Plus size={13} /></>
+          )}
         </button>
       </div>
+
+      {benefit.lifetime && (
+        <div className="absolute top-0 right-0 transform translate-x-0.5 -translate-y-0.5 bg-swiss-dark text-white text-[9px] font-mono font-bold px-2 py-0.5 tracking-wider uppercase border border-swiss-border z-10">
+          LIFETIME
+        </div>
+      )}
     </div>
-  )
+  );
 }

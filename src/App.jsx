@@ -174,7 +174,7 @@ const PRESET_BUNDLES = [
 
 // Hàm tính "X ngày trước" động từ ISO date string (YYYY-MM-DD)
 // Tự động cập nhật mỗi khi render — không cần hardcode text thủ công
-function timeAgo(dateStr) {
+function timeAgo(dateStr, lang = 'vi') {
   if (!dateStr) return "";
   const now = new Date();
   const past = new Date(dateStr + "T00:00:00+07:00"); // Hanoi timezone
@@ -185,6 +185,16 @@ function timeAgo(dateStr) {
   const diffWeeks = Math.floor(diffDays / 7);
   const diffMonths = Math.floor(diffDays / 30);
   const diffYears = Math.floor(diffDays / 365);
+
+  if (lang === 'en') {
+    if (diffMins < 1)    return "Just now";
+    if (diffMins < 60)   return `${diffMins} mins ago`;
+    if (diffHours < 24)  return `${diffHours} hrs ago`;
+    if (diffDays < 7)    return `${diffDays} days ago`;
+    if (diffWeeks < 5)   return `${diffWeeks} weeks ago`;
+    if (diffMonths < 12) return `${diffMonths} months ago`;
+    return `${diffYears} yrs ago`;
+  }
 
   if (diffMins < 1)    return "Vừa xong";
   if (diffMins < 60)   return `${diffMins} phút trước`;
