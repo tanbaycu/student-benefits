@@ -994,10 +994,10 @@ function App() {
             </svg>
           </div>
           <div className="flex flex-col">
-            <span className="font-roboto font-black text-xs xs:text-sm sm:text-base tracking-tighter uppercase text-swiss-dark leading-none">
+            <span className="font-roboto font-black text-xs sm:text-base tracking-tighter uppercase text-swiss-dark leading-none">
               STUDENT BENEFITS
             </span>
-            <span className="text-[8px] font-mono text-swiss-gray uppercase tracking-widest leading-none mt-1.5 hidden xs:block">
+            <span className="text-[8px] font-mono text-swiss-gray uppercase tracking-widest leading-none mt-1.5 hidden sm:block">
               by tanbaycu · 2026/27
             </span>
           </div>
@@ -1050,24 +1050,6 @@ function App() {
             <span className="hidden lg:inline">Ctrl + K</span>
           </button>
 
-          {/* Bilingual Language Switcher Button (VI / EN) */}
-          <button
-            type="button"
-            onClick={() => {
-              SoundFX.playClick();
-              const nextLang = lang === 'vi' ? 'en' : 'vi';
-              setLang(nextLang);
-              setIsListLoading(true);
-              setTimeout(() => setIsListLoading(false), 450);
-              showToast(nextLang === 'en' ? '✦ SWITCHED LANGUAGE TO ENGLISH (GLOBAL SCOPE)' : '✦ ĐÃ CHUYỂN NGÔN NGỮ SANG TIẾNG VIỆT (VIETNAM SCOPE)');
-            }}
-            title="Đổi ngôn ngữ VI ↔ EN"
-            className="flex items-center gap-1 bg-white hover:bg-swiss-light border border-swiss-border px-2.5 py-1.5 rounded-full text-[10px] font-mono text-swiss-dark font-bold tracking-wider transition-all shadow-2xs"
-          >
-            <Globe size={13} className="text-swiss-red" />
-            <span>{lang.toUpperCase()}</span>
-          </button>
-
           {/* Multi-Currency Toggle Button (USD / VNĐ) */}
           <button
             type="button"
@@ -1077,7 +1059,7 @@ function App() {
               showToast(`✦ ĐÃ ĐỔI ĐƠN VỊ TIỀN TỆ SANG [${currency === 'USD' ? 'VNĐ' : 'USD'}]`);
             }}
             title="Đổi đơn vị tiền tệ USD ↔ VNĐ"
-            className="flex items-center gap-1 bg-white hover:bg-swiss-light border border-swiss-border px-2.5 py-1.5 rounded-full text-[10px] font-mono text-swiss-dark font-bold tracking-wider transition-all shadow-2xs"
+            className="hidden sm:flex items-center gap-1 bg-white hover:bg-swiss-light border border-swiss-border px-2.5 py-1.5 rounded-full text-[10px] font-mono text-swiss-dark font-bold tracking-wider transition-all shadow-2xs"
           >
             <CurrencyCircleDollar size={13} className="text-swiss-blue" />
             <span>{currency}</span>
@@ -1091,13 +1073,13 @@ function App() {
               if (isMuted) SoundFX.playClick();
             }}
             title={isMuted ? "Bật âm thanh tương tác" : "Tắt âm thanh tương tác"}
-            className="p-1.5 rounded-full border border-swiss-border bg-white text-swiss-dark hover:bg-swiss-light transition-all"
+            className="hidden sm:flex p-1.5 rounded-full border border-swiss-border bg-white text-swiss-dark hover:bg-swiss-light transition-all"
           >
             {isMuted ? <SpeakerSimpleSlash size={13} /> : <SpeakerHigh size={13} className="text-swiss-red" />}
           </button>
 
           {/* Dynamic Savings Capsule */}
-          <div className="flex items-center bg-swiss-light border border-swiss-border rounded-full p-0.5 shadow-sm">
+          <div className="flex items-center bg-transparent sm:bg-swiss-light sm:border border-swiss-border rounded-full p-0 sm:p-0.5 shadow-none sm:shadow-sm">
             <span className="hidden sm:inline-block font-mono text-[9px] text-swiss-gray uppercase tracking-widest px-3 font-semibold">
               SAVED: <span className="text-swiss-blue font-bold">{formatMoney(totalYearlySavings, currency)}/yr</span>
             </span>
@@ -1107,7 +1089,7 @@ function App() {
                 SoundFX.playClick();
                 setIsPlannerOpen(true);
               }}
-              className="swiss-pressable flex items-center gap-1.5 bg-swiss-dark text-white hover:bg-swiss-blue hover:text-white px-3.5 sm:px-4 py-2 text-xs font-mono uppercase tracking-widest rounded-full active:scale-95 transition-all shadow-sm font-bold"
+              className="swiss-pressable flex items-center gap-1.5 bg-swiss-dark text-white hover:bg-swiss-blue hover:text-white px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] sm:text-xs font-mono uppercase tracking-widest rounded-full active:scale-95 transition-all shadow-sm font-bold"
             >
               <Sliders size={12} />
               Kit ({myPlan.length})
