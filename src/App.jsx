@@ -5919,19 +5919,34 @@ function App() {
           </div>
         </div>
 
-        {/* Smart Preset Bundles (Combo 1-Click theo ngành học) — PEAK BENTO DESIGN */}
-        <div className="mb-10 p-5 sm:p-7 bg-white border-2 border-swiss-dark rounded-3xl shadow-[0_15px_45px_rgba(0,0,0,0.04)]">
-          <div className="flex items-center justify-between mb-5 flex-wrap gap-2">
-            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest font-bold text-swiss-dark">
-              <Lightning size={18} className="text-swiss-red animate-bounce" />
-              <span>✦ SMART PRESET BUNDLES / COMBO 1-CLICK THEO NGÀNH HỌC</span>
+        {/* Smart Preset Bundles (Combo 1-Click theo ngành học) — PEAK BENTO & MAX RESPONSIVE */}
+        <div className="mb-12 p-5 sm:p-8 bg-white border-2 border-swiss-dark rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.06)] relative overflow-hidden">
+          {/* Subtle Background Mesh Line */}
+          <div className="absolute top-0 right-0 w-72 h-72 bg-swiss-blue/5 rounded-full blur-3xl pointer-events-none" />
+
+          <div className="flex items-center justify-between mb-6 flex-wrap gap-3 relative z-10 border-b border-swiss-border pb-4">
+            <div className="flex items-center gap-3">
+              <div className="p-2 rounded-xl bg-swiss-dark text-white shrink-0">
+                <Lightning size={20} className="text-yellow-400 animate-pulse" />
+              </div>
+              <div>
+                <h3 className="font-roboto font-black text-sm sm:text-base uppercase tracking-widest text-swiss-dark leading-tight">
+                  ✦ SMART PRESET BUNDLES / COMBO 1-CLICK THEO NGÀNH HỌC
+                </h3>
+                <span className="text-[10px] font-mono text-swiss-gray uppercase tracking-wider block mt-0.5">
+                  Tối ưu bộ công cụ học tập & làm việc trọn gói theo chuyên ngành
+                </span>
+              </div>
             </div>
-            <span className="text-[10.5px] font-mono text-swiss-gray">
-              * Nhấp nút KÍCH HOẠT để tự động nạp trọn bộ vào Kit của bạn
-            </span>
+
+            <div className="flex items-center gap-2 text-[10.5px] font-mono text-swiss-gray bg-swiss-light/80 px-3.5 py-1.5 rounded-full border border-swiss-border shrink-0">
+              <Sparkle size={12} className="text-swiss-red" />
+              <span>Nhấp nút bên dưới để nạp trọn bộ vào Kit tiết kiệm</span>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {/* Grid MAX Responsive: 1 Cột (Mobile) ➔ 2 Cột (Tablet/Md) ➔ 4 Cột (Desktop Large/Xl) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 relative z-10">
             {PRESET_BUNDLES.map((bundle) => {
               const IconComp = bundle.icon;
               const matched = BENEFITS_DATA.filter(b => {
@@ -5940,62 +5955,112 @@ function App() {
                 return bundle.matchKeywords.some(kw => title.includes(kw) || desc.includes(kw));
               });
               const totalSavings = matched.reduce((sum, item) => sum + (item.savings || 0), 0);
-              const sampleBrands = Array.from(new Set(matched.map(m => m.title.split(" ")[0]))).slice(0, 3);
+              const sampleBrands = Array.from(new Set(matched.map(m => m.title.split(" ")[0]))).slice(0, 4);
+
+              // Smart State: Kiểm tra xem bao nhiêu items đã có trong Kit
+              const appliedCount = matched.filter(m => myPlan.some(p => p.id === m.id)).length;
+              const isFullyApplied = matched.length > 0 && appliedCount === matched.length;
 
               return (
                 <div
                   key={bundle.id}
-                  className="bg-white border-2 border-swiss-dark rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
+                  className={`bg-white border-2 border-swiss-dark rounded-2xl p-5 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden ${
+                    isFullyApplied ? 'ring-2 ring-emerald-500/50 bg-emerald-50/10' : ''
+                  }`}
                 >
-                  <div className="space-y-3.5">
+                  {/* Top Accent Line */}
+                  <div className={`absolute top-0 left-0 right-0 h-1.5 ${bundle.color.split(' ')[0]}`} />
+
+                  <div className="space-y-4 pt-1">
                     {/* Card Header: Icon & Badge & Savings */}
-                    <div className="flex items-center justify-between gap-2">
-                      <div className="flex items-center gap-2">
-                        <span className={`p-2.5 rounded-xl text-sm ${bundle.color} shadow-sm group-hover:scale-110 transition-transform`}>
+                    <div className="flex items-center justify-between gap-2 flex-wrap">
+                      <div className="flex items-center gap-2.5">
+                        <span className={`p-2.5 rounded-xl text-sm ${bundle.color} shadow-sm group-hover:scale-110 transition-transform shrink-0`}>
                           <IconComp size={18} />
                         </span>
-                        <span className="text-[9.5px] font-mono uppercase tracking-widest text-swiss-dark bg-swiss-light px-2 py-1 rounded-md font-bold border border-swiss-border">
-                          {matched.length} CODES
-                        </span>
+                        <div className="flex flex-col">
+                          <span className="text-[9px] font-mono uppercase tracking-widest text-swiss-gray font-bold">
+                            SLOT BUNDLE
+                          </span>
+                          <span className="text-xs font-mono font-black text-swiss-dark">
+                            {matched.length} ƯU ĐÃI
+                          </span>
+                        </div>
                       </div>
-                      <span className="text-[11px] font-mono font-bold text-swiss-blue bg-swiss-blue/10 px-2.5 py-1 rounded-full border border-swiss-blue/20">
+
+                      <span className="text-xs font-mono font-black text-swiss-blue bg-swiss-blue/10 px-3 py-1 rounded-full border border-swiss-blue/20 shrink-0">
                         {formatMoney(totalSavings, currency)}/năm
                       </span>
                     </div>
 
                     {/* Title & Description */}
                     <div>
-                      <h4 className="font-roboto font-black text-base uppercase text-swiss-dark tracking-tight leading-tight group-hover:text-swiss-blue transition-colors">
+                      <h4 className="font-roboto font-black text-base uppercase text-swiss-dark tracking-tight leading-tight group-hover:text-swiss-blue transition-colors flex items-center gap-1.5">
                         {bundle.name}
+                        {isFullyApplied && (
+                          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0" title="Đã kích hoạt trọn bộ" />
+                        )}
                       </h4>
-                      <p className="text-[11px] font-sans text-swiss-gray leading-snug mt-1.5 line-clamp-2">
+                      <p className="text-xs font-sans text-swiss-gray leading-relaxed mt-1.5 line-clamp-2 min-h-[2.4rem]">
                         {bundle.description}
                       </p>
                     </div>
 
-                    {/* Sample Brands Tags */}
-                    <div className="flex flex-wrap gap-1 pt-1">
-                      {sampleBrands.map((bName, idx) => (
-                        <span key={idx} className="text-[9px] font-mono text-swiss-dark bg-swiss-light border border-swiss-border px-2 py-0.5 rounded font-semibold">
-                          ✦ {bName}
-                        </span>
-                      ))}
-                      {matched.length > 3 && (
-                        <span className="text-[9px] font-mono text-swiss-gray px-1 py-0.5">
-                          +{matched.length - 3} khác
-                        </span>
-                      )}
+                    {/* Sample Brands Tags Grid */}
+                    <div className="space-y-1.5 pt-1">
+                      <span className="text-[8.5px] font-mono uppercase tracking-widest text-swiss-gray/80 font-bold block">
+                        ỨNG DỤNG TIÊU BIỂU TRONG GÓI:
+                      </span>
+                      <div className="flex flex-wrap gap-1.5">
+                        {sampleBrands.map((bName, idx) => (
+                          <span 
+                            key={idx} 
+                            className="text-[9.5px] font-mono text-swiss-dark bg-swiss-light border border-swiss-border px-2 py-0.5 rounded-md font-semibold flex items-center gap-1 group-hover:border-swiss-dark/40 transition-colors"
+                          >
+                            <span className="w-1 h-1 rounded-full bg-swiss-dark/40" />
+                            {bName}
+                          </span>
+                        ))}
+                        {matched.length > 4 && (
+                          <span className="text-[9.5px] font-mono text-swiss-gray bg-swiss-light/50 px-2 py-0.5 rounded-md font-bold">
+                            +{matched.length - 4} khác
+                          </span>
+                        )}
+                      </div>
                     </div>
                   </div>
 
-                  {/* 1-Click Action Button */}
-                  <button
-                    type="button"
-                    onClick={() => applyPresetBundle(bundle)}
-                    className="swiss-pressable mt-5 w-full bg-swiss-dark hover:bg-swiss-blue text-white text-xs font-mono uppercase py-2.5 px-4 font-bold tracking-widest flex items-center justify-center gap-2 rounded-xl transition-colors shadow-sm active:scale-95"
-                  >
-                    <Lightning size={13} className="text-yellow-400" /> KÍCH HOẠT COMBO
-                  </button>
+                  {/* Smart 1-Click Action Button with Feedback State */}
+                  <div className="pt-4 border-t border-dashed border-swiss-border mt-5">
+                    <button
+                      type="button"
+                      onClick={() => applyPresetBundle(bundle)}
+                      className={`swiss-pressable w-full text-xs font-mono uppercase py-3 px-4 font-black tracking-widest flex items-center justify-center gap-2 rounded-xl transition-all shadow-sm active:scale-95 ${
+                        isFullyApplied 
+                          ? 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-emerald-600/20' 
+                          : appliedCount > 0 
+                            ? 'bg-swiss-blue hover:bg-swiss-dark text-white shadow-swiss-blue/20' 
+                            : 'bg-swiss-dark hover:bg-swiss-blue text-white shadow-md'
+                      }`}
+                    >
+                      {isFullyApplied ? (
+                        <>
+                          <CheckCircle size={15} className="text-white shrink-0" />
+                          <span>TRỌN BỘ ĐÃ TRONG KIT</span>
+                        </>
+                      ) : appliedCount > 0 ? (
+                        <>
+                          <Plus size={15} className="text-yellow-400 shrink-0" />
+                          <span>THÊM {matched.length - appliedCount} MỤC CÒN LẠI</span>
+                        </>
+                      ) : (
+                        <>
+                          <Lightning size={15} className="text-yellow-400 shrink-0" />
+                          <span>KÍCH HOẠT COMBO</span>
+                        </>
+                      )}
+                    </button>
+                  </div>
                 </div>
               );
             })}
