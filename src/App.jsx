@@ -544,7 +544,8 @@ function App() {
   const [isPlannerOpen, setIsPlannerOpen] = useState(false);
   const [isListLoading, setIsListLoading] = useState(false);
 
-  // Currency & Sound FX & Command Palette States
+  // Language & Currency & Sound FX & Command Palette States
+  const [lang, setLang] = useState('vi'); // 'vi' | 'en'
   const [currency, setCurrency] = useState('USD'); // 'USD' | 'VND'
   const [isMuted, setIsMuted] = useState(false);
   const [isCmdPaletteOpen, setIsCmdPaletteOpen] = useState(false);
@@ -847,7 +848,7 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
-  // Performance Peak: memoize filtered list by Theme and Search parameters
+// Performance Peak: memoize filtered list by Theme and Search parameters
   // Sort theo updatedDate mới nhất lên đầu — tính động từ ISO date string
   const filteredBenefits = useMemo(() => {
     return BENEFITS_DATA
