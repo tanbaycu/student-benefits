@@ -98,21 +98,6 @@ export function Header({
       {/* Right Zone: Controls Bar */}
       <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
         {/* Bilingual Language Switcher (VI / EN) */}
-        <button
-          type="button"
-          onClick={() => {
-            SoundFX.playClick();
-            const nextLang = lang === 'vi' ? 'en' : 'vi';
-            setLang(nextLang);
-            triggerSkeleton();
-            showToast(nextLang === 'en' ? t.toastLangEn : t.toastLangVi);
-          }}
-          title={t.langTooltip}
-          className="flex items-center gap-1 bg-white hover:bg-swiss-light border border-swiss-border px-2.5 py-1.5 rounded-full text-[10px] font-mono text-swiss-dark font-bold tracking-wider transition-all shadow-2xs"
-        >
-          <Globe size={13} className="text-swiss-red" />
-          <span>{lang.toUpperCase()}</span>
-        </button>
 
         {/* Command Palette Button (Ctrl + K) */}
         <button

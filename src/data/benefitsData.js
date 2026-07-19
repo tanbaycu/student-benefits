@@ -1,4 +1,4 @@
-// Exported BENEFITS_DATA module (295 items - 100% Fully Cleaned English Dataset)
+// Exported BENEFITS_DATA module (295 items - Pure 100% Vietnamese Original Dataset)
 export const BENEFITS_DATA = [
   {
     "id": "b001",
@@ -14,11 +14,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.autodesk.com/education/edu-software/overview",
     "requirements": "Tạo tài khoản Autodesk bằng email trường học và xác thực trạng thái sinh viên qua hệ thống SheerID.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "Autodesk Fusion 360 for Students",
-    "valueEn": "Free 1-Year Educational License (annual renewal)",
-    "descriptionEn": "Professional cloud-based CAD, CAM, CAE, and PCB software platform for product design, 3D modeling, and simulation.",
-    "requirementsEn": "Create Autodesk account with university email (.edu) and verify student status via SheerID system."
+    "isHot": true
   },
   {
     "id": "b002",
@@ -34,11 +30,7 @@ export const BENEFITS_DATA = [
     "link": "https://fptarena.edu.vn/",
     "requirements": "Liên hệ bộ phận tuyển sinh của FPT Arena và xuất trình thẻ sinh viên/giấy báo nhập học để áp dụng học bổng học tập.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "FPT Arena Study Grant",
-    "valueEn": "Up to 30% Creative Scholarship",
-    "descriptionEn": "Multimedia Arts scholarship program dedicated to artistic and creative students.",
-    "requirementsEn": "Contact FPT Arena admissions department and present student ID or enrollment notification to claim scholarship."
+    "isHot": true
   },
   {
     "id": "b003",
@@ -54,11 +46,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.mathworks.com/academia/tah-support-program/students.html",
     "requirements": "Đăng ký tài khoản MathWorks bằng email trường (.edu) hoặc xác minh tư cách sinh viên.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "MATLAB Student Suite",
-    "valueEn": "Free Campus-Wide License or $119 Student Pass",
-    "descriptionEn": "Free MATLAB & Simulink license if your university has a Campus-Wide License. Otherwise, Student tier is $119/yr including 20 hrs/mo free MATLAB Online.",
-    "requirementsEn": "Register account MathWorks with university email (.edu) (.edu) or xac minh tu cach students."
+    "isHot": true
   },
   {
     "id": "b004",
@@ -74,11 +62,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.coursera.org/student",
     "requirements": "Đăng ký thông qua chương trình liên kết của trường đại học đối tác.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "Coursera Student Program",
-    "valueEn": "1 Chung Chi Free / Nam",
-    "descriptionEn": "Hoc tap from cac universities hang dau the gioi. free hoc and cap chung chi cho mot khoa hoc per year.",
-    "requirementsEn": "Register via Program lien ket of universities doi tac."
+    "isHot": true
   },
   {
     "id": "b005",
@@ -94,11 +78,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.adobe.com/creativecloud/buy/students.html",
     "requirements": "Thẻ sinh viên hoặc email đuôi giáo dục khi đăng ký.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "Adobe Creative Cloud",
-    "valueEn": "Uu Dai Discount 60%",
-    "descriptionEn": "So huu toan bo bo Tool sang tao including Photoshop, Illustrator, Premiere Pro and Lightroom with chi phi cuc thap.",
-    "requirementsEn": "student ID card or email duoi giao duc khi Register."
+    "isHot": true
   },
   {
     "id": "b006",
@@ -114,11 +94,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.solidworks.com/solution/job-functions/students",
     "requirements": "Đăng ký qua cổng SolidWorks Student với email .edu hoặc thẻ sinh viên.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "SOLIDWORKS for Students",
-    "valueEn": "license SOLIDWORKS Design Standard",
-    "descriptionEn": "license phan mem thiet ke 3D CAD chuan cong nghiep free from 01/07/2026 cho students. Ban Premium gia deal $60/nam kem voucher thi chung chi CSWA/CSWP.",
-    "requirementsEn": "Register qua cong SolidWorks Student with email .edu or student ID card."
+    "isHot": true
   },
   {
     "id": "b007",
@@ -134,11 +110,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.jetbrains.com/academy/",
     "requirements": "Xác thực thông qua JetBrains Account đã liên kết giấy phép sinh viên JetBrains Student License.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "JetBrains Academy Portal",
-    "valueEn": "Free Full Access to Academy Tracks",
-    "descriptionEn": "Platform hoc tap lap trinh thuc te theo du an of JetBrains (Kotlin, Java, Python, Go...). Giup students thuc hanh lap trinh.",
-    "requirementsEn": "Verify via JetBrains Account da lien ket giay phep students JetBrains Student License."
+    "isHot": true
   },
   {
     "id": "b008",
@@ -154,11 +126,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.cursor.com/students",
     "requirements": "Đăng ký tham gia các sự kiện on-campus hoặc webinar giáo dục do Cursor tổ chức.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "Cursor Pro (Education Pricing)",
-    "valueEn": "Uu dai nang cap Cursor Pro qua su kien schools",
-    "descriptionEn": "Trinh soan thao ma nguon tich hop AI hang dau the gioi hien nay. Hang Provides ma nang cap Pro free thong qua cac su kien on-campus and su kien truc tuyen chinh thuc mua tuu school.",
-    "requirementsEn": "Register tham gia cac su kien on-campus or webinar giao duc do Cursor to chuc."
+    "isHot": true
   },
   {
     "id": "b009",
@@ -174,11 +142,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.anthropic.com/news/claude-edu",
     "requirements": "Đăng nhập Single Sign-On (SSO) qua cổng thông tin hoặc email của trường đại học đối tác.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "Claude for Education (Anthropic)",
-    "valueEn": "Quyen truy cap to chuc dai hoc",
-    "descriptionEn": "Anthropic Provides Program Claude for Education danh cho cac universities/cao dang de tich hop sau ando he thong, cho phep students, faculty truy cap Claude phuc vu hoc tap/nghien cuu.",
-    "requirementsEn": "Log in Single Sign-On (SSO) qua cong thong tin or email of universities doi tac."
+    "isHot": true
   },
   {
     "id": "b010",
@@ -194,11 +158,7 @@ export const BENEFITS_DATA = [
     "link": "https://openai.com/chatgpt/edu/",
     "requirements": "Đăng nhập bằng email trường do trường học liên kết đối tác cung cấp.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "ChatGPT Edu (OpenAI)",
-    "valueEn": "Quyen truy cap cap dai hoc (GPT-4o)",
-    "descriptionEn": "Phien ban ChatGPT duoc thiet ke rieng cho cac universities with bao mat du lieu cap doanh nghiep, gioi han tin nhan cao hon, Supports tao GPTs tuy chinh.",
-    "requirementsEn": "Log in with university email (.edu) do schools lien ket doi tac Provides."
+    "isHot": true
   },
   {
     "id": "b011",
@@ -214,11 +174,7 @@ export const BENEFITS_DATA = [
     "link": "https://education.github.com/pack",
     "requirements": "Email trường (.edu) hoặc thẻ sinh viên/giấy xác nhận nhập học.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "GitHub Student Developer Pack",
-    "valueEn": "Free Developer Tools & Copilot",
-    "descriptionEn": "Truy cap cac Tool lap trinh tot nhat the gioi including GitHub Copilot, Canva Pro, Namecheap Completely free.",
-    "requirementsEn": "university email (.edu) (.edu) or student ID card/enrollment verification letter."
+    "isHot": true
   },
   {
     "id": "b012",
@@ -234,11 +190,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.figma.com/education/students/",
     "requirements": "Thẻ sinh viên cứng hoặc tài liệu học tập có đóng dấu của trường.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "Figma Professional Plan",
-    "valueEn": "account Pro Free 100%",
-    "descriptionEn": "Tool thiet ke UI/UX and lam viec nhom chuan cong nghiep. Nhan day du tinh nang thiet ke Pro de lam do an.",
-    "requirementsEn": "student ID card cung or tai lieu hoc tap co dong dau of school."
+    "isHot": true
   },
   {
     "id": "b013",
@@ -254,11 +206,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.edx.org/",
     "requirements": "Đăng ký học dạng Audit (miễn phí), sau đó nộp đơn xin hỗ trợ tài chính trình bày rõ hoàn cảnh.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "edX Financial Assistance",
-    "valueEn": "Off Den 90% Chung Chi Khoa Hoc",
-    "descriptionEn": "Financial aid program for students and learners in need. Offers 80–90% discount on Verified Certificates from Harvard, MIT, and leading universities.",
-    "requirementsEn": "Enroll in Audit mode (free), then submit a financial assistance application explaining your situation."
+    "isHot": true
   },
   {
     "id": "b014",
@@ -274,11 +222,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.canva.com/education/",
     "requirements": "Thẻ sinh viên hoặc email do trường học cấp.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "Canva Pro for Education",
-    "valueEn": "account Pro Free",
-    "descriptionEn": "Design slides, posters, and professional academic CVs with millions of free premium assets.",
-    "requirementsEn": "Student ID card or university-issued email address."
+    "isHot": true
   },
   {
     "id": "b015",
@@ -294,11 +238,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.udemy.com/",
     "requirements": "Xác thực thông qua cổng liên kết của trường học.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "Udemy Student Program",
-    "valueEn": "Up to 75% Off Courses",
-    "descriptionEn": "Access thousands of high-quality courses from programming, business to arts at discounted student prices.",
-    "requirementsEn": "Verify via university partner portal or student email."
+    "isHot": true
   },
   {
     "id": "b016",
@@ -314,11 +254,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.grab.com/vn/blog/grabstudent-bi-kip-tiet-kiem-khi-di-hoc-cung-grab/",
     "requirements": "Mở app Grab trên điện thoại -> Vào mục 'Thử thách' (Challenges) hoặc 'Ưu đãi' (Rewards) để đăng ký gói sinh viên; hoặc xác thực qua MoMo Student Pass bằng thẻ sinh viên.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "GrabStudent Transport Pack",
-    "valueEn": "20% Off Grab Rides",
-    "descriptionEn": "Get monthly transport discount voucher packs for commuting between dormitories and university lecture halls.",
-    "requirementsEn": "Open Grab app -> Go to 'Challenges' or 'Rewards' tab to join student program, or verify via MoMo Student Pass with student ID."
+    "isHot": true
   },
   {
     "id": "b017",
@@ -334,11 +270,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.perplexity.ai",
     "requirements": "Xác thực trạng thái học tập qua cổng SheerID tích hợp trong phần cài đặt Perplexity bằng email .edu.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "Perplexity Education Pro",
-    "valueEn": "50% Off Pro Plan ($10/mo)",
-    "descriptionEn": "Full access to advanced AI models (GPT-4o, Claude 3.5 Sonnet), unlimited file uploads, and Pro Search at half price.",
-    "requirementsEn": "Verify student status via integrated SheerID portal in Perplexity settings using .edu email."
+    "isHot": true
   },
   {
     "id": "b018",
@@ -354,11 +286,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.ynab.com/college",
     "requirements": "Xác thực trạng thái sinh viên đại học hoặc sau đại học thông qua hệ thống SheerID.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "You Need A Budget (YNAB) Student",
-    "valueEn": "Free 1 nam goi Pro",
-    "descriptionEn": "Application quan ly tai chinh ca nhan and lap ngan sach hang dau the gioi giup students xay dung thoi quen chi tieu thong minh khoa hoc.",
-    "requirementsEn": "Verify trang thai students dai hoc or sau dai hoc via he thong SheerID."
+    "isHot": true
   },
   {
     "id": "b019",
@@ -374,11 +302,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.microsoft.com/vi-vn/education/products/office",
     "requirements": "Đăng ký bằng tài khoản email trường do cơ sở giáo dục cấp.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "Microsoft 365 Education",
-    "valueEn": "Bo Office & 1TB OneDrive Free",
-    "descriptionEn": "Su dung truc tuyen Word, Excel, PowerPoint, OneNote, Microsoft Teams kem dung luong dam may khong lo 1TB.",
-    "requirementsEn": "Register with account university email (.edu) do co so giao duc cap."
+    "isHot": true
   },
   {
     "id": "b020",
@@ -394,11 +318,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.vietnamairlines.com/vn/vi/lotusmiles/enroll-lotusmiles",
     "requirements": "Đăng ký hội viên Bông Sen Vàng (Lotusmiles) -> Đăng nhập -> Vào mục 'LotuSociety' ở trang cá nhân -> Chọn ưu đãi 'Học sinh, sinh viên' và tải thẻ sinh viên lên để kích hoạt.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "Vietnam Airlines LotuStudents",
-    "valueEn": "Off Den 10% + Free 1 Kien Hanh Ly",
-    "descriptionEn": "Program dac quyen danh rieng cho students from 15-31 tuoi. discount ve, tang them hanh ly ky gui and free doi ngay bay lan dau.",
-    "requirementsEn": "Register hoi vien Bong Sen andng (Lotusmiles) -> Log in -> ando muc 'LotuSociety' o trang ca nhan -> Chon uu dai 'students, students' and tai student ID card len de kich hoat."
+    "isHot": true
   },
   {
     "id": "b021",
@@ -414,11 +334,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.notion.so/product/notion-for-education",
     "requirements": "Xác thực trực tiếp bằng email sinh viên trường liên kết.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "Notion Education Plus Plan",
-    "valueEn": "Free Nang Cap Goi Plus",
-    "descriptionEn": "Manage notes, research documents, and study schedules with unlimited block uploads and 30-day page history.",
-    "requirementsEn": "Verify directly with partner university student email (.edu)."
+    "isHot": true
   },
   {
     "id": "b022",
@@ -434,11 +350,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.xanhsm.com/",
     "requirements": "Đăng ký xác thực tài khoản học sinh/sinh viên trực tiếp trên ứng dụng Xanh SM bằng cách chụp ảnh thẻ sinh viên.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "Xanh SM Student Offer",
-    "valueEn": "Discount 15% Cac Chuyen Xe Dien",
-    "descriptionEn": "Di chuyen xanh, em ai cung cac dong taxi dien VinFast with muc chiet khau 15% monthly.",
-    "requirementsEn": "Register Verify account students/students truc tiep tren Application Xanh SM with cach chup anh student ID card."
+    "isHot": true
   },
   {
     "id": "b023",
@@ -454,11 +366,7 @@ export const BENEFITS_DATA = [
     "link": "https://cellphones.com.vn/s-student/",
     "requirements": "Đăng ký trực tuyến trên website CellphoneS (mục S-Student) bằng email trường/thẻ sinh viên, hoặc mang thẻ sinh viên và CCCD qua cửa hàng để kích hoạt giảm giá trực tiếp.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "CellphoneS S-Student Membership",
-    "valueEn": "Off them toi 10% & Tra gop 0%",
-    "descriptionEn": "Exclusive extra discount up to 10% on smartphones, laptops, tablets, and accessories with 0% interest installment options.",
-    "requirementsEn": "Register truc tuyen tren website CellphoneS (muc S-Student) with university email (.edu)/student ID card, or mang student ID card and CCCD qua cua hang de kich hoat Discount truc tiep."
+    "isHot": true
   },
   {
     "id": "b024",
@@ -474,11 +382,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.amazon.com/joinstudent",
     "requirements": "Email sinh viên trường hoặc bảng điểm chứng minh đang đi học.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "Amazon Prime Student",
-    "valueEn": "Free 6 Thang Prime",
-    "descriptionEn": "Giao hang sieu toc free, truy cap Prime Video xem phim and deal doc quyen danh rieng cho gioi tre.",
-    "requirementsEn": "Email students school or bang diem chung minh dang di hoc."
+    "isHot": true
   },
   {
     "id": "b025",
@@ -494,11 +398,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.starbucks.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên khi gọi món trực tiếp tại các cửa hàng Starbucks Việt Nam để áp dụng ưu đãi theo mùa (nếu có).",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "Starbucks Workspaces",
-    "valueEn": "15% Off Nuoc Uong Handmade",
-    "descriptionEn": "Xuat trinh the students at quay de duoc discount do uong and su dung khong gian hoc tap yen tinh.",
-    "requirementsEn": "Xuat trinh student ID card/students khi goi mon truc tiep at cac cua hang Starbucks Viet Nam de ap dung uu dai theo mua (neu co)."
+    "isHot": true
   },
   {
     "id": "b026",
@@ -514,11 +414,7 @@ export const BENEFITS_DATA = [
     "link": "https://fptshop.com.vn/",
     "requirements": "Mang theo thẻ học sinh/sinh viên kèm CCCD chính chủ đến các cửa hàng FPT Shop toàn quốc khi mua laptop, máy tính bảng để nhận chiết khấu học đường.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "FPT Shop Student Privilege",
-    "valueEn": "Off them 5% & Free 1 nam bao hanh",
-    "descriptionEn": "Off them toi 5% gia may laptop/PC (len toi 10% cho tan students dua theo diem thi) and tang them 1 nam bao hanh chinh hang (tong cong 2 nam bao hanh).",
-    "requirementsEn": "Mang theo student ID card/students kem CCCD chinh chu den cac cua hang FPT Shop toan quoc khi mua laptop, may tinh bang de nhan chiet khau hoc duong."
+    "isHot": true
   },
   {
     "id": "b027",
@@ -534,11 +430,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.lottecinemavn.com/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên kèm CCCD chính chủ trực tiếp tại quầy vé của Lotte Cinema để mua vé xem phim với giá ưu đãi U22.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "Lotte Cinema Student Offer",
-    "valueEn": "Dong Gia Ve 55,000 VND",
-    "descriptionEn": "Thuong thuc cac bo phim bom tan with muc gia deal and nhan voucher discount combo bap nuoc.",
-    "requirementsEn": "Xuat trinh student ID card/students kem CCCD chinh chu truc tiep at quay ve of Lotte Cinema de mua ve xem phim with gia uu dai U22."
+    "isHot": true
   },
   {
     "id": "b028",
@@ -554,11 +446,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.cgv.vn/default/news-offers",
     "requirements": "Xuất trình thẻ học sinh/sinh viên và CCCD tại quầy vé của CGV để mua vé phim giá U22 (áp dụng cho hội viên CGV dưới 22 tuổi).",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "CGV Cinema Student Discount",
-    "valueEn": "Dong Gia Ve 60,000 VND",
-    "descriptionEn": "Ap dung gia ve deal cuc soc cho moi students duoi 22 tuoi at tat ca cum rap CGV toan quoc.",
-    "requirementsEn": "Xuat trinh student ID card/students and CCCD at quay ve of CGV de mua ve phim gia U22 (ap dung cho hoi vien CGV duoi 22 tuoi)."
+    "isHot": true
   },
   {
     "id": "b029",
@@ -574,11 +462,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.highlandscoffee.com.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên chính chủ tại quầy thanh toán của Highlands Coffee để mua các combo đồ uống kèm bánh ngọt với giá ưu đãi.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "Highlands Coffee Student Combo",
-    "valueEn": "Combo Do Uong + Banh Chi 39,000 VND",
-    "descriptionEn": "Khuay dong ngay dai hoc tap with combo Phin Sua Da/Tra Sen kem banh ngot with gia students sieu tiet kiem.",
-    "requirementsEn": "Xuat trinh student ID card/students chinh chu at quay thanh toan of Highlands Coffee de mua cac combo do uong kem banh ngot with gia uu dai."
+    "isHot": true
   },
   {
     "id": "b030",
@@ -594,11 +478,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.spotify.com/vn-vi/student/",
     "requirements": "Xác thực thông qua cổng SheerID bằng ảnh chụp thẻ sinh viên.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "Spotify Student Premium",
-    "valueEn": "50% Off Goi Premium",
-    "descriptionEn": "Nghe nhac khong quang cao, tai nhac offline and phat nhac theo yeu cau with muc gia deal danh rieng for students.",
-    "requirementsEn": "Verify via cong SheerID with anh chup student ID card."
+    "isHot": true
   },
   {
     "id": "b031",
@@ -614,11 +494,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.youtube.com/premium/student",
     "requirements": "Xác thực SheerID bằng thẻ sinh viên cứng hoặc bảng điểm.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "YouTube Premium Student",
-    "valueEn": "Uu Dai Off Phi 45%",
-    "descriptionEn": "Xem video khong quang cao, phat trong nen and su dung YouTube Music Premium khong gioi han.",
-    "requirementsEn": "Verify SheerID with student ID card cung or bang diem."
+    "isHot": true
   },
   {
     "id": "b032",
@@ -634,11 +510,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.vietjetair.com",
     "requirements": "Nhập mã ưu đãi sinh viên trong các đợt chiến dịch trên website đặt vé của Vietjet Air, và xuất trình thẻ sinh viên khi làm thủ tục check-in tại sân bay.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "Vietjet Air Student Offer",
-    "valueEn": "Ve Eco 0 dong & 20% Off Deluxe",
-    "descriptionEn": "Vietjet Air Supports students thong qua cac dot khuyen mai tuu school with ve 0 dong and discount 20-30% cho cac hang ve Deluxe/SkyBoss trong 'Ngay andng'.",
-    "requirementsEn": "Nhap ma uu dai students trong cac dot chien dich tren website dat ve of Vietjet Air, and xuat trinh student ID card khi lam thu tuc check-in at san bay."
+    "isHot": true
   },
   {
     "id": "b033",
@@ -654,11 +526,7 @@ export const BENEFITS_DATA = [
     "link": "https://1password.com/",
     "requirements": "Kích hoạt qua GitHub Student Developer Pack hoặc Student App Centre.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "1Password Manager",
-    "valueEn": "Free 1-Year New Account License",
-    "descriptionEn": "Industry-leading secure password manager helping protect your credentials seamlessly across all platforms.",
-    "requirementsEn": "Activate via GitHub Student Developer Pack or Student App Centre."
+    "isHot": true
   },
   {
     "id": "b034",
@@ -674,11 +542,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.hubspot.com/academy/education-partner-program",
     "requirements": "Đăng ký thông qua lời mời từ giảng viên tham gia chương trình HubSpot EPP của trường.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "HubSpot for Education Partner Program",
-    "valueEn": "Free cac Tool CRM enterprise cao cap",
-    "descriptionEn": "HubSpot Education Partner Program (EPP) gives students free access to enterprise-tier CRM, Marketing, Sales, Service, and Content Hub software tools.",
-    "requirementsEn": "Register via loi moi from faculty tham gia Program HubSpot EPP of school."
+    "isHot": false
   },
   {
     "id": "b035",
@@ -694,11 +558,7 @@ export const BENEFITS_DATA = [
     "link": "https://newrelic.com",
     "requirements": "Kết nối tài khoản New Relic cá nhân với tài khoản học sinh GitHub Education.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "New Relic Student Edition",
-    "valueEn": "Free Standard Edition trong 2 nam",
-    "descriptionEn": "Comprehensive observability platform for log analysis, APM application performance, and cloud infrastructure monitoring for academic projects.",
-    "requirementsEn": "Ket noi account New Relic ca nhan with account students GitHub Education."
+    "isHot": false
   },
   {
     "id": "b036",
@@ -714,11 +574,7 @@ export const BENEFITS_DATA = [
     "link": "https://unity.com",
     "requirements": "Đăng ký tài khoản Unity và xác thực trạng thái học sinh thông qua cổng đối tác.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Unity Student Plan",
-    "valueEn": "Free goi Student including Unity Pro",
-    "descriptionEn": "Leading 3D/2D game development engine and virtual/augmented reality (VR/AR) content creation platform.",
-    "requirementsEn": "Register account Unity and Verify trang thai students via cong doi tac."
+    "isHot": false
   },
   {
     "id": "b037",
@@ -734,11 +590,7 @@ export const BENEFITS_DATA = [
     "link": "https://education.bentley.com/",
     "requirements": "Đăng ký tài khoản trên cổng Bentley Education sử dụng email học thuật (.edu) và nhập thông tin trường học.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Bentley Education Student Program",
-    "valueEn": "Free quyen truy cap hon 50 phan mem chuyen nghiep",
-    "descriptionEn": "Quyen truy cap free ando cac Application ky thuat co so ha tang chuyen nghiep hang dau nhu MicroStation (CAD), STAAD.Pro (phan tich ket cau), PLAXIS (dia ky thuat).",
-    "requirementsEn": "Register account tren cong Bentley Education su dung email hoc thuat (.edu) and nhap thong tin schools."
+    "isHot": false
   },
   {
     "id": "b038",
@@ -754,11 +606,7 @@ export const BENEFITS_DATA = [
     "link": "https://unity.com/products/unity-student",
     "requirements": "Xác thực trạng thái học sinh, sinh viên thông qua GitHub Student Developer Pack hoặc qua SheerID.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Unity Student Plan Premium",
-    "valueEn": "Free Educational License Unity Student nang cao",
-    "descriptionEn": "Goi phan mem phat trien game and Application 3D thoi gian thuc free cho students, students, including cac Tool nang cao, cac khoa hoc Unity Learn Premium and 5 seat free Unity Version Control.",
-    "requirementsEn": "Verify trang thai students, students via GitHub Student Developer Pack or qua SheerID."
+    "isHot": false
   },
   {
     "id": "b039",
@@ -774,11 +622,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.sidefx.com",
     "requirements": "Xác thực trạng thái sinh viên thông qua cổng đối tác Proxi.ID khi tiến hành thanh toán.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Houdini Education License",
-    "valueEn": "license Houdini Education gia $75/nam",
-    "descriptionEn": "Phan mem mo phong ky xao 3D hieu ung vat ly nang cao (lua, nuoc, khoi) chuan Hollywood cho du an hoc tap.",
-    "requirementsEn": "Verify trang thai students via cong doi tac Proxi.ID khi tien hanh thanh toan."
+    "isHot": false
   },
   {
     "id": "b040",
@@ -794,11 +638,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.datadoghq.com",
     "requirements": "Đăng ký qua cổng đối tác GitHub Student Developer Pack bằng email trường học.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Datadog for Students",
-    "valueEn": "Free goi Datadog Pro trong 2 nam",
-    "descriptionEn": "He thong giam sat ha tang and quan ly log tap trung Supports toi da 10 may chu (host) cho du an nghien cuu hoc thuat.",
-    "requirementsEn": "Register qua cong doi tac GitHub Student Developer Pack with university email (.edu)."
+    "isHot": false
   },
   {
     "id": "b041",
@@ -814,11 +654,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.altium.com/education/students",
     "requirements": "Xác thực email đuôi trường (.edu) hoặc tải tài liệu học tập qua cổng Altium Education.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Altium Designer Student License",
-    "valueEn": "license Altium Designer Free",
-    "descriptionEn": "license phan mem thiet ke mach in dien tu (PCB) chuyen nghiep so 1 the gioi Altium Designer, di kem dam may Altium 365.",
-    "requirementsEn": "Verify email duoi school (.edu) or tai tai lieu hoc tap qua cong Altium Education."
+    "isHot": false
   },
   {
     "id": "b042",
@@ -834,11 +670,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.onshape.com/en/education/",
     "requirements": "Đăng ký tài khoản Onshape Education bằng email học thuật (.edu) và thông tin trường học.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Onshape Education Standard Plan",
-    "valueEn": "Free account Education Standard",
-    "descriptionEn": "Phan mem thiet ke CAD 3D chuyen nghiep chay Completely tren dam may, cho phep students hoc tap, thiet ke and cong tac thoi gian thuc tren bat ky trinh duyet web and thiet bi nao ma khong can cai dat.",
-    "requirementsEn": "Register account Onshape Education with email hoc thuat (.edu) and thong tin schools."
+    "isHot": false
   },
   {
     "id": "b043",
@@ -854,11 +686,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.maxon.net",
     "requirements": "Xác thực thông qua hệ thống SheerID với thẻ sinh viên và bảng điểm học tập còn hiệu lực.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Maxon One / Cinema 4D Discount",
-    "valueEn": "license Maxon One chi $60/nam",
-    "descriptionEn": "Bo Tool thiet ke 3D, ky xao dien anh chuyen nghiep gom Cinema 4D, Redshift, Red Giant and ZBrush.",
-    "requirementsEn": "Verify via he thong SheerID with student ID card and bang diem hoc tap con hieu luc."
+    "isHot": false
   },
   {
     "id": "b044",
@@ -874,11 +702,7 @@ export const BENEFITS_DATA = [
     "link": "https://siemens.com/solid-edge-student",
     "requirements": "Đăng ký bằng email học thuật (.edu) hoặc cung cấp tài liệu chứng minh đang đi học trên cổng phần mềm giáo dục của Siemens.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Siemens Solid Edge Student Edition",
-    "valueEn": "Free 1-Year Educational License (annual renewal)",
-    "descriptionEn": "Phien ban hoc tap of phan mem CAD chuyen nghiep Solid Edge from Siemens, Supports day du cac tinh nang thiet ke 3D, lap rap, xuat ban ve 2D, mo phong and truy cap thu vien hoc tap free.",
-    "requirementsEn": "Register with email hoc thuat (.edu) or Provides tai lieu chung minh dang di hoc tren cong phan mem giao duc of Siemens."
+    "isHot": false
   },
   {
     "id": "b045",
@@ -894,11 +718,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.intel.com/content/www/us/en/developer/tools/oneapi/commercial-availability.html#academic",
     "requirements": "Đăng ký tài khoản Intel Developer Zone bằng email trường học và khai báo thông tin học tập.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Intel Academic Software Tools",
-    "valueEn": "Free Tool lap trinh hieu nang cao Intel oneAPI",
-    "descriptionEn": "Intel Provides free cac Tool phat trien phan mem hieu nang cao and phan tich he thong nhu Intel oneAPI Base & HPC Toolkit, Intel VTune Profiler for students and nha nghien cuu hoc thuat.",
-    "requirementsEn": "Register account Intel Developer Zone with university email (.edu) and khai bao thong tin hoc tap."
+    "isHot": false
   },
   {
     "id": "b046",
@@ -914,11 +734,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.tableau.com/academic/students",
     "requirements": "Điền form đăng ký sử dụng email học thuật (.edu) và xác thực danh tính sinh viên qua hệ thống SheerID.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Tableau Desktop & Prep for Students",
-    "valueEn": "Free 1-Year License Tableau Desktop and Prep",
-    "descriptionEn": "Tableau Provides giay phep su dung phan mem phan tich and truc quan hoa du lieu hang dau the gioi Tableau Desktop and Tableau Prep Builder Completely free for students.",
-    "requirementsEn": "Dien form Register su dung email hoc thuat (.edu) and Verify danh tinh students qua he thong SheerID."
+    "isHot": false
   },
   {
     "id": "b047",
@@ -934,11 +750,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.ansys.com/academic/students",
     "requirements": "Đăng ký và tải trực tiếp từ cổng ANSYS Academic dành cho sinh viên.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "ANSYS Student Edition",
-    "valueEn": "Free ANSYS Academic Suite",
-    "descriptionEn": "Tai xuong free bo phan mem mo phong vat ly, dong luc hoc chat luu (CFD), cau truc co hoc phuc vu nghien cuu and hoc tap.",
-    "requirementsEn": "Register and tai truc tiep from cong ANSYS Academic danh for students."
+    "isHot": false
   },
   {
     "id": "b048",
@@ -954,11 +766,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.intuit.com/partners/education-program/",
     "requirements": "Xác thực trạng thái sinh viên khối ngành kinh tế bằng email trường học thông qua cổng Intuit Education.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Intuit QuickBooks for Students",
-    "valueEn": "Free 12 Thang Goi Online Plus",
-    "descriptionEn": "Phan mem ke toan, quan ly tai chinh and thue hang dau the gioi for students nganh tai chinh, kinh te thuc hanh.",
-    "requirementsEn": "Verify trang thai students khoi nganh kinh te with university email (.edu) via cong Intuit Education."
+    "isHot": false
   },
   {
     "id": "b049",
@@ -974,11 +782,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.intel.com/content/www/us/en/developer/topic-solutions/academic/overview.html",
     "requirements": "Đăng ký bằng email giáo dục qua cổng học thuật của Intel.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Intel Developer Program",
-    "valueEn": "Free OneAPI Toolkits & DevCloud Access",
-    "descriptionEn": "Provides free cac bo Tool OneAPI toi uu hoa hieu suat phan cung and quyen truy cap dam may Intel DevCloud de chay AI.",
-    "requirementsEn": "Register with email giao duc qua cong hoc thuat of Intel."
+    "isHot": false
   },
   {
     "id": "b050",
@@ -994,11 +798,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.acm.org/membership/student",
     "requirements": "Đăng nhập bằng email học thuật (.edu) của trường đại học có liên kết hoặc đăng ký hội viên sinh viên ACM.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "O'Reilly for Higher Education (Library Access)",
-    "valueEn": "Free truy cap qua thu vien school lien ket",
-    "descriptionEn": "Truy cap khong gioi han ando hang ngan dau sach cong nghe, lap trinh, kinh doanh and cac khoa hoc video chat luong of O'Reilly Online Learning thong qua account thu vien of cac universities lien ket.",
-    "requirementsEn": "Log in with email hoc thuat (.edu) of universities co lien ket or Register hoi vien students ACM."
+    "isHot": false
   },
   {
     "id": "b051",
@@ -1014,11 +814,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.apple.com",
     "requirements": "Mua trực tiếp trên Apple Store Education và xác thực qua hệ thống UNiDAYS.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Apple Pro Apps Bundle",
-    "valueEn": "Bo 5 phan mem sang tao gia chi $199",
-    "descriptionEn": "Goi phan mem cuc hoi gom: Logic Pro, Final Cut Pro, Motion, Compressor, MainStage for students lam am thanh & dung video.",
-    "requirementsEn": "Mua truc tiep tren Apple Store Education and Verify qua he thong UNiDAYS."
+    "isHot": false
   },
   {
     "id": "b052",
@@ -1034,11 +830,7 @@ export const BENEFITS_DATA = [
     "link": "https://wsj.com/student",
     "requirements": "Xác thực trực tiếp trên cổng wsj.com/student bằng email sinh viên trường liên kết hoặc SheerID.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Wall Street Journal Student",
-    "valueEn": "Dong Gia $4/Thang (Off 90%)",
-    "descriptionEn": "Tap chi tai chinh kinh te hang dau the gioi. Provides tin tuc the gioi chuyen sau and cac phan tich thi school chat luong.",
-    "requirementsEn": "Verify truc tiep tren cong wsj.com/student with email students school lien ket or SheerID."
+    "isHot": false
   },
   {
     "id": "b053",
@@ -1054,11 +846,7 @@ export const BENEFITS_DATA = [
     "link": "https://retool.com/retool-for-students",
     "requirements": "Đăng ký tài khoản và nộp đơn qua trang giáo dục bằng email đuôi trường học (.edu).",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Retool for Students",
-    "valueEn": "Off 100% goi Team or Business",
-    "descriptionEn": "Platform low-code manh me giup xay dung nhanh cac Application noi bo, giao dien keo tha and bang dieu khien cho do an hoc tap.",
-    "requirementsEn": "Register account and nop don qua trang giao duc with email duoi schools (.edu)."
+    "isHot": false
   },
   {
     "id": "b054",
@@ -1074,11 +862,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.axure.com/edu",
     "requirements": "Đăng ký thông qua Axure Student Portal bằng cách upload thẻ sinh viên hoặc bảng điểm.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Axure RP Prototyping",
-    "valueEn": "license Axure RP Team Free",
-    "descriptionEn": "Tool ve prototype tuong tac UX/UI manh me nhat danh cho cac du an thiet ke Application and website phuc tap of students.",
-    "requirementsEn": "Register via Axure Student Portal with cach upload student ID card or bang diem."
+    "isHot": false
   },
   {
     "id": "b055",
@@ -1094,11 +878,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.browserstack.com",
     "requirements": "Xác thực thông qua tài khoản gói GitHub Student Developer Pack.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "BrowserStack Student Package",
-    "valueEn": "Free 1 nam goi Live & Automate",
-    "descriptionEn": "Platform dam may Supports kiem thu Application and website tren hon 3000 thiet bi that and trinh duyet thuc te.",
-    "requirementsEn": "Verify via account goi GitHub Student Developer Pack."
+    "isHot": false
   },
   {
     "id": "b056",
@@ -1114,11 +894,7 @@ export const BENEFITS_DATA = [
     "link": "https://sentry.io/education/",
     "requirements": "Liên kết tài khoản Sentry cá nhân với GitHub Student Developer Pack đã xác thực.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Sentry for Education",
-    "valueEn": "Free goi Team (50k errors/month)",
-    "descriptionEn": "Tool giam sat loi phan mem Application and theo doi hieu nang hoat dong thoi gian thuc cho lap trinh vien hoc tap.",
-    "requirementsEn": "Lien ket account Sentry ca nhan with GitHub Student Developer Pack da Verify."
+    "isHot": false
   },
   {
     "id": "b057",
@@ -1134,11 +910,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.datacamp.com/groups/education",
     "requirements": "Đăng ký thông qua tài khoản lớp học được giảng viên bảo trợ.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Datacamp for Education",
-    "valueEn": "Free Hoc Data Science",
-    "descriptionEn": "Platform hoc tap Khoa hoc du lieu, AI and phan tich du lieu hang dau the gioi danh cho cac students nganh cong nghe.",
-    "requirementsEn": "Register via account lop hoc duoc faculty bao tro."
+    "isHot": false
   },
   {
     "id": "b058",
@@ -1154,11 +926,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.bloomberg.com/",
     "requirements": "Xác thực trạng thái sinh viên thông qua liên kết đối tác Student Beans.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Bloomberg Student Access",
-    "valueEn": "Thue bao Digital chi $9.99/thang",
-    "descriptionEn": "Quyen truy cap khong gioi han bai viet tin tuc phan tich tai chinh toan cau of Bloomberg with gia deal dac biet (goc $34.99/thang).",
-    "requirementsEn": "Verify trang thai students via lien ket doi tac Student Beans."
+    "isHot": false
   },
   {
     "id": "b059",
@@ -1174,11 +942,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.shapr3d.com/pricing",
     "requirements": "Đăng ký tài khoản Shapr3D bằng email học thuật (.edu), gửi đơn xin cấp phép EDU kèm theo thẻ sinh viên hoặc bảng điểm hợp lệ.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Shapr3D for Education",
-    "valueEn": "Free 1-Year Educational License (annual renewal)",
-    "descriptionEn": "Phan mem thiet ke 3D CAD chuyen nghiep toi uu hoa cho thiet bi di dong (iPad, may tinh bang) and may tinh Windows/Mac, Supports ve phac thao and dung hinh 3D truc quan with but cam ung.",
-    "requirementsEn": "Register account Shapr3D with email hoc thuat (.edu), gui don xin cap phep EDU kem theo student ID card or bang diem hop le."
+    "isHot": false
   },
   {
     "id": "b060",
@@ -1194,11 +958,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.shapr3d.com/education",
     "requirements": "Đăng ký qua email trường .edu và upload thẻ sinh viên hoặc bảng điểm hợp lệ.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Shapr3D Educational License",
-    "valueEn": "Free 1 nam Shapr3D Pro",
-    "descriptionEn": "Tool thiet ke mo hinh 3D CAD chuyen nghiep toi uu hoa cho iPad (with Apple Pencil), Windows and macOS for students.",
-    "requirementsEn": "Register qua university email (.edu) .edu and upload student ID card or bang diem hop le."
+    "isHot": false
   },
   {
     "id": "b061",
@@ -1214,11 +974,7 @@ export const BENEFITS_DATA = [
     "link": "https://basecamp.com/discounts",
     "requirements": "Tạo tài khoản Basecamp mới bằng email trường học, sau đó gửi email tới bộ phận hỗ trợ của Basecamp kèm thông tin chứng minh đang đi học.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Basecamp for Education Premium",
-    "valueEn": "Free account Basecamp Premium",
-    "descriptionEn": "Basecamp la phan mem quan ly du an and giao tiep noi bo noi tieng giup toi uu hoa cong viec nhom. Phien ban giao duc Provides day du cac tinh nang of goi tra phi phuc vu hoc tap.",
-    "requirementsEn": "Create account Basecamp moi with university email (.edu), sau do gui email toi bo phan Supports of Basecamp kem thong tin chung minh dang di hoc."
+    "isHot": false
   },
   {
     "id": "b062",
@@ -1234,11 +990,7 @@ export const BENEFITS_DATA = [
     "link": "https://rive.app",
     "requirements": "Gửi email trực tiếp đến support@rive.app với thông tin dự án học tập/coursework và thẻ sinh viên.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Rive Education Plan",
-    "valueEn": "Cap account giao duc Free/uu dai",
-    "descriptionEn": "Tool thiet ke chuyen dong and tao animation tuong tac thoi gian thuc cho Application di dong, web and game.",
-    "requirementsEn": "Gui email truc tiep den support@rive.app with thong tin du an hoc tap/coursework and student ID card."
+    "isHot": false
   },
   {
     "id": "b063",
@@ -1254,11 +1006,7 @@ export const BENEFITS_DATA = [
     "link": "https://dbeaver.com",
     "requirements": "Đăng ký trực tuyến bằng email giáo dục và gửi minh chứng học tập hợp lệ qua cổng học thuật của DBeaver.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "DBeaver Academic License",
-    "valueEn": "Free Educational License DBeaver Enterprise Edition",
-    "descriptionEn": "Provides giay phep su dung free phien ban Enterprise cao cap of Tool quan ly co so du lieu da Platform DBeaver cho muc dich hoc tap.",
-    "requirementsEn": "Register truc tuyen with email giao duc and gui minh chung hoc tap hop le qua cong hoc thuat of DBeaver."
+    "isHot": false
   },
   {
     "id": "b064",
@@ -1274,11 +1022,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.marvelousdesigner.com",
     "requirements": "Xác thực trạng thái học tập trực tiếp bằng email trường học (.edu) hoặc thẻ học sinh.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Marvelous Designer Student Plan",
-    "valueEn": "Dang ky students chi $8.25/thang (Off 70%)",
-    "descriptionEn": "Phan mem mo phong and thiet ke quan ao 3D dinh cao danh cho lam game, hoat hinh and thoi trang ky thuat so hoc tap.",
-    "requirementsEn": "Verify trang thai hoc tap truc tiep with university email (.edu) (.edu) or student ID card."
+    "isHot": false
   },
   {
     "id": "b065",
@@ -1294,11 +1038,7 @@ export const BENEFITS_DATA = [
     "link": "https://kiro.dev/students",
     "requirements": "Đăng ký tài khoản Kiro bằng email đại học (.edu) và hoàn tất xác minh trạng thái sinh viên qua cổng SheerID.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Kiro AI IDE Student Program",
-    "valueEn": "1,000 Free Credits/Thang Trong 1 Nam",
-    "descriptionEn": "Moi school lap trinh tich hop AI (agentic IDE) the he moi from AWS, Supports spec-driven development, viet test and refactor code tu dong.",
-    "requirementsEn": "Register account Kiro with email dai hoc (.edu) and hoan tat xac minh trang thai students qua cong SheerID."
+    "isHot": false
   },
   {
     "id": "b066",
@@ -1314,11 +1054,7 @@ export const BENEFITS_DATA = [
     "link": "https://v0.dev/",
     "requirements": "Xác thực tài khoản Vercel thông qua email đuôi trường học (.edu) của sinh viên.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "v0.dev Pro Education Plan",
-    "valueEn": "account Pro v0 Free",
-    "descriptionEn": "Supports thiet ke and sinh code UI/UX sieu toc with tri tue nhan tao (AI) of Vercel cho cac du an and do an cong nghe.",
-    "requirementsEn": "Verify account Vercel via email duoi schools (.edu) of students."
+    "isHot": false
   },
   {
     "id": "b067",
@@ -1334,11 +1070,7 @@ export const BENEFITS_DATA = [
     "link": "https://superhuman.com/",
     "requirements": "Gửi email yêu cầu đến hello@superhuman.com bằng email sinh viên trường học.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Superhuman Email Client",
-    "valueEn": "Discount 67% Goi Premium Mail",
-    "descriptionEn": "Application quan ly email (Gmail/Outlook) nhanh nhat the gioi giup students xu ly hop thu den sieu toc and dat Inbox Zero.",
-    "requirementsEn": "Gui email yeu cau den hello@superhuman.com with email students schools."
+    "isHot": false
   },
   {
     "id": "b068",
@@ -1354,11 +1086,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.airtable.com/education",
     "requirements": "Đăng ký qua email .edu và nộp đơn đăng ký trực tiếp trên trang web Airtable.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Airtable Student Offer",
-    "valueEn": "Free Goi Airtable Team",
-    "descriptionEn": "Tool co so du lieu ket hop bang tinh truc quan, giup students quan ly du an hoc tap, nghien cuu and to chuc du lieu manh me.",
-    "requirementsEn": "Register qua email .edu and nop don Register truc tiep tren trang web Airtable."
+    "isHot": false
   },
   {
     "id": "b069",
@@ -1374,11 +1102,7 @@ export const BENEFITS_DATA = [
     "link": "https://sub.ft.com/spa-student",
     "requirements": "Xác minh thông tin học sinh sinh viên qua cổng đăng ký học tập của FT hoặc email trường.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Financial Times (FT) Student",
-    "valueEn": "Off gia 50% goi Digital",
-    "descriptionEn": "Provides quyen truy cap tin tuc tai chinh, kinh te toan cau chat luong cao giup Supports hoc tap and nghien cuu hoc thuat sau sac.",
-    "requirementsEn": "Xac minh thong tin students students qua cong Register hoc tap of FT or university email (.edu)."
+    "isHot": false
   },
   {
     "id": "b070",
@@ -1394,11 +1118,7 @@ export const BENEFITS_DATA = [
     "link": "https://about.gitlab.com/solutions/education/",
     "requirements": "Điền đơn đăng ký thông qua chương trình GitLab for Education, yêu cầu xác thực bằng email trường và tài liệu chứng minh đang đi học.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "GitLab Ultimate for Education",
-    "valueEn": "Free Educational License cao cap nhat GitLab Ultimate",
-    "descriptionEn": "GitLab Provides free phien ban cao cap nhat GitLab Ultimate cho cac universities and du an hoc thuat of students, Supports tinh nang bao mat nang cao and cac Tool CI/CD.",
-    "requirementsEn": "Dien don Register via Program GitLab for Education, yeu cau Verify with university email (.edu) and tai lieu chung minh dang di hoc."
+    "isHot": false
   },
   {
     "id": "b071",
@@ -1414,11 +1134,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.qatarairways.com/en/student-club.html",
     "requirements": "Đăng ký online bằng email .edu, thẻ sinh viên hoặc Visa du học / Thư nhập học.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Qatar Airways Student Club",
-    "valueEn": "10% Off - 20% + Free 10kg Hanh Ly",
-    "descriptionEn": "Nhan ma Off 10% lan dau, 15% lan 2, 20% lan 3 & 4. Them hanh ly ky gui, doi ngay free and nang hang Privilege Club khi tot nghiep.",
-    "requirementsEn": "Register online with email .edu, student ID card or Visa du hoc / Thu nhap hoc."
+    "isHot": false
   },
   {
     "id": "b072",
@@ -1434,11 +1150,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.emirates.com/vn/vietnamese/special-offers/student-special-fares/",
     "requirements": "Áp dụng mã promo code STUDENT khi đặt vé và xuất trình thẻ sinh viên hoặc email trường khi check-in.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Emirates Student Discount",
-    "valueEn": "Off Den 10% + Free 10kg Hanh Ly",
-    "descriptionEn": "discount ve bay toi 10% cho hang Economy and Business Class, kem theo hanh ly ky gui bo dung and thay doi ngay bay free lan dau.",
-    "requirementsEn": "Ap dung ma promo code STUDENT khi dat ve and xuat trinh student ID card or university email (.edu) khi check-in."
+    "isHot": false
   },
   {
     "id": "b073",
@@ -1454,11 +1166,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.mongodb.com/academia",
     "requirements": "Kích hoạt thông qua GitHub Student Developer Pack.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "MongoDB Atlas for Students",
-    "valueEn": "Free $50 Cloud Credit + Free Certification",
-    "descriptionEn": "Tin dung dam may MongoDB Atlas de chay co so du lieu NoSQL, di kem voucher thi free chung chi MongoDB Certified Developer.",
-    "requirementsEn": "Kich hoat via GitHub Student Developer Pack."
+    "isHot": false
   },
   {
     "id": "b074",
@@ -1474,11 +1182,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.digitalocean.com/github-students",
     "requirements": "Kích hoạt qua GitHub Student Developer Pack.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "DigitalOcean Student Cloud Credit",
-    "valueEn": "Free $200 Cloud Credit Free",
-    "descriptionEn": "Tin dung dam may su dung trong vong 1 nam de deploy may chu ao (Droplets), co so du lieu, Application dam may cho hoc tap.",
-    "requirementsEn": "Kich hoat qua GitHub Student Developer Pack."
+    "isHot": false
   },
   {
     "id": "b075",
@@ -1494,11 +1198,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.avid.com",
     "requirements": "Xác thực trạng thái học tập qua cổng Proxi.id bằng email nhà trường hoặc thẻ sinh viên.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Avid Pro Tools Education",
-    "valueEn": "license Pro Tools Studio chi $99/nam",
-    "descriptionEn": "Tool chinh sua, thu am and san xuat am thanh hau ky phim anh tieu chuan cong nghiep am nhac.",
-    "requirementsEn": "Verify trang thai hoc tap qua cong Proxi.id with email nha school or student ID card."
+    "isHot": false
   },
   {
     "id": "b076",
@@ -1514,11 +1214,7 @@ export const BENEFITS_DATA = [
     "link": "https://academy.oracle.com/",
     "requirements": "Đăng ký thông qua tài khoản Oracle Academy do trường đại học của sinh viên liên kết cung cấp.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Oracle Academy Cloud Program",
-    "valueEn": "Free Oracle Cloud Free Tier & tai nguyen Academy",
-    "descriptionEn": "Oracle Academy Provides for students quyen truy cap free ando cac Service dam may of Oracle (Oracle Cloud Free Tier), cac khoa hoc Java, co so du lieu SQL and cong nghe AI.",
-    "requirementsEn": "Register via account Oracle Academy do universities of students lien ket Provides."
+    "isHot": false
   },
   {
     "id": "b077",
@@ -1534,11 +1230,7 @@ export const BENEFITS_DATA = [
     "link": "https://frontendmasters.com/welcome/github-student-developers/",
     "requirements": "Liên kết và kích hoạt thông qua GitHub Student Developer Pack.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Frontend Masters Student Access",
-    "valueEn": "Free 6 Thang Premium Access",
-    "descriptionEn": "Platform hoc lap trinh Web/Frontend chuyen sau from cac chuyen gia hang dau. free truy cap toan bo khoa hoc chat luong cao trong 6 thang.",
-    "requirementsEn": "Lien ket and kich hoat via GitHub Student Developer Pack."
+    "isHot": false
   },
   {
     "id": "b078",
@@ -1554,11 +1246,7 @@ export const BENEFITS_DATA = [
     "link": "https://miro.com/education/",
     "requirements": "Đăng ký bằng email trường học (.edu) và gửi thông tin xác nhận qua cổng đăng ký Miro Education.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Miro for Education Standard",
-    "valueEn": "Free Educational License Education (thoi han 2 nam)",
-    "descriptionEn": "Bang trang ky thuat so cong tac truc tuyen truc quan hang dau, giup cac nhom cung brainstorm, lap ban do tu duy, ve so do and quan ly du an. Ban Education Provides so luong bang khong gioi han.",
-    "requirementsEn": "Register with university email (.edu) (.edu) and gui thong tin xac nhan qua cong Register Miro Education."
+    "isHot": false
   },
   {
     "id": "b079",
@@ -1574,11 +1262,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.framer.com/education/",
     "requirements": "Đăng ký tài khoản Framer bằng email trường học và điền đơn xin học tập trực tuyến.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Framer No-Code Website Builder",
-    "valueEn": "Free Goi Basic Plan 1 Nam",
-    "descriptionEn": "Tool thiet ke and phat trien website khong can viet code (No-code site builder). Nhan free 1 nam goi Basic de xay dung portfolio ca nhan.",
-    "requirementsEn": "Register account Framer with university email (.edu) and dien don xin hoc tap truc tuyen."
+    "isHot": false
   },
   {
     "id": "b080",
@@ -1594,11 +1278,7 @@ export const BENEFITS_DATA = [
     "link": "https://accessnyt.com/",
     "requirements": "Xác minh thông qua cổng accessnyt.com bằng email giáo dục của trường đại học.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "The New York Times Student",
-    "valueEn": "Free Academic / Off Con $2/thang",
-    "descriptionEn": "Truy cap khong gioi han bai viet, tin tuc the gioi chat luong cao from to bao danh tieng The New York Times.",
-    "requirementsEn": "Xac minh via cong accessnyt.com with email giao duc of universities."
+    "isHot": false
   },
   {
     "id": "b081",
@@ -1614,11 +1294,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.postman.com/student-program/",
     "requirements": "Xác thực qua email trường .edu hoặc cung cấp minh chứng học tập khác.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Postman Student Program",
-    "valueEn": "Free Postman Premium",
-    "descriptionEn": "Provides cac khoa hoc dao tao API free, chung chi Postman Student Expert and Supports giay phep su dung Premium for students hoc tap.",
-    "requirementsEn": "Verify qua university email (.edu) .edu or Provides minh chung hoc tap khac."
+    "isHot": false
   },
   {
     "id": "b082",
@@ -1634,11 +1310,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.wix.com/students",
     "requirements": "Xác thực tình trạng sinh viên thông qua Student Beans.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Wix Website Student Plan",
-    "valueEn": "50% Off Goi Premium Nam",
-    "descriptionEn": "Platform thiet ke website keo tha pho bien, Supports students nhanh chong tu tao blog, portfolio ca nhan or landing page chuyen nghiep.",
-    "requirementsEn": "Verify tinh trang students via Student Beans."
+    "isHot": false
   },
   {
     "id": "b083",
@@ -1654,11 +1326,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.ableton.com",
     "requirements": "Tải tài liệu chứng minh là học sinh/sinh viên toàn thời gian hoặc bán thời gian lên trang xác thực Ableton.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Ableton Live Education",
-    "valueEn": "40% Off gia mua license Ableton Live",
-    "descriptionEn": "Phan mem may tram am thanh ky thuat so (DAW) chuyen nghiep chuan cong nghiep danh cho viec san xuat am nhac, phoi khi.",
-    "requirementsEn": "Tai tai lieu chung minh la students/students toan thoi gian or ban thoi gian len trang Verify Ableton."
+    "isHot": false
   },
   {
     "id": "b084",
@@ -1674,11 +1342,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.coreldraw.com",
     "requirements": "Xác thực trạng thái học sinh thông qua cổng SheerID hoặc cung cấp thẻ học sinh trực tiếp.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "CorelDraw Education Edition",
-    "valueEn": "Off gia toi 75% license chinh thuc",
-    "descriptionEn": "Bo Tool thiet ke do hoa vector and chinh sua anh chuyen nghiep phuc vu hoc tap sang tao nghe thuat.",
-    "requirementsEn": "Verify trang thai students via cong SheerID or Provides student ID card truc tiep."
+    "isHot": false
   },
   {
     "id": "b085",
@@ -1694,11 +1358,7 @@ export const BENEFITS_DATA = [
     "link": "https://affinity.serif.com/education/",
     "requirements": "Kích hoạt thông qua tài khoản Canva for Education được trường học phê duyệt.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Affinity Suite for Education",
-    "valueEn": "license Affinity V2 Free",
-    "descriptionEn": "Canva and Affinity ket hop Provides free bo Application thiet ke do hoa chuyen nghiep (Designer, Photo, Publisher) thay the cho Adobe Illustrator, Photoshop.",
-    "requirementsEn": "Kich hoat via account Canva for Education duoc schools phe duyet."
+    "isHot": false
   },
   {
     "id": "b086",
@@ -1714,11 +1374,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.heroku.com/github-students",
     "requirements": "Đăng ký qua GitHub Student Developer Pack.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Heroku Student Hobby Tier",
-    "valueEn": "Free $13/thang Cloud Credit (12 thang)",
-    "descriptionEn": "Tin dung dam may tri gia $13 per month trong vong 1 nam de chay cac Application Node.js, Python, Ruby tren Heroku free.",
-    "requirementsEn": "Register qua GitHub Student Developer Pack."
+    "isHot": false
   },
   {
     "id": "b087",
@@ -1734,11 +1390,7 @@ export const BENEFITS_DATA = [
     "link": "https://moqups.com",
     "requirements": "Tạo tài khoản bằng email giáo dục của trường và gửi email yêu cầu kích hoạt đến bộ phận hỗ trợ Moqups.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Moqups for Education",
-    "valueEn": "Free account Pro 1 nam",
-    "descriptionEn": "Tool thiet ke so do luong, wireframe, sitemap and cong tac nhom tren mot bang ve truc tuyen duy nhat.",
-    "requirementsEn": "Create account with email giao duc of school and gui email yeu cau kich hoat den bo phan Supports Moqups."
+    "isHot": false
   },
   {
     "id": "b088",
@@ -1754,11 +1406,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.samsung.com/vn/offer/student-discount/",
     "requirements": "Đăng nhập cổng Samsung Student Vietnam bằng email giáo dục.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Samsung Student Offers",
-    "valueEn": "Discount Den 30% Thiet Bi",
-    "descriptionEn": "deal chiet khau truc tiep khi mua dien thoai Galaxy, may tinh bang Tab, laptop Book and phu kien cong nghe.",
-    "requirementsEn": "Log in cong Samsung Student Vietnam with email giao duc."
+    "isHot": false
   },
   {
     "id": "b089",
@@ -1774,11 +1422,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.isic.org/",
     "requirements": "Cung cấp ảnh chụp thẻ sinh viên chính chủ còn hạn sử dụng để làm thẻ ISIC.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "ISIC International Student Card",
-    "valueEn": "The Uu Dai Du Lich Toan Cau",
-    "descriptionEn": "Mo khoa hon 150.000 deal ve may bay, ve tau, khach san, ve ando cong bao tang tren toan the gioi.",
-    "requirementsEn": "Provides anh chup student ID card chinh chu con han su dung de lam the ISIC."
+    "isHot": false
   },
   {
     "id": "b090",
@@ -1794,11 +1438,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.singaporeair.com/en_UK/sg/plan-travel/local-promotions/student-privilege/",
     "requirements": "Xác minh tài khoản KrisFlyer qua cổng SheerID bằng thẻ sinh viên hoặc giấy xác nhận nhập học.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Singapore Airlines Student Privileges",
-    "valueEn": "10% Off Khu Hoi / Free 40kg Hanh Ly",
-    "descriptionEn": "Dac quyen bay for students dang ky KrisFlyer. discount ve, tang dang ke hanh ly ky gui and Supports hoan ve free neu bi from choi Visa.",
-    "requirementsEn": "Xac minh account KrisFlyer qua cong SheerID with student ID card or enrollment verification letter."
+    "isHot": false
   },
   {
     "id": "b091",
@@ -1814,11 +1454,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.codecademy.com/student-center",
     "requirements": "Xác minh tư cách sinh viên qua dịch vụ đối tác SheerID.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Codecademy Student Pro",
-    "valueEn": "50% Off Goi Membership Nam",
-    "descriptionEn": "discount 50% cho goi Codecademy Pro annually, giup students tiep can cac lo trinh hoc lap trinh tuong tac phong phu, do an thuc te.",
-    "requirementsEn": "Xac minh tu cach students qua Service doi tac SheerID."
+    "isHot": false
   },
   {
     "id": "b092",
@@ -1834,11 +1470,7 @@ export const BENEFITS_DATA = [
     "link": "https://visualstudio.microsoft.com/dev-essentials/",
     "requirements": "Đăng ký tài khoản Microsoft Dev Essentials và kích hoạt ưu đãi Pluralsight.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Pluralsight Premium Offer",
-    "valueEn": "Truy Cap Free qua Microsoft Dev Essentials",
-    "descriptionEn": "Truy cap ando thu vien cac khoa hoc cong nghe cao cap of Pluralsight thong qua goi Visual Studio Dev Essentials of Microsoft.",
-    "requirementsEn": "Register account Microsoft Dev Essentials and kich hoat uu dai Pluralsight."
+    "isHot": false
   },
   {
     "id": "b093",
@@ -1854,11 +1486,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.educative.io/github-students",
     "requirements": "Đăng nhập bằng tài khoản GitHub đã được xác thực trạng thái sinh viên qua GitHub Student Developer Pack.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Educative.io Student Access Program",
-    "valueEn": "Free 6 thang hoc thu hon 60 khoa hoc lap trinh",
-    "descriptionEn": "Educative.io Provides Platform hoc lap trinh tuong tac dua tren van ban giup students hoc code nhanh hon thong qua trinh duyet ma khong can thiet lap moi school phuc tap.",
-    "requirementsEn": "Log in with account GitHub da duoc Verify trang thai students qua GitHub Student Developer Pack."
+    "isHot": false
   },
   {
     "id": "b094",
@@ -1874,11 +1502,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.turkishairlines.com/en-int/miles-and-smiles/student/",
     "requirements": "Đăng ký thành viên Miles&Smiles và gửi hồ sơ chứng minh sinh viên qua form hỗ trợ.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Turkish Airlines Student Club",
-    "valueEn": "Discount Den 20% + 40kg Ky Gui Free",
-    "descriptionEn": "deal di chuyen quoc te cuc lon from hang hang khong 5 sao of Tho Nhi Ky danh cho du students and students.",
-    "requirementsEn": "Register thanh vien Miles&Smiles and gui ho so chung minh students qua form Supports."
+    "isHot": false
   },
   {
     "id": "b095",
@@ -1894,11 +1518,7 @@ export const BENEFITS_DATA = [
     "link": "https://nhakhoaparkway.com/",
     "requirements": "Đặt lịch hẹn tư vấn trực tuyến và xuất trình thẻ học sinh/sinh viên chính thức khi đến phòng khám để được áp dụng giảm giá niềng răng hoặc chăm sóc răng.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Nha khoa Parkway Student Teeth Care",
-    "valueEn": "Off Service chinh nha & Cao voi toi 50%",
-    "descriptionEn": "discount chinh nha Invisalign/mac cai thong qua su kien lien ket schools or deal truc tiep cho the students.",
-    "requirementsEn": "Dat lich hen tu van truc tuyen and xuat trinh student ID card/students chinh thuc khi den phong kham de duoc ap dung Discount nieng rang or cham soc rang."
+    "isHot": false
   },
   {
     "id": "b096",
@@ -1914,11 +1534,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.sbb.ch",
     "requirements": "Xác minh độ tuổi từ 16 - 24 bằng hộ chiếu khi mua vé trực tuyến hoặc trực tiếp tại ga.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Swiss Travel Pass Youth",
-    "valueEn": "Off gia 30% ve tau hoa Thuy Si",
-    "descriptionEn": "The di chuyen tron goi with tau hoa, xe buyt, tau thuy and free ando cua 500 bao tang at Thuy Si danh cho gioi tre.",
-    "requirementsEn": "Xac minh do tuoi from 16 - 24 with ho chieu khi mua ve truc tuyen or truc tiep at ga."
+    "isHot": false
   },
   {
     "id": "b097",
@@ -1934,11 +1550,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.wolfram.com/mathematica/pricing/",
     "requirements": "Đăng nhập/Xác thực qua Student Beans hoặc sử dụng email giáo dục (.edu) đăng ký qua cổng phần mềm của trường liên kết.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Mathematica Student Edition / WolframAlpha Pro Student",
-    "valueEn": "Off gia 30%–60% (or Free qua school lien ket)",
-    "descriptionEn": "WolframAlpha Pro Provides Tool giai toan nang cao buoc-theo-buoc. Mathematica Student Edition Provides Tool tinh toan khoa hoc, mo phong ky thuat and phat trien thuat toan chuyen nghiep.",
-    "requirementsEn": "Log in/Verify qua Student Beans or su dung email giao duc (.edu) Register qua cong phan mem of school lien ket."
+    "isHot": false
   },
   {
     "id": "b098",
@@ -1954,11 +1566,7 @@ export const BENEFITS_DATA = [
     "link": "https://brilliant.org/educators/",
     "requirements": "Giáo viên K-12 nộp đơn xin tài khoản lớp học và thêm học sinh của mình vào danh sách.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Brilliant.org for Educators & Students",
-    "valueEn": "Free Premium cho students K-12",
-    "descriptionEn": "Platform hoc Toan, Khoa hoc May tinh tuong tac truc quan Provides account Premium free cho lop hoc giao vien bao tro.",
-    "requirementsEn": "Giao vien K-12 nop don xin account lop hoc and them students of minh ando danh sach."
+    "isHot": false
   },
   {
     "id": "b099",
@@ -1974,11 +1582,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.mural.co/education",
     "requirements": "Đăng ký tài khoản trên trang Mural Education bằng email giáo dục (.edu) hoặc cung cấp bằng chứng nhập học.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Mural for Education Workspace",
-    "valueEn": "Free goi account Education day du tinh nang",
-    "descriptionEn": "Platform bang trang tuong tac ky thuat so giup thiet ke y tuong, brainstorm and lap ban do tu duy cong tac truc quan cho cac doi nhom hoc tap of students.",
-    "requirementsEn": "Register account tren trang Mural Education with email giao duc (.edu) or Provides with chung nhap hoc."
+    "isHot": false
   },
   {
     "id": "b100",
@@ -1994,11 +1598,7 @@ export const BENEFITS_DATA = [
     "link": "https://proto.io",
     "requirements": "Liên hệ hỗ trợ trực tuyến của Proto.io từ địa chỉ email trường để nhận ưu đãi giáo dục.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Proto.io Student Discount",
-    "valueEn": "50% Off moi goi thue bao Service",
-    "descriptionEn": "Tool thiet ke mau thu (prototyping) Application di dong co do trung thuc cao (high-fidelity) khong can viet code.",
-    "requirementsEn": "Lien he Supports truc tuyen of Proto.io from dia chi university email (.edu) de nhan uu dai giao duc."
+    "isHot": false
   },
   {
     "id": "b101",
@@ -2014,11 +1614,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.economist.com/",
     "requirements": "Xác thực qua cổng Student Beans hoặc thẻ sinh viên quốc tế ISIC.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "The Economist Student",
-    "valueEn": "Discount 75% Thue Bao Digital",
-    "descriptionEn": "Tuan bao uy tin phan tich sau ve kinh te toan cau, chinh tri the gioi, khoa hoc cong nghe and van hoa.",
-    "requirementsEn": "Verify qua cong Student Beans or student ID card quoc te ISIC."
+    "isHot": false
   },
   {
     "id": "b102",
@@ -2034,11 +1630,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.cathaypacific.com",
     "requirements": "Xác minh bằng Thẻ sinh viên quốc tế (ISIC), visa du học, hoặc Thư mời nhập học khi làm thủ tục check-in.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Cathay Pacific Student Offer",
-    "valueEn": "Off toi 10% ve + Free hanh ly + Doi ngay free",
-    "descriptionEn": "Dac quyen bay for students quoc te khi dat ve truc tuyen su dung ma khuyen mai theo khu vuc (vi du: VNSTUDENT).",
-    "requirementsEn": "Xac minh with student ID card quoc te (ISIC), visa du hoc, or Thu moi nhap hoc khi lam thu tuc check-in."
+    "isHot": false
   },
   {
     "id": "b103",
@@ -2054,11 +1646,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.evaair.com",
     "requirements": "Xuất trình Thẻ sinh viên quốc tế (ISIC), visa học tập hoặc giấy báo nhập học tại sân bay.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "EVA Air Student Tickets",
-    "valueEn": "Off gia ve bay + Free them hanh ly ky gui",
-    "descriptionEn": "Goi deal for students dai hoc/cao dang and khach du lich theo dien Working Holiday tren cac duong bay quoc te duoc chi dinh.",
-    "requirementsEn": "Xuat trinh student ID card quoc te (ISIC), visa hoc tap or admission letter at san bay."
+    "isHot": false
   },
   {
     "id": "b104",
@@ -2074,11 +1662,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.ana.co.jp",
     "requirements": "Yêu cầu đăng ký thành viên ANA Mileage Club và xác minh bằng thẻ sinh viên hoặc thư nhập học bằng tiếng Anh.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "ANA Student Exclusive Deals",
-    "valueEn": "Off gia ve bay + Free them hanh ly mien cuoc",
-    "descriptionEn": "deal for students bay chang quoc te of hang hang khong 5 sao All Nippon Airways di My, Nhat Ban, Canada...",
-    "requirementsEn": "Yeu cau Register thanh vien ANA Mileage Club and xac minh with student ID card or thu nhap hoc with tieng Anh."
+    "isHot": false
   },
   {
     "id": "b105",
@@ -2094,11 +1678,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.etihad.com",
     "requirements": "Đăng ký qua cổng xác thực đối tác Student Beans.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Etihad Airways Student Discount",
-    "valueEn": "Off toi 10% Economy / 5% Business + Them hanh ly",
-    "descriptionEn": "Program deal gia ve bay quoc te and nang them han muc hanh ly ky gui free for students.",
-    "requirementsEn": "Register qua cong Verify doi tac Student Beans."
+    "isHot": false
   },
   {
     "id": "b106",
@@ -2114,11 +1694,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.squarespace.com/students",
     "requirements": "Xác thực tình trạng sinh viên thông qua Student Beans.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Squarespace Portfolio Store",
-    "valueEn": "Discount 50% Nam Dau Chi Tiet",
-    "descriptionEn": "Tool xay dung and thiet ke website chuyen nghiep, Supports dac luc for students lam portfolio ca nhan or du an hoc tap.",
-    "requirementsEn": "Verify tinh trang students via Student Beans."
+    "isHot": false
   },
   {
     "id": "b107",
@@ -2134,11 +1710,7 @@ export const BENEFITS_DATA = [
     "link": "https://asana.com",
     "requirements": "Đăng ký qua trang Asana for Students bằng email trường đại học.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Asana for Students",
-    "valueEn": "Free 12 thang goi Asana Premium",
-    "descriptionEn": "Tool quan ly du an hang dau the gioi, giup cac nhom students lap ke hoach, phan chia cong viec and theo doi deadline mot cach truc quan.",
-    "requirementsEn": "Register qua trang Asana for Students with university email (.edu) dai hoc."
+    "isHot": false
   },
   {
     "id": "b108",
@@ -2154,11 +1726,7 @@ export const BENEFITS_DATA = [
     "link": "http://timbus.vn/",
     "requirements": "Nộp tờ khai đăng ký làm thẻ xe buýt tháng HSSV (có dấu xác nhận của trường) kèm 2 ảnh 3x4 tại các điểm bán vé xe buýt ở Hà Nội.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Vé xe buýt Hà Nội dành cho HSSV (Thẻ tháng)",
-    "valueEn": "Ve thang uu tien 70.000d (1 tuyen) or 140.000d (lien tuyen)",
-    "descriptionEn": "Tong cong ty Van tai Ha Noi Provides the ve thang xe buyt uu tien cho students, students, giup di lai khong gioi han tren cac tuyen buyt tro gia of thanh pho.",
-    "requirementsEn": "Nop to khai Register lam the xe buyt thang HSSV (co dau xac nhan of school) kem 2 anh 3x4 at cac diem ban ve xe buyt o Ha Noi."
+    "isHot": false
   },
   {
     "id": "b109",
@@ -2174,11 +1742,7 @@ export const BENEFITS_DATA = [
     "link": "https://termius.com/education",
     "requirements": "Đăng ký thông qua GitHub Student Developer Pack.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Termius Student Premium",
-    "valueEn": "account Termius Premium Free",
-    "descriptionEn": "Application SSH Client hien dai, dong bo cau hinh dam may, luu tru khoa and snippet giup quan ly VPS/may chu tren PC and mobile.",
-    "requirementsEn": "Register via GitHub Student Developer Pack."
+    "isHot": false
   },
   {
     "id": "b110",
@@ -2194,11 +1758,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.sketch.com/education/",
     "requirements": "Gửi biểu mẫu yêu cầu qua Sketch Education Store kèm thẻ sinh viên còn hạn.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Sketch for Students",
-    "valueEn": "license Sketch Supports 100%",
-    "descriptionEn": "Phan mem thiet ke giao dien UI/UX chuyen nghiep tren macOS. free day du tinh nang cho students hoc tap thiet ke.",
-    "requirementsEn": "Gui bieu mau yeu cau qua Sketch Education Store kem student ID card con han."
+    "isHot": false
   },
   {
     "id": "b111",
@@ -2214,11 +1774,7 @@ export const BENEFITS_DATA = [
     "link": "https://whimsical.com/education",
     "requirements": "Điền biểu mẫu yêu cầu trên trang Whimsical bằng tài khoản email .edu.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Whimsical Visual Workspace",
-    "valueEn": "Free Nang Cap Goi Pro",
-    "descriptionEn": "Tool truc quan hoa tu duy hang dau, Supports ve so do tu duy (mind map), luu do (flowchart), and phac thao wireframe.",
-    "requirementsEn": "Dien bieu mau yeu cau tren trang Whimsical with account email .edu."
+    "isHot": false
   },
   {
     "id": "b112",
@@ -2234,11 +1790,7 @@ export const BENEFITS_DATA = [
     "link": "https://coda.io/pricing",
     "requirements": "Xác thực trực tiếp trên trang Coda Pricing thông qua email giáo dục.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Coda All-in-One Docs",
-    "valueEn": "Free Nang Cap Goi Coda Pro",
-    "descriptionEn": "Platform tai lieu all-in-one ket hop soan thao van ban, bang du lieu and Application giup to chuc and cong tac thong tin du an hoc tap.",
-    "requirementsEn": "Verify truc tiep tren trang Coda Pricing via email giao duc."
+    "isHot": false
   },
   {
     "id": "b113",
@@ -2254,11 +1806,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.lufthansa.com",
     "requirements": "Xác minh trạng thái học tập trực tuyến thông qua cổng liên kết UNiDAYS hoặc Student Beans.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Lufthansa Student Fares",
-    "valueEn": "Off gia ve + Free hanh ly phu + Doi ve linh hoat",
-    "descriptionEn": "Provides gia ve students deal cho cac chuyen bay xuyen dai duong from 16 tuoi tro len.",
-    "requirementsEn": "Xac minh trang thai hoc tap truc tuyen via cong lien ket UNiDAYS or Student Beans."
+    "isHot": false
   },
   {
     "id": "b114",
@@ -2274,11 +1822,7 @@ export const BENEFITS_DATA = [
     "link": "https://nhakhoaparis.vn/",
     "requirements": "Đặt lịch hẹn khám trực tuyến và xuất trình thẻ sinh viên tại phòng khám để nhận ưu đãi lấy cao răng, nhổ răng khôn hoặc niềng răng dành riêng cho sinh viên.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Nha khoa Paris Orthodontics",
-    "valueEn": "Tra gop nieng rang 0% & Uu dai",
-    "descriptionEn": "Goi deal nieng rang (chinh nha) danh rieng cho students with chinh sach tra gop 0% truc tiep with nha khoa.",
-    "requirementsEn": "Dat lich hen kham truc tuyen and xuat trinh student ID card at phong kham de nhan uu dai lay cao rang, nho rang khon or nieng rang danh rieng for students."
+    "isHot": false
   },
   {
     "id": "b115",
@@ -2294,11 +1838,7 @@ export const BENEFITS_DATA = [
     "link": "https://zed.dev/education",
     "requirements": "Đăng nhập bằng tài khoản GitHub (trên 30 ngày tuổi) và xác thực email trường học.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Zed Editor Education Program",
-    "valueEn": "Free Zed Pro trong 1 nam & AI credits",
-    "descriptionEn": "Trinh soan thao ma nguon the he moi sieu nhanh, Supports lap trinh cong tac thoi gian thuc and tich hop mo hinh AI nang cao.",
-    "requirementsEn": "Log in with account GitHub (tren 30 ngay tuoi) and Verify university email (.edu)."
+    "isHot": false
   },
   {
     "id": "b116",
@@ -2314,11 +1854,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.studentuniverse.com",
     "requirements": "Xác thực thẻ sinh viên quốc tế hoặc giấy tờ chứng minh đang theo học tại trường đại học.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "StudentUniverse",
-    "valueEn": "Off toi 30% ve may bay & khach san",
-    "descriptionEn": "Dai ly du lich truc tuyen chuyen biet Provides ve may bay and phong o gia re danh cho du students toan cau.",
-    "requirementsEn": "Verify student ID card quoc te or giay to chung minh dang theo hoc at universities."
+    "isHot": false
   },
   {
     "id": "b117",
@@ -2334,11 +1870,7 @@ export const BENEFITS_DATA = [
     "link": "https://sunsama.com",
     "requirements": "Gửi email yêu cầu giảm giá học sinh tới support@sunsama.com bằng email trường.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Sunsama Student Discount",
-    "valueEn": "Off gia 50% phi Service monthly",
-    "descriptionEn": "Application lap ke hoach hang ngay truc quan giup sap xep thoi gian lam viec and hoc tap can with khoa hoc.",
-    "requirementsEn": "Gui email yeu cau Discount students toi support@sunsama.com with university email (.edu)."
+    "isHot": false
   },
   {
     "id": "b118",
@@ -2354,11 +1886,7 @@ export const BENEFITS_DATA = [
     "link": "https://akiflow.com",
     "requirements": "Gửi email yêu cầu ưu đãi giáo dục tới đội ngũ hỗ trợ của Akiflow kèm email trường.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Akiflow Student Discount",
-    "valueEn": "Off gia toi 50% goi Service Premium",
-    "descriptionEn": "Tool tong hop cong viec from nhieu nguon (Gmail, Slack, Notion) and keo tha truc tiep len lich ca nhan students.",
-    "requirementsEn": "Gui email yeu cau uu dai giao duc toi doi ngu Supports of Akiflow kem university email (.edu)."
+    "isHot": false
   },
   {
     "id": "b119",
@@ -2374,11 +1902,7 @@ export const BENEFITS_DATA = [
     "link": "https://balsamiq.com/wireframes/cloud/sales/classroom/",
     "requirements": "Gửi email yêu cầu đến Balsamiq kèm theo minh chứng học sinh sinh viên hiện tại hoặc email .edu.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Balsamiq Cloud Student License",
-    "valueEn": "Free 1 Nam Cloud License",
-    "descriptionEn": "Tool ve phac thao (wireframe) giao dien UI/UX truc quan and nhanh chong cho do an website, Application di dong.",
-    "requirementsEn": "Gui email yeu cau den Balsamiq kem theo minh chung students students hien at or email .edu."
+    "isHot": false
   },
   {
     "id": "b120",
@@ -2394,11 +1918,7 @@ export const BENEFITS_DATA = [
     "link": "https://spline.design",
     "requirements": "Đăng ký tài khoản và điền thông tin xác thực tại trang Spline Education bằng email trường học.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Spline 3D Education",
-    "valueEn": "Free/Off gia goi Spline Pro",
-    "descriptionEn": "Tool thiet ke mo hinh 3D tuong tac truc tiep tren trinh duyet web, xuat ban thiet ke sang WebGL/React de dang.",
-    "requirementsEn": "Register account and dien thong tin Verify at trang Spline Education with university email (.edu)."
+    "isHot": false
   },
   {
     "id": "b121",
@@ -2414,11 +1934,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.washingtonpost.com/subscribe/signup/academic",
     "requirements": "Xác thực trạng thái học tập qua cổng SheerID tích hợp tại trang đăng ký.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "The Washington Post Academic",
-    "valueEn": "Goi Academic chi $1 moi 4 tuan",
-    "descriptionEn": "Truy cap khong gioi han tin tuc Hoa Ky and the gioi tren website and Application di dong with muc gia deal lon (tiet kiem ~90%).",
-    "requirementsEn": "Verify trang thai hoc tap qua cong SheerID tich hop at trang Register."
+    "isHot": false
   },
   {
     "id": "b122",
@@ -2434,11 +1950,7 @@ export const BENEFITS_DATA = [
     "link": "https://azure.microsoft.com/en-us/free/students/",
     "requirements": "Đăng ký trực tiếp bằng email đuôi giáo dục (.edu) của trường đại học.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Microsoft Azure for Students",
-    "valueEn": "Free $100 Annual Credit + Service Free",
-    "descriptionEn": "Tang $100 tin dung Azure annually khong can the tin dung, cong with quyen truy cap free cac Service App Services, SQL DB and may ao.",
-    "requirementsEn": "Register truc tiep with email duoi giao duc (.edu) of universities."
+    "isHot": false
   },
   {
     "id": "b123",
@@ -2454,11 +1966,7 @@ export const BENEFITS_DATA = [
     "link": "https://aws.amazon.com/education/awseducate/",
     "requirements": "Đăng ký bằng email trường học. Quyết định phê duyệt trong vòng vài ngày.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "AWS Educate Portal",
-    "valueEn": "Free Cloud Labs & AWS Credits",
-    "descriptionEn": "Program dao tao dien toan dam may Amazon Web Services Provides cac phong thuc hanh free (labs) and tin dung AWS for students.",
-    "requirementsEn": "Register with university email (.edu). Quyet dinh phe duyet trong vong andi ngay."
+    "isHot": false
   },
   {
     "id": "b124",
@@ -2474,11 +1982,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.apple.com/us-edu/store",
     "requirements": "Xác thực trạng thái sinh viên trực tuyến bằng tài khoản UNiDAYS hoặc cung cấp minh chứng học tập khi mua trực tiếp.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Apple Store Education",
-    "valueEn": "Gia Hoc Tap Cho Mac & iPad + 10% Off AppleCare+",
-    "descriptionEn": "deal dac quyen cho students, students and faculty khi mua sam may tinh Mac and may tinh bang iPad moi at cua hang truc tuyen chinh thuc of Apple.",
-    "requirementsEn": "Verify trang thai students truc tuyen with account UNiDAYS or Provides minh chung hoc tap khi mua truc tiep."
+    "isHot": false
   },
   {
     "id": "b125",
@@ -2494,11 +1998,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.dell.com/en-us/lp/dell-university",
     "requirements": "Xác thực trực tiếp bằng email trường (.edu) hoặc qua cổng UNiDAYS/Student Beans.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Dell University Student Discount",
-    "valueEn": "Off Them Den 10% Cho Laptop & PC",
-    "descriptionEn": "Nhan ma discount doc quyen cho cac dong laptop Dell Latitude, XPS, Inspiron and Alienware danh rieng cho students.",
-    "requirementsEn": "Verify truc tiep with university email (.edu) (.edu) or qua cong UNiDAYS/Student Beans."
+    "isHot": false
   },
   {
     "id": "b126",
@@ -2514,11 +2014,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.hp.com/us-en/shop/cv/hp-education-store",
     "requirements": "Đăng ký tài khoản HP Store bằng email giáo dục (.edu) hợp lệ.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "HP Student Store",
-    "valueEn": "Discount Len Den 40% Thiet Bi HP",
-    "descriptionEn": "Program HP Education Store Provides deal chiet khau truc tiep tren laptop, may tinh de ban, man hinh and may in.",
-    "requirementsEn": "Register account HP Store with email giao duc (.edu) hop le."
+    "isHot": false
   },
   {
     "id": "b127",
@@ -2534,11 +2030,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.microsoft.com/en-us/store/b/education",
     "requirements": "Đăng nhập bằng tài khoản Microsoft cá nhân và xác thực email trường học.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Microsoft Store Student",
-    "valueEn": "Off Toi 10% Surface & Phu Kien",
-    "descriptionEn": "deal discount truc tiep khi mua may tinh xach tay Surface Laptop, may tinh bang Surface Pro and cac phu kien Surface chinh hang.",
-    "requirementsEn": "Log in with account Microsoft ca nhan and Verify university email (.edu)."
+    "isHot": false
   },
   {
     "id": "b128",
@@ -2554,11 +2046,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.razer.com/education",
     "requirements": "Xác thực thông qua UNiDAYS, Student Beans hoặc bằng email trường học.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Razer Education Program",
-    "valueEn": "15% Off Phu Kien & 5% Laptop",
-    "descriptionEn": "Tiet kiem chi phi khi trang bi thiet bi cong nghe, gaming and hoc tap hieu suat cao of Razer for students, faculty.",
-    "requirementsEn": "Verify via UNiDAYS, Student Beans or with university email (.edu)."
+    "isHot": false
   },
   {
     "id": "b129",
@@ -2574,11 +2062,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.jal.co.jp",
     "requirements": "Đăng ký tài khoản JAL Mileage Bank và xác thực thông tin ngày sinh/thẻ sinh viên.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Japan Airlines Sky Mate",
-    "valueEn": "Off toi 50% ve bay noi dia Nhat sat gio",
-    "descriptionEn": "Dac quyen gia ve 'Sky Mate' cuc re cho hanh khach from 12-25 tuoi dat ve sat gio bay noi dia Nhat, cung the tin dung JALCARD navi free nien han.",
-    "requirementsEn": "Register account JAL Mileage Bank and Verify thong tin ngay sinh/student ID card."
+    "isHot": false
   },
   {
     "id": "b130",
@@ -2594,11 +2078,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.eurail.com",
     "requirements": "Xác thực độ tuổi trực tiếp bằng hộ chiếu khi mua vé trực tuyến (không cần thẻ sinh viên).",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Eurail Youth Pass",
-    "valueEn": "Off gia toi 25% ve tau Eurail Pass",
-    "descriptionEn": "Dac quyen ve tau di lai khong gioi han tren he thong duong sat of 33 quoc gia chau Au danh cho hanh khach from 12 den 27 tuoi.",
-    "requirementsEn": "Verify do tuoi truc tiep with ho chieu khi mua ve truc tuyen (khong can student ID card)."
+    "isHot": false
   },
   {
     "id": "b131",
@@ -2614,11 +2094,7 @@ export const BENEFITS_DATA = [
     "link": "https://marvelapp.com",
     "requirements": "Xác thực tư cách sinh viên thông qua cổng đối tác Student Beans.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Marvel App Student Discount",
-    "valueEn": "Off 70% cac goi thue bao nam",
-    "descriptionEn": "Tool thiet ke UI/UX keo tha nhanh, bien cac ban phac thao ve tay thanh Application tuong tac di dong/web trong andi phut.",
-    "requirementsEn": "Verify tu cach students via cong doi tac Student Beans."
+    "isHot": false
   },
   {
     "id": "b132",
@@ -2634,11 +2110,7 @@ export const BENEFITS_DATA = [
     "link": "https://nhakhoakim.com/",
     "requirements": "Đặt lịch khám qua hotline/website và xuất trình thẻ sinh viên chính thức tại quầy tiếp đón của Nha khoa Kim để nhận chiết khấu điều trị.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Nha khoa Kim Student Program",
-    "valueEn": "Tra gop chinh nha 0% & Off gia",
-    "descriptionEn": "Tra gop nieng rang lai suat 0% chia nho theo thang for students cung cac Program cao voi rang deal.",
-    "requirementsEn": "Dat lich kham qua hotline/website and xuat trinh student ID card chinh thuc at quay tiep don of Nha khoa Kim de nhan chiet khau dieu tri."
+    "isHot": false
   },
   {
     "id": "b133",
@@ -2654,11 +2126,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.image-line.com",
     "requirements": "Xác thực giấy tờ nhập học thông qua nhà phân phối phần mềm âm nhạc được ủy quyền ( Thomann).",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "FL Studio Academic Edition",
-    "valueEn": "Signature Bundle Academic Edition gia $199",
-    "descriptionEn": "Phan mem lam nhac (DAW) chuyen nghiep duoc nhieu nha san xuat am nhac noi tieng tin dung.",
-    "requirementsEn": "Verify giay to nhap hoc via nha phan phoi phan mem am nhac duoc uy quyen ( Thomann)."
+    "isHot": false
   },
   {
     "id": "b134",
@@ -2674,11 +2142,7 @@ export const BENEFITS_DATA = [
     "link": "https://endnote.com",
     "requirements": "Xác thực trạng thái học thuật qua cổng Proxi.id bằng thẻ sinh viên hoặc email trường.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "EndNote Academic License",
-    "valueEn": "license tron doi gia students dac biet",
-    "descriptionEn": "Tool quan ly tai lieu tham khao and tu dong trich dan khoa hoc chuan muc quoc te cho nghien cuu sinh tot nghiep.",
-    "requirementsEn": "Verify trang thai hoc thuat qua cong Proxi.id with student ID card or university email (.edu)."
+    "isHot": false
   },
   {
     "id": "b135",
@@ -2694,11 +2158,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.linode.com/",
     "requirements": "Đăng ký tài khoản mới trên trang chính thức của Akamai Cloud và xác thực phương thức thanh toán hợp lệ.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Linode (Akamai) Cloud Credit",
-    "valueEn": "Free $100 Cloud Credits su dung trong 60 ngay",
-    "descriptionEn": "Akamai Cloud (truoc day la Linode) Provides $100 tin dung dam may free cho students, students de trien khai cloud VPS, luu tru du lieu and thu nghiem cac du an lap trinh.",
-    "requirementsEn": "Register account moi tren trang chinh thuc of Akamai Cloud and Verify phuong thuc thanh toan hop le."
+    "isHot": false
   },
   {
     "id": "b136",
@@ -2714,11 +2174,7 @@ export const BENEFITS_DATA = [
     "link": "https://linear.app/",
     "requirements": "Đăng ký workspace Linear bằng địa chỉ email sinh viên trường học.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Linear Project Manager",
-    "valueEn": "Free Linear Premium Workspace",
-    "descriptionEn": "Tool quan ly du an and theo doi bug (issue tracker) chuyen nghiep chuan Agile danh cho cac nhom phat trien phan mem hoc tap.",
-    "requirementsEn": "Register workspace Linear with dia chi email students schools."
+    "isHot": false
   },
   {
     "id": "b137",
@@ -2734,11 +2190,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.lucidchart.com/pages/use-case/education",
     "requirements": "Đăng ký và xác thực thông qua email trường .edu.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Lucidchart for Education",
-    "valueEn": "Free goi Educational nang cao",
-    "descriptionEn": "Tool ve so do tu duy, luu do thuat toan and bang trang cong tac truc quan hang dau, Supports dac luc cho hoc tap, lam bai tap nhom.",
-    "requirementsEn": "Register and Verify via university email (.edu) .edu."
+    "isHot": false
   },
   {
     "id": "b138",
@@ -2754,11 +2206,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.skillshare.com/",
     "requirements": "Đăng ký bằng email đuôi giáo dục hợp lệ.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Skillshare Student Plan",
-    "valueEn": "Discount 50% Membership",
-    "descriptionEn": "Hoc tap cac ky nang thuc te from cac chuyen gia thiet ke, nhiep anh, kinh doanh truc tuyen.",
-    "requirementsEn": "Register with email duoi giao duc hop le."
+    "isHot": false
   },
   {
     "id": "b139",
@@ -2774,11 +2222,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.loom.com/education",
     "requirements": "Xác minh thông qua Atlassian Portal / Goodstack bằng email đuôi nhà trường.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Loom Screen Recorder",
-    "valueEn": "Off Den 75% Goi Loom Education",
-    "descriptionEn": "Platform ghi man hinh and gui video tin nhan nhanh giup students thuyet trinh bai tap or giao tiep nhom from xa hieu qua.",
-    "requirementsEn": "Xac minh via Atlassian Portal / Goodstack with email duoi nha school."
+    "isHot": false
   },
   {
     "id": "b140",
@@ -2794,11 +2238,7 @@ export const BENEFITS_DATA = [
     "link": "https://replit.com/edu",
     "requirements": "Đăng ký bằng email trường học và liên kết tài khoản github học tập.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Replit Core Student Discount",
-    "valueEn": "50% Off Goi Replit Core",
-    "descriptionEn": "Cho phep students truy cap Tool lap trinh dam may Replit Core and Replit Agent (su dung AI) with chi phi deal discount 50% trong 6 thang dau.",
-    "requirementsEn": "Register with university email (.edu) and lien ket account github hoc tap."
+    "isHot": false
   },
   {
     "id": "b141",
@@ -2814,11 +2254,7 @@ export const BENEFITS_DATA = [
     "link": "https://roamresearch.com",
     "requirements": "Nộp đơn đăng ký chương trình học giả (dành cho người dưới 22 tuổi hoặc nghiên cứu viên).",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Roam Research Scholars Program",
-    "valueEn": "Off gia 50% phi Service monthly",
-    "descriptionEn": "Tool ghi chu lien ket mang luoi tu duy (bi-directional linking) hang dau danh cho hoc thuat and nghien cuu khoa hoc.",
-    "requirementsEn": "Nop don Register Program hoc gia (danh cho nguoi duoi 22 tuoi or nghien cuu vien)."
+    "isHot": false
   },
   {
     "id": "b142",
@@ -2834,11 +2270,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.atlassian.com/solutions/survey/classroom-license-request#/",
     "requirements": "Đăng ký yêu cầu Classroom License qua cổng Atlassian và xác thực thông tin học tập qua tổ chức xác thực Percent.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Trello Classroom License & Premium",
-    "valueEn": "Free Classroom License or Off 75% Premium",
-    "descriptionEn": "Trello Provides Tool quan ly du an truc quan dua tren phuong phap Kanban, Supports toi uu hoa quy trinh lam viec nhom cho students, students and faculty.",
-    "requirementsEn": "Register yeu cau Classroom License qua cong Atlassian and Verify thong tin hoc tap qua to chuc Verify Percent."
+    "isHot": false
   },
   {
     "id": "b143",
@@ -2854,11 +2286,7 @@ export const BENEFITS_DATA = [
     "link": "http://buyttphcm.com.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên còn hiệu lực trực tiếp cho tiếp viên khi lên xe buýt tại TP.HCM để mua vé xe buýt đồng giá ưu đãi.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Vé xe buýt TP.HCM dành cho HSSV",
-    "valueEn": "Dong gia ve luot 3.000d or Free mot so tuyen",
-    "descriptionEn": "Program tro gia ve xe buyt cong cong of TP.HCM danh rieng cho doi tuong students, students giup Off thieu chi phi di lai hang ngay. Dac biet free mot so tuyen tro gia nam 2026.",
-    "requirementsEn": "Xuat trinh student ID card/students con hieu luc truc tiep cho tiep vien khi len xe buyt at TP.HCM de mua ve xe buyt dong gia uu dai."
+    "isHot": false
   },
   {
     "id": "b144",
@@ -2874,11 +2302,7 @@ export const BENEFITS_DATA = [
     "link": "https://schools.duolingo.com/",
     "requirements": "Đăng ký lớp học do giáo viên/giảng viên tạo lập bằng mã tham gia (Class code).",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Duolingo Schools / Classroom",
-    "valueEn": "Dac Quyen Super Duolingo Free",
-    "descriptionEn": "Hoc ngoai ngu khong quang cao, vo han luot thu thach qua viec tham gia ando account lop hoc Duolingo Classroom.",
-    "requirementsEn": "Register lop hoc do giao vien/faculty tao lap with ma tham gia (Class code)."
+    "isHot": false
   },
   {
     "id": "b145",
@@ -2894,11 +2318,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.scribd.com/promo/student",
     "requirements": "Xác thực trạng thái sinh viên qua cổng SheerID.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Scribd Student Subscription",
-    "valueEn": "Off Phi Thue Bao ($4.99/thang)",
-    "descriptionEn": "Goi deal Scribd/Everand de truy cap khong gioi han hang trieu cuon sach dien tu, tai lieu nghien cuu hoc thuat, slide and audiobook.",
-    "requirementsEn": "Verify trang thai students qua cong SheerID."
+    "isHot": false
   },
   {
     "id": "b146",
@@ -2914,11 +2334,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.overleaf.com/user/subscription/plans",
     "requirements": "Đăng ký với email trường .edu hoặc cung cấp minh chứng học tập.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Overleaf Student Plan",
-    "valueEn": "Discount Goi LaTeX Collaborator",
-    "descriptionEn": "Trinh soan thao van ban LaTeX cong tac truc tuyen chuyen nghiep cho cac tai lieu khoa hoc, luan van and bai nghien cuu, Supports dong bo GitHub.",
-    "requirementsEn": "Register with university email (.edu) .edu or Provides minh chung hoc tap."
+    "isHot": false
   },
   {
     "id": "b147",
@@ -2934,11 +2350,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.mockflow.com",
     "requirements": "Xác thực trạng thái học tập qua cổng giáo dục MockFlow sử dụng email trường học.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "MockFlow Education",
-    "valueEn": "50% Off gia cac goi Service",
-    "descriptionEn": "Tool ve wireframe nhanh and lap ke hoach UI/UX cho trang web and Application di dong.",
-    "requirementsEn": "Verify trang thai hoc tap qua cong giao duc MockFlow su dung university email (.edu)."
+    "isHot": false
   },
   {
     "id": "b148",
@@ -2954,11 +2366,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.intellect.co/",
     "requirements": "Tài khoản đăng ký bằng email đuôi trường liên kết đối tác.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Intellect Premium Program",
-    "valueEn": "Free 1 Nam App Tam Ly",
-    "descriptionEn": "Application cham soc suc khoe tinh than hang dau. Off stress, cai thien giac ngu and phat trien ban than.",
-    "requirementsEn": "account Register with email duoi school lien ket doi tac."
+    "isHot": false
   },
   {
     "id": "b149",
@@ -2974,11 +2382,7 @@ export const BENEFITS_DATA = [
     "link": "https://be.com.vn/",
     "requirements": "Đăng ký tham gia câu lạc bộ sinh viên BeStudent trực tiếp trên ứng dụng di động Be bằng cách chụp ảnh thẻ sinh viên để nhận gói coupon di chuyển hàng tuần.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "BeStudent Commuting Pack",
-    "valueEn": "20% Off beBike & beCar",
-    "descriptionEn": "Goi khuyen mai di chuyen hang tuan danh rieng for students cac universities/Cao dang.",
-    "requirementsEn": "Register tham gia cau lac bo students BeStudent truc tiep tren Application di dong Be with cach chup anh student ID card de nhan goi coupon di chuyen hang tuan."
+    "isHot": false
   },
   {
     "id": "b150",
@@ -2994,11 +2398,7 @@ export const BENEFITS_DATA = [
     "link": "https://nordvpn.com/student-discount/",
     "requirements": "Xác minh qua cổng Youth Discount, Student Beans hoặc SheerID bằng thẻ sinh viên/email trường.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "NordVPN Student Discount",
-    "valueEn": "Discount Den 60-70% + Thang Free",
-    "descriptionEn": "deal discount dac biet cho Service mang rieng ao (VPN) bao mat hang dau NordVPN, Supports hoc tap an toan.",
-    "requirementsEn": "Xac minh qua cong Youth Discount, Student Beans or SheerID with student ID card/university email (.edu)."
+    "isHot": false
   },
   {
     "id": "b151",
@@ -3014,11 +2414,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.lenovo.com/us/en/student/",
     "requirements": "Xác minh qua cổng ID.me hoặc UNiDAYS khi thanh toán trong giỏ hàng.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Lenovo Student Store",
-    "valueEn": "Discount Them Toi 10% Thiet Bi",
-    "descriptionEn": "Dac quyen gia tot cho cac dong may Lenovo ThinkPad, Yoga, IdeaPad and Legion phuc vu muc dich hoc tap and lam viec.",
-    "requirementsEn": "Xac minh qua cong ID.me or UNiDAYS khi thanh toan trong gio hang."
+    "isHot": false
   },
   {
     "id": "b152",
@@ -3034,11 +2430,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.asus.com/us/store/",
     "requirements": "Đăng ký thành viên ASUS bằng email sinh viên trường học.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "ASUS Store Student",
-    "valueEn": "Uu Dai Gia Giao Duc Zenbook & ROG",
-    "descriptionEn": "ASUS Education Store discount cho cac dong laptop Zenbook, Vivobook and ROG phuc vu cho students.",
-    "requirementsEn": "Register thanh vien ASUS with email students schools."
+    "isHot": false
   },
   {
     "id": "b153",
@@ -3054,11 +2446,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.expressvpn.com",
     "requirements": "Xác minh bằng email giáo dục qua cổng liên kết Student Beans hoặc UNiDAYS.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "ExpressVPN Student Discount",
-    "valueEn": "Off toi 80% + Free them 3-4 thang free",
-    "descriptionEn": "Service mang rieng ao (VPN) bao mat, an danh and toc do cao hang dau the gioi giup truy cap tai nguyen hoc tap an toan.",
-    "requirementsEn": "Xac minh with email giao duc qua cong lien ket Student Beans or UNiDAYS."
+    "isHot": false
   },
   {
     "id": "b154",
@@ -3074,11 +2462,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.rosettastone.com/",
     "requirements": "Xác thực trạng thái học sinh sinh viên qua cổng đối tác Student Beans.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Rosetta Stone Student Discount",
-    "valueEn": "Off gia den 50% hoc ngoai ngu",
-    "descriptionEn": "Application hoc ngoai ngu theo phuong phap giao tiep tu nhien discount sau cac goi dang ky dai han or tron doi for students.",
-    "requirementsEn": "Verify trang thai students students qua cong doi tac Student Beans."
+    "isHot": false
   },
   {
     "id": "b155",
@@ -3094,11 +2478,7 @@ export const BENEFITS_DATA = [
     "link": "https://obsidian.md/pricing",
     "requirements": "Đăng ký qua email .edu hoặc gửi minh chứng học tập khác tới hỗ trợ của Obsidian.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Obsidian Sync/Publish",
-    "valueEn": "40% Off Service Dong Bo",
-    "descriptionEn": "Giup students dong bo hoa ghi chu bao mat Obsidian Sync and xuat ban ghi chu ca nhan len website ca nhan with chi phi hoc tap.",
-    "requirementsEn": "Register qua email .edu or gui minh chung hoc tap khac toi Supports of Obsidian."
+    "isHot": false
   },
   {
     "id": "b156",
@@ -3114,11 +2494,7 @@ export const BENEFITS_DATA = [
     "link": "https://education.github.com/pack",
     "requirements": "Đăng nhập bằng tài khoản GitHub Student Developer Pack để lấy mã coupon hoặc liên kết kích hoạt của Vultr.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Vultr Student Cloud Credits",
-    "valueEn": "Free $50–$100 tin dung dam may Vultr VPS",
-    "descriptionEn": "Tin dung dam may free for students de khoi tao VPS, may chu dam may, GPU and cac giai phap luu tru du lieu thong qua lien ket with cac Program hoc tap or GitHub Student Pack.",
-    "requirementsEn": "Log in with account GitHub Student Developer Pack de lay ma coupon or lien ket kich hoat of Vultr."
+    "isHot": false
   },
   {
     "id": "b157",
@@ -3134,11 +2510,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.deezer.com/en/offers/student",
     "requirements": "Xác thực tài khoản UNiDAYS bằng thẻ sinh viên hoặc email giáo dục.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Deezer Student Premium",
-    "valueEn": "Discount 50% Goi Premium",
-    "descriptionEn": "Service nghe nhac truc tuyen chat luong cao with hon 90 trieu bai hat and cac goi y am nhac ca nhan hoa Flow.",
-    "requirementsEn": "Verify account UNiDAYS with student ID card or email giao duc."
+    "isHot": false
   },
   {
     "id": "b158",
@@ -3154,11 +2526,7 @@ export const BENEFITS_DATA = [
     "link": "https://mubi.com/student",
     "requirements": "Đăng ký qua mubi.com/student bằng địa chỉ email trường học hợp lệ.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "MUBI Cinema Student",
-    "valueEn": "Discount 40% monthly",
-    "descriptionEn": "Platform xem phim dien anh nghe thuat (indie, classic, award-winning) tuyen chon chat luong cao.",
-    "requirementsEn": "Register qua mubi.com/student with dia chi university email (.edu) hop le."
+    "isHot": false
   },
   {
     "id": "b159",
@@ -3174,11 +2542,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.hulu.com/student",
     "requirements": "Xác thực qua SheerID (yêu cầu học sinh tại trường đại học/cao đẳng).",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Hulu Student Discount",
-    "valueEn": "Goi Hulu (With Ads) Chi $1.99/thang",
-    "descriptionEn": "Platform xem phim, Program truyen hinh and anime truc tuyen with muc gia cuc ky deal for students (Off 75% so with gia goc).",
-    "requirementsEn": "Verify qua SheerID (yeu cau students at universities/cao dang)."
+    "isHot": false
   },
   {
     "id": "b160",
@@ -3194,11 +2558,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.git-tower.com/pricing",
     "requirements": "Kích hoạt thông qua GitHub Student Developer Pack hoặc đăng ký bằng email .edu.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Tower Git Client",
-    "valueEn": "license Tower Pro Free",
-    "descriptionEn": "Mot trong nhung Application giao dien Git (Git GUI) manh me and truc quan nhat danh cho macOS and Windows.",
-    "requirementsEn": "Kich hoat via GitHub Student Developer Pack or Register with email .edu."
+    "isHot": false
   },
   {
     "id": "b161",
@@ -3214,11 +2574,7 @@ export const BENEFITS_DATA = [
     "link": "https://tidal.com/pricing",
     "requirements": "Xác minh thông qua cổng SheerID bằng tài liệu minh chứng học tập.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Tidal Student Music",
-    "valueEn": "Discount 50% Hifi Lossless",
-    "descriptionEn": "Service phat nhac truc tuyen chat luong am thanh Hi-Fi lossless chuan studio danh cho nguoi nghe nhac kho tinh.",
-    "requirementsEn": "Xac minh via cong SheerID with tai lieu minh chung hoc tap."
+    "isHot": false
   },
   {
     "id": "b162",
@@ -3234,11 +2590,7 @@ export const BENEFITS_DATA = [
     "link": "http://timbus.vn/",
     "requirements": "Đến trực tiếp điểm làm thẻ xe buýt tháng của Transerco Hà Nội, nộp thẻ học sinh/sinh viên để được áp dụng gói vé tháng ưu đãi một tuyến hoặc liên tuyến.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Hanoi Student Monthly Bus Pass",
-    "valueEn": "Ve thang 1 tuyen 70K, lien tuyen 140K",
-    "descriptionEn": "Off 50% gia ve thang xe buyt cho HSSV at Ha Noi (muc gia thuong la 140.000d/1 tuyen and 280.000d/lien tuyen).",
-    "requirementsEn": "Den truc tiep diem lam the xe buyt thang of Transerco Ha Noi, nop student ID card/students de duoc ap dung goi ve thang uu dai mot tuyen or lien tuyen."
+    "isHot": false
   },
   {
     "id": "b163",
@@ -3254,11 +2606,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.calm.com/",
     "requirements": "Xác thực trạng thái sinh viên thông qua Student Beans hoặc Amazon Prime Student.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Calm Sleep & Meditation",
-    "valueEn": "Off 60% Goi Premium",
-    "descriptionEn": "Application cham soc suc khoe tinh than, Supports giac ngu and chanh niem with kho nhac thu gian and cau chuyen ke dem khuya.",
-    "requirementsEn": "Verify trang thai students via Student Beans or Amazon Prime Student."
+    "isHot": false
   },
   {
     "id": "b164",
@@ -3274,11 +2622,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.apple.com/apple-music/#student",
     "requirements": "Xác thực tài khoản UNiDAYS thông qua thẻ sinh viên hoặc email trường.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Apple Music & TV+ Bundle",
-    "valueEn": "Off Phi 50% + Free Kem Apple TV+",
-    "descriptionEn": "Nghe nhac chat luong cao khong gioi han and xem cac Program phim doc quyen from Apple TV+.",
-    "requirementsEn": "Verify account UNiDAYS via student ID card or university email (.edu)."
+    "isHot": false
   },
   {
     "id": "b165",
@@ -3294,11 +2638,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.adidas.com/us/student-discount",
     "requirements": "Xác thực thẻ học sinh/sinh viên qua hệ thống UNiDAYS.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Adidas Student Offer",
-    "valueEn": "Discount 15% Truc Tuyen",
-    "descriptionEn": "Nhan ma discount 15% khi mua sam tat ca cac san pham thoi trang and giay the thao Adidas.",
-    "requirementsEn": "Verify student ID card/students qua he thong UNiDAYS."
+    "isHot": false
   },
   {
     "id": "b166",
@@ -3314,11 +2654,7 @@ export const BENEFITS_DATA = [
     "link": "https://bootstrapstudio.io/pages/student-license",
     "requirements": "Đăng ký qua cổng Bootstrap Studio Education bằng email trường hoặc thẻ sinh viên.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Bootstrap Studio Student License",
-    "valueEn": "license Free for students",
-    "descriptionEn": "Phan mem thiet ke giao dien web responsive chuyen nghiep keo tha, tu dong sinh code sach su dung framework Bootstrap.",
-    "requirementsEn": "Register qua cong Bootstrap Studio Education with university email (.edu) or student ID card."
+    "isHot": false
   },
   {
     "id": "b167",
@@ -3334,11 +2670,7 @@ export const BENEFITS_DATA = [
     "link": "https://evernote.com/",
     "requirements": "Xác thực trạng thái học sinh sinh viên thông qua cổng UNiDAYS.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Evernote Student Discount",
-    "valueEn": "Discount 50% Evernote Personal",
-    "descriptionEn": "discount 50% Service ghi chu and quan ly cong viec hoc tap chuyen nghiep Evernote Personal de luu bai giang, tai lieu nghien cuu.",
-    "requirementsEn": "Verify trang thai students students via cong UNiDAYS."
+    "isHot": false
   },
   {
     "id": "b168",
@@ -3354,11 +2686,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.headspace.com/studentplan",
     "requirements": "Xác minh trực tiếp trạng thái sinh viên qua cổng SheerID tích hợp trên Headspace.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Headspace Mental Health",
-    "valueEn": "Thue Bao Hoc Duong $9.99/Nam (Off 85%)",
-    "descriptionEn": "Application thien dinh and cham soc suc khoe tinh than hang dau giup Off stress, cai thien kha nang tap trung and giac ngu.",
-    "requirementsEn": "Xac minh truc tiep trang thai students qua cong SheerID tich hop tren Headspace."
+    "isHot": false
   },
   {
     "id": "b169",
@@ -3374,11 +2702,7 @@ export const BENEFITS_DATA = [
     "link": "https://proton.me/student",
     "requirements": "Xác thực tình trạng sinh viên qua hệ thống Student Beans.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Proton Unlimited Student",
-    "valueEn": "50% Off Goi Proton Unlimited",
-    "descriptionEn": "Truy cap ando toan bo bo Service bao mat cao cap including Proton Mail, Proton VPN, Proton Drive, Proton Calendar and Proton Pass with 500GB luu tru.",
-    "requirementsEn": "Verify tinh trang students qua he thong Student Beans."
+    "isHot": false
   },
   {
     "id": "b170",
@@ -3394,11 +2718,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.dashlane.com/students",
     "requirements": "Đăng ký và xác thực qua email sinh viên .edu.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Dashlane Premium for Students",
-    "valueEn": "Free 1 nam Dashlane Premium",
-    "descriptionEn": "Trinh quan ly mat khau an toan, cho phep students luu tru mat khau khong gioi han and tu dong dien thong tin dang nhap tren nhieu thiet bi.",
-    "requirementsEn": "Register and Verify qua email students .edu."
+    "isHot": false
   },
   {
     "id": "b171",
@@ -3414,11 +2734,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.peacocktv.com/student",
     "requirements": "Xác thực tình trạng sinh viên qua SheerID.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Peacock Student Discount",
-    "valueEn": "Peacock Premium Chi $5.99/thang",
-    "descriptionEn": "Service phat truc tuyen of NBCUniversal with nhieu bo phim doc quyen and cac tran dau the thao truc tiep deal dac biet for students.",
-    "requirementsEn": "Verify tinh trang students qua SheerID."
+    "isHot": false
   },
   {
     "id": "b172",
@@ -3434,11 +2750,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.soundcloud.com",
     "requirements": "Xác thực thông qua cổng SheerID.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "SoundCloud Go+ Student Plan",
-    "valueEn": "50% Off Goi Premium Music",
-    "descriptionEn": "Platform phan phoi am nhac truc tuyen lon nhat the gioi, cho phep nghe nhac khong quang cao, tai nhac ngoai tuyen chat luong cao.",
-    "requirementsEn": "Verify via cong SheerID."
+    "isHot": false
   },
   {
     "id": "b173",
@@ -3454,11 +2766,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.craft.do",
     "requirements": "Đăng ký tài khoản mới hoặc đổi email tài khoản hiện tại sang email trường học để tự động kích hoạt.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Craft.do Education Plan",
-    "valueEn": "Free goi Pro hoan chinh",
-    "descriptionEn": "Tool ghi chu, soan thao tai lieu dep mat and quan ly tai lieu ca nhan Supports AI cuc manh me.",
-    "requirementsEn": "Register account moi or doi email account hien at sang university email (.edu) de tu dong kich hoat."
+    "isHot": false
   },
   {
     "id": "b174",
@@ -3474,11 +2782,7 @@ export const BENEFITS_DATA = [
     "link": "https://hbr.org/",
     "requirements": "Đăng ký bằng địa chỉ email đuôi giáo dục (.edu) hoặc cung cấp minh chứng học tập.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Harvard Business Review Student",
-    "valueEn": "Off gia 50% goi Digital/Print",
-    "descriptionEn": "Tap chi quan tri kinh doanh uy tin hang dau the gioi discount mot nua phi dang ky thue bao for students and gioi hoc thuat.",
-    "requirementsEn": "Register with dia chi email duoi giao duc (.edu) or Provides minh chung hoc tap."
+    "isHot": false
   },
   {
     "id": "b175",
@@ -3494,11 +2798,7 @@ export const BENEFITS_DATA = [
     "link": "https://leetcode.com/student/",
     "requirements": "Đăng ký tham gia sự kiện 'Back-to-School' bằng email của trường đại học (.edu) khi đạt tối thiểu 50 người đăng ký cùng trường.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "LeetCode Premium Student Discount",
-    "valueEn": "Off gia goi Premium annually con $99/nam",
-    "descriptionEn": "LeetCode Premium Provides quyen truy cap ando kho cau hoi lap trinh lon nhat the gioi, giai thich chi tiet, trinh bien dich nhanh hon, and cac cau hoi phong van thuc te from cac tap doan cong nghe lon.",
-    "requirementsEn": "Register tham gia su kien 'Back-to-School' with email of universities (.edu) khi dat toi thieu 50 nguoi Register cung school."
+    "isHot": false
   },
   {
     "id": "b176",
@@ -3514,11 +2814,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.gitkraken.com/student-resources",
     "requirements": "Đăng ký thông qua GitHub Student Developer Pack.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "GitKraken Client Pro",
-    "valueEn": "Free license GitKraken Pro",
-    "descriptionEn": "Giao dien do hoa (GUI) quan ly Git truc quan and manh me nhat hien nay. Phien ban Pro giup quan ly repo lon and tich hop muot ma.",
-    "requirementsEn": "Register via GitHub Student Developer Pack."
+    "isHot": false
   },
   {
     "id": "b177",
@@ -3534,11 +2830,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.parallels.com/landingpage/pd/education/",
     "requirements": "Xác thực trạng thái học tập qua cổng OnTheHub hoặc email trường để nhận license key giảm giá 50%.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Parallels Desktop for Students",
-    "valueEn": "Discount 50% license Hang Nam",
-    "descriptionEn": "Phan mem gia lap chay he dieu hanh Windows song song tren may Mac muot ma khong can reboot danh cho hoc tap and do hoa.",
-    "requirementsEn": "Verify trang thai hoc tap qua cong OnTheHub or university email (.edu) de nhan license key Discount 50%."
+    "isHot": false
   },
   {
     "id": "b178",
@@ -3554,11 +2846,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.nike.com/help/a/student-discount",
     "requirements": "Xác minh trạng thái sinh viên thông qua cổng SheerID.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Nike Student Discount",
-    "valueEn": "Discount 10% Don Hang",
-    "descriptionEn": "deal truc tiep 10% khi mua sam cac san pham giay, quan ao the thao Nike chinh hang truc tuyen.",
-    "requirementsEn": "Xac minh trang thai students via cong SheerID."
+    "isHot": false
   },
   {
     "id": "b179",
@@ -3574,11 +2862,7 @@ export const BENEFITS_DATA = [
     "link": "https://dominos.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên khi mua pizza trực tiếp tại cửa hàng Domino's Pizza Việt Nam để nhận combo giảm giá đặc biệt.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Domino's Pizza Student Deal",
-    "valueEn": "Uu Dai Discount 30%",
-    "descriptionEn": "Dat banh pizza Domino co vua and lon with muc chiet khau 30% cho cac buoi tu hop hoc nhom.",
-    "requirementsEn": "Xuat trinh student ID card/students khi mua pizza truc tiep at cua hang Domino's Pizza Viet Nam de nhan combo Discount dac biet."
+    "isHot": false
   },
   {
     "id": "b180",
@@ -3594,11 +2878,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.amtrak.com/student-discounts",
     "requirements": "Đặt vé trước ít nhất 1 ngày và xuất trình thẻ sinh viên hợp lệ khi soát vé trên tàu.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Amtrak Train Discount",
-    "valueEn": "Discount 15% Ve Tau Hoa",
-    "descriptionEn": "Tiet kiem chi phi di lai with tau hoa tren khap nuoc My cho students, students from 17 den 25 tuoi.",
-    "requirementsEn": "Dat ve truoc it nhat 1 ngay and xuat trinh student ID card hop le khi soat ve tren tau."
+    "isHot": false
   },
   {
     "id": "b181",
@@ -3614,11 +2894,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.logitech.com",
     "requirements": "Xác thực qua tài khoản UNiDAYS hoặc Student Beans.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Logitech Student Store",
-    "valueEn": "Discount 25% Chuot & Ban Phim",
-    "descriptionEn": "Tiet kiem chi phi khi mua chuot, ban phim, tai nghe, webcam and thiet bi ngoai vi phuc vu hoc tap and giai tri of Logitech.",
-    "requirementsEn": "Verify qua account UNiDAYS or Student Beans."
+    "isHot": false
   },
   {
     "id": "b182",
@@ -3634,11 +2910,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.paramountplus.com/account/edu/",
     "requirements": "Xác thực tình trạng sinh viên qua SheerID.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Paramount+ Student Offer",
-    "valueEn": "Discount 50% Moi Goi Cuoc",
-    "descriptionEn": "Platform xem phim truc tuyen hang dau of My with kho phim bom tan do so and cac tran dau the thao truc tiep, Off nua gia for students.",
-    "requirementsEn": "Verify tinh trang students qua SheerID."
+    "isHot": false
   },
   {
     "id": "b183",
@@ -3654,11 +2926,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.expedia.com",
     "requirements": "Xác thực trạng thái sinh viên qua ID.me hoặc cổng Student Beans.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Expedia Student Discount",
-    "valueEn": "Off from 8% den 10% dat phong khach san",
-    "descriptionEn": "Ma discount doc quyen for students khi dat Service luu tru khach san tren toan the gioi qua Platform Expedia.",
-    "requirementsEn": "Verify trang thai students qua ID.me or cong Student Beans."
+    "isHot": false
   },
   {
     "id": "b184",
@@ -3674,11 +2942,7 @@ export const BENEFITS_DATA = [
     "link": "https://get.tech/github-student-pack",
     "requirements": "Đăng nhập bằng tài khoản GitHub Student Developer Pack để lấy mã giảm giá hoặc liên kết kích hoạt.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": ".TECH Domains for Students",
-    "valueEn": "Free dang ky ten mien .tech 1 nam & SSL",
-    "descriptionEn": ".TECH Domains hop tac with cac Program giao duc nhu GitHub Student Pack de Provides free 1 nam dang ky ten mien .tech cho students, students xay dung trang web ca nhan.",
-    "requirementsEn": "Log in with account GitHub Student Developer Pack de lay ma Discount or lien ket kich hoat."
+    "isHot": false
   },
   {
     "id": "b185",
@@ -3694,11 +2958,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.atlassian.com/software/bitbucket/pricing",
     "requirements": "Đăng ký tài khoản Bitbucket bằng email học thuật (.edu) hoặc liên kết thông qua cổng phần mềm giáo dục của trường.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Bitbucket Cloud Academic Plan",
-    "valueEn": "Free goi Academic khong gioi han cong tac vien",
-    "descriptionEn": "Atlassian Provides goi Bitbucket Cloud Academic free khong gioi han so luong cong tac vien cho cac kho chua ma nguon ca nhan danh cho students, students and faculty.",
-    "requirementsEn": "Register account Bitbucket with email hoc thuat (.edu) or lien ket via cong phan mem giao duc of school."
+    "isHot": false
   },
   {
     "id": "b186",
@@ -3714,11 +2974,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.shodan.io/",
     "requirements": "Đăng ký tài khoản Shodan bằng email đại học/học thuật để tự động kích hoạt nâng cấp Academic Membership trọn đời.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Shodan Academic Membership",
-    "valueEn": "Nang Cap Member Tron Doi Free",
-    "descriptionEn": "Tool tim kiem cac thiet bi ket noi internet danh cho nha nghien cuu bao mat and students cong nghe thong tin hoc tap.",
-    "requirementsEn": "Register account Shodan with email dai hoc/hoc thuat de tu dong kich hoat nang cap Academic Membership tron doi."
+    "isHot": false
   },
   {
     "id": "b187",
@@ -3734,11 +2990,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.flinto.com",
     "requirements": "Gửi hình ảnh thẻ sinh viên hoặc thời khóa biểu học tập học kỳ hiện tại qua trang mua hàng giáo dục của Flinto.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Flinto for Mac",
-    "valueEn": "50% Off gia license phan mem",
-    "descriptionEn": "Application thiet ke mau thu UI/UX manh me tren macOS, chuyen Supports tao cac hieu ung chuyen canh (transitions) muot ma.",
-    "requirementsEn": "Gui hinh anh student ID card or thoi khoa bieu hoc tap hoc ky hien at qua trang mua hang giao duc of Flinto."
+    "isHot": false
   },
   {
     "id": "b188",
@@ -3754,11 +3006,7 @@ export const BENEFITS_DATA = [
     "link": "https://readwise.io",
     "requirements": "Gửi email đăng ký tới hello@readwise.io bằng email trường học hoặc gửi minh chứng học tập.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Readwise Reader Student",
-    "valueEn": "Discount 50% Moi Goi Thue Bao",
-    "descriptionEn": "Giai phap luu tru, dong bo hoa and on tap tu dong cac phan highlight from sach (Kindle), bai bao, and tai lieu doc truc tuyen cho students, students.",
-    "requirementsEn": "Gui email Register toi hello@readwise.io with university email (.edu) or gui minh chung hoc tap."
+    "isHot": false
   },
   {
     "id": "b189",
@@ -3774,11 +3022,7 @@ export const BENEFITS_DATA = [
     "link": "https://vinaphone.com.vn/",
     "requirements": "Mang CCCD kèm thẻ học sinh/sinh viên còn hiệu lực đến các điểm giao dịch của VinaPhone toàn quốc để đăng ký sim sinh viên chính chủ.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "VinaPhone YOLO100M Student Pack",
-    "valueEn": "1GB data/ngay & Free YouTube/TikTok/FB",
-    "descriptionEn": "Goi data danh cho gioi tre and HSSV with dung luong lon cung dac quyen free data toc do cao khi luot TikTok, xem YouTube and Facebook.",
-    "requirementsEn": "Mang CCCD kem student ID card/students con hieu luc den cac diem giao dich of VinaPhone toan quoc de Register sim students chinh chu."
+    "isHot": false
   },
   {
     "id": "b190",
@@ -3794,11 +3038,7 @@ export const BENEFITS_DATA = [
     "link": "https://mobifone.vn/",
     "requirements": "Đăng ký chính chủ sim sinh viên tại các cửa hàng giao dịch MobiFone toàn quốc bằng cách xuất trình CCCD và thẻ sinh viên.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "MobiFone MXH100 Combo",
-    "valueEn": "1GB data/ngay & Free Social Media",
-    "descriptionEn": "Goi cuoc combo tich hop data toc do cao and free data truy cap khong gioi han cho cac Platform mang xa hoi and giai tri pho bien nhat of students.",
-    "requirementsEn": "Register chinh chu sim students at cac cua hang giao dich MobiFone toan quoc with cach xuat trinh CCCD and student ID card."
+    "isHot": false
   },
   {
     "id": "b191",
@@ -3814,11 +3054,7 @@ export const BENEFITS_DATA = [
     "link": "http://buyttphcm.com.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên khi lên xe buýt tại TP.HCM để mua vé lượt đồng giá ưu đãi trực tiếp từ nhân viên bán vé.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "HCMC Student Bus Ticket",
-    "valueEn": "Ve luot 3K or Free tron goi",
-    "descriptionEn": "discount ve le from 6-7K xuong con 3.000d for students. Dac biet from 01/07/2026 den 31/12/2026 duoc free 100% khi di xe buyt tro gia at TP.HCM.",
-    "requirementsEn": "Xuat trinh student ID card/students khi len xe buyt at TP.HCM de mua ve luot dong gia uu dai truc tiep from nhan vien ban ve."
+    "isHot": false
   },
   {
     "id": "b192",
@@ -3834,11 +3070,7 @@ export const BENEFITS_DATA = [
     "link": "https://clickup.com",
     "requirements": "Điền đơn đăng ký chương trình học thuật trực tiếp trên trang chủ ClickUp.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "ClickUp Academic Discount",
-    "valueEn": "Off gia dac biet cho goi tra phi",
-    "descriptionEn": "He thong quan ly cong viec and du an hoc tap 'tat ca trong mot', giup theo doi tien do do an nhom and hoc tap ca nhan hieu qua.",
-    "requirementsEn": "Dien don Register Program hoc thuat truc tiep tren trang chu ClickUp."
+    "isHot": false
   },
   {
     "id": "b193",
@@ -3854,11 +3086,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.cyberghostvpn.com",
     "requirements": "Xác thực tư cách sinh viên thông qua Student Beans hoặc UNiDAYS.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "CyberGhost Student Discount",
-    "valueEn": "Off toi 84% + Free them thang free",
-    "descriptionEn": "Giai phap VPN toc do cao, giao dien than thien with cac may chu toi uu hoa rieng cho viec nghien cuu and truy cap web an toan.",
-    "requirementsEn": "Verify tu cach students via Student Beans or UNiDAYS."
+    "isHot": false
   },
   {
     "id": "b194",
@@ -3874,11 +3102,7 @@ export const BENEFITS_DATA = [
     "link": "https://vus.edu.vn/",
     "requirements": "Liên hệ tư vấn viên tại các cơ sở Anh văn Hội Việt Mỹ (VUS) và xuất trình thẻ sinh viên để được áp dụng giảm học phí hoặc tặng học bổng.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "VUS Student Study Support",
-    "valueEn": "Scholarship ban phan & Tra gop hoc phi 0%",
-    "descriptionEn": "deal Off hoc phi cac khoa tieng Anh giao tiep or IELTS and tra gop hoc phi lai suat 0% qua ngan hang lien ket.",
-    "requirementsEn": "Lien he tu van vien at cac co so Anh van Hoi Viet My (VUS) and xuat trinh student ID card de duoc ap dung Off hoc phi or tang hoc bong."
+    "isHot": false
   },
   {
     "id": "b195",
@@ -3894,11 +3118,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.levi.com/",
     "requirements": "Xác minh trạng thái sinh viên qua cổng SheerID để nhận mã giảm giá một lần.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Levi's Student Discount",
-    "valueEn": "Off gia 15% khi mua sam online",
-    "descriptionEn": "Thuong hieu quan jean bieu tuong Levi's discount 15% cho tat ca don hang truc tuyen of students, students.",
-    "requirementsEn": "Xac minh trang thai students qua cong SheerID de nhan ma Discount mot lan."
+    "isHot": false
   },
   {
     "id": "b196",
@@ -3914,11 +3134,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.klook.com/",
     "requirements": "Xác minh qua Student Beans hoặc UNiDAYS tùy theo khu vực địa lý.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Klook Travel Activities",
-    "valueEn": "Discount Den 18% Dat Tour & Ve",
-    "descriptionEn": "Platform dat ve vui choi, tour du lich, phuong tien di chuyen and sim the tien loi for students di trai nghiem.",
-    "requirementsEn": "Xac minh qua Student Beans or UNiDAYS tuy theo khu vuc dia ly."
+    "isHot": false
   },
   {
     "id": "b197",
@@ -3934,11 +3150,7 @@ export const BENEFITS_DATA = [
     "link": "https://cacoo.com",
     "requirements": "Đăng ký trực tiếp qua trang Cacoo dành cho giáo dục.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Cacoo Education Plan",
-    "valueEn": "50% Off goi Service nhom (Team Plan)",
-    "descriptionEn": "Phan mem thiet ke so do, wireframe and mindmap cong tac thoi gian thuc truc tuyen cho hoc tap nhom.",
-    "requirementsEn": "Register truc tiep qua trang Cacoo danh cho giao duc."
+    "isHot": false
   },
   {
     "id": "b198",
@@ -3954,11 +3166,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.mindmeister.com",
     "requirements": "Đăng ký tài khoản cơ bản rồi gửi yêu cầu nâng cấp kèm minh chứng học tập qua cổng hỗ trợ.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "MindMeister for Education",
-    "valueEn": "50% Off chi phi cac goi tra phi",
-    "descriptionEn": "Tool ve so do tu duy truc tuyen Supports cong tac thoi gian thuc and trinh bay y tuong hoc thuat chuyen nghiep.",
-    "requirementsEn": "Register account co ban roi gui yeu cau nang cap kem minh chung hoc tap qua cong Supports."
+    "isHot": false
   },
   {
     "id": "b199",
@@ -3974,11 +3182,7 @@ export const BENEFITS_DATA = [
     "link": "https://raycast.com/student-program",
     "requirements": "Nộp biểu mẫu đăng ký chương trình sinh viên với thông tin email và bằng chứng đang theo học.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Raycast Pro Student Program",
-    "valueEn": "Off gia 50% goi Raycast Pro",
-    "descriptionEn": "Tool launcher sieu toc tren macOS tich hop Tool viet, tim kiem thong tin with AI and phim tat cuc manh.",
-    "requirementsEn": "Nop bieu mau Register Program students with thong tin email and with chung dang theo hoc."
+    "isHot": false
   },
   {
     "id": "b200",
@@ -3994,11 +3198,7 @@ export const BENEFITS_DATA = [
     "link": "https://vietteltelecom.vn/",
     "requirements": "Mang theo thẻ học sinh/sinh viên (từ 14 đến 22 tuổi) kèm CCCD đến cửa hàng Viettel để đăng ký sim chính chủ hoặc đổi gói cước qua app MyViettel.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Viettel GIC90N Student Package",
-    "valueEn": "1GB data/ngay & Free TikTok/FB",
-    "descriptionEn": "Goi cuoc dac quyen moi danh rieng cho students from 14–22 tuoi. free data toc do cao khi truy cap Facebook, TikTok, Messenger and doc sach Mydio.",
-    "requirementsEn": "Mang theo student ID card/students (from 14 den 22 tuoi) kem CCCD den cua hang Viettel de Register sim chinh chu or doi goi cuoc qua app MyViettel."
+    "isHot": false
   },
   {
     "id": "b201",
@@ -4014,11 +3214,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.underarmour.com/",
     "requirements": "Xác thực tài khoản sinh viên qua UNiDAYS để nhận mã giảm giá.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Under Armour Student Discount",
-    "valueEn": "Off gia 15%–20% do the thao",
-    "descriptionEn": "Thuong hieu thoi trang the thao hieu nang cao Under Armour discount len toi 20% cho students.",
-    "requirementsEn": "Verify account students qua UNiDAYS de nhan ma Discount."
+    "isHot": false
   },
   {
     "id": "b202",
@@ -4034,11 +3230,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.scrintal.com",
     "requirements": "Đăng ký và thanh toán tài khoản bằng email đuôi nhà trường đại học hoặc cao đẳng.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Scrintal for Education",
-    "valueEn": "Off gia 30% goi Service Pro",
-    "descriptionEn": "Tool ghi chep dang the ket hop bang trang ky thuat so (visual board) giup nghien cuu tai lieu de dang.",
-    "requirementsEn": "Register and thanh toan account with email duoi nha universities or cao dang."
+    "isHot": false
   },
   {
     "id": "b203",
@@ -4054,11 +3246,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.babbel.com/",
     "requirements": "Xác minh tư cách học sinh sinh viên qua dịch vụ đối tác.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Babbel Language Learning",
-    "valueEn": "Discount 65% Cho Hoc Ngoai Ngu",
-    "descriptionEn": "Hoc tieng Anh, tieng Tay Ban Nha, tieng Phap... with phuong phap phan xa khoa hoc and deal toi 65%.",
-    "requirementsEn": "Xac minh tu cach students students qua Service doi tac."
+    "isHot": false
   },
   {
     "id": "b204",
@@ -4074,11 +3262,7 @@ export const BENEFITS_DATA = [
     "link": "https://phuclong.com.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên chính chủ tại quầy thanh toán của Phúc Long khi mua đồ uống để nhận ưu đãi combo hoặc giảm giá theo chương trình.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Phuc Long Tea & Coffee Student Offer",
-    "valueEn": "Discount 10% Hoa Don",
-    "descriptionEn": "deal truc tiep cho cac thuc uong tra sua, tra dao, cafe noi tieng of Phuc Long at cua hang.",
-    "requirementsEn": "Xuat trinh student ID card/students chinh chu at quay thanh toan of Phuc Long khi mua do uong de nhan uu dai combo or Discount theo Program."
+    "isHot": false
   },
   {
     "id": "b205",
@@ -4094,11 +3278,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.grammarly.com/",
     "requirements": "Xác thực tình trạng sinh viên qua SheerID hoặc email giáo dục (.edu).",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Grammarly Writing Assistant",
-    "valueEn": "Discount 20% Goi Grammarly Pro",
-    "descriptionEn": "Tro ly viet tieng Anh with AI giup sua loi ngu phap, toi uu hoa cau from and cai thien phong cach viet hoc thuat chuyen nghiep.",
-    "requirementsEn": "Verify tinh trang students qua SheerID or email giao duc (.edu)."
+    "isHot": false
   },
   {
     "id": "b206",
@@ -4114,11 +3294,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.bambooairways.com/",
     "requirements": "Chọn hạng vé HSSV khi đặt vé trực tuyến hoặc mua vé tại phòng vé chính thức của Bamboo Airways, xuất trình thẻ sinh viên khi làm thủ tục bay.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Bamboo Airways Student Promo",
-    "valueEn": "Ve uu dai from 99,000 VND",
-    "descriptionEn": "Hang Supports students thong qua cac Program khuyen mai mua tuu school (thang 8-9) with gia ve re or tang dam thuong tich luy hoi vien Bamboo Club.",
-    "requirementsEn": "Chon hang ve HSSV khi dat ve truc tuyen or mua ve at phong ve chinh thuc of Bamboo Airways, xuat trinh student ID card khi lam thu tuc bay."
+    "isHot": false
   },
   {
     "id": "b207",
@@ -4134,11 +3310,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.flixbus.com/",
     "requirements": "Xác thực qua hệ thống UNiDAYS, Student Beans hoặc thẻ ISIC.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "FlixBus Intercity Discount",
-    "valueEn": "Discount 10% - 15% Ve Xe Khach",
-    "descriptionEn": "Service xe khach lien tinh gia re at Chau Au and My, giup students di chuyen tiet kiem giua cac thanh pho hoc tap or di du lich.",
-    "requirementsEn": "Verify qua he thong UNiDAYS, Student Beans or the ISIC."
+    "isHot": false
   },
   {
     "id": "b208",
@@ -4154,11 +3326,7 @@ export const BENEFITS_DATA = [
     "link": "https://tableplus.com",
     "requirements": "Gửi email yêu cầu đến đội ngũ hỗ trợ của TablePlus bằng email trường học kèm thẻ sinh viên.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "TablePlus Student License",
-    "valueEn": "50% Off license phan mem",
-    "descriptionEn": "Tool quan ly co so du lieu (SQL & NoSQL) giao dien native muot ma and cuc nhanh cho nha phat trien tren macOS/Windows.",
-    "requirementsEn": "Gui email yeu cau den doi ngu Supports of TablePlus with university email (.edu) kem student ID card."
+    "isHot": false
   },
   {
     "id": "b209",
@@ -4174,11 +3342,7 @@ export const BENEFITS_DATA = [
     "link": "https://dsvn.vn/",
     "requirements": "Mua vé trực tiếp tại ga tàu hoặc đặt trực tuyến qua website dsvn.vn (chọn đối tượng Sinh viên), xuất trình thẻ sinh viên chính chủ kèm giấy tờ tùy thân khi lên tàu.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Vé tàu hỏa Đường sắt Việt Nam (VNR)",
-    "valueEn": "10% Off gia ve tau tren tat ca doan tau khach",
-    "descriptionEn": "Tong cong ty Duong sat Viet Nam ap dung chinh sach Off 10% gia ve tau hoa tren tat ca cac tuyen cho students, students quanh nam.",
-    "requirementsEn": "Mua ve truc tiep at ga tau or dat truc tuyen qua website dsvn.vn (chon doi tuong students), xuat trinh student ID card chinh chu kem giay to tuy than khi len tau."
+    "isHot": false
   },
   {
     "id": "b210",
@@ -4194,11 +3358,7 @@ export const BENEFITS_DATA = [
     "link": "https://hoanghamobile.com/",
     "requirements": "Mang thẻ sinh viên còn hiệu lực và CCCD qua hệ thống cửa hàng Hoàng Hà Mobile để đăng ký chương trình Hoàng Hà Edu và nhận ưu đãi giảm giá.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Hoàng Hà Mobile HSSV (Hoàng Hà Edu)",
-    "valueEn": "Off gia dac quyen & Tra gop 0%",
-    "descriptionEn": "Dac quyen discount truc tiep cho thiet bi cong nghe hoc tap danh cho HSSV from 14-22 tuoi, cung thu tuc tra gop 0% lai suat don gian.",
-    "requirementsEn": "Mang student ID card con hieu luc and CCCD qua he thong cua hang Hoang Ha Mobile de Register Program Hoang Ha Edu and nhan uu dai Discount."
+    "isHot": false
   },
   {
     "id": "b211",
@@ -4214,11 +3374,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.asos.com/",
     "requirements": "Xác minh tư cách sinh viên thông qua cổng SheerID tích hợp trên website ASOS.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "ASOS Student Discount",
-    "valueEn": "Off gia 10% don hang thoi trang",
-    "descriptionEn": "Trang mua sam thoi trang quoc te lon nhat danh cho gioi tre Off 10% cho moi don hang thoi trang of students.",
-    "requirementsEn": "Xac minh tu cach students via cong SheerID tich hop tren website ASOS."
+    "isHot": false
   },
   {
     "id": "b212",
@@ -4234,11 +3390,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.ray-ban.com/",
     "requirements": "Xác minh tư cách học sinh sinh viên qua hệ thống UNiDAYS.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Ray-Ban Student Discount",
-    "valueEn": "Off gia 20% kinh mat chinh hang",
-    "descriptionEn": "Thuong hieu kinh mat Ray-Ban Off 20% for students khi mua cac san pham kinh chinh hang truc tuyen.",
-    "requirementsEn": "Xac minh tu cach students students qua he thong UNiDAYS."
+    "isHot": false
   },
   {
     "id": "b213",
@@ -4254,11 +3406,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.masterclass.com/",
     "requirements": "Xác minh tình trạng học tập thông qua Student Beans hoặc UNiDAYS.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "MasterClass Online Lessons",
-    "valueEn": "Discount 15% Thue Bao Nam",
-    "descriptionEn": "Platform hoc truc tuyen with cac bai giang from nhung chuyen gia, nghe si, doanh nhan noi tieng nhat the gioi trong nhieu linh vuc.",
-    "requirementsEn": "Xac minh tinh trang hoc tap via Student Beans or UNiDAYS."
+    "isHot": false
   },
   {
     "id": "b214",
@@ -4274,11 +3422,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.wolframalpha.com/pro/",
     "requirements": "Xác minh qua cổng Student Beans hoặc UNiDAYS.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "WolframAlpha Pro Student",
-    "valueEn": "Discount 30% Ban Pro",
-    "descriptionEn": "Tool tinh toan tri thuc thong minh giai cac bai toan toan hoc, khoa hoc, phan tich du lieu chuyen sau and hien thi loi giai fromng buoc.",
-    "requirementsEn": "Xac minh qua cong Student Beans or UNiDAYS."
+    "isHot": false
   },
   {
     "id": "b215",
@@ -4294,11 +3438,7 @@ export const BENEFITS_DATA = [
     "link": "https://cinestar.com.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên hoặc căn cước công dân (dưới 22 tuổi) tại quầy vé khi thanh toán trực tiếp.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Cinestar C'Student Member",
-    "valueEn": "Ve Xem Phim Dong Gia from 45K - 49K",
-    "descriptionEn": "deal gia ve xem phim 2D dong gia cuc tot cho HSSV and thanh vien U22 at tat ca he thong rap Cinestar toan quoc.",
-    "requirementsEn": "Xuat trinh student ID card/students or can cuoc cong dan (duoi 22 tuoi) at quay ve khi thanh toan truc tiep."
+    "isHot": false
   },
   {
     "id": "b216",
@@ -4314,11 +3454,7 @@ export const BENEFITS_DATA = [
     "link": "https://nova.app",
     "requirements": "Gửi liên hệ hoặc email bằng hòm thư giáo dục của trường học để nhận mã giảm giá.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Nova Editor (by Panic)",
-    "valueEn": "Off 25% license phan mem macOS",
-    "descriptionEn": "Trinh soan thao code native tuyet dep, hieu nang cao and day du tinh nang danh rieng cho he dieu hanh macOS from hang Panic.",
-    "requirementsEn": "Gui lien he or email with hom thu giao duc of schools de nhan ma Discount."
+    "isHot": false
   },
   {
     "id": "b217",
@@ -4334,11 +3470,7 @@ export const BENEFITS_DATA = [
     "link": "https://didongviet.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên và CCCD tại các cửa hàng Di Động Việt để được giảm giá trực tiếp khi mua điện thoại, phụ kiện công nghệ.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Di Động Việt Student Deal",
-    "valueEn": "Off them 100K - 1.000K",
-    "descriptionEn": "deal discount truc tiep bo sung for students khi mua dien thoai Android, iPhone, iPad or MacBook ben canh cac deal san co.",
-    "requirementsEn": "Xuat trinh student ID card/students and CCCD at cac cua hang Di Dong Viet de duoc Discount truc tiep khi mua dien thoai, phu kien cong nghe."
+    "isHot": false
   },
   {
     "id": "b218",
@@ -4354,11 +3486,7 @@ export const BENEFITS_DATA = [
     "link": "https://thepizzacompany.vn/",
     "requirements": "Xuất trình thẻ sinh viên/học sinh trực tiếp tại cửa hàng The Pizza Company để áp dụng menu combo HSSV đồng giá cực kỳ ưu đãi.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "The Pizza Company Student Combo",
-    "valueEn": "Mua 1 Free 1 Thu 3 & Thu 4",
-    "descriptionEn": "Program Mua 1 Tang 1 pizza co vua/lon giup cac nhom students tiet kiem chi phi an uong hop nhom or lien hoan.",
-    "requirementsEn": "Xuat trinh student ID card/students truc tiep at cua hang The Pizza Company de ap dung menu combo HSSV dong gia cuc ky uu dai."
+    "isHot": false
   },
   {
     "id": "b219",
@@ -4374,11 +3502,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.hostelworld.com",
     "requirements": "Xác thực trạng thái học tập thông qua Student Beans, UNiDAYS hoặc mã giảm giá từ thẻ ISIC.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Hostelworld Student Discount",
-    "valueEn": "Off gia 7% cho moi dat phong hostel",
-    "descriptionEn": "Platform tim kiem and dat phong hostel du lich bui lon nhat danh cho gioi tre and students toan cau.",
-    "requirementsEn": "Verify trang thai hoc tap via Student Beans, UNiDAYS or ma Discount from the ISIC."
+    "isHot": false
   },
   {
     "id": "b220",
@@ -4394,11 +3518,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.drmartens.com/",
     "requirements": "Xác minh và lấy mã ưu đãi thông qua cổng đối tác UNiDAYS.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Dr. Martens Student Discount",
-    "valueEn": "Off gia 10%–15% giay da/boots",
-    "descriptionEn": "Hang giay da Dr. Martens discount for students khi mua cac san pham giay bot co dien chinh hang online.",
-    "requirementsEn": "Xac minh and lay ma uu dai via cong doi tac UNiDAYS."
+    "isHot": false
   },
   {
     "id": "b221",
@@ -4414,11 +3534,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.hostinger.com/student-discount",
     "requirements": "Xác thực trạng thái sinh viên thông qua tài khoản Student Beans để nhận mã giảm giá đặc biệt.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Hostinger Student Discount",
-    "valueEn": "Off gia them 10%–25% tren gia khuyen mai goc",
-    "descriptionEn": "Hostinger discount them 10% for students tren gia da Off of cac goi hosting chat luong cao (Shared, Cloud, VPS Hosting) kem theo ten mien free.",
-    "requirementsEn": "Verify trang thai students via account Student Beans de nhan ma Discount dac biet."
+    "isHot": false
   },
   {
     "id": "b222",
@@ -4434,11 +3550,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.roboform.com/student-discount",
     "requirements": "Xác thực trạng thái sinh viên bằng email đuôi trường học.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "RoboForm Password Manager",
-    "valueEn": "Free 1 Nam Ban Pro",
-    "descriptionEn": "Application quan ly mat khau an toan, tu dong dien thong tin and dong bo hoa tren moi thiet bi.",
-    "requirementsEn": "Verify trang thai students with email duoi schools."
+    "isHot": false
   },
   {
     "id": "b223",
@@ -4454,11 +3566,7 @@ export const BENEFITS_DATA = [
     "link": "https://setapp.com/",
     "requirements": "Đăng ký tài khoản Setapp bằng địa chỉ email sinh viên (.edu).",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Setapp Suite for Mac & iOS",
-    "valueEn": "Discount 20% Thue Bao Nam",
-    "descriptionEn": "Platform dang ky thue bao tron goi hon 240+ Application chat luong cao danh cho macOS and iOS (including CleanMyMac, Ulysses...).",
-    "requirementsEn": "Register account Setapp with dia chi email students (.edu)."
+    "isHot": false
   },
   {
     "id": "b224",
@@ -4474,11 +3582,7 @@ export const BENEFITS_DATA = [
     "link": "https://xmind.app",
     "requirements": "Đăng ký mua bản quyền giáo dục bằng cách tải lên thẻ sinh viên hoặc biên lai đóng học phí.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "XMind Education Plan",
-    "valueEn": "40% Off gia mua license",
-    "descriptionEn": "Phan mem thiet ke so do tu duy and lap ban do y tuong da Platform pho bien bac nhat the gioi.",
-    "requirementsEn": "Register mua license giao duc with cach tai len student ID card or bien lai dong hoc phi."
+    "isHot": false
   },
   {
     "id": "b225",
@@ -4494,11 +3598,7 @@ export const BENEFITS_DATA = [
     "link": "https://vietteltelecom.vn/",
     "requirements": "Đăng ký chính chủ sim sinh viên tại các cửa hàng Viettel trên toàn quốc bằng cách cung cấp thẻ sinh viên và CCCD.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Viettel GIC70N Student Pack",
-    "valueEn": "1GB data/ngay & Free Mydio",
-    "descriptionEn": "Goi cuoc tiet kiem danh rieng cho students from 14–22 tuoi, Provides 1GB data/ngay cung Service doc sach Mydio free.",
-    "requirementsEn": "Register chinh chu sim students at cac cua hang Viettel tren toan quoc with cach Provides student ID card and CCCD."
+    "isHot": false
   },
   {
     "id": "b226",
@@ -4514,11 +3614,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.perlego.com/",
     "requirements": "Xác thực trạng thái sinh viên thông qua tài khoản Student Beans hoặc UNiDAYS để nhận mã giảm giá.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Perlego Student Library Discount",
-    "valueEn": "Off gia 25% goi doc sach hoc thuat",
-    "descriptionEn": "Perlego la thu vien hoc thuat truc tuyen Provides quyen truy cap khong gioi han ando hon 1 trieu dau sach giao trinh, tai lieu tham khao khoa hoc and sach hoc thuat from cac nha xuat ban lon.",
-    "requirementsEn": "Verify trang thai students via account Student Beans or UNiDAYS de nhan ma Discount."
+    "isHot": false
   },
   {
     "id": "b227",
@@ -4534,11 +3630,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.converse.com/",
     "requirements": "Xác minh thông tin học sinh sinh viên qua cổng SheerID để nhận mã promo code.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Converse Student Discount",
-    "valueEn": "Off gia 15% don hang giay",
-    "descriptionEn": "Thuong hieu giay Converse discount 15% cho cac don hang giay sneaker and phu kien truc tuyen of students.",
-    "requirementsEn": "Xac minh thong tin students students qua cong SheerID de nhan ma promo code."
+    "isHot": false
   },
   {
     "id": "b228",
@@ -4554,11 +3646,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.puma.com/",
     "requirements": "Đăng nhập và xác thực tài khoản qua cổng UNiDAYS hoặc Student Beans.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Puma Student Discount",
-    "valueEn": "Off gia 10%–20% giay the thao",
-    "descriptionEn": "Hang giay the thao Puma discount truc tiep for students khi mua sam quan ao and giay sneaker truc tuyen.",
-    "requirementsEn": "Log in and Verify account qua cong UNiDAYS or Student Beans."
+    "isHot": false
   },
   {
     "id": "b229",
@@ -4574,11 +3662,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.newbalance.com/",
     "requirements": "Xác thực tài khoản học sinh sinh viên qua UNiDAYS hoặc Student Beans tùy khu vực.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "New Balance Student Discount",
-    "valueEn": "Off gia 10%–15% giay sneaker",
-    "descriptionEn": "Thuong hieu giay New Balance discount for students khi mua cac san pham giay chay bo and sneaker nguyen gia.",
-    "requirementsEn": "Verify account students students qua UNiDAYS or Student Beans tuy khu vuc."
+    "isHot": false
   },
   {
     "id": "b230",
@@ -4594,11 +3678,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.booking.com/",
     "requirements": "Truy cập thông qua link liên kết của cổng Student Beans hoặc UNiDAYS.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Booking.com Student Deals",
-    "valueEn": "Hoan Tien 4% + Dac Quyen Genius",
-    "descriptionEn": "Platform dat phong khach san, homestay and ve may bay lon nhat the gioi with cac dac quyen phong nghi gia re for students.",
-    "requirementsEn": "Truy cap via link lien ket of cong Student Beans or UNiDAYS."
+    "isHot": false
   },
   {
     "id": "b231",
@@ -4614,11 +3694,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.united.com",
     "requirements": "Yêu cầu là thành viên MileagePlus từ 18 đến 23 tuổi và thực hiện đặt vé trực tiếp trên App United.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "United Airlines Young Traveler",
-    "valueEn": "Off 5% gia ve may bay",
-    "descriptionEn": "deal discount ve cho hanh khach tre tuoi dat cho qua Application di dong of United Airlines.",
-    "requirementsEn": "Yeu cau la thanh vien MileagePlus from 18 den 23 tuoi and thuc hien dat ve truc tiep tren App United."
+    "isHot": false
   },
   {
     "id": "b232",
@@ -4634,11 +3710,7 @@ export const BENEFITS_DATA = [
     "link": "https://pizzahut.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên khi gọi món trực tiếp tại nhà hàng Pizza Hut để áp dụng ưu đãi giảm giá combo sinh viên.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Pizza Hut Vietnam Group Student Deal",
-    "valueEn": "40% Off combo nhom & BOGO",
-    "descriptionEn": "Combo nhom cho HSSV Off den 40%, cung Program Mua 1 Tang 1 pizza co vua/lon ando ngay thuong.",
-    "requirementsEn": "Xuat trinh student ID card/students khi goi mon truc tiep at nha hang Pizza Hut de ap dung uu dai Discount combo students."
+    "isHot": false
   },
   {
     "id": "b233",
@@ -4654,11 +3726,7 @@ export const BENEFITS_DATA = [
     "link": "https://thenewgym.vn/",
     "requirements": "Mang theo thẻ học sinh/sinh viên khi đăng ký gói tập trực tiếp tại các cơ sở của The New Gym để được giảm giá phí hội viên tháng.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "The New Gym Student Membership",
-    "valueEn": "Chi from 299K/thang, khong hop dong",
-    "descriptionEn": "Goi tap gym gia cuc re khong phat sinh phi an, khong bat dong truoc ca nam, tap luyen linh hoat.",
-    "requirementsEn": "Mang theo student ID card/students khi Register goi tap truc tiep at cac co so of The New Gym de duoc Discount phi hoi vien thang."
+    "isHot": false
   },
   {
     "id": "b234",
@@ -4674,11 +3742,7 @@ export const BENEFITS_DATA = [
     "link": "https://staygenerator.com",
     "requirements": "Nhập mã thẻ ISIC và thông tin xác thực khi tiến hành đặt phòng trên staygenerator.com.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Generator Hostels Student Discount",
-    "valueEn": "Off gia 10% khi dat phong truc tiep",
-    "descriptionEn": "Chuoi nha nghi (hostel) mang phong cach thiet ke nghe thuat cao cap at cac thanh pho lon at Au My.",
-    "requirementsEn": "Nhap ma the ISIC and thong tin Verify khi tien hanh dat phong tren staygenerator.com."
+    "isHot": false
   },
   {
     "id": "b235",
@@ -4694,11 +3758,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.nationalexpress.com",
     "requirements": "Xác thực thông qua tài khoản UNiDAYS, Student Beans hoặc TOTUM khi tiến hành đặt vé online.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "National Express Student Discount",
-    "valueEn": "Off from 10% - 20% gia ve xe khach lien tinh",
-    "descriptionEn": "Hang xe khach duong dai lon nhat Vuong Quoc Anh ket noi cac thanh pho lon and san bay tien loi.",
-    "requirementsEn": "Verify via account UNiDAYS, Student Beans or TOTUM khi tien hanh dat ve online."
+    "isHot": false
   },
   {
     "id": "b236",
@@ -4714,11 +3774,7 @@ export const BENEFITS_DATA = [
     "link": "https://macpaw.com",
     "requirements": "Xác thực email sinh viên đuôi trường học hoặc gửi thư trực tiếp cho education@macpaw.com.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "CleanMyMac Education Discount",
-    "valueEn": "Off gia 30% license phan mem toi uu",
-    "descriptionEn": "Tool don dep he thong, toi uu hoa bo nho and bao ve macOS khoi phan mem doc hai chinh hang MacPaw.",
-    "requirementsEn": "Verify email students duoi schools or gui thu truc tiep cho education@macpaw.com."
+    "isHot": false
   },
   {
     "id": "b237",
@@ -4734,11 +3790,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.hm.com/",
     "requirements": "Xác thực tài khoản học sinh sinh viên qua UNiDAYS hoặc Student Beans để lấy mã.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "H&M Student Offer",
-    "valueEn": "Off gia 10% don hang online",
-    "descriptionEn": "Hang thoi trang Thuy Dien H&M discount 10% truc tiep tren hoa don mua sam truc tuyen cho cac san pham nguyen gia.",
-    "requirementsEn": "Verify account students students qua UNiDAYS or Student Beans de lay ma."
+    "isHot": false
   },
   {
     "id": "b238",
@@ -4754,11 +3806,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.gymshark.com/",
     "requirements": "Đăng nhập và xác minh trạng thái sinh viên qua hệ thống Student Beans.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Gymshark Student Discount",
-    "valueEn": "Off gia 10% do the thao gym",
-    "descriptionEn": "Thuong hieu do the thao Gymshark discount 10% for students trang bi quan ao tap luyen the thao chat luong cao.",
-    "requirementsEn": "Log in and xac minh trang thai students qua he thong Student Beans."
+    "isHot": false
   },
   {
     "id": "b239",
@@ -4774,11 +3822,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.crocs.com/",
     "requirements": "Xác minh thông tin học sinh sinh viên qua UNiDAYS, Student Beans hoặc ID.me.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Crocs Student Discount",
-    "valueEn": "Off gia 15%–20% giay Crocs",
-    "descriptionEn": "Thuong hieu dep Crocs discount for students khi mua cac dong san pham giay dep clog nhua and sticker Jibbitz truc tuyen.",
-    "requirementsEn": "Xac minh thong tin students students qua UNiDAYS, Student Beans or ID.me."
+    "isHot": false
   },
   {
     "id": "b240",
@@ -4794,11 +3838,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.betacinemas.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên kèm CCCD tại quầy vé Beta Cinemas để mua vé xem phim đồng giá U22 (áp dụng cả ngày thường).",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Beta Cinemas (Vietnam)",
-    "valueEn": "Ve xem phim dong gia from 40,000 VND",
-    "descriptionEn": "Program deal ve xem phim 2D/3D dong gia cuc re danh rieng cho students, students duoi 22 tuoi at tat ca cac cum rap Beta Cinemas tren toan quoc.",
-    "requirementsEn": "Xuat trinh student ID card/students kem CCCD at quay ve Beta Cinemas de mua ve xem phim dong gia U22 (ap dung ca ngay thuong)."
+    "isHot": false
   },
   {
     "id": "b241",
@@ -4814,11 +3854,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.bhdstar.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên chính chủ tại quầy vé BHD Star để nhận ưu đãi giá vé xem phim thành viên U22.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "BHD Star Cineplex (Vietnam)",
-    "valueEn": "Ve U22 from 48,000 VND",
-    "descriptionEn": "deal gia ve xem phim dac biet danh cho thanh vien U22 (duoi 22 tuoi) ap dung cho cac suat chieu hang ngay.",
-    "requirementsEn": "Xuat trinh student ID card/students chinh chu at quay ve BHD Star de nhan uu dai gia ve xem phim thanh vien U22."
+    "isHot": false
   },
   {
     "id": "b242",
@@ -4834,11 +3870,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.galaxycine.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên tại quầy vé Galaxy Cinema để áp dụng chương trình ưu đãi giá vé xem phim đồng giá U22.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Galaxy Cinema (Vietnam)",
-    "valueEn": "Ve U22 dong gia from 45,000 VND",
-    "descriptionEn": "Ap dung gia ve U22 deal cho students, students from 13 den 22 tuoi ando cac ngay trong tuan (Thu 2, Thu 4, Thu 5).",
-    "requirementsEn": "Xuat trinh student ID card/students at quay ve Galaxy Cinema de ap dung Program uu dai gia ve xem phim dong gia U22."
+    "isHot": false
   },
   {
     "id": "b243",
@@ -4854,11 +3886,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.keepersecurity.com",
     "requirements": "Xác thực thông qua cổng đối tác Student Beans.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Keeper Security Student",
-    "valueEn": "50% Off Service luu tru mat khau Unlimited",
-    "descriptionEn": "Trinh quan ly mat khau an toan and ma hoa du lieu ca nhan hang dau the gioi for students.",
-    "requirementsEn": "Verify via cong doi tac Student Beans."
+    "isHot": false
   },
   {
     "id": "b244",
@@ -4874,11 +3902,7 @@ export const BENEFITS_DATA = [
     "link": "https://online.iigvietnam.com/",
     "requirements": "Đăng ký dự thi TOEIC/TOEFL trực tuyến qua website IIG và tải lên thẻ sinh viên còn hiệu lực để được áp dụng lệ phí thi ưu đãi cho sinh viên.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "IIG Việt Nam TOEIC/TOEFL Registration",
-    "valueEn": "Off le phi thi & Tiet kiem den 450K",
-    "descriptionEn": "deal le phi thi chung chi tieng Anh quoc te TOEIC and TOEFL ITP danh rieng for students he chinh quy.",
-    "requirementsEn": "Register du thi TOEIC/TOEFL truc tuyen qua website IIG and tai len student ID card con hieu luc de duoc ap dung le phi thi uu dai for students."
+    "isHot": false
   },
   {
     "id": "b245",
@@ -4894,11 +3918,7 @@ export const BENEFITS_DATA = [
     "link": "https://ulysses.app",
     "requirements": "Xác thực thẻ sinh viên cứng hoặc giấy tờ học tập trực tiếp từ giao diện ứng dụng.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Ulysses writing app",
-    "valueEn": "Goi students uu dai dac biet $10.99/6 thang",
-    "descriptionEn": "Application viet van, ghi chep and soan thao tai lieu khoa hoc tinh gon, tap trung cao cho he sinh thai Apple.",
-    "requirementsEn": "Verify student ID card cung or giay to hoc tap truc tiep from giao dien Application."
+    "isHot": false
   },
   {
     "id": "b246",
@@ -4914,11 +3934,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.vans.com/",
     "requirements": "Xác minh trạng thái sinh viên qua SheerID (US) hoặc UNiDAYS/Student Beans (UK/Global).",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Vans Student Discount",
-    "valueEn": "Off gia 10%–15% giay Vans",
-    "descriptionEn": "Thuong hieu giay Vans discount truc tuyen for students mua sam giay sneaker truot van and balo hoc tap.",
-    "requirementsEn": "Xac minh trang thai students qua SheerID (US) or UNiDAYS/Student Beans (UK/Global)."
+    "isHot": false
   },
   {
     "id": "b247",
@@ -4934,11 +3950,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.champion.com/",
     "requirements": "Xác minh tư cách sinh viên thông qua UNiDAYS, Student Beans hoặc ID.me.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Champion Student Discount",
-    "valueEn": "Off gia 10%–20% quan ao",
-    "descriptionEn": "Thuong hieu thoi trang the thao Champion discount for students khi mua sam cac mau ao hoodie, ao phong online.",
-    "requirementsEn": "Xac minh tu cach students via UNiDAYS, Student Beans or ID.me."
+    "isHot": false
   },
   {
     "id": "b248",
@@ -4954,11 +3966,7 @@ export const BENEFITS_DATA = [
     "link": "https://cake.vn/",
     "requirements": "Tải ứng dụng Cake by VPBank, thực hiện mở tài khoản trực tuyến (eKYC) bằng CCCD và chọn loại tài khoản/thẻ liên kết dành cho sinh viên.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Cake by VPBank Student Card",
-    "valueEn": "Free Cake Mastercard & Cashback",
-    "descriptionEn": "Ngan hang so free phat hanh and duy tri the, lien ket sau with Be Group hoan tien di chuyen and mua sam online for students.",
-    "requirementsEn": "Tai Application Cake by VPBank, thuc hien mo account truc tuyen (eKYC) with CCCD and chon loai account/the lien ket danh for students."
+    "isHot": false
   },
   {
     "id": "b249",
@@ -4974,11 +3982,7 @@ export const BENEFITS_DATA = [
     "link": "https://aeropress.com/",
     "requirements": "Xác minh tư cách học sinh sinh viên qua dịch vụ đối tác.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "AeroPress Coffee Student",
-    "valueEn": "Discount 10% Cho May Pha Cafe",
-    "descriptionEn": "Nhan deal 10% de tu chuan bi nhung ly cafe Aeropress sach and dam vi ngay at ky tuc xa.",
-    "requirementsEn": "Xac minh tu cach students students qua Service doi tac."
+    "isHot": false
   },
   {
     "id": "b250",
@@ -4994,11 +3998,7 @@ export const BENEFITS_DATA = [
     "link": "https://nc.me/",
     "requirements": "Đăng ký trực tiếp bằng email trường (.edu) hoặc kết nối qua GitHub Student Developer Pack.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Namecheap NC.ME (Namecheap for Education)",
-    "valueEn": "Free ten mien .me trong 1 nam & SSL",
-    "descriptionEn": "Program NC.ME Provides free mot ten mien .me trong vong 1 nam and chung chi bao mat SSL free for students de phat trien thuong hieu ca nhan or lam blog, portfolio.",
-    "requirementsEn": "Register truc tiep with university email (.edu) (.edu) or ket noi qua GitHub Student Developer Pack."
+    "isHot": false
   },
   {
     "id": "b251",
@@ -5014,11 +4014,7 @@ export const BENEFITS_DATA = [
     "link": "https://paw.cloud",
     "requirements": "Đăng ký trực tuyến và tải lên minh chứng đăng ký học tập hoặc thẻ sinh viên.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "RapidAPI Client (formerly Paw)",
-    "valueEn": "30% Off license ca nhan",
-    "descriptionEn": "Tool thiet ke, kiem thu and tuong tac API REST/GraphQL chuyen nghiep and truc quan tren he dieu hanh macOS.",
-    "requirementsEn": "Register truc tuyen and tai len minh chung Register hoc tap or student ID card."
+    "isHot": false
   },
   {
     "id": "b252",
@@ -5034,11 +4030,7 @@ export const BENEFITS_DATA = [
     "link": "https://popeyes.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên còn hiệu lực tại quầy thu ngân của Popeyes khi đặt hàng để áp dụng combo gà rán sinh viên giá rẻ.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Popeyes Vietnam Student Combo",
-    "valueEn": "Combo Sieu No from 89K",
-    "descriptionEn": "Fried chicken/burger combo with soft drink plus Buy 1 Get 1 Free deal for online student orders.",
-    "requirementsEn": "Xuat trinh student ID card/students con hieu luc at quay thu ngan of Popeyes khi dat hang de ap dung combo ga ran students gia re."
+    "isHot": false
   },
   {
     "id": "b253",
@@ -5054,11 +4046,7 @@ export const BENEFITS_DATA = [
     "link": "https://imazing.com/",
     "requirements": "Xác thực học sinh qua cổng SheerID, Student Beans hoặc UNiDAYS trực tiếp tại trang cửa hàng.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "iMazing Education Program",
-    "valueEn": "Off gia 30% license phan mem",
-    "descriptionEn": "Professional iOS device management tool for iPhone/iPad replacing iTunes with advance backup.",
-    "requirementsEn": "Verify students qua cong SheerID, Student Beans or UNiDAYS truc tiep at trang cua hang."
+    "isHot": false
   },
   {
     "id": "b254",
@@ -5074,11 +4062,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.name.com/partner/github-students",
     "requirements": "Đăng nhập bằng tài khoản GitHub học sinh/sinh viên đã được phê duyệt trong GitHub Student Developer Pack.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Name.com Education Domain Program",
-    "valueEn": "Free dang ky ten mien 1 nam & SSL Free",
-    "descriptionEn": "Name.com partners with GitHub Education to offer students 1 free domain name.",
-    "requirementsEn": "Log in with account GitHub students/students da duoc phe duyet trong GitHub Student Developer Pack."
+    "isHot": false
   },
   {
     "id": "b255",
@@ -5094,11 +4078,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.morgen.so",
     "requirements": "Liên hệ đội ngũ hỗ trợ của Morgen bằng email đuôi trường học để được áp dụng mã giảm giá.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Morgen Calendar Pro Discount",
-    "valueEn": "Off 25% tron doi goi Morgen Pro",
-    "descriptionEn": "Calendar aggregation tool combining multiple calendar sources with time-blocking and schedule management.",
-    "requirementsEn": "Lien he doi ngu Supports of Morgen with email duoi schools de duoc ap dung ma Discount."
+    "isHot": false
   },
   {
     "id": "b256",
@@ -5114,11 +4094,7 @@ export const BENEFITS_DATA = [
     "link": "https://macpaw.com/student-discount",
     "requirements": "Gửi địa chỉ email sinh viên (.edu) qua trang ưu đãi của MacPaw để nhận mã giảm giá 30% trực tiếp.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "CleanMyMac X Student Discount",
-    "valueEn": "Discount 30% license Tieu Chuan",
-    "descriptionEn": "Best macOS system optimization, cleanup, and security tool for Mac laptops.",
-    "requirementsEn": "Gui dia chi email students (.edu) qua trang uu dai of MacPaw de nhan ma Discount 30% truc tiep."
+    "isHot": false
   },
   {
     "id": "b257",
@@ -5134,11 +4110,7 @@ export const BENEFITS_DATA = [
     "link": "https://texaschicken.com.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên khi mua hàng trực tiếp tại quầy thanh toán của Texas Chicken để nhận ưu đãi giảm giá combo gà rán.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Texas Chicken Student Deal",
-    "valueEn": "Combo 45K & Refill nuoc ngot",
-    "descriptionEn": "Crispy fried chicken combo with unlimited soft drink refills, highly popular among students.",
-    "requirementsEn": "Xuat trinh student ID card/students khi mua hang truc tiep at quay thanh toan of Texas Chicken de nhan uu dai Discount combo ga ran."
+    "isHot": false
   },
   {
     "id": "b258",
@@ -5154,11 +4126,7 @@ export const BENEFITS_DATA = [
     "link": "https://mobiedu.vn/",
     "requirements": "Đăng ký gói cước trực tuyến trên trang mobiedu.vn hoặc qua tin nhắn điện thoại bằng tài khoản thuê bao học sinh/sinh viên.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "MobiFone MA30 Education Pack",
-    "valueEn": "Free VIP mobiEdu & mobiStudy",
-    "descriptionEn": "Educational mobile package with free VIP study portal access on mobiEdu/mobiStudy plus data.",
-    "requirementsEn": "Register goi cuoc truc tuyen tren trang mobiedu.vn or qua tin nhan dien thoai with account thue bao students/students."
+    "isHot": false
   },
   {
     "id": "b259",
@@ -5174,11 +4142,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.tnex.com.vn/",
     "requirements": "Đăng ký mở tài khoản ngân hàng số TNEX trực tiếp trên app điện thoại bằng CCCD và chọn gói ưu đãi thẻ dành cho sinh viên.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "TNEX Digital Bank Student",
-    "valueEn": "5 Khong tron doi & Quan ly chi tieu",
-    "descriptionEn": "Digital bank powered by MSB 100% free for life (no transfer or withdrawal fees).",
-    "requirementsEn": "Register mo account ngan hang so TNEX truc tiep tren app dien thoai with CCCD and chon goi uu dai the danh for students."
+    "isHot": false
   },
   {
     "id": "b260",
@@ -5194,11 +4158,7 @@ export const BENEFITS_DATA = [
     "link": "https://timo.vn/",
     "requirements": "Mở tài khoản Timo trực tuyến qua app bằng CCCD (eKYC) và nhận thẻ Timo ATM miễn phí ship để tham gia các ưu đãi chiết khấu học tập.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Timo Digital Bank Spend Pots",
-    "valueEn": "Free Debit Card & Hu chi tieu",
-    "descriptionEn": "Digital bank with free money transfers and ATM withdrawals nationwide with smart budgeting.",
-    "requirementsEn": "Mo account Timo truc tuyen qua app with CCCD (eKYC) and nhan the Timo ATM Free ship de tham gia cac uu dai chiet khau hoc tap."
+    "isHot": false
   },
   {
     "id": "b261",
@@ -5214,11 +4174,7 @@ export const BENEFITS_DATA = [
     "link": "https://medium.com/membership",
     "requirements": "Đăng ký và xác thực tài khoản thông qua cổng liên kết UNiDAYS.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Medium Student Membership",
-    "valueEn": "Off gia 25% goi Monthly/Annual",
-    "descriptionEn": "Knowledge sharing platform featuring in-depth articles on technology, design, and science.",
-    "requirementsEn": "Register and Verify account via cong lien ket UNiDAYS."
+    "isHot": false
   },
   {
     "id": "b262",
@@ -5234,11 +4190,7 @@ export const BENEFITS_DATA = [
     "link": "https://shopee.vn/",
     "requirements": "Xác thực bằng email trường học (.edu.vn) và nhập mã OTP trực tiếp trên trang chủ Shopee Sinh Viên tại ứng dụng Shopee di động.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Shopee Sinh Viên (Shopee Student Club)",
-    "valueEn": "Free 12 Thang Goi Shopee VIP",
-    "descriptionEn": "Exclusive student club membership offering daily free shipping vouchers and extra discounts.",
-    "requirementsEn": "Verify with university email (.edu) (.edu.vn) and nhap ma OTP truc tiep tren trang chu Shopee students at Application Shopee di dong."
+    "isHot": false
   },
   {
     "id": "b263",
@@ -5254,11 +4206,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.algoexpert.io",
     "requirements": "Xác thực thông qua cổng kết nối GitHub Student Developer Pack.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "AlgoExpert Discount",
-    "valueEn": "10% Off + Luyen tap 20 cau hoi free",
-    "descriptionEn": "Top algorithm practice, system design, and coding interview preparation platform.",
-    "requirementsEn": "Verify via cong ket noi GitHub Student Developer Pack."
+    "isHot": false
   },
   {
     "id": "b264",
@@ -5274,11 +4222,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.mockplus.com",
     "requirements": "Điền thông tin vào mẫu đăng ký chương trình giáo dục Mockplus bằng email giáo dục.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Mockplus for Students",
-    "valueEn": "Free 1 thang goi Pro cao cap",
-    "descriptionEn": "UI/UX design and online collaboration platform for designers and developers.",
-    "requirementsEn": "Dien thong tin ando mau Register Program giao duc Mockplus with email giao duc."
+    "isHot": false
   },
   {
     "id": "b265",
@@ -5294,11 +4238,7 @@ export const BENEFITS_DATA = [
     "link": "https://mindnode.com",
     "requirements": "Gửi email yêu cầu ưu đãi giáo dục bằng hòm thư trường học tới bộ phận hỗ trợ MindNode.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "MindNode Plus Discount",
-    "valueEn": "Off gia toi 50% goi Service nam",
-    "descriptionEn": "Professional native mind mapping application on the Apple ecosystem.",
-    "requirementsEn": "Gui email yeu cau uu dai giao duc with hom thu schools toi bo phan Supports MindNode."
+    "isHot": false
   },
   {
     "id": "b266",
@@ -5314,11 +4254,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.lotteria.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên tại quầy thu ngân của Lotteria để mua các combo gà rán HSSV đồng giá siêu tiết kiệm.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Lotteria Việt Nam Combo HSSV",
-    "valueEn": "Off 20-30% cho set an",
-    "descriptionEn": "Exclusive meal set featuring burger/chicken + fries + soft drink at student rates.",
-    "requirementsEn": "Xuat trinh student ID card/students at quay thu ngan of Lotteria de mua cac combo ga ran HSSV dong gia sieu tiet kiem."
+    "isHot": false
   },
   {
     "id": "b267",
@@ -5334,11 +4270,7 @@ export const BENEFITS_DATA = [
     "link": "https://ticktick.com/education",
     "requirements": "Đăng ký qua trang TickTick Education bằng email trường học.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "TickTick Task Manager",
-    "valueEn": "Off 25% Goi Premium Nam",
-    "descriptionEn": "Task and study schedule management app with integrated Pomodoro timer and habit tracker.",
-    "requirementsEn": "Register qua trang TickTick Education with university email (.edu)."
+    "isHot": false
   },
   {
     "id": "b268",
@@ -5354,11 +4286,7 @@ export const BENEFITS_DATA = [
     "link": "https://bear.app/",
     "requirements": "Liên hệ bộ phận hỗ trợ khách hàng của Bear và cung cấp email trường hoặc thẻ sinh viên.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Bear App Markdown Notes",
-    "valueEn": "Discount 30% Goi Bear Pro",
-    "descriptionEn": "Award-winning minimal markdown note-taking application for Apple devices.",
-    "requirementsEn": "Lien he bo phan Supports khach hang of Bear and Provides university email (.edu) or student ID card."
+    "isHot": false
   },
   {
     "id": "b269",
@@ -5374,11 +4302,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.surfshark.com",
     "requirements": "Đăng nhập và xác thực tài khoản qua cổng Student Beans.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Surfshark Student Discount",
-    "valueEn": "Off them 15% tren cac goi khuyen mai",
-    "descriptionEn": "High-security VPN service supporting unlimited simultaneous device connections.",
-    "requirementsEn": "Log in and Verify account qua cong Student Beans."
+    "isHot": false
   },
   {
     "id": "b270",
@@ -5394,11 +4318,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.literatureandlatte.com/store",
     "requirements": "Lựa chọn phiên bản 'Educational Licence' tại trang thanh toán.",
     "dealType": "free",
-    "isHot": false,
-    "titleEn": "Scrivener Academic License",
-    "valueEn": "Off gia giay phep tron doi vinh vien",
-    "descriptionEn": "Long-form writing and manuscript management software for academic dissertations and books.",
-    "requirementsEn": "Lua chon phien ban 'Educational Licence' at trang thanh toan."
+    "isHot": false
   },
   {
     "id": "b271",
@@ -5414,11 +4334,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.kfcvietnam.com.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên tại quầy thanh toán của KFC để mua combo gà rán HSSV với giá ưu đãi đặc biệt.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "KFC Việt Nam Student Combo",
-    "valueEn": "Combo trua from 42.000 VND",
-    "descriptionEn": "Value student combo featuring chicken rice / spaghetti and Pepsi at discounted rates.",
-    "requirementsEn": "Xuat trinh student ID card/students at quay thanh toan of KFC de mua combo ga ran HSSV with gia uu dai dac biet."
+    "isHot": false
   },
   {
     "id": "b272",
@@ -5434,11 +4350,7 @@ export const BENEFITS_DATA = [
     "link": "https://jollibee.com.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên trực tiếp tại quầy thu ngân của Jollibee khi mua sắm để được áp dụng combo học đường giảm giá.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Jollibee Việt Nam Combo Học Đường",
-    "valueEn": "Set an dac biet from 45.000 VND",
-    "descriptionEn": "Crispy fried chicken and spaghetti combos with drinks at prioritized student prices.",
-    "requirementsEn": "Xuat trinh student ID card/students truc tiep at quay thu ngan of Jollibee khi mua sam de duoc ap dung combo hoc duong Discount."
+    "isHot": false
   },
   {
     "id": "b273",
@@ -5454,11 +4366,7 @@ export const BENEFITS_DATA = [
     "link": "http://damsenwaterpark.com.vn/",
     "requirements": "Mua vé vào cổng trực tiếp tại quầy vé Công viên nước Đầm Sen và xuất trình thẻ học sinh/sinh viên chính chủ để được giảm giá vé.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Đầm Sen Cultural Park Discount",
-    "valueEn": "50% Off gia ve tron goi",
-    "descriptionEn": "Full-package entertainment ticket discount at Dam Sen Park during summer.",
-    "requirementsEn": "Mua ve ando cong truc tiep at quay ve Cong vien nuoc Dam Sen and xuat trinh student ID card/students chinh chu de duoc Discount ve."
+    "isHot": false
   },
   {
     "id": "b274",
@@ -5474,11 +4382,7 @@ export const BENEFITS_DATA = [
     "link": "https://suoitien.vn/",
     "requirements": "Mua vé vào cổng trực tiếp tại quầy vé Khu du lịch Suối Tiên và xuất trình thẻ học sinh/sinh viên còn hạn để nhận ưu đãi giảm giá vé.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Suối Tiên Theme Park Offer",
-    "valueEn": "Ve tron goi students from 180K",
-    "descriptionEn": "Special admission and ride ticket deals at Suoi Tien Cultural Theme Park.",
-    "requirementsEn": "Mua ve ando cong truc tiep at quay ve Khu du lich Suoi Tien and xuat trinh student ID card/students con han de nhan uu dai Discount ve."
+    "isHot": false
   },
   {
     "id": "b275",
@@ -5494,11 +4398,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.goodnotes.com/",
     "requirements": "Xác minh trạng thái học sinh sinh viên thông qua cổng Student Beans.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Goodnotes 6 Student Plan",
-    "valueEn": "Off gia 10% goi thue bao nam",
-    "descriptionEn": "Famous digital handwriting note app on iOS/iPadOS with 10% student discount.",
-    "requirementsEn": "Xac minh trang thai students students via cong Student Beans."
+    "isHot": false
   },
   {
     "id": "b276",
@@ -5514,11 +4414,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.dinhdoclap.gov.vn/",
     "requirements": "Mua vé tham quan trực tiếp tại quầy bán vé của Dinh Độc Lập và xuất trình thẻ học sinh/sinh viên để giảm 50% giá vé vào cổng.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Dinh Độc Lập Student Ticket",
-    "valueEn": "50% Off gia ve (chi 20K)",
-    "descriptionEn": "50% off admission ticket deal for Independence Palace historic landmark.",
-    "requirementsEn": "Mua ve tham quan truc tiep at quay ban ve of Dinh Doc Lap and xuat trinh student ID card/students de Off 50% gia ve ando cong."
+    "isHot": false
   },
   {
     "id": "b277",
@@ -5534,11 +4430,7 @@ export const BENEFITS_DATA = [
     "link": "http://www.baotangchungtichchientranh.vn/",
     "requirements": "Mua vé vào cổng trực tiếp tại quầy vé và xuất trình thẻ học sinh/sinh viên để được áp dụng mức giảm giá vé tham quan theo quy định.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "War Remnants Museum Ticket",
-    "valueEn": "50% Off gia ve (chi 20K)",
-    "descriptionEn": "50% off entrance ticket to War Remnants Museum in HCMC.",
-    "requirementsEn": "Mua ve ando cong truc tiep at quay ve and xuat trinh student ID card/students de duoc ap dung muc Discount ve tham quan theo quy dinh."
+    "isHot": false
   },
   {
     "id": "b278",
@@ -5554,11 +4446,7 @@ export const BENEFITS_DATA = [
     "link": "https://vnfam.vn/",
     "requirements": "Mua vé tham quan trực tiếp tại quầy vé Bảo tàng Mỹ thuật Việt Nam và xuất trình thẻ sinh viên để nhận mức giảm giá vé.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Vietnam National Museum of Fine Arts",
-    "valueEn": "50% Off gia ve (chi 20K)",
-    "descriptionEn": "50% off admission ticket to Vietnam National Museum of Fine Arts in Hanoi.",
-    "requirementsEn": "Mua ve tham quan truc tiep at quay ve Bao tang My thuat Viet Nam and xuat trinh student ID card de nhan muc Discount ve."
+    "isHot": false
   },
   {
     "id": "b279",
@@ -5574,11 +4462,7 @@ export const BENEFITS_DATA = [
     "link": "http://www.vme.org.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên tại quầy bán vé của Bảo tàng Dân tộc học Việt Nam để mua vé tham quan với giá ưu đãi.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Bảo tàng Dân tộc học Ticket",
-    "valueEn": "50% Off gia ve (chi 20K)",
-    "descriptionEn": "50% off entrance ticket to Vietnam Museum of Ethnology in Hanoi.",
-    "requirementsEn": "Xuat trinh student ID card/students at quay ban ve of Bao tang Dan toc hoc Viet Nam de mua ve tham quan with gia uu dai."
+    "isHot": false
   },
   {
     "id": "b280",
@@ -5594,11 +4478,7 @@ export const BENEFITS_DATA = [
     "link": "http://baotangphunu.org.vn/",
     "requirements": "Mua vé trực tiếp tại quầy vé Bảo tàng Phụ nữ Việt Nam và xuất trình thẻ học sinh/sinh viên để nhận chiết khấu giảm giá vé.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Bảo tàng Phụ nữ Việt Nam Ticket",
-    "valueEn": "50% Off gia ve (chi 20K)",
-    "descriptionEn": "50% off admission ticket to Vietnam Women's Museum in Hanoi.",
-    "requirementsEn": "Mua ve truc tiep at quay ve Bao tang Phu nu Viet Nam and xuat trinh student ID card/students de nhan chiet khau Discount ve."
+    "isHot": false
   },
   {
     "id": "b281",
@@ -5614,11 +4494,7 @@ export const BENEFITS_DATA = [
     "link": "http://vanmieu.gov.vn/",
     "requirements": "Xuất trình thẻ học sinh/sinh viên và CCCD trực tiếp tại quầy bán vé của di tích Văn Miếu Quốc Tử Giám để được giảm 50% giá vé vào cổng.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Văn Miếu Quốc Tử Giám Ticket",
-    "valueEn": "50% Off gia ve (chi 15K)",
-    "descriptionEn": "50% off entrance ticket to War Remnants Museum in HCMC.",
-    "requirementsEn": "Xuat trinh student ID card/students and CCCD truc tiep at quay ban ve of di tich Van Mieu Quoc Tu Giam de duoc Off 50% gia ve ando cong."
+    "isHot": false
   },
   {
     "id": "b282",
@@ -5634,11 +4510,7 @@ export const BENEFITS_DATA = [
     "link": "http://hoangthanhthanglong.com/",
     "requirements": "Mua vé tham quan trực tiếp tại quầy bán vé khu di sản Hoàng thành Thăng Long và xuất trình thẻ học sinh/sinh viên để được giảm 50% giá vé.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Hoàng thành Thăng Long Ticket",
-    "valueEn": "50% Off gia ve (chi 15K)",
-    "descriptionEn": "50% off entrance ticket to Vietnam Museum of Ethnology in Hanoi.",
-    "requirementsEn": "Mua ve tham quan truc tiep at quay ban ve khu di san Hoang thanh Thang Long and xuat trinh student ID card/students de duoc Off 50% gia ve."
+    "isHot": false
   },
   {
     "id": "b283",
@@ -5654,11 +4526,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.apple.com/vn-edu/shop",
     "requirements": "Mua qua Apple Education Store bằng địa chỉ email đại học hoặc xác thực qua UNiDAYS. Áp dụng cho sinh viên, phụ huynh mua cho con và giảng viên đang dạy học. Chương trình kết thúc 27/8/2026.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "Apple Back to School 2026 — Vietnam",
-    "valueEn": "Free kem bo 4 AirTag (2nd gen) khi mua Mac/iPad",
-    "descriptionEn": "Back to School 2026 promo in Vietnam: Buy Mac/iPad to get free AirTag 4-pack.",
-    "requirementsEn": "Mua qua Apple Education Store with dia chi email dai hoc or Verify qua UNiDAYS. Ap dung for students, phu huynh mua cho con and faculty dang day hoc. Program ket thuc 27/8/2026."
+    "isHot": true
   },
   {
     "id": "b284",
@@ -5674,11 +4542,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.notion.so/product/notion-for-education",
     "requirements": "Xác thực email trường học (.edu) qua trang Notion for Education để kích hoạt miễn phí Notion Plus. Sau đó mua add-on Notion AI trong settings workspace để hưởng giảm giá 50%.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "Notion AI Add-on for Students",
-    "valueEn": "50% Off phi Notion AI (add-on rieng)",
-    "descriptionEn": "Get an extra 50% off Notion AI add-on fee in addition to free Notion Plus.",
-    "requirementsEn": "Verify university email (.edu) (.edu) qua trang Notion for Education de kich hoat Free Notion Plus. Sau do mua add-on Notion AI trong settings workspace de huong Discount 50%."
+    "isHot": true
   },
   {
     "id": "b285",
@@ -5694,11 +4558,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.grammarly.com/students",
     "requirements": "Xác thực tài khoản UNiDAYS hoặc Student Beans bằng thẻ sinh viên để nhận mã giảm giá. Ngoài ra có thể xác thực qua SheerID (support.grammarly.com) để nhận ưu đãi 40%.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "Grammarly Pro Student Discount",
-    "valueEn": "Off 25–40% goi Grammarly Pro nam",
-    "descriptionEn": "World-leading AI grammar checker and academic writing assistant.",
-    "requirementsEn": "Verify account UNiDAYS or Student Beans with student ID card de nhan ma Discount. Ngoai ra co the Verify qua SheerID (support.grammarly.com) de nhan uu dai 40%."
+    "isHot": true
   },
   {
     "id": "b286",
@@ -5714,11 +4574,7 @@ export const BENEFITS_DATA = [
     "link": "https://quillbot.com/",
     "requirements": "Xác thực tài khoản UNiDAYS bằng thẻ sinh viên tại trang UNiDAYS đối tác QuillBot để lấy mã giảm 25%. Áp dụng cho gói Premium hàng năm và gói 6 tháng.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "QuillBot Writing Suite Student",
-    "valueEn": "Off 25% goi Premium annually",
-    "descriptionEn": "7-in-1 academic writing suite with AI paraphraser, grammar checker, and summarizer.",
-    "requirementsEn": "Verify account UNiDAYS with student ID card at trang UNiDAYS doi tac QuillBot de lay ma Off 25%. Ap dung cho goi Premium annually and goi 6 thang."
+    "isHot": true
   },
   {
     "id": "b287",
@@ -5734,11 +4590,7 @@ export const BENEFITS_DATA = [
     "link": "https://welcome.babbel.com/en/student-discount/",
     "requirements": "Tạo tài khoản UNiDAYS và xác thực thẻ sinh viên để nhận link giảm 65% (gói 3 tháng) hoặc 50%+ cho gói 12 tháng. Sinh viên quốc tế cũng có thể xác thực qua Student Beans.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "Babbel Student Language Learning",
-    "valueEn": "Off 65% goi 3 thang (chi ~$5/thang)",
-    "descriptionEn": "World's #1 language learning app teaching practical conversation.",
-    "requirementsEn": "Create account UNiDAYS and Verify student ID card de nhan link Off 65% (goi 3 thang) or 50%+ cho goi 12 thang. students quoc te cung co the Verify qua Student Beans."
+    "isHot": true
   },
   {
     "id": "b288",
@@ -5754,11 +4606,7 @@ export const BENEFITS_DATA = [
     "link": "https://otter.ai/education",
     "requirements": "Đăng ký tài khoản Otter.ai bằng email trường học (.edu) và xác thực trạng thái sinh viên/giảng viên qua trang Help Center của Otter.ai. Giảm giá áp dụng cho gói Pro hàng tháng và hàng năm.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Otter.ai Pro Student & Teacher Program",
-    "valueEn": "20% Off goi Pro (~$6.66/thang)",
-    "descriptionEn": "Real-time AI lecture transcription and note-taking assistant.",
-    "requirementsEn": "Register account Otter.ai with university email (.edu) (.edu) and Verify trang thai students/faculty qua trang Help Center of Otter.ai. Discount ap dung cho goi Pro monthly and annually."
+    "isHot": false
   },
   {
     "id": "b289",
@@ -5774,11 +4622,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.wordtune.com/",
     "requirements": "Xác thực tài khoản UNiDAYS bằng thẻ sinh viên tại trang UNiDAYS đối tác Wordtune, hoặc liên hệ trực tiếp đội hỗ trợ Wordtune bằng email trường để nhận mã 30% off.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Wordtune AI Writing Assistant",
-    "valueEn": "30% Off goi Advanced/Unlimited",
-    "descriptionEn": "Professor-designed AI sentence rewriter helping polish academic papers.",
-    "requirementsEn": "Verify account UNiDAYS with student ID card at trang UNiDAYS doi tac Wordtune, or lien he truc tiep doi Supports Wordtune with university email (.edu) de nhan ma 30% off."
+    "isHot": false
   },
   {
     "id": "b290",
@@ -5794,11 +4638,7 @@ export const BENEFITS_DATA = [
     "link": "https://evernote.com/intl/en/unidays",
     "requirements": "Xác thực tài khoản UNiDAYS và truy cập trang ưu đãi Evernote trên UNiDAYS để nhận mã giảm 40% cho gói Advanced hàng năm. Chỉ áp dụng cho người dùng mới chưa có gói trả phí.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Evernote Advanced Student Discount",
-    "valueEn": "40% Off goi Evernote Advanced nam",
-    "descriptionEn": "Evernote Advanced offers unlimited device sync and content search in PDFs.",
-    "requirementsEn": "Verify account UNiDAYS and truy cap trang uu dai Evernote tren UNiDAYS de nhan ma Off 40% cho goi Advanced annually. Chi ap dung cho nguoi dung moi chua co goi tra phi."
+    "isHot": false
   },
   {
     "id": "b291",
@@ -5814,11 +4654,7 @@ export const BENEFITS_DATA = [
     "link": "https://medium.com/membership",
     "requirements": "Xác thực tài khoản UNiDAYS bằng thẻ sinh viên và truy cập trang Medium trên UNiDAYS để lấy mã giảm 25% cho gói membership 1 năm đầu tiên.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Medium Student Membership",
-    "valueEn": "Off 25% goi Medium Membership 1 nam",
-    "descriptionEn": "Unlimited access to millions of in-depth tech and startup articles on Medium.",
-    "requirementsEn": "Verify account UNiDAYS with student ID card and truy cap trang Medium tren UNiDAYS de lay ma Off 25% cho goi membership 1 nam dau tien."
+    "isHot": false
   },
   {
     "id": "b292",
@@ -5834,11 +4670,7 @@ export const BENEFITS_DATA = [
     "link": "https://knowt.com/",
     "requirements": "Đăng ký tài khoản miễn phí tại knowt.com bằng email bất kỳ. Không cần xác thực sinh viên, không giới hạn số lượng flashcard và bộ thẻ. Tham gia bằng mã lớp học từ giảng viên để dùng tính năng classroom.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "Knowt AI Flashcard & Study Tool",
-    "valueEn": "Free toan bo — Thay the Quizlet khong gioi han",
-    "descriptionEn": "Next-gen #1 free AI study app replacing Quizlet with auto flashcard creation.",
-    "requirementsEn": "Register account Free at knowt.com with email bat ky. Khong can Verify students, khong gioi han so luong flashcard and bo the. Tham gia with ma lop hoc from faculty de dung tinh nang classroom."
+    "isHot": true
   },
   {
     "id": "b293",
@@ -5854,11 +4686,7 @@ export const BENEFITS_DATA = [
     "link": "https://krater.ai/",
     "requirements": "Truy cập trang krater.ai/students và nhấn nút 'Claim Discount' — mã giảm 15% được áp dụng tự động vào giỏ hàng, không cần nhập email trường hay xác thực thẻ sinh viên.",
     "dealType": "discount",
-    "isHot": false,
-    "titleEn": "Krater AI — Multi-model Student Bundle",
-    "valueEn": "15% Off them (~$6.38/thang) — 350+ AI models",
-    "descriptionEn": "Krater AI bundles 350+ AI models into 1 subscription with extra 15% student off.",
-    "requirementsEn": "Truy cap trang krater.ai/students and nhan nut 'Claim Discount' — ma Off 15% duoc ap dung tu dong ando gio hang, khong can nhap university email (.edu) hay Verify student ID card."
+    "isHot": false
   },
   {
     "id": "b294",
@@ -5874,11 +4702,7 @@ export const BENEFITS_DATA = [
     "link": "https://www.vietnam.vn/en/nghi-dinh-179-2026-nd-cp-cu-hich-moi-cho-mua-tuyen-sinh",
     "requirements": "Đăng ký nguyện vọng vào các ngành vi mạch bán dẫn, khoa học cơ bản hoặc công nghệ chiến lược theo danh mục được Bộ GD&ĐT phê duyệt theo Nghị định 179/2026. Nộp hồ sơ xin học bổng qua cổng tuyển sinh của trường sau khi nhập học.",
     "dealType": "discount",
-    "isHot": true,
-    "titleEn": "Decree 179 — Học bổng ngành STEM chiến lược",
-    "valueEn": "3.7–5.5 trieu VND/thang hoc bong ngan sach nha nuoc",
-    "descriptionEn": "Decree 179/2026/ND-CP state budget scholarship for STEM and strategic tech students.",
-    "requirementsEn": "Register nguyen vong ando cac nganh vi mach ban dan, khoa hoc co ban or cong nghe chien luoc theo danh muc duoc Bo GD&DT phe duyet theo Nghi dinh 179/2026. Nop ho so xin hoc bong qua cong tuyen sinh of school sau khi nhap hoc."
+    "isHot": true
   },
   {
     "id": "b295",
@@ -5894,10 +4718,6 @@ export const BENEFITS_DATA = [
     "link": "https://www.vietnam.vn/en/tu-nam-hoc-2026-2027-4-dia-phuong-dau-tien-ca-nuoc-mien-phi-sach-giao-khoa",
     "requirements": "Học sinh đang theo học tại các trường công lập tại TP.HCM, Đà Nẵng (Hoa Vang), Quảng Ninh hoặc Cà Mau đăng ký nhận sách miễn phí qua trường vào đầu năm học 2026–2027.",
     "dealType": "free",
-    "isHot": true,
-    "titleEn": "Sách giáo khoa miễn phí 2026–2027",
-    "valueEn": "100% Free sach giao khoa nam hoc 2026–2027",
-    "descriptionEn": "Free 100% textbooks for public school students in HCMC, Da Nang, Quang Ninh, and Ca Mau.",
-    "requirementsEn": "students dang theo hoc at cac school cong lap at TP.HCM, Da Nang (Hoa Vang), Quang Ninh or Ca Mau Register nhan sach Free qua school ando dau nam hoc 2026–2027."
+    "isHot": true
   }
 ];
