@@ -1,4 +1,4 @@
-// Exported BENEFITS_DATA module (282 items with 100% Complete Bilingual i18n support)
+// Exported BENEFITS_DATA module (295 items - Pure Human Native English Translation)
 export const BENEFITS_DATA = [
   {
     "id": "b001",
@@ -16,7 +16,7 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": true,
     "titleEn": "Autodesk Fusion 360 for Students",
-    "valueEn": "Free Educational License 1 Year",
+    "valueEn": "Free 1-Year Educational License (annual renewal)",
     "descriptionEn": "Professional cloud-based CAD, CAM, CAE, and PCB software platform for product design, 3D modeling, and simulation.",
     "requirementsEn": "Create Autodesk account with university email (.edu) and verify student status via SheerID system."
   },
@@ -36,9 +36,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": true,
     "titleEn": "FPT Arena Study Grant",
-    "valueEn": "Creative Scholarship Up to 30%",
+    "valueEn": "Up to 30% Creative Scholarship",
     "descriptionEn": "Multimedia Arts scholarship program dedicated to artistic and creative students.",
-    "requirementsEn": "Liên hệ bộ phận tuyển sinh của FPT Arena và xuất trình student ID/giấy báo nhập học để áp dụng học bổng học tập."
+    "requirementsEn": "Contact FPT Arena admissions department and present student ID or enrollment notification to claim scholarship."
   },
   {
     "id": "b003",
@@ -76,9 +76,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": true,
     "titleEn": "Coursera Student Program",
-    "valueEn": "1 Chứng Chỉ Free / Năm",
-    "descriptionEn": "Học tập từ các universities hàng đầu thế giới. free học và cấp chứng chỉ cho một khóa học mỗi năm.",
-    "requirementsEn": "Register with thông qua chương trình liên kết của trường đại học đối tác."
+    "valueEn": "1 Chứng Chỉ Miễn Phí / Năm",
+    "descriptionEn": "Học tập từ các trường đại học hàng đầu thế giới. Miễn phí học và cấp chứng chỉ cho một khóa học mỗi năm.",
+    "requirementsEn": "Register thông qua chương trình liên kết của trường đại học đối tác."
   },
   {
     "id": "b005",
@@ -96,8 +96,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": true,
     "titleEn": "Adobe Creative Cloud",
-    "valueEn": "Special Deal Discount 60%",
-    "descriptionEn": "Get full creative suite including Photoshop, Illustrator, Premiere Pro, and Lightroom at low student rates.",
+    "valueEn": "Ưu Đãi Off Giá 60%",
+    "descriptionEn": "Access full creative toolkit including Photoshop, Illustrator, Premiere Pro, and Lightroom at low student rates.",
     "requirementsEn": "Register with student ID or educational email address (.edu)."
   },
   {
@@ -137,8 +137,8 @@ export const BENEFITS_DATA = [
     "isHot": true,
     "titleEn": "JetBrains Academy Portal",
     "valueEn": "Free Full Access to Academy Tracks",
-    "descriptionEn": "Nền tảng học tập lập trình thực tế theo dự án của JetBrains (Kotlin, Java, Python, Go...). Giúp students thực hành lập trình.",
-    "requirementsEn": "Verify with thông qua JetBrains Account đã liên kết giấy phép sinh viên JetBrains Student License."
+    "descriptionEn": "Nền tảng học tập lập trình thực tế theo dự án của JetBrains (Kotlin, Java, Python, Go...). Giúp sinh viên thực hành lập trình.",
+    "requirementsEn": "Verify thông qua JetBrains Account đã liên kết giấy phép sinh viên JetBrains Student License."
   },
   {
     "id": "b008",
@@ -196,7 +196,7 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": true,
     "titleEn": "ChatGPT Edu (OpenAI)",
-    "valueEn": "University Org Access (GPT-4o)",
+    "valueEn": "University Organization Access (GPT-4o)",
     "descriptionEn": "Enterprise-grade ChatGPT tailored for universities with data privacy, higher message limits, and custom GPT creation support.",
     "requirementsEn": "Log in using university email provided by partner institution."
   },
@@ -217,7 +217,7 @@ export const BENEFITS_DATA = [
     "isHot": true,
     "titleEn": "GitHub Student Developer Pack",
     "valueEn": "Free Developer Tools & Copilot",
-    "descriptionEn": "Access top global developer tools including GitHub Copilot, Canva Pro, Namecheap completely free.",
+    "descriptionEn": "Access world-best developer tools including GitHub Copilot, Canva Pro, Namecheap completely free.",
     "requirementsEn": "University email (.edu) or student ID / enrollment verification letter."
   },
   {
@@ -236,7 +236,7 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": true,
     "titleEn": "Figma Professional Plan",
-    "valueEn": "Account Pro Free 100%",
+    "valueEn": "100% Free Pro Account",
     "descriptionEn": "Industry-standard UI/UX and collaborative design tool. Get full Pro features for academic coursework.",
     "requirementsEn": "Physical student ID card or stamped academic documentation from school."
   },
@@ -256,9 +256,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": true,
     "titleEn": "edX Financial Assistance",
-    "valueEn": "Off Đến 90% Chứng Chỉ Khóa Học",
-    "descriptionEn": "Chương trình hỗ trợ tài chính for students/người học có hoàn cảnh khó khăn. discount 80-90% cho chứng chỉ Verified Certificate của Harvard, MIT...",
-    "requirementsEn": "Register with học dạng Audit (miễn phí), sau đó nộp đơn xin hỗ trợ tài chính trình bày rõ hoàn cảnh."
+    "valueEn": "Off Up to 90% Course Certificates",
+    "descriptionEn": "Financial aid program for students and learners in need. Offers 80–90% discount on Verified Certificates from Harvard, MIT, and top universities.",
+    "requirementsEn": "Enroll in Audit mode (free), then submit a financial assistance application explaining your situation."
   },
   {
     "id": "b014",
@@ -276,9 +276,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": true,
     "titleEn": "Canva Pro for Education",
-    "valueEn": "Account Pro Free",
-    "descriptionEn": "Thiết kế slide thuyết trình, poster, CV học tập chuyên nghiệp với hàng triệu tài nguyên Premium free.",
-    "requirementsEn": "student ID or email do trường học cấp."
+    "valueEn": "100% Free Pro Account",
+    "descriptionEn": "Design slides, posters, and professional academic CVs with millions of free premium assets.",
+    "requirementsEn": "Student ID card or university-issued email address."
   },
   {
     "id": "b015",
@@ -296,9 +296,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": true,
     "titleEn": "Udemy Student Program",
-    "valueEn": "Discount Khóa Học Lên Tới 75%",
-    "descriptionEn": "Truy cập hàng ngàn khóa học chất lượng cao từ lập trình, kinh tế đến nghệ thuật với chi phí siêu rẻ.",
-    "requirementsEn": "Verify with thông qua cổng liên kết của trường học."
+    "valueEn": "Up to 75% Off Courses",
+    "descriptionEn": "Access thousands of high-quality courses from programming, business to arts at discounted student prices.",
+    "requirementsEn": "Verify via university partner portal."
   },
   {
     "id": "b016",
@@ -316,9 +316,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": true,
     "titleEn": "GrabStudent Transport Pack",
-    "valueEn": "Off 20% Chuyến Đi Grab",
-    "descriptionEn": "Nhận các gói mã special deal di chuyển hàng tháng hỗ trợ đi lại từ ký túc xá đến các giảng đường đại học.",
-    "requirementsEn": "Mở app Grab trên điện thoại -> Vào mục 'Thử thách' (Challenges) or 'Ưu đãi' (Rewards) để Register with gói sinh viên; or Verify with qua MoMo Student Pass bằng student ID."
+    "valueEn": "20% Off Grab Rides",
+    "descriptionEn": "Get monthly transport discount voucher packs for commuting between dormitories and university lecture halls.",
+    "requirementsEn": "Open Grab app -> Go to 'Challenges' or 'Rewards' tab to join student program, or verify via MoMo Student Pass with student ID."
   },
   {
     "id": "b017",
@@ -336,9 +336,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": true,
     "titleEn": "Perplexity Education Pro",
-    "valueEn": "Off 50% Gói Pro ($10/tháng)",
-    "descriptionEn": "Truy cập đầy đủ các mô hình AI tiên tiến nhất (GPT-4o, Claude 3.5 Sonnet), tải tài liệu không giới hạn và Pro search với giá chỉ 50%.",
-    "requirementsEn": "Verify with trạng thái học tập qua cổng SheerID tích hợp trong phần cài đặt Perplexity bằng email .edu."
+    "valueEn": "50% Off Pro Plan ($10/mo)",
+    "descriptionEn": "Full access to advanced AI models (GPT-4o, Claude 3.5 Sonnet), unlimited file uploads, and Pro Search at half price.",
+    "requirementsEn": "Verify trạng thái học tập qua cổng SheerID tích hợp trong phần cài đặt Perplexity bằng email .edu."
   },
   {
     "id": "b018",
@@ -356,9 +356,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": true,
     "titleEn": "You Need A Budget (YNAB) Student",
-    "valueEn": "Free 1 năm gói Pro",
-    "descriptionEn": "Ứng dụng quản lý tài chính cá nhân và lập ngân sách hàng đầu thế giới giúp students xây dựng thói quen chi tiêu thông minh khoa học.",
-    "requirementsEn": "Verify with trạng thái sinh viên đại học or sau đại học thông qua hệ thống SheerID."
+    "valueEn": "Miễn phí 1 năm gói Pro",
+    "descriptionEn": "Ứng dụng quản lý tài chính cá nhân và lập ngân sách hàng đầu thế giới giúp sinh viên xây dựng thói quen chi tiêu thông minh khoa học.",
+    "requirementsEn": "Verify trạng thái sinh viên đại học hoặc sau đại học thông qua hệ thống SheerID."
   },
   {
     "id": "b019",
@@ -378,7 +378,7 @@ export const BENEFITS_DATA = [
     "titleEn": "Microsoft 365 Education",
     "valueEn": "Bộ Office & 1TB OneDrive Free",
     "descriptionEn": "Sử dụng trực tuyến Word, Excel, PowerPoint, OneNote, Microsoft Teams kèm dung lượng đám mây khổng lồ 1TB.",
-    "requirementsEn": "Register with bằng tài khoản university email (.edu) do cơ sở giáo dục cấp."
+    "requirementsEn": "Register bằng tài khoản email trường do cơ sở giáo dục cấp."
   },
   {
     "id": "b020",
@@ -396,9 +396,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": true,
     "titleEn": "Vietnam Airlines LotuStudents",
-    "valueEn": "Off Đến 10% + Tặng 1 Kiện Hành Lý",
-    "descriptionEn": "Chương trình đặc quyền tailored for students students từ 15-31 tuổi. discount vé, tặng thêm hành lý ký gửi và free đổi ngày bay lần đầu.",
-    "requirementsEn": "Register with hội viên Bông Sen Vàng (Lotusmiles) -> Đăng nhập -> Vào mục 'LotuSociety' ở trang cá nhân -> Chọn ưu đãi 'Học sinh, sinh viên' và tải student ID lên để kích hoạt."
+    "valueEn": "Off Up to 10% + Tặng 1 Kiện Hành Lý",
+    "descriptionEn": "Chương trình đặc quyền dành riêng cho học sinh sinh viên từ 15-31 tuổi. Discount vé, tặng thêm hành lý ký gửi và miễn phí đổi ngày bay lần đầu.",
+    "requirementsEn": "Register hội viên Bông Sen Vàng (Lotusmiles) -> Đăng nhập -> Vào mục 'LotuSociety' ở trang cá nhân -> Chọn ưu đãi 'Học sinh, sinh viên' và tải thẻ sinh viên lên để kích hoạt."
   },
   {
     "id": "b021",
@@ -416,9 +416,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": true,
     "titleEn": "Notion Education Plus Plan",
-    "valueEn": "Free Nâng Cấp Gói Plus",
-    "descriptionEn": "Quản lý ghi chú, tài liệu nghiên cứu và lịch trình học tập. Không giới hạn block tải lên và lưu lịch sử trang 30 ngày.",
-    "requirementsEn": "Verify with trực tiếp bằng email sinh viên trường liên kết."
+    "valueEn": "Miễn Phí Nâng Cấp Gói Plus",
+    "descriptionEn": "Manage notes, research documents, and study schedules with unlimited block uploads and 30-day page history.",
+    "requirementsEn": "Verify trực tiếp bằng email sinh viên trường liên kết."
   },
   {
     "id": "b022",
@@ -436,9 +436,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": true,
     "titleEn": "Xanh SM Student Offer",
-    "valueEn": "Discount 15% Các Chuyến Xe Điện",
+    "valueEn": "Off Giá 15% Các Chuyến Xe Điện",
     "descriptionEn": "Di chuyển xanh, êm ái cùng các dòng taxi điện VinFast với mức chiết khấu 15% hàng tháng.",
-    "requirementsEn": "Register with Verify with tài khoản học sinh/sinh viên trực tiếp trên ứng dụng Xanh SM bằng cách chụp ảnh student ID."
+    "requirementsEn": "Register xác thực tài khoản học sinh/sinh viên trực tiếp trên ứng dụng Xanh SM bằng cách chụp ảnh thẻ sinh viên."
   },
   {
     "id": "b023",
@@ -457,8 +457,8 @@ export const BENEFITS_DATA = [
     "isHot": true,
     "titleEn": "CellphoneS S-Student Membership",
     "valueEn": "Off thêm tới 10% & Trả góp 0%",
-    "descriptionEn": "Đặc quyền giảm thêm đến 10% trực tiếp trên giá bán các sản phẩm điện thoại, laptop, máy tính bảng và phụ kiện, kèm gói trả góp 0% lãi suất.",
-    "requirementsEn": "Register with trực tuyến trên website CellphoneS (mục S-Student) bằng university email (.edu)/student ID, or mang student ID và CCCD qua cửa hàng để kích hoạt giảm giá trực tiếp."
+    "descriptionEn": "Exclusive extra discount up to 10% on smartphones, laptops, tablets, and accessories with 0% interest installment options.",
+    "requirementsEn": "Register online on CellphoneS website (S-Student section) with university email (.edu) or student ID, or bring student ID to store."
   },
   {
     "id": "b024",
@@ -476,9 +476,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": true,
     "titleEn": "Amazon Prime Student",
-    "valueEn": "Free 6 Tháng Prime",
-    "descriptionEn": "Giao hàng siêu tốc free, truy cập Prime Video xem phim và special deal độc quyền tailored for giới trẻ.",
-    "requirementsEn": "Email sinh viên trường or bảng điểm chứng minh đang đi học."
+    "valueEn": "Miễn Phí 6 Tháng Prime",
+    "descriptionEn": "Giao hàng siêu tốc miễn phí, truy cập Prime Video xem phim và ưu đãi độc quyền dành riêng cho giới trẻ.",
+    "requirementsEn": "Email sinh viên trường hoặc bảng điểm chứng minh đang đi học."
   },
   {
     "id": "b025",
@@ -496,8 +496,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": true,
     "titleEn": "Starbucks Workspaces",
-    "valueEn": "Off 15% Nước Uống Handmade",
-    "descriptionEn": "Xuất trình thẻ students tại quầy để được discount đồ uống và sử dụng không gian học tập yên tĩnh.",
+    "valueEn": "15% Off Nước Uống Handmade",
+    "descriptionEn": "Xuất trình thẻ sinh viên tại quầy để được giảm giá đồ uống và sử dụng không gian học tập yên tĩnh.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên khi gọi món trực tiếp tại các cửa hàng Starbucks Việt Nam để áp dụng ưu đãi theo mùa (nếu có)."
   },
   {
@@ -517,8 +517,8 @@ export const BENEFITS_DATA = [
     "isHot": true,
     "titleEn": "FPT Shop Student Privilege",
     "valueEn": "Off thêm 5% & Tặng 1 năm bảo hành",
-    "descriptionEn": "Giảm thêm tới 5% giá máy laptop/PC (lên tới 10% cho tân students dựa theo điểm thi) và tặng thêm 1 năm bảo hành chính hãng (tổng cộng 2 năm bảo hành).",
-    "requirementsEn": "Mang theo thẻ học sinh/sinh viên kèm CCCD chính chủ đến các cửa hàng FPT Shop toàn quốc khi mua laptop, máy tính bảng để nhận chiết khấu học đường."
+    "descriptionEn": "Extra discount up to 5% on laptops/PCs (up to 10% for freshmen based on exam scores) plus 1 extra year of official warranty.",
+    "requirementsEn": "Bring your student ID or admission letter along with national ID to any FPT Shop nationwide when buying laptops or tablets."
   },
   {
     "id": "b027",
@@ -537,7 +537,7 @@ export const BENEFITS_DATA = [
     "isHot": true,
     "titleEn": "Lotte Cinema Student Offer",
     "valueEn": "Đồng Giá Vé 55,000 VND",
-    "descriptionEn": "Thưởng thức các bộ phim bom tấn với mức giá special deal và nhận voucher discount combo bắp nước.",
+    "descriptionEn": "Thưởng thức các bộ phim bom tấn với mức giá ưu đãi và nhận voucher giảm giá combo bắp nước.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên kèm CCCD chính chủ trực tiếp tại quầy vé của Lotte Cinema để mua vé xem phim với giá ưu đãi U22."
   },
   {
@@ -557,7 +557,7 @@ export const BENEFITS_DATA = [
     "isHot": true,
     "titleEn": "CGV Cinema Student Discount",
     "valueEn": "Đồng Giá Vé 60,000 VND",
-    "descriptionEn": "Áp dụng giá vé special deal cực sốc cho mọi students students dưới 22 tuổi tại tất cả cụm rạp CGV toàn quốc.",
+    "descriptionEn": "Áp dụng giá vé ưu đãi cực sốc cho mọi học sinh sinh viên dưới 22 tuổi tại tất cả cụm rạp CGV toàn quốc.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên và CCCD tại quầy vé của CGV để mua vé phim giá U22 (áp dụng cho hội viên CGV dưới 22 tuổi)."
   },
   {
@@ -577,7 +577,7 @@ export const BENEFITS_DATA = [
     "isHot": true,
     "titleEn": "Highlands Coffee Student Combo",
     "valueEn": "Combo Đồ Uống + Bánh Chỉ 39,000 VND",
-    "descriptionEn": "Khuấy động ngày dài học tập với combo Phin Sữa Đá/Trà Sen kèm bánh ngọt với giá students siêu tiết kiệm.",
+    "descriptionEn": "Khuấy động ngày dài học tập với combo Phin Sữa Đá/Trà Sen kèm bánh ngọt với giá sinh viên siêu tiết kiệm.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên chính chủ tại quầy thanh toán của Highlands Coffee để mua các combo đồ uống kèm bánh ngọt với giá ưu đãi."
   },
   {
@@ -596,9 +596,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": true,
     "titleEn": "Spotify Student Premium",
-    "valueEn": "Off 50% Gói Premium",
-    "descriptionEn": "Nghe nhạc không quảng cáo, tải nhạc offline và phát nhạc theo yêu cầu với mức giá special deal tailored for students.",
-    "requirementsEn": "Verify with thông qua cổng SheerID bằng ảnh chụp student ID."
+    "valueEn": "50% Off Gói Premium",
+    "descriptionEn": "Nghe nhạc không quảng cáo, tải nhạc offline và phát nhạc theo yêu cầu với mức giá ưu đãi dành riêng cho sinh viên.",
+    "requirementsEn": "Verify thông qua cổng SheerID bằng ảnh chụp thẻ sinh viên."
   },
   {
     "id": "b031",
@@ -616,9 +616,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": true,
     "titleEn": "YouTube Premium Student",
-    "valueEn": "Special Deal Off Phí 45%",
+    "valueEn": "Ưu Đãi Off Phí 45%",
     "descriptionEn": "Xem video không quảng cáo, phát trong nền và sử dụng YouTube Music Premium không giới hạn.",
-    "requirementsEn": "Verify with SheerID bằng physical student ID card or bảng điểm."
+    "requirementsEn": "Verify SheerID bằng thẻ sinh viên cứng hoặc bảng điểm."
   },
   {
     "id": "b032",
@@ -637,8 +637,8 @@ export const BENEFITS_DATA = [
     "isHot": true,
     "titleEn": "Vietjet Air Student Offer",
     "valueEn": "Vé Eco 0 đồng & Off 20% Deluxe",
-    "descriptionEn": "Vietjet Air hỗ trợ students thông qua các đợt khuyến mãi tựu trường với vé 0 đồng và discount 20-30% cho các hạng vé Deluxe/SkyBoss trong 'Ngày vàng'.",
-    "requirementsEn": "Nhập mã ưu đãi sinh viên trong các đợt chiến dịch trên website đặt vé của Vietjet Air, và xuất trình student ID khi làm thủ tục check-in tại sân bay."
+    "descriptionEn": "Vietjet Air hỗ trợ sinh viên thông qua các đợt khuyến mãi tựu trường với vé 0 đồng và giảm giá 20-30% cho các hạng vé Deluxe/SkyBoss trong 'Ngày vàng'.",
+    "requirementsEn": "Nhập mã ưu đãi sinh viên trong các đợt chiến dịch trên website đặt vé của Vietjet Air, và xuất trình thẻ sinh viên khi làm thủ tục check-in tại sân bay."
   },
   {
     "id": "b033",
@@ -656,9 +656,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": true,
     "titleEn": "1Password Manager",
-    "valueEn": "Free 1 Năm Account Mới",
-    "descriptionEn": "Ứng dụng quản lý mật khẩu an toàn và phổ biến nhất hiện nay, giúp bảo mật thông tin đăng nhập trên mọi nền tảng.",
-    "requirementsEn": "Kích hoạt qua GitHub Student Developer Pack or Student App Centre."
+    "valueEn": "Free 1-Year New Account License",
+    "descriptionEn": "Industry-leading secure password manager helping protect your credentials seamlessly across all platforms.",
+    "requirementsEn": "Activate via GitHub Student Developer Pack or Student App Centre."
   },
   {
     "id": "b034",
@@ -676,9 +676,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "HubSpot for Education Partner Program",
-    "valueEn": "Free các công cụ CRM enterprise cao cấp",
-    "descriptionEn": "Chương trình HubSpot Education Partner (EPP) mang đến for students quyền truy cập free vào các công cụ phần mềm CRM, Marketing, Sales, Service và Content Hub phiên bản doanh nghiệp của HubSpot.",
-    "requirementsEn": "Register with thông qua lời mời từ giảng viên tham gia chương trình HubSpot EPP của trường."
+    "valueEn": "Free Premium Enterprise CRM Suite",
+    "descriptionEn": "HubSpot Education Partner Program (EPP) gives students free access to enterprise-tier CRM, Marketing, Sales, Service, and Content Hub tools.",
+    "requirementsEn": "Register via invitation link from faculty participating in your school's HubSpot EPP program."
   },
   {
     "id": "b035",
@@ -696,9 +696,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "New Relic Student Edition",
-    "valueEn": "Free Standard Edition trong 2 năm",
-    "descriptionEn": "Nền tảng quan sát toàn diện giúp phân tích log, APM hiệu năng ứng dụng và giám sát hạ tầng đám mây cho dự án học tập.",
-    "requirementsEn": "Kết nối tài khoản New Relic cá nhân với tài khoản học sinh GitHub Education."
+    "valueEn": "Free Standard Edition for 2 Years",
+    "descriptionEn": "Comprehensive observability platform for log analysis, APM application performance, and cloud infrastructure monitoring for academic projects.",
+    "requirementsEn": "Connect personal New Relic account with GitHub Education student account."
   },
   {
     "id": "b036",
@@ -716,9 +716,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Unity Student Plan",
-    "valueEn": "Free gói Student bao gồm Unity Pro",
-    "descriptionEn": "Nền tảng phát triển game 3D/2D và xây dựng nội dung thực tế ảo (VR/AR) phổ biến nhất hiện nay.",
-    "requirementsEn": "Register with tài khoản Unity và Verify with trạng thái học sinh thông qua cổng đối tác."
+    "valueEn": "Free Student Plan Including Unity Pro",
+    "descriptionEn": "Leading 3D/2D game development engine and virtual/augmented reality (VR/AR) content creation platform.",
+    "requirementsEn": "Register Unity account and verify student status via partner portal."
   },
   {
     "id": "b037",
@@ -736,9 +736,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Bentley Education Student Program",
-    "valueEn": "Free quyền truy cập hơn 50 phần mềm chuyên nghiệp",
-    "descriptionEn": "Quyền truy cập free vào các ứng dụng kỹ thuật cơ sở hạ tầng chuyên nghiệp hàng đầu như MicroStation (CAD), STAAD.Pro (phân tích kết cấu), PLAXIS (địa kỹ thuật).",
-    "requirementsEn": "Register with tài khoản trên cổng Bentley Education sử dụng email học thuật (.edu) và nhập thông tin trường học."
+    "valueEn": "Miễn phí quyền truy cập hơn 50 phần mềm chuyên nghiệp",
+    "descriptionEn": "Quyền truy cập miễn phí vào các ứng dụng kỹ thuật cơ sở hạ tầng chuyên nghiệp hàng đầu như MicroStation (CAD), STAAD.Pro (phân tích kết cấu), PLAXIS (địa kỹ thuật).",
+    "requirementsEn": "Register tài khoản trên cổng Bentley Education sử dụng email học thuật (.edu) và nhập thông tin trường học."
   },
   {
     "id": "b038",
@@ -756,9 +756,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Unity Student Plan Premium",
-    "valueEn": "Free Educational License",
-    "descriptionEn": "Gói phần mềm phát triển game và ứng dụng 3D thời gian thực free cho students, students, bao gồm các công cụ nâng cao, các khóa học Unity Learn Premium và 5 seat free Unity Version Control.",
-    "requirementsEn": "Verify with trạng thái học sinh, sinh viên thông qua GitHub Student Developer Pack or qua SheerID."
+    "valueEn": "Free Student Plan Including Unity Pro",
+    "descriptionEn": "Leading 3D/2D game development engine and virtual/augmented reality (VR/AR) content creation platform.",
+    "requirementsEn": "Register Unity account and verify student status via partner portal."
   },
   {
     "id": "b039",
@@ -776,9 +776,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Houdini Education License",
-    "valueEn": "License Houdini Education giá $75/năm",
+    "valueEn": "Bản quyền Houdini Education giá $75/năm",
     "descriptionEn": "Phần mềm mô phỏng kỹ xảo 3D hiệu ứng vật lý nâng cao (lửa, nước, khói) chuẩn Hollywood cho dự án học tập.",
-    "requirementsEn": "Verify with trạng thái sinh viên thông qua cổng đối tác Proxi.ID khi tiến hành thanh toán."
+    "requirementsEn": "Verify trạng thái sinh viên thông qua cổng đối tác Proxi.ID khi tiến hành thanh toán."
   },
   {
     "id": "b040",
@@ -796,9 +796,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Datadog for Students",
-    "valueEn": "Free gói Datadog Pro trong 2 năm",
+    "valueEn": "Miễn phí gói Datadog Pro trong 2 năm",
     "descriptionEn": "Hệ thống giám sát hạ tầng và quản lý log tập trung hỗ trợ tối đa 10 máy chủ (host) cho dự án nghiên cứu học thuật.",
-    "requirementsEn": "Register with qua cổng đối tác GitHub Student Developer Pack bằng university email (.edu) học."
+    "requirementsEn": "Register qua cổng đối tác GitHub Student Developer Pack bằng email trường học."
   },
   {
     "id": "b041",
@@ -816,9 +816,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Altium Designer Student License",
-    "valueEn": "License Altium Designer Free",
-    "descriptionEn": "license phần mềm thiết kế mạch in điện tử (PCB) chuyên nghiệp số 1 thế giới Altium Designer, đi kèm đám mây Altium 365.",
-    "requirementsEn": "Verify with email đuôi trường (.edu) or tải tài liệu học tập qua cổng Altium Education."
+    "valueEn": "Bản Quyền Altium Designer Miễn Phí",
+    "descriptionEn": "Bản quyền phần mềm thiết kế mạch in điện tử (PCB) chuyên nghiệp số 1 thế giới Altium Designer, đi kèm đám mây Altium 365.",
+    "requirementsEn": "Verify email đuôi trường (.edu) hoặc tải tài liệu học tập qua cổng Altium Education."
   },
   {
     "id": "b042",
@@ -836,9 +836,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Onshape Education Standard Plan",
-    "valueEn": "Free Account Education Standard",
-    "descriptionEn": "Phần mềm thiết kế CAD 3D chuyên nghiệp chạy hoàn toàn trên đám mây, cho phép students học tập, thiết kế và cộng tác thời gian thực trên bất kỳ trình duyệt web và thiết bị nào mà không cần cài đặt.",
-    "requirementsEn": "Register with tài khoản Onshape Education bằng email học thuật (.edu) và thông tin trường học."
+    "valueEn": "Miễn phí tài khoản Education Standard",
+    "descriptionEn": "Phần mềm thiết kế CAD 3D chuyên nghiệp chạy hoàn toàn trên đám mây, cho phép sinh viên học tập, thiết kế và cộng tác thời gian thực trên bất kỳ trình duyệt web và thiết bị nào mà không cần cài đặt.",
+    "requirementsEn": "Register tài khoản Onshape Education bằng email học thuật (.edu) và thông tin trường học."
   },
   {
     "id": "b043",
@@ -856,9 +856,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Maxon One / Cinema 4D Discount",
-    "valueEn": "License Maxon One chỉ $60/năm",
+    "valueEn": "Bản quyền Maxon One chỉ $60/năm",
     "descriptionEn": "Bộ công cụ thiết kế 3D, kỹ xảo điện ảnh chuyên nghiệp gồm Cinema 4D, Redshift, Red Giant và ZBrush.",
-    "requirementsEn": "Verify with thông qua hệ thống SheerID với student ID và bảng điểm học tập còn hiệu lực."
+    "requirementsEn": "Verify thông qua hệ thống SheerID với thẻ sinh viên và bảng điểm học tập còn hiệu lực."
   },
   {
     "id": "b044",
@@ -876,9 +876,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Siemens Solid Edge Student Edition",
-    "valueEn": "Free Educational License 1 Year",
-    "descriptionEn": "Phiên bản học tập của phần mềm CAD chuyên nghiệp Solid Edge từ Siemens, hỗ trợ đầy đủ các tính năng thiết kế 3D, lắp ráp, xuất bản vẽ 2D, mô phỏng và truy cập thư viện học tập free.",
-    "requirementsEn": "Register with bằng email học thuật (.edu) or cung cấp tài liệu chứng minh đang đi học trên cổng phần mềm giáo dục của Siemens."
+    "valueEn": "Free License 1 năm (gia hạn hàng năm)",
+    "descriptionEn": "Phiên bản học tập của phần mềm CAD chuyên nghiệp Solid Edge từ Siemens, hỗ trợ đầy đủ các tính năng thiết kế 3D, lắp ráp, xuất bản vẽ 2D, mô phỏng và truy cập thư viện học tập miễn phí.",
+    "requirementsEn": "Register bằng email học thuật (.edu) hoặc cung cấp tài liệu chứng minh đang đi học trên cổng phần mềm giáo dục của Siemens."
   },
   {
     "id": "b045",
@@ -896,9 +896,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Intel Academic Software Tools",
-    "valueEn": "Free công cụ lập trình hiệu năng cao Intel oneAPI",
-    "descriptionEn": "Intel cung cấp free các công cụ phát triển phần mềm hiệu năng cao và phân tích hệ thống như Intel oneAPI Base & HPC Toolkit, Intel VTune Profiler for students và nhà nghiên cứu học thuật.",
-    "requirementsEn": "Register with tài khoản Intel Developer Zone bằng university email (.edu) học và khai báo thông tin học tập."
+    "valueEn": "Miễn phí công cụ lập trình hiệu năng cao Intel oneAPI",
+    "descriptionEn": "Intel cung cấp miễn phí các công cụ phát triển phần mềm hiệu năng cao và phân tích hệ thống như Intel oneAPI Base & HPC Toolkit, Intel VTune Profiler cho sinh viên và nhà nghiên cứu học thuật.",
+    "requirementsEn": "Register tài khoản Intel Developer Zone bằng email trường học và khai báo thông tin học tập."
   },
   {
     "id": "b046",
@@ -916,9 +916,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Tableau Desktop & Prep for Students",
-    "valueEn": "Free Educational License 1 Year",
-    "descriptionEn": "Tableau cung cấp giấy phép sử dụng phần mềm phân tích và trực quan hóa dữ liệu hàng đầu thế giới Tableau Desktop và Tableau Prep Builder completely free for students.",
-    "requirementsEn": "Điền form Register with sử dụng email học thuật (.edu) và Verify with danh tính sinh viên qua hệ thống SheerID."
+    "valueEn": "Free License 1 năm Tableau Desktop và Prep",
+    "descriptionEn": "Tableau cung cấp giấy phép sử dụng phần mềm phân tích và trực quan hóa dữ liệu hàng đầu thế giới Tableau Desktop và Tableau Prep Builder hoàn toàn miễn phí cho sinh viên.",
+    "requirementsEn": "Điền form đăng ký sử dụng email học thuật (.edu) và xác thực danh tính sinh viên qua hệ thống SheerID."
   },
   {
     "id": "b047",
@@ -936,9 +936,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "ANSYS Student Edition",
-    "valueEn": "Free ANSYS Academic Suite",
-    "descriptionEn": "Tải xuống free bộ phần mềm mô phỏng vật lý, động lực học chất lưu (CFD), cấu trúc cơ học phục vụ nghiên cứu và học tập.",
-    "requirementsEn": "Register with và tải trực tiếp từ cổng ANSYS Academic dành cho sinh viên."
+    "valueEn": "Miễn Phí ANSYS Academic Suite",
+    "descriptionEn": "Tải xuống miễn phí bộ phần mềm mô phỏng vật lý, động lực học chất lưu (CFD), cấu trúc cơ học phục vụ nghiên cứu và học tập.",
+    "requirementsEn": "Register và tải trực tiếp từ cổng ANSYS Academic dành cho sinh viên."
   },
   {
     "id": "b048",
@@ -956,9 +956,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Intuit QuickBooks for Students",
-    "valueEn": "Free 12 Tháng Gói Online Plus",
-    "descriptionEn": "Phần mềm kế toán, quản lý tài chính và thuế hàng đầu thế giới for students ngành tài chính, kinh tế thực hành.",
-    "requirementsEn": "Verify with trạng thái sinh viên khối ngành kinh tế bằng university email (.edu) học thông qua cổng Intuit Education."
+    "valueEn": "Miễn Phí 12 Tháng Gói Online Plus",
+    "descriptionEn": "Phần mềm kế toán, quản lý tài chính và thuế hàng đầu thế giới dành cho sinh viên ngành tài chính, kinh tế thực hành.",
+    "requirementsEn": "Verify trạng thái sinh viên khối ngành kinh tế bằng email trường học thông qua cổng Intuit Education."
   },
   {
     "id": "b049",
@@ -977,8 +977,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Intel Developer Program",
     "valueEn": "Free OneAPI Toolkits & DevCloud Access",
-    "descriptionEn": "Cung cấp free các bộ công cụ OneAPI tối ưu hóa hiệu suất phần cứng và quyền truy cập đám mây Intel DevCloud để chạy AI.",
-    "requirementsEn": "Register with bằng email giáo dục qua cổng học thuật của Intel."
+    "descriptionEn": "Cung cấp miễn phí các bộ công cụ OneAPI tối ưu hóa hiệu suất phần cứng và quyền truy cập đám mây Intel DevCloud để chạy AI.",
+    "requirementsEn": "Register bằng email giáo dục qua cổng học thuật của Intel."
   },
   {
     "id": "b050",
@@ -996,9 +996,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "O'Reilly for Higher Education (Library Access)",
-    "valueEn": "Free truy cập qua thư viện trường liên kết",
-    "descriptionEn": "Truy cập không giới hạn vào hàng ngàn đầu sách công nghệ, lập trình, kinh doanh và các khóa học video chất lượng của O'Reilly Online Learning thông qua account thư viện của các universities liên kết.",
-    "requirementsEn": "Đăng nhập bằng email học thuật (.edu) của trường đại học có liên kết or Register with hội viên sinh viên ACM."
+    "valueEn": "Miễn phí truy cập qua thư viện trường liên kết",
+    "descriptionEn": "Truy cập không giới hạn vào hàng ngàn đầu sách công nghệ, lập trình, kinh doanh và các khóa học video chất lượng của O'Reilly Online Learning thông qua tài khoản thư viện của các trường đại học liên kết.",
+    "requirementsEn": "Đăng nhập bằng email học thuật (.edu) của trường đại học có liên kết hoặc đăng ký hội viên sinh viên ACM."
   },
   {
     "id": "b051",
@@ -1017,8 +1017,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Apple Pro Apps Bundle",
     "valueEn": "Bộ 5 phần mềm sáng tạo giá chỉ $199",
-    "descriptionEn": "Gói phần mềm cực hời gồm: Logic Pro, Final Cut Pro, Motion, Compressor, MainStage for students làm âm thanh & dựng video.",
-    "requirementsEn": "Mua trực tiếp trên Apple Store Education và Verify with qua hệ thống UNiDAYS."
+    "descriptionEn": "Gói phần mềm cực hời gồm: Logic Pro, Final Cut Pro, Motion, Compressor, MainStage dành cho sinh viên làm âm thanh & dựng video.",
+    "requirementsEn": "Mua trực tiếp trên Apple Store Education và xác thực qua hệ thống UNiDAYS."
   },
   {
     "id": "b052",
@@ -1038,7 +1038,7 @@ export const BENEFITS_DATA = [
     "titleEn": "Wall Street Journal Student",
     "valueEn": "Đồng Giá $4/Tháng (Off 90%)",
     "descriptionEn": "Tạp chí tài chính kinh tế hàng đầu thế giới. Cung cấp tin tức thế giới chuyên sâu và các phân tích thị trường chất lượng.",
-    "requirementsEn": "Verify with trực tiếp trên cổng wsj.com/student bằng email sinh viên trường liên kết or SheerID."
+    "requirementsEn": "Verify trực tiếp trên cổng wsj.com/student bằng email sinh viên trường liên kết hoặc SheerID."
   },
   {
     "id": "b053",
@@ -1056,9 +1056,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Retool for Students",
-    "valueEn": "Off 100% gói Team hoặc Business",
+    "valueEn": "100% Off gói Team hoặc Business",
     "descriptionEn": "Nền tảng low-code mạnh mẽ giúp xây dựng nhanh các ứng dụng nội bộ, giao diện kéo thả và bảng điều khiển cho đồ án học tập.",
-    "requirementsEn": "Register with tài khoản và nộp đơn qua trang giáo dục bằng email đuôi trường học (.edu)."
+    "requirementsEn": "Register tài khoản và nộp đơn qua trang giáo dục bằng email đuôi trường học (.edu)."
   },
   {
     "id": "b054",
@@ -1076,9 +1076,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Axure RP Prototyping",
-    "valueEn": "License Axure RP Team Free",
-    "descriptionEn": "Công cụ vẽ prototype tương tác UX/UI mạnh mẽ nhất for các dự án thiết kế ứng dụng và website phức tạp của students.",
-    "requirementsEn": "Register with thông qua Axure Student Portal bằng cách upload student ID or bảng điểm."
+    "valueEn": "Bản Quyền Axure RP Team Miễn Phí",
+    "descriptionEn": "Công cụ vẽ prototype tương tác UX/UI mạnh mẽ nhất dành cho các dự án thiết kế ứng dụng và website phức tạp của sinh viên.",
+    "requirementsEn": "Register thông qua Axure Student Portal bằng cách upload thẻ sinh viên hoặc bảng điểm."
   },
   {
     "id": "b055",
@@ -1096,9 +1096,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "BrowserStack Student Package",
-    "valueEn": "Free 1 năm gói Live & Automate",
+    "valueEn": "Miễn phí 1 năm gói Live & Automate",
     "descriptionEn": "Nền tảng đám mây hỗ trợ kiểm thử ứng dụng và website trên hơn 3000 thiết bị thật và trình duyệt thực tế.",
-    "requirementsEn": "Verify with thông qua tài khoản gói GitHub Student Developer Pack."
+    "requirementsEn": "Verify thông qua tài khoản gói GitHub Student Developer Pack."
   },
   {
     "id": "b056",
@@ -1116,9 +1116,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Sentry for Education",
-    "valueEn": "Free gói Team (50k errors/month)",
+    "valueEn": "Miễn phí gói Team (50k errors/month)",
     "descriptionEn": "Công cụ giám sát lỗi phần mềm ứng dụng và theo dõi hiệu năng hoạt động thời gian thực cho lập trình viên học tập.",
-    "requirementsEn": "Liên kết tài khoản Sentry cá nhân với GitHub Student Developer Pack đã Verify with."
+    "requirementsEn": "Liên kết tài khoản Sentry cá nhân với GitHub Student Developer Pack đã xác thực."
   },
   {
     "id": "b057",
@@ -1136,9 +1136,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Datacamp for Education",
-    "valueEn": "Free Học Data Science",
-    "descriptionEn": "Nền tảng học tập Khoa học dữ liệu, AI và phân tích dữ liệu hàng đầu thế giới for các students ngành công nghệ.",
-    "requirementsEn": "Register with thông qua tài khoản lớp học được giảng viên bảo trợ."
+    "valueEn": "Miễn Phí Học Data Science",
+    "descriptionEn": "Nền tảng học tập Khoa học dữ liệu, AI và phân tích dữ liệu hàng đầu thế giới dành cho các sinh viên ngành công nghệ.",
+    "requirementsEn": "Register thông qua tài khoản lớp học được giảng viên bảo trợ."
   },
   {
     "id": "b058",
@@ -1157,8 +1157,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Bloomberg Student Access",
     "valueEn": "Thuê bao Digital chỉ $9.99/tháng",
-    "descriptionEn": "Quyền truy cập không giới hạn bài viết tin tức phân tích tài chính toàn cầu của Bloomberg với giá special deal đặc biệt (gốc $34.99/tháng).",
-    "requirementsEn": "Verify with trạng thái sinh viên thông qua liên kết đối tác Student Beans."
+    "descriptionEn": "Quyền truy cập không giới hạn bài viết tin tức phân tích tài chính toàn cầu của Bloomberg với giá ưu đãi đặc biệt (gốc $34.99/tháng).",
+    "requirementsEn": "Verify trạng thái sinh viên thông qua liên kết đối tác Student Beans."
   },
   {
     "id": "b059",
@@ -1176,9 +1176,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Shapr3D for Education",
-    "valueEn": "Free Educational License 1 Year",
+    "valueEn": "Free License 1 năm (gia hạn hàng năm)",
     "descriptionEn": "Phần mềm thiết kế 3D CAD chuyên nghiệp tối ưu hóa cho thiết bị di động (iPad, máy tính bảng) và máy tính Windows/Mac, hỗ trợ vẽ phác thảo và dựng hình 3D trực quan bằng bút cảm ứng.",
-    "requirementsEn": "Register with tài khoản Shapr3D bằng email học thuật (.edu), gửi đơn xin cấp phép EDU kèm theo student ID or bảng điểm hợp lệ."
+    "requirementsEn": "Register tài khoản Shapr3D bằng email học thuật (.edu), gửi đơn xin cấp phép EDU kèm theo thẻ sinh viên hoặc bảng điểm hợp lệ."
   },
   {
     "id": "b060",
@@ -1196,9 +1196,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Shapr3D Educational License",
-    "valueEn": "Free 1 năm Shapr3D Pro",
-    "descriptionEn": "Công cụ thiết kế mô hình 3D CAD chuyên nghiệp tối ưu hoá cho iPad (với Apple Pencil), Windows và macOS for students.",
-    "requirementsEn": "Register with qua university email (.edu) .edu và upload student ID or bảng điểm hợp lệ."
+    "valueEn": "Miễn phí 1 năm Shapr3D Pro",
+    "descriptionEn": "Công cụ thiết kế mô hình 3D CAD chuyên nghiệp tối ưu hoá cho iPad (với Apple Pencil), Windows và macOS cho sinh viên.",
+    "requirementsEn": "Register qua email trường .edu và upload thẻ sinh viên hoặc bảng điểm hợp lệ."
   },
   {
     "id": "b061",
@@ -1216,9 +1216,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Basecamp for Education Premium",
-    "valueEn": "Free Account Basecamp Premium",
+    "valueEn": "Miễn phí tài khoản Basecamp Premium",
     "descriptionEn": "Basecamp là phần mềm quản lý dự án và giao tiếp nội bộ nổi tiếng giúp tối ưu hóa công việc nhóm. Phiên bản giáo dục cung cấp đầy đủ các tính năng của gói trả phí phục vụ học tập.",
-    "requirementsEn": "Create account with Basecamp mới bằng university email (.edu) học, sau đó gửi email tới bộ phận hỗ trợ của Basecamp kèm thông tin chứng minh đang đi học."
+    "requirementsEn": "Create account Basecamp mới bằng email trường học, sau đó gửi email tới bộ phận hỗ trợ của Basecamp kèm thông tin chứng minh đang đi học."
   },
   {
     "id": "b062",
@@ -1236,9 +1236,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Rive Education Plan",
-    "valueEn": "Cấp Account giáo dục Free/Special Deal",
+    "valueEn": "Cấp tài khoản giáo dục miễn phí/ưu đãi",
     "descriptionEn": "Công cụ thiết kế chuyển động và tạo animation tương tác thời gian thực cho ứng dụng di động, web và game.",
-    "requirementsEn": "Gửi email trực tiếp đến support@rive.app với thông tin dự án học tập/coursework và student ID."
+    "requirementsEn": "Gửi email trực tiếp đến support@rive.app với thông tin dự án học tập/coursework và thẻ sinh viên."
   },
   {
     "id": "b063",
@@ -1256,9 +1256,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "DBeaver Academic License",
-    "valueEn": "Free Educational License",
-    "descriptionEn": "Cung cấp giấy phép sử dụng free phiên bản Enterprise cao cấp của công cụ quản lý cơ sở dữ liệu đa nền tảng DBeaver cho mục đích học tập.",
-    "requirementsEn": "Register with trực tuyến bằng email giáo dục và gửi minh chứng học tập hợp lệ qua cổng học thuật của DBeaver."
+    "valueEn": "Free License DBeaver Enterprise Edition",
+    "descriptionEn": "Cung cấp giấy phép sử dụng miễn phí phiên bản Enterprise cao cấp của công cụ quản lý cơ sở dữ liệu đa nền tảng DBeaver cho mục đích học tập.",
+    "requirementsEn": "Register trực tuyến bằng email giáo dục và gửi minh chứng học tập hợp lệ qua cổng học thuật của DBeaver."
   },
   {
     "id": "b064",
@@ -1276,9 +1276,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Marvelous Designer Student Plan",
-    "valueEn": "Đăng ký Student chỉ $8.25/tháng (Off 70%)",
-    "descriptionEn": "Phần mềm mô phỏng và thiết kế quần áo 3D đỉnh cao for làm game, hoạt hình và thời trang kỹ thuật số học tập.",
-    "requirementsEn": "Verify with trạng thái học tập trực tiếp bằng university email (.edu) học (.edu) or thẻ học sinh."
+    "valueEn": "Register sinh viên chỉ $8.25/tháng (giảm 70%)",
+    "descriptionEn": "Phần mềm mô phỏng và thiết kế quần áo 3D đỉnh cao dành cho làm game, hoạt hình và thời trang kỹ thuật số học tập.",
+    "requirementsEn": "Verify trạng thái học tập trực tiếp bằng email trường học (.edu) hoặc thẻ học sinh."
   },
   {
     "id": "b065",
@@ -1298,7 +1298,7 @@ export const BENEFITS_DATA = [
     "titleEn": "Kiro AI IDE Student Program",
     "valueEn": "1,000 Free Credits/Tháng Trong 1 Năm",
     "descriptionEn": "Môi trường lập trình tích hợp AI (agentic IDE) thế hệ mới từ AWS, hỗ trợ spec-driven development, viết test và refactor code tự động.",
-    "requirementsEn": "Register with tài khoản Kiro bằng email đại học (.edu) và hoàn tất xác minh trạng thái sinh viên qua cổng SheerID."
+    "requirementsEn": "Register tài khoản Kiro bằng email đại học (.edu) và hoàn tất xác minh trạng thái sinh viên qua cổng SheerID."
   },
   {
     "id": "b066",
@@ -1316,9 +1316,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "v0.dev Pro Education Plan",
-    "valueEn": "Account Pro v0 Free",
+    "valueEn": "Tài khoản Pro v0 Miễn Phí",
     "descriptionEn": "Hỗ trợ thiết kế và sinh code UI/UX siêu tốc bằng trí tuệ nhân tạo (AI) của Vercel cho các dự án và đồ án công nghệ.",
-    "requirementsEn": "Verify with tài khoản Vercel thông qua email đuôi trường học (.edu) của sinh viên."
+    "requirementsEn": "Verify tài khoản Vercel thông qua email đuôi trường học (.edu) của sinh viên."
   },
   {
     "id": "b067",
@@ -1336,8 +1336,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Superhuman Email Client",
-    "valueEn": "Discount 67% Gói Premium Mail",
-    "descriptionEn": "Ứng dụng quản lý email (Gmail/Outlook) nhanh nhất thế giới giúp students xử lý hộp thư đến siêu tốc và đạt Inbox Zero.",
+    "valueEn": "Off Giá 67% Gói Premium Mail",
+    "descriptionEn": "Ứng dụng quản lý email (Gmail/Outlook) nhanh nhất thế giới giúp sinh viên xử lý hộp thư đến siêu tốc và đạt Inbox Zero.",
     "requirementsEn": "Gửi email yêu cầu đến hello@superhuman.com bằng email sinh viên trường học."
   },
   {
@@ -1356,9 +1356,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Airtable Student Offer",
-    "valueEn": "Free Gói Airtable Team",
-    "descriptionEn": "Công cụ cơ sở dữ liệu kết hợp bảng tính trực quan, giúp students quản lý dự án học tập, nghiên cứu và tổ chức dữ liệu mạnh mẽ.",
-    "requirementsEn": "Register with qua email .edu và nộp đơn Register with trực tiếp trên trang web Airtable."
+    "valueEn": "Miễn Phí Gói Airtable Team",
+    "descriptionEn": "Công cụ cơ sở dữ liệu kết hợp bảng tính trực quan, giúp sinh viên quản lý dự án học tập, nghiên cứu và tổ chức dữ liệu mạnh mẽ.",
+    "requirementsEn": "Register qua email .edu và nộp đơn đăng ký trực tiếp trên trang web Airtable."
   },
   {
     "id": "b069",
@@ -1378,7 +1378,7 @@ export const BENEFITS_DATA = [
     "titleEn": "Financial Times (FT) Student",
     "valueEn": "Discount 50% gói Digital",
     "descriptionEn": "Cung cấp quyền truy cập tin tức tài chính, kinh tế toàn cầu chất lượng cao giúp hỗ trợ học tập và nghiên cứu học thuật sâu sắc.",
-    "requirementsEn": "Xác minh thông tin học sinh sinh viên qua cổng Register with học tập của FT or university email (.edu)."
+    "requirementsEn": "Xác minh thông tin học sinh sinh viên qua cổng đăng ký học tập của FT hoặc university email (.edu)."
   },
   {
     "id": "b070",
@@ -1396,9 +1396,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "GitLab Ultimate for Education",
-    "valueEn": "Free Educational License",
-    "descriptionEn": "GitLab cung cấp free phiên bản cao cấp nhất GitLab Ultimate cho các universities và dự án học thuật của students, hỗ trợ tính năng bảo mật nâng cao và các công cụ CI/CD.",
-    "requirementsEn": "Điền đơn Register with thông qua chương trình GitLab for Education, yêu cầu Verify with bằng university email (.edu) và tài liệu chứng minh đang đi học."
+    "valueEn": "Free License cao cấp nhất GitLab Ultimate",
+    "descriptionEn": "GitLab cung cấp miễn phí phiên bản cao cấp nhất GitLab Ultimate cho các trường đại học và dự án học thuật của sinh viên, hỗ trợ tính năng bảo mật nâng cao và các công cụ CI/CD.",
+    "requirementsEn": "Điền đơn đăng ký thông qua chương trình GitLab for Education, yêu cầu xác thực bằng university email (.edu) và tài liệu chứng minh đang đi học."
   },
   {
     "id": "b071",
@@ -1416,9 +1416,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Qatar Airways Student Club",
-    "valueEn": "Off 10% - 20% + Tặng 10kg Hành Lý",
-    "descriptionEn": "Nhận mã giảm 10% lần đầu, 15% lần 2, 20% lần 3 & 4. Thêm hành lý ký gửi, đổi ngày free và nâng hạng Privilege Club khi tốt nghiệp.",
-    "requirementsEn": "Register with online bằng email .edu, student ID or Visa du học / Thư nhập học."
+    "valueEn": "10% Off - 20% + Tặng 10kg Hành Lý",
+    "descriptionEn": "Nhận mã giảm 10% lần đầu, 15% lần 2, 20% lần 3 & 4. Thêm hành lý ký gửi, đổi ngày miễn phí và nâng hạng Privilege Club khi tốt nghiệp.",
+    "requirementsEn": "Register online bằng email .edu, thẻ sinh viên hoặc Visa du học / Thư nhập học."
   },
   {
     "id": "b072",
@@ -1436,9 +1436,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Emirates Student Discount",
-    "valueEn": "Off Đến 10% + Tặng 10kg Hành Lý",
-    "descriptionEn": "discount vé bay tới 10% cho hạng Economy và Business Class, kèm theo hành lý ký gửi bổ dung và thay đổi ngày bay free lần đầu.",
-    "requirementsEn": "Áp dụng mã promo code STUDENT khi đặt vé và xuất trình student ID or university email (.edu) khi check-in."
+    "valueEn": "Off Up to 10% + Tặng 10kg Hành Lý",
+    "descriptionEn": "Discount vé bay tới 10% cho hạng Economy và Business Class, kèm theo hành lý ký gửi bổ dung và thay đổi ngày bay miễn phí lần đầu.",
+    "requirementsEn": "Áp dụng mã promo code STUDENT khi đặt vé và xuất trình thẻ sinh viên hoặc university email (.edu) khi check-in."
   },
   {
     "id": "b073",
@@ -1457,7 +1457,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "MongoDB Atlas for Students",
     "valueEn": "Tặng $50 Cloud Credit + Free Certification",
-    "descriptionEn": "Tín dụng đám mây MongoDB Atlas để chạy cơ sở dữ liệu NoSQL, đi kèm voucher thi free chứng chỉ MongoDB Certified Developer.",
+    "descriptionEn": "Tín dụng đám mây MongoDB Atlas để chạy cơ sở dữ liệu NoSQL, đi kèm voucher thi miễn phí chứng chỉ MongoDB Certified Developer.",
     "requirementsEn": "Kích hoạt thông qua GitHub Student Developer Pack."
   },
   {
@@ -1476,7 +1476,7 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "DigitalOcean Student Cloud Credit",
-    "valueEn": "Tặng $200 Cloud Credit Free",
+    "valueEn": "Tặng $200 Cloud Credit miễn phí",
     "descriptionEn": "Tín dụng đám mây sử dụng trong vòng 1 năm để deploy máy chủ ảo (Droplets), cơ sở dữ liệu, ứng dụng đám mây cho học tập.",
     "requirementsEn": "Kích hoạt qua GitHub Student Developer Pack."
   },
@@ -1496,9 +1496,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Avid Pro Tools Education",
-    "valueEn": "License Pro Tools Studio chỉ $99/năm",
+    "valueEn": "Bản quyền Pro Tools Studio chỉ $99/năm",
     "descriptionEn": "Công cụ chỉnh sửa, thu âm và sản xuất âm thanh hậu kỳ phim ảnh tiêu chuẩn công nghiệp âm nhạc.",
-    "requirementsEn": "Verify with trạng thái học tập qua cổng Proxi.id bằng email nhà trường or student ID."
+    "requirementsEn": "Verify trạng thái học tập qua cổng Proxi.id bằng email nhà trường hoặc thẻ sinh viên."
   },
   {
     "id": "b076",
@@ -1516,9 +1516,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Oracle Academy Cloud Program",
-    "valueEn": "Free Oracle Cloud Free Tier & tài nguyên Academy",
-    "descriptionEn": "Oracle Academy cung cấp for students quyền truy cập free vào các dịch vụ đám mây của Oracle (Oracle Cloud Free Tier), các khóa học Java, cơ sở dữ liệu SQL và công nghệ AI.",
-    "requirementsEn": "Register with thông qua tài khoản Oracle Academy do trường đại học của sinh viên liên kết cung cấp."
+    "valueEn": "Miễn phí Oracle Cloud Free Tier & tài nguyên Academy",
+    "descriptionEn": "Oracle Academy cung cấp cho sinh viên quyền truy cập miễn phí vào các dịch vụ đám mây của Oracle (Oracle Cloud Free Tier), các khóa học Java, cơ sở dữ liệu SQL và công nghệ AI.",
+    "requirementsEn": "Register thông qua tài khoản Oracle Academy do trường đại học của sinh viên liên kết cung cấp."
   },
   {
     "id": "b077",
@@ -1536,8 +1536,8 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Frontend Masters Student Access",
-    "valueEn": "Free 6 Tháng Premium Access",
-    "descriptionEn": "Nền tảng học lập trình Web/Frontend chuyên sâu từ các chuyên gia hàng đầu. free truy cập toàn bộ khóa học chất lượng cao trong 6 tháng.",
+    "valueEn": "Miễn Phí 6 Tháng Premium Access",
+    "descriptionEn": "Nền tảng học lập trình Web/Frontend chuyên sâu từ các chuyên gia hàng đầu. Miễn phí truy cập toàn bộ khóa học chất lượng cao trong 6 tháng.",
     "requirementsEn": "Liên kết và kích hoạt thông qua GitHub Student Developer Pack."
   },
   {
@@ -1556,9 +1556,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Miro for Education Standard",
-    "valueEn": "Free Educational License",
+    "valueEn": "Free License Education (thời hạn 2 năm)",
     "descriptionEn": "Bảng trắng kỹ thuật số cộng tác trực tuyến trực quan hàng đầu, giúp các nhóm cùng brainstorm, lập bản đồ tư duy, vẽ sơ đồ và quản lý dự án. Bản Education cung cấp số lượng bảng không giới hạn.",
-    "requirementsEn": "Register with bằng university email (.edu) học (.edu) và gửi thông tin xác nhận qua cổng Register with Miro Education."
+    "requirementsEn": "Register bằng email trường học (.edu) và gửi thông tin xác nhận qua cổng đăng ký Miro Education."
   },
   {
     "id": "b079",
@@ -1576,9 +1576,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Framer No-Code Website Builder",
-    "valueEn": "Free Gói Basic Plan 1 Năm",
-    "descriptionEn": "Công cụ thiết kế và phát triển website không cần viết code (No-code site builder). Nhận free 1 năm gói Basic để xây dựng portfolio cá nhân.",
-    "requirementsEn": "Register with tài khoản Framer bằng university email (.edu) học và điền đơn xin học tập trực tuyến."
+    "valueEn": "Miễn Phí Gói Basic Plan 1 Năm",
+    "descriptionEn": "Công cụ thiết kế và phát triển website không cần viết code (No-code site builder). Nhận miễn phí 1 năm gói Basic để xây dựng portfolio cá nhân.",
+    "requirementsEn": "Register tài khoản Framer bằng email trường học và điền đơn xin học tập trực tuyến."
   },
   {
     "id": "b080",
@@ -1616,9 +1616,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Postman Student Program",
-    "valueEn": "Free Postman Premium",
-    "descriptionEn": "Cung cấp các khoá học đào tạo API free, chứng chỉ Postman Student Expert và hỗ trợ giấy phép sử dụng Premium for students học tập.",
-    "requirementsEn": "Verify with qua university email (.edu) .edu or cung cấp minh chứng học tập khác."
+    "valueEn": "Miễn phí Postman Premium",
+    "descriptionEn": "Cung cấp các khoá học đào tạo API miễn phí, chứng chỉ Postman Student Expert và hỗ trợ giấy phép sử dụng Premium cho sinh viên học tập.",
+    "requirementsEn": "Verify qua email trường .edu hoặc cung cấp minh chứng học tập khác."
   },
   {
     "id": "b082",
@@ -1636,9 +1636,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Wix Website Student Plan",
-    "valueEn": "Off 50% Gói Premium Năm",
-    "descriptionEn": "Nền tảng thiết kế website kéo thả phổ biến, hỗ trợ students nhanh chóng tự tạo blog, portfolio cá nhân hoặc landing page chuyên nghiệp.",
-    "requirementsEn": "Verify with tình trạng sinh viên thông qua Student Beans."
+    "valueEn": "50% Off Gói Premium Năm",
+    "descriptionEn": "Nền tảng thiết kế website kéo thả phổ biến, hỗ trợ sinh viên nhanh chóng tự tạo blog, portfolio cá nhân hoặc landing page chuyên nghiệp.",
+    "requirementsEn": "Verify tình trạng sinh viên thông qua Student Beans."
   },
   {
     "id": "b083",
@@ -1656,9 +1656,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Ableton Live Education",
-    "valueEn": "Off 40% giá mua License Ableton Live",
-    "descriptionEn": "Phần mềm máy trạm âm thanh kỹ thuật số (DAW) chuyên nghiệp chuẩn công nghiệp for việc sản xuất âm nhạc, phối khí.",
-    "requirementsEn": "Tải tài liệu chứng minh là học sinh/sinh viên toàn thời gian or bán thời gian lên trang Verify with Ableton."
+    "valueEn": "40% Off giá mua bản quyền Ableton Live",
+    "descriptionEn": "Phần mềm máy trạm âm thanh kỹ thuật số (DAW) chuyên nghiệp chuẩn công nghiệp dành cho việc sản xuất âm nhạc, phối khí.",
+    "requirementsEn": "Tải tài liệu chứng minh là học sinh/sinh viên toàn thời gian hoặc bán thời gian lên trang xác thực Ableton."
   },
   {
     "id": "b084",
@@ -1676,9 +1676,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "CorelDraw Education Edition",
-    "valueEn": "Discount tới 75% License chính thức",
+    "valueEn": "Discount tới 75% bản quyền chính thức",
     "descriptionEn": "Bộ công cụ thiết kế đồ họa vector và chỉnh sửa ảnh chuyên nghiệp phục vụ học tập sáng tạo nghệ thuật.",
-    "requirementsEn": "Verify with trạng thái học sinh thông qua cổng SheerID or cung cấp thẻ học sinh trực tiếp."
+    "requirementsEn": "Verify trạng thái học sinh thông qua cổng SheerID hoặc cung cấp thẻ học sinh trực tiếp."
   },
   {
     "id": "b085",
@@ -1696,8 +1696,8 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Affinity Suite for Education",
-    "valueEn": "License Affinity V2 Free",
-    "descriptionEn": "Canva và Affinity kết hợp cung cấp free bộ ứng dụng thiết kế đồ hoạ chuyên nghiệp (Designer, Photo, Publisher) thay thế cho Adobe Illustrator, Photoshop.",
+    "valueEn": "Bản Quyền Affinity V2 Miễn Phí",
+    "descriptionEn": "Canva và Affinity kết hợp cung cấp miễn phí bộ ứng dụng thiết kế đồ hoạ chuyên nghiệp (Designer, Photo, Publisher) thay thế cho Adobe Illustrator, Photoshop.",
     "requirementsEn": "Kích hoạt thông qua tài khoản Canva for Education được trường học phê duyệt."
   },
   {
@@ -1717,8 +1717,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Heroku Student Hobby Tier",
     "valueEn": "Tặng $13/tháng Cloud Credit (12 tháng)",
-    "descriptionEn": "Tín dụng đám mây trị giá $13 mỗi tháng trong vòng 1 năm để chạy các ứng dụng Node.js, Python, Ruby trên Heroku free.",
-    "requirementsEn": "Register with qua GitHub Student Developer Pack."
+    "descriptionEn": "Tín dụng đám mây trị giá $13 mỗi tháng trong vòng 1 năm để chạy các ứng dụng Node.js, Python, Ruby trên Heroku miễn phí.",
+    "requirementsEn": "Register qua GitHub Student Developer Pack."
   },
   {
     "id": "b087",
@@ -1736,9 +1736,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Moqups for Education",
-    "valueEn": "Free Account Pro 1 năm",
+    "valueEn": "Miễn phí tài khoản Pro 1 năm",
     "descriptionEn": "Công cụ thiết kế sơ đồ luồng, wireframe, sitemap và cộng tác nhóm trên một bảng vẽ trực tuyến duy nhất.",
-    "requirementsEn": "Create account with bằng email giáo dục của trường và gửi email yêu cầu kích hoạt đến bộ phận hỗ trợ Moqups."
+    "requirementsEn": "Create account bằng email giáo dục của trường và gửi email yêu cầu kích hoạt đến bộ phận hỗ trợ Moqups."
   },
   {
     "id": "b088",
@@ -1756,8 +1756,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Samsung Student Offers",
-    "valueEn": "Discount Đến 30% Thiết Bị",
-    "descriptionEn": "special deal chiết khấu trực tiếp khi mua điện thoại Galaxy, máy tính bảng Tab, laptop Book và phụ kiện công nghệ.",
+    "valueEn": "Off Giá Up to 30% Thiết Bị",
+    "descriptionEn": "Ưu đãi chiết khấu trực tiếp khi mua điện thoại Galaxy, máy tính bảng Tab, laptop Book và phụ kiện công nghệ.",
     "requirementsEn": "Đăng nhập cổng Samsung Student Vietnam bằng email giáo dục."
   },
   {
@@ -1776,9 +1776,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "ISIC International Student Card",
-    "valueEn": "Thẻ Special Deal Du Lịch Toàn Cầu",
-    "descriptionEn": "Mở khóa hơn 150.000 special deal vé máy bay, vé tàu, khách sạn, vé vào cổng bảo tàng trên toàn thế giới.",
-    "requirementsEn": "Cung cấp ảnh chụp student ID chính chủ còn hạn sử dụng để làm thẻ ISIC."
+    "valueEn": "Thẻ Ưu Đãi Du Lịch Toàn Cầu",
+    "descriptionEn": "Mở khóa hơn 150.000 ưu đãi vé máy bay, vé tàu, khách sạn, vé vào cổng bảo tàng trên toàn thế giới.",
+    "requirementsEn": "Cung cấp ảnh chụp thẻ sinh viên chính chủ còn hạn sử dụng để làm thẻ ISIC."
   },
   {
     "id": "b090",
@@ -1796,9 +1796,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Singapore Airlines Student Privileges",
-    "valueEn": "Off 10% Khứ Hồi / Tặng 40kg Hành Lý",
-    "descriptionEn": "Đặc quyền bay for students đăng ký KrisFlyer. discount vé, tăng đáng kể hành lý ký gửi và hỗ trợ hoàn vé free nếu bị từ chối Visa.",
-    "requirementsEn": "Xác minh tài khoản KrisFlyer qua cổng SheerID bằng student ID or enrollment verification letter."
+    "valueEn": "10% Off Khứ Hồi / Tặng 40kg Hành Lý",
+    "descriptionEn": "Đặc quyền bay cho sinh viên đăng ký KrisFlyer. Discount vé, tăng đáng kể hành lý ký gửi và hỗ trợ hoàn vé miễn phí nếu bị từ chối Visa.",
+    "requirementsEn": "Xác minh tài khoản KrisFlyer qua cổng SheerID bằng thẻ sinh viên hoặc giấy xác nhận nhập học."
   },
   {
     "id": "b091",
@@ -1816,8 +1816,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Codecademy Student Pro",
-    "valueEn": "Off 50% Gói Membership Năm",
-    "descriptionEn": "discount 50% cho gói Codecademy Pro hàng năm, giúp students tiếp cận các lộ trình học lập trình tương tác phong phú, đồ án thực tế.",
+    "valueEn": "50% Off Gói Membership Năm",
+    "descriptionEn": "Discount 50% cho gói Codecademy Pro hàng năm, giúp sinh viên tiếp cận các lộ trình học lập trình tương tác phong phú, đồ án thực tế.",
     "requirementsEn": "Xác minh tư cách sinh viên qua dịch vụ đối tác SheerID."
   },
   {
@@ -1838,7 +1838,7 @@ export const BENEFITS_DATA = [
     "titleEn": "Pluralsight Premium Offer",
     "valueEn": "Truy Cập Free qua Microsoft Dev Essentials",
     "descriptionEn": "Truy cập vào thư viện các khóa học công nghệ cao cấp của Pluralsight thông qua gói Visual Studio Dev Essentials của Microsoft.",
-    "requirementsEn": "Register with tài khoản Microsoft Dev Essentials và kích hoạt ưu đãi Pluralsight."
+    "requirementsEn": "Register tài khoản Microsoft Dev Essentials và kích hoạt ưu đãi Pluralsight."
   },
   {
     "id": "b093",
@@ -1856,9 +1856,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Educative.io Student Access Program",
-    "valueEn": "Free 6 tháng học thử hơn 60 khóa học lập trình",
-    "descriptionEn": "Educative.io cung cấp nền tảng học lập trình tương tác dựa trên văn bản giúp students học code nhanh hơn thông qua trình duyệt mà không cần thiết lập môi trường phức tạp.",
-    "requirementsEn": "Đăng nhập bằng tài khoản GitHub đã được Verify with trạng thái sinh viên qua GitHub Student Developer Pack."
+    "valueEn": "Miễn phí 6 tháng học thử hơn 60 khóa học lập trình",
+    "descriptionEn": "Educative.io cung cấp nền tảng học lập trình tương tác dựa trên văn bản giúp sinh viên học code nhanh hơn thông qua trình duyệt mà không cần thiết lập môi trường phức tạp.",
+    "requirementsEn": "Đăng nhập bằng tài khoản GitHub đã được xác thực trạng thái sinh viên qua GitHub Student Developer Pack."
   },
   {
     "id": "b094",
@@ -1876,9 +1876,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Turkish Airlines Student Club",
-    "valueEn": "Discount Đến 20% + 40kg Ký Gửi Free",
-    "descriptionEn": "special deal di chuyển quốc tế cực lớn từ hãng hàng không 5 sao của Thổ Nhĩ Kỳ for du students và students.",
-    "requirementsEn": "Register with thành viên Miles&Smiles và gửi hồ sơ chứng minh sinh viên qua form hỗ trợ."
+    "valueEn": "Off Giá Up to 20% + 40kg Ký Gửi Free",
+    "descriptionEn": "Ưu đãi di chuyển quốc tế cực lớn từ hãng hàng không 5 sao của Thổ Nhĩ Kỳ dành cho du học sinh và sinh viên.",
+    "requirementsEn": "Register thành viên Miles&Smiles và gửi hồ sơ chứng minh sinh viên qua form hỗ trợ."
   },
   {
     "id": "b095",
@@ -1897,8 +1897,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Nha khoa Parkway Student Teeth Care",
     "valueEn": "Off dịch vụ chỉnh nha & Cạo vôi tới 50%",
-    "descriptionEn": "discount chỉnh nha Invisalign/mắc cài thông qua sự kiện liên kết trường học hoặc special deal trực tiếp cho thẻ students.",
-    "requirementsEn": "Đặt lịch hẹn tư vấn trực tuyến và xuất trình thẻ học sinh/sinh viên chính thức khi đến phòng khám để được áp dụng giảm giá niềng răng or chăm sóc răng."
+    "descriptionEn": "Discount chỉnh nha Invisalign/mắc cài thông qua sự kiện liên kết trường học hoặc ưu đãi trực tiếp cho thẻ sinh viên.",
+    "requirementsEn": "Đặt lịch hẹn tư vấn trực tuyến và xuất trình thẻ học sinh/sinh viên chính thức khi đến phòng khám để được áp dụng giảm giá niềng răng hoặc chăm sóc răng."
   },
   {
     "id": "b096",
@@ -1917,8 +1917,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Swiss Travel Pass Youth",
     "valueEn": "Discount 30% vé tàu hỏa Thụy Sĩ",
-    "descriptionEn": "Thẻ di chuyển trọn gói bằng tàu hỏa, xe buýt, tàu thủy và free vào cửa 500 bảo tàng tại Thụy Sĩ for giới trẻ.",
-    "requirementsEn": "Xác minh độ tuổi từ 16 - 24 bằng hộ chiếu khi mua vé trực tuyến or trực tiếp tại ga."
+    "descriptionEn": "Thẻ di chuyển trọn gói bằng tàu hỏa, xe buýt, tàu thủy và miễn phí vào cửa 500 bảo tàng tại Thụy Sĩ dành cho giới trẻ.",
+    "requirementsEn": "Xác minh độ tuổi từ 16 - 24 bằng hộ chiếu khi mua vé trực tuyến hoặc trực tiếp tại ga."
   },
   {
     "id": "b097",
@@ -1936,9 +1936,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Mathematica Student Edition / WolframAlpha Pro Student",
-    "valueEn": "Discount 30%–60% (hoặc Free qua trường liên kết)",
+    "valueEn": "Discount 30%–60% (hoặc miễn phí qua trường liên kết)",
     "descriptionEn": "WolframAlpha Pro cung cấp công cụ giải toán nâng cao bước-theo-bước. Mathematica Student Edition cung cấp công cụ tính toán khoa học, mô phỏng kỹ thuật và phát triển thuật toán chuyên nghiệp.",
-    "requirementsEn": "Đăng nhập/Verify with qua Student Beans or sử dụng email giáo dục (.edu) Register with qua cổng phần mềm của trường liên kết."
+    "requirementsEn": "Đăng nhập/Verify qua Student Beans hoặc sử dụng email giáo dục (.edu) đăng ký qua cổng phần mềm của trường liên kết."
   },
   {
     "id": "b098",
@@ -1957,7 +1957,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Brilliant.org for Educators & Students",
     "valueEn": "Free Premium cho học sinh K-12",
-    "descriptionEn": "Nền tảng học Toán, Khoa học Máy tính tương tác trực quan cung cấp account Premium free cho lớp học giáo viên bảo trợ.",
+    "descriptionEn": "Nền tảng học Toán, Khoa học Máy tính tương tác trực quan cung cấp tài khoản Premium miễn phí cho lớp học giáo viên bảo trợ.",
     "requirementsEn": "Giáo viên K-12 nộp đơn xin tài khoản lớp học và thêm học sinh của mình vào danh sách."
   },
   {
@@ -1976,9 +1976,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Mural for Education Workspace",
-    "valueEn": "Free gói Account Education đầy đủ tính năng",
-    "descriptionEn": "Nền tảng bảng trắng tương tác kỹ thuật số giúp thiết kế ý tưởng, brainstorm và lập bản đồ tư duy cộng tác trực quan cho các đội nhóm học tập của students.",
-    "requirementsEn": "Register with tài khoản trên trang Mural Education bằng email giáo dục (.edu) or cung cấp bằng chứng nhập học."
+    "valueEn": "Miễn phí gói tài khoản Education đầy đủ tính năng",
+    "descriptionEn": "Nền tảng bảng trắng tương tác kỹ thuật số giúp thiết kế ý tưởng, brainstorm và lập bản đồ tư duy cộng tác trực quan cho các đội nhóm học tập của sinh viên.",
+    "requirementsEn": "Register tài khoản trên trang Mural Education bằng email giáo dục (.edu) hoặc cung cấp bằng chứng nhập học."
   },
   {
     "id": "b100",
@@ -1996,7 +1996,7 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Proto.io Student Discount",
-    "valueEn": "Off 50% mọi gói thuê bao dịch vụ",
+    "valueEn": "50% Off mọi gói thuê bao dịch vụ",
     "descriptionEn": "Công cụ thiết kế mẫu thử (prototyping) ứng dụng di động có độ trung thực cao (high-fidelity) không cần viết code.",
     "requirementsEn": "Liên hệ hỗ trợ trực tuyến của Proto.io từ địa chỉ university email (.edu) để nhận ưu đãi giáo dục."
   },
@@ -2016,9 +2016,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "The Economist Student",
-    "valueEn": "Discount 75% Thuê Bao Digital",
+    "valueEn": "Off Giá 75% Thuê Bao Digital",
     "descriptionEn": "Tuần báo uy tín phân tích sâu về kinh tế toàn cầu, chính trị thế giới, khoa học công nghệ và văn hóa.",
-    "requirementsEn": "Verify with qua cổng Student Beans or student ID quốc tế ISIC."
+    "requirementsEn": "Verify qua cổng Student Beans hoặc thẻ sinh viên quốc tế ISIC."
   },
   {
     "id": "b102",
@@ -2037,8 +2037,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Cathay Pacific Student Offer",
     "valueEn": "Off tới 10% vé + Tặng hành lý + Đổi ngày free",
-    "descriptionEn": "Đặc quyền bay for students quốc tế khi đặt vé trực tuyến sử dụng mã khuyến mại theo khu vực (ví dụ: VNSTUDENT).",
-    "requirementsEn": "Xác minh bằng student ID quốc tế (ISIC), visa du học, or Thư mời nhập học khi làm thủ tục check-in."
+    "descriptionEn": "Đặc quyền bay dành cho sinh viên quốc tế khi đặt vé trực tuyến sử dụng mã khuyến mại theo khu vực (ví dụ: VNSTUDENT).",
+    "requirementsEn": "Xác minh bằng Student ID quốc tế (ISIC), visa du học, hoặc Thư mời nhập học khi làm thủ tục check-in."
   },
   {
     "id": "b103",
@@ -2057,8 +2057,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "EVA Air Student Tickets",
     "valueEn": "Discount vé bay + Tặng thêm hành lý ký gửi",
-    "descriptionEn": "Gói special deal for students đại học/cao đẳng và khách du lịch theo diện Working Holiday trên các đường bay quốc tế được chỉ định.",
-    "requirementsEn": "Xuất trình student ID quốc tế (ISIC), visa học tập or giấy báo nhập học tại sân bay."
+    "descriptionEn": "Gói ưu đãi dành cho sinh viên đại học/cao đẳng và khách du lịch theo diện Working Holiday trên các đường bay quốc tế được chỉ định.",
+    "requirementsEn": "Xuất trình Student ID quốc tế (ISIC), visa học tập hoặc giấy báo nhập học tại sân bay."
   },
   {
     "id": "b104",
@@ -2077,8 +2077,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "ANA Student Exclusive Deals",
     "valueEn": "Discount vé bay + Tặng thêm hành lý miễn cước",
-    "descriptionEn": "special deal for students bay chặng quốc tế của hãng hàng không 5 sao All Nippon Airways đi Mỹ, Nhật Bản, Canada...",
-    "requirementsEn": "Yêu cầu Register with thành viên ANA Mileage Club và xác minh bằng student ID or thư nhập học bằng tiếng Anh."
+    "descriptionEn": "Ưu đãi dành cho sinh viên bay chặng quốc tế của hãng hàng không 5 sao All Nippon Airways đi Mỹ, Nhật Bản, Canada...",
+    "requirementsEn": "Yêu cầu đăng ký thành viên ANA Mileage Club và xác minh bằng thẻ sinh viên hoặc thư nhập học bằng tiếng Anh."
   },
   {
     "id": "b105",
@@ -2097,8 +2097,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Etihad Airways Student Discount",
     "valueEn": "Off tới 10% Economy / 5% Business + Thêm hành lý",
-    "descriptionEn": "Chương trình special deal giá vé bay quốc tế và nâng thêm hạn mức hành lý ký gửi free for students.",
-    "requirementsEn": "Register with qua cổng Verify with đối tác Student Beans."
+    "descriptionEn": "Chương trình ưu đãi giá vé bay quốc tế và nâng thêm hạn mức hành lý ký gửi miễn phí cho sinh viên.",
+    "requirementsEn": "Register qua cổng xác thực đối tác Student Beans."
   },
   {
     "id": "b106",
@@ -2116,9 +2116,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Squarespace Portfolio Store",
-    "valueEn": "Discount 50% Năm Đầu Chi Tiết",
-    "descriptionEn": "Công cụ xây dựng và thiết kế website chuyên nghiệp, hỗ trợ đắc lực for students làm portfolio cá nhân hoặc dự án học tập.",
-    "requirementsEn": "Verify with tình trạng sinh viên thông qua Student Beans."
+    "valueEn": "Off Giá 50% Năm Đầu Chi Tiết",
+    "descriptionEn": "Công cụ xây dựng và thiết kế website chuyên nghiệp, hỗ trợ đắc lực cho sinh viên làm portfolio cá nhân hoặc dự án học tập.",
+    "requirementsEn": "Verify tình trạng sinh viên thông qua Student Beans."
   },
   {
     "id": "b107",
@@ -2136,9 +2136,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Asana for Students",
-    "valueEn": "Free 12 tháng gói Asana Premium",
-    "descriptionEn": "Công cụ quản lý dự án hàng đầu thế giới, giúp các nhóm students lập kế hoạch, phân chia công việc và theo dõi deadline một cách trực quan.",
-    "requirementsEn": "Register with qua trang Asana for Students bằng university email (.edu) đại học."
+    "valueEn": "Miễn phí 12 tháng gói Asana Premium",
+    "descriptionEn": "Công cụ quản lý dự án hàng đầu thế giới, giúp các nhóm sinh viên lập kế hoạch, phân chia công việc và theo dõi deadline một cách trực quan.",
+    "requirementsEn": "Register qua trang Asana for Students bằng email trường đại học."
   },
   {
     "id": "b108",
@@ -2157,8 +2157,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Vé xe buýt Hà Nội dành cho HSSV (Thẻ tháng)",
     "valueEn": "Vé tháng ưu tiên 70.000đ (1 tuyến) hoặc 140.000đ (liên tuyến)",
-    "descriptionEn": "Tổng công ty Vận tải Hà Nội cung cấp thẻ vé tháng xe buýt ưu tiên cho students, students, giúp đi lại không giới hạn trên các tuyến buýt trợ giá của thành phố.",
-    "requirementsEn": "Nộp tờ khai Register with làm thẻ xe buýt tháng HSSV (có dấu xác nhận của trường) kèm 2 ảnh 3x4 tại các điểm bán vé xe buýt ở Hà Nội."
+    "descriptionEn": "Tổng công ty Vận tải Hà Nội cung cấp thẻ vé tháng xe buýt ưu tiên cho học sinh, sinh viên, giúp đi lại không giới hạn trên các tuyến buýt trợ giá của thành phố.",
+    "requirementsEn": "Nộp tờ khai đăng ký làm thẻ xe buýt tháng HSSV (có dấu xác nhận của trường) kèm 2 ảnh 3x4 tại các điểm bán vé xe buýt ở Hà Nội."
   },
   {
     "id": "b109",
@@ -2176,9 +2176,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Termius Student Premium",
-    "valueEn": "Account Termius Premium Free",
+    "valueEn": "Tài khoản Termius Premium Miễn Phí",
     "descriptionEn": "Ứng dụng SSH Client hiện đại, đồng bộ cấu hình đám mây, lưu trữ khóa và snippet giúp quản lý VPS/máy chủ trên PC và mobile.",
-    "requirementsEn": "Register with thông qua GitHub Student Developer Pack."
+    "requirementsEn": "Register thông qua GitHub Student Developer Pack."
   },
   {
     "id": "b110",
@@ -2196,9 +2196,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Sketch for Students",
-    "valueEn": "License Sketch Hỗ Trợ 100%",
-    "descriptionEn": "Phần mềm thiết kế giao diện UI/UX chuyên nghiệp trên macOS. free đầy đủ tính năng for students học tập thiết kế.",
-    "requirementsEn": "Gửi biểu mẫu yêu cầu qua Sketch Education Store kèm student ID còn hạn."
+    "valueEn": "Bản Quyền Sketch Hỗ Trợ 100%",
+    "descriptionEn": "Phần mềm thiết kế giao diện UI/UX chuyên nghiệp trên macOS. Miễn phí đầy đủ tính năng cho học sinh sinh viên học tập thiết kế.",
+    "requirementsEn": "Gửi biểu mẫu yêu cầu qua Sketch Education Store kèm thẻ sinh viên còn hạn."
   },
   {
     "id": "b111",
@@ -2216,7 +2216,7 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Whimsical Visual Workspace",
-    "valueEn": "Free Nâng Cấp Gói Pro",
+    "valueEn": "Miễn Phí Nâng Cấp Gói Pro",
     "descriptionEn": "Công cụ trực quan hóa tư duy hàng đầu, hỗ trợ vẽ sơ đồ tư duy (mind map), lưu đồ (flowchart), và phác thảo wireframe.",
     "requirementsEn": "Điền biểu mẫu yêu cầu trên trang Whimsical bằng tài khoản email .edu."
   },
@@ -2236,9 +2236,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Coda All-in-One Docs",
-    "valueEn": "Free Nâng Cấp Gói Coda Pro",
+    "valueEn": "Miễn Phí Nâng Cấp Gói Coda Pro",
     "descriptionEn": "Nền tảng tài liệu all-in-one kết hợp soạn thảo văn bản, bảng dữ liệu và ứng dụng giúp tổ chức và cộng tác thông tin dự án học tập.",
-    "requirementsEn": "Verify with trực tiếp trên trang Coda Pricing thông qua email giáo dục."
+    "requirementsEn": "Verify trực tiếp trên trang Coda Pricing thông qua email giáo dục."
   },
   {
     "id": "b113",
@@ -2257,8 +2257,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Lufthansa Student Fares",
     "valueEn": "Discount vé + Tặng hành lý phụ + Đổi vé linh hoạt",
-    "descriptionEn": "Cung cấp giá vé students special deal cho các chuyến bay xuyên đại dương từ 16 tuổi trở lên.",
-    "requirementsEn": "Xác minh trạng thái học tập trực tuyến thông qua cổng liên kết UNiDAYS or Student Beans."
+    "descriptionEn": "Cung cấp giá vé sinh viên ưu đãi cho các chuyến bay xuyên đại dương từ 16 tuổi trở lên.",
+    "requirementsEn": "Xác minh trạng thái học tập trực tuyến thông qua cổng liên kết UNiDAYS hoặc Student Beans."
   },
   {
     "id": "b114",
@@ -2276,9 +2276,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Nha khoa Paris Orthodontics",
-    "valueEn": "Trả góp niềng răng 0% & Special Deal",
-    "descriptionEn": "Gói special deal niềng răng (chỉnh nha) tailored for students students với chính sách trả góp 0% trực tiếp với nha khoa.",
-    "requirementsEn": "Đặt lịch hẹn khám trực tuyến và xuất trình student ID tại phòng khám để nhận ưu đãi lấy cao răng, nhổ răng khôn or niềng răng dành riêng cho sinh viên."
+    "valueEn": "Trả góp niềng răng 0% & Ưu đãi",
+    "descriptionEn": "Gói ưu đãi niềng răng (chỉnh nha) dành riêng cho học sinh sinh viên với chính sách trả góp 0% trực tiếp với nha khoa.",
+    "requirementsEn": "Đặt lịch hẹn khám trực tuyến và xuất trình thẻ sinh viên tại phòng khám để nhận ưu đãi lấy cao răng, nhổ răng khôn hoặc niềng răng dành riêng cho sinh viên."
   },
   {
     "id": "b115",
@@ -2296,9 +2296,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Zed Editor Education Program",
-    "valueEn": "Free Zed Pro trong 1 năm & AI credits",
+    "valueEn": "Miễn phí Zed Pro trong 1 năm & AI credits",
     "descriptionEn": "Trình soạn thảo mã nguồn thế hệ mới siêu nhanh, hỗ trợ lập trình cộng tác thời gian thực và tích hợp mô hình AI nâng cao.",
-    "requirementsEn": "Đăng nhập bằng tài khoản GitHub (trên 30 ngày tuổi) và Verify with university email (.edu) học."
+    "requirementsEn": "Đăng nhập bằng tài khoản GitHub (trên 30 ngày tuổi) và xác thực university email (.edu) học."
   },
   {
     "id": "b116",
@@ -2317,8 +2317,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "StudentUniverse",
     "valueEn": "Off tới 30% vé máy bay & khách sạn",
-    "descriptionEn": "Đại lý du lịch trực tuyến chuyên biệt cung cấp vé máy bay và phòng ở giá rẻ for du students toàn cầu.",
-    "requirementsEn": "Verify with student ID quốc tế or giấy tờ chứng minh đang theo học tại trường đại học."
+    "descriptionEn": "Đại lý du lịch trực tuyến chuyên biệt cung cấp vé máy bay và phòng ở giá rẻ dành cho du học sinh toàn cầu.",
+    "requirementsEn": "Verify thẻ sinh viên quốc tế hoặc giấy tờ chứng minh đang theo học tại trường đại học."
   },
   {
     "id": "b117",
@@ -2357,7 +2357,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Akiflow Student Discount",
     "valueEn": "Discount tới 50% gói dịch vụ Premium",
-    "descriptionEn": "Công cụ tổng hợp công việc từ nhiều nguồn (Gmail, Slack, Notion) và kéo thả trực tiếp lên lịch cá nhân students.",
+    "descriptionEn": "Công cụ tổng hợp công việc từ nhiều nguồn (Gmail, Slack, Notion) và kéo thả trực tiếp lên lịch cá nhân sinh viên.",
     "requirementsEn": "Gửi email yêu cầu ưu đãi giáo dục tới đội ngũ hỗ trợ của Akiflow kèm university email (.edu)."
   },
   {
@@ -2376,9 +2376,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Balsamiq Cloud Student License",
-    "valueEn": "Free 1 Năm Cloud License",
+    "valueEn": "Miễn Phí 1 Năm Cloud License",
     "descriptionEn": "Công cụ vẽ phác thảo (wireframe) giao diện UI/UX trực quan và nhanh chóng cho đồ án website, ứng dụng di động.",
-    "requirementsEn": "Gửi email yêu cầu đến Balsamiq kèm theo minh chứng học sinh sinh viên hiện tại or email .edu."
+    "requirementsEn": "Gửi email yêu cầu đến Balsamiq kèm theo minh chứng học sinh sinh viên hiện tại hoặc email .edu."
   },
   {
     "id": "b120",
@@ -2396,9 +2396,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Spline 3D Education",
-    "valueEn": "Free/Discount gói Spline Pro",
+    "valueEn": "Miễn phí/Discount gói Spline Pro",
     "descriptionEn": "Công cụ thiết kế mô hình 3D tương tác trực tiếp trên trình duyệt web, xuất bản thiết kế sang WebGL/React dễ dàng.",
-    "requirementsEn": "Register with tài khoản và điền thông tin Verify with tại trang Spline Education bằng university email (.edu) học."
+    "requirementsEn": "Register tài khoản và điền thông tin xác thực tại trang Spline Education bằng email trường học."
   },
   {
     "id": "b121",
@@ -2417,8 +2417,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "The Washington Post Academic",
     "valueEn": "Gói Academic chỉ $1 mỗi 4 tuần",
-    "descriptionEn": "Truy cập không giới hạn tin tức Hoa Kỳ và thế giới trên website và ứng dụng di động với mức giá special deal lớn (tiết kiệm ~90%).",
-    "requirementsEn": "Verify with trạng thái học tập qua cổng SheerID tích hợp tại trang Register with."
+    "descriptionEn": "Truy cập không giới hạn tin tức Hoa Kỳ và thế giới trên website và ứng dụng di động với mức giá ưu đãi lớn (tiết kiệm ~90%).",
+    "requirementsEn": "Verify trạng thái học tập qua cổng SheerID tích hợp tại trang đăng ký."
   },
   {
     "id": "b122",
@@ -2437,8 +2437,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Microsoft Azure for Students",
     "valueEn": "Tặng $100 Annual Credit + Dịch Vụ Free",
-    "descriptionEn": "Tặng $100 tín dụng Azure hàng năm không cần thẻ tín dụng, cộng với quyền truy cập free các dịch vụ App Services, SQL DB và máy ảo.",
-    "requirementsEn": "Register with trực tiếp bằng educational email (.edu) (.edu) của trường đại học."
+    "descriptionEn": "Tặng $100 tín dụng Azure hàng năm không cần thẻ tín dụng, cộng với quyền truy cập miễn phí các dịch vụ App Services, SQL DB và máy ảo.",
+    "requirementsEn": "Register trực tiếp bằng email đuôi giáo dục (.edu) của trường đại học."
   },
   {
     "id": "b123",
@@ -2456,9 +2456,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "AWS Educate Portal",
-    "valueEn": "Free Cloud Labs & AWS Credits",
-    "descriptionEn": "Chương trình đào tạo điện toán đám mây Amazon Web Services cung cấp các phòng thực hành free (labs) và tín dụng AWS for students.",
-    "requirementsEn": "Register with bằng university email (.edu) học. Quyết định phê duyệt trong vòng vài ngày."
+    "valueEn": "Miễn Phí Cloud Labs & AWS Credits",
+    "descriptionEn": "Chương trình đào tạo điện toán đám mây Amazon Web Services cung cấp các phòng thực hành miễn phí (labs) và tín dụng AWS cho sinh viên.",
+    "requirementsEn": "Register bằng email trường học. Quyết định phê duyệt trong vòng vài ngày."
   },
   {
     "id": "b124",
@@ -2477,8 +2477,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Apple Store Education",
     "valueEn": "Giá Học Tập Cho Mac & iPad + Off 10% AppleCare+",
-    "descriptionEn": "special deal đặc quyền cho students, students và faculty khi mua sắm máy tính Mac và máy tính bảng iPad mới tại cửa hàng trực tuyến chính thức của Apple.",
-    "requirementsEn": "Verify with trạng thái sinh viên trực tuyến bằng tài khoản UNiDAYS or cung cấp minh chứng học tập khi mua trực tiếp."
+    "descriptionEn": "Ưu đãi đặc quyền cho học sinh, sinh viên và giảng viên khi mua sắm máy tính Mac và máy tính bảng iPad mới tại cửa hàng trực tuyến chính thức của Apple.",
+    "requirementsEn": "Verify trạng thái sinh viên trực tuyến bằng tài khoản UNiDAYS hoặc cung cấp minh chứng học tập khi mua trực tiếp."
   },
   {
     "id": "b125",
@@ -2496,9 +2496,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Dell University Student Discount",
-    "valueEn": "Off Thêm Đến 10% Cho Laptop & PC",
-    "descriptionEn": "Nhận mã discount độc quyền cho các dòng laptop Dell Latitude, XPS, Inspiron và Alienware tailored for students students.",
-    "requirementsEn": "Verify with trực tiếp bằng university email (.edu) (.edu) or qua cổng UNiDAYS/Student Beans."
+    "valueEn": "Off Thêm Up to 10% Cho Laptop & PC",
+    "descriptionEn": "Nhận mã giảm giá độc quyền cho các dòng laptop Dell Latitude, XPS, Inspiron và Alienware dành riêng cho học sinh sinh viên.",
+    "requirementsEn": "Verify trực tiếp bằng email trường (.edu) hoặc qua cổng UNiDAYS/Student Beans."
   },
   {
     "id": "b126",
@@ -2516,9 +2516,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "HP Student Store",
-    "valueEn": "Discount Lên Đến 40% Thiết Bị HP",
-    "descriptionEn": "Chương trình HP Education Store cung cấp special deal chiết khấu trực tiếp trên laptop, máy tính để bàn, màn hình và máy in.",
-    "requirementsEn": "Register with tài khoản HP Store bằng email giáo dục (.edu) hợp lệ."
+    "valueEn": "Off Giá Lên Up to 40% Thiết Bị HP",
+    "descriptionEn": "Chương trình HP Education Store cung cấp ưu đãi chiết khấu trực tiếp trên laptop, máy tính để bàn, màn hình và máy in.",
+    "requirementsEn": "Register tài khoản HP Store bằng email giáo dục (.edu) hợp lệ."
   },
   {
     "id": "b127",
@@ -2537,8 +2537,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Microsoft Store Student",
     "valueEn": "Off Tới 10% Surface & Phụ Kiện",
-    "descriptionEn": "special deal discount trực tiếp khi mua máy tính xách tay Surface Laptop, máy tính bảng Surface Pro và các phụ kiện Surface chính hãng.",
-    "requirementsEn": "Đăng nhập bằng tài khoản Microsoft cá nhân và Verify with university email (.edu) học."
+    "descriptionEn": "Ưu đãi giảm giá trực tiếp khi mua máy tính xách tay Surface Laptop, máy tính bảng Surface Pro và các phụ kiện Surface chính hãng.",
+    "requirementsEn": "Đăng nhập bằng tài khoản Microsoft cá nhân và xác thực university email (.edu) học."
   },
   {
     "id": "b128",
@@ -2556,9 +2556,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Razer Education Program",
-    "valueEn": "Off 15% Phụ Kiện & 5% Laptop",
-    "descriptionEn": "Tiết kiệm chi phí khi trang bị thiết bị công nghệ, gaming và học tập hiệu suất cao của Razer for students, faculty.",
-    "requirementsEn": "Verify with thông qua UNiDAYS, Student Beans or bằng university email (.edu) học."
+    "valueEn": "15% Off Phụ Kiện & 5% Laptop",
+    "descriptionEn": "Tiết kiệm chi phí khi trang bị thiết bị công nghệ, gaming và học tập hiệu suất cao của Razer cho sinh viên, giảng viên.",
+    "requirementsEn": "Verify thông qua UNiDAYS, Student Beans hoặc bằng email trường học."
   },
   {
     "id": "b129",
@@ -2577,8 +2577,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Japan Airlines Sky Mate",
     "valueEn": "Off tới 50% vé bay nội địa Nhật sát giờ",
-    "descriptionEn": "Đặc quyền giá vé 'Sky Mate' cực rẻ cho hành khách từ 12-25 tuổi đặt vé sát giờ bay nội địa Nhật, cùng thẻ tín dụng JALCARD navi free niên hạn.",
-    "requirementsEn": "Register with tài khoản JAL Mileage Bank và Verify with thông tin ngày sinh/student ID."
+    "descriptionEn": "Đặc quyền giá vé 'Sky Mate' cực rẻ cho hành khách từ 12-25 tuổi đặt vé sát giờ bay nội địa Nhật, cùng thẻ tín dụng JALCARD navi miễn phí niên hạn.",
+    "requirementsEn": "Register tài khoản JAL Mileage Bank và xác thực thông tin ngày sinh/thẻ sinh viên."
   },
   {
     "id": "b130",
@@ -2597,8 +2597,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Eurail Youth Pass",
     "valueEn": "Discount tới 25% vé tàu Eurail Pass",
-    "descriptionEn": "Đặc quyền vé tàu đi lại không giới hạn trên hệ thống đường sắt của 33 quốc gia châu Âu for hành khách từ 12 đến 27 tuổi.",
-    "requirementsEn": "Verify with độ tuổi trực tiếp bằng hộ chiếu khi mua vé trực tuyến (không cần student ID)."
+    "descriptionEn": "Đặc quyền vé tàu đi lại không giới hạn trên hệ thống đường sắt của 33 quốc gia châu Âu dành cho hành khách từ 12 đến 27 tuổi.",
+    "requirementsEn": "Verify độ tuổi trực tiếp bằng hộ chiếu khi mua vé trực tuyến (không cần thẻ sinh viên)."
   },
   {
     "id": "b131",
@@ -2616,9 +2616,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Marvel App Student Discount",
-    "valueEn": "Off 70% các gói thuê bao năm",
+    "valueEn": "70% Off các gói thuê bao năm",
     "descriptionEn": "Công cụ thiết kế UI/UX kéo thả nhanh, biến các bản phác thảo vẽ tay thành ứng dụng tương tác di động/web trong vài phút.",
-    "requirementsEn": "Verify with tư cách sinh viên thông qua cổng đối tác Student Beans."
+    "requirementsEn": "Verify tư cách sinh viên thông qua cổng đối tác Student Beans."
   },
   {
     "id": "b132",
@@ -2637,8 +2637,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Nha khoa Kim Student Program",
     "valueEn": "Trả góp chỉnh nha 0% & Discount",
-    "descriptionEn": "Trả góp niềng răng lãi suất 0% chia nhỏ theo tháng for students cùng các chương trình cạo vôi răng special deal.",
-    "requirementsEn": "Đặt lịch khám qua hotline/website và xuất trình student ID chính thức tại quầy tiếp đón của Nha khoa Kim để nhận chiết khấu điều trị."
+    "descriptionEn": "Trả góp niềng răng lãi suất 0% chia nhỏ theo tháng cho sinh viên cùng các chương trình cạo vôi răng ưu đãi.",
+    "requirementsEn": "Đặt lịch khám qua hotline/website và xuất trình thẻ sinh viên chính thức tại quầy tiếp đón của Nha khoa Kim để nhận chiết khấu điều trị."
   },
   {
     "id": "b133",
@@ -2658,7 +2658,7 @@ export const BENEFITS_DATA = [
     "titleEn": "FL Studio Academic Edition",
     "valueEn": "Signature Bundle Academic Edition giá $199",
     "descriptionEn": "Phần mềm làm nhạc (DAW) chuyên nghiệp được nhiều nhà sản xuất âm nhạc nổi tiếng tin dùng.",
-    "requirementsEn": "Verify with giấy tờ nhập học thông qua nhà phân phối phần mềm âm nhạc được ủy quyền ( Thomann)."
+    "requirementsEn": "Verify giấy tờ nhập học thông qua nhà phân phối phần mềm âm nhạc được ủy quyền ( Thomann)."
   },
   {
     "id": "b134",
@@ -2676,9 +2676,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "EndNote Academic License",
-    "valueEn": "License trọn đời giá Student đặc biệt",
+    "valueEn": "Bản quyền trọn đời giá sinh viên đặc biệt",
     "descriptionEn": "Công cụ quản lý tài liệu tham khảo và tự động trích dẫn khoa học chuẩn mực quốc tế cho nghiên cứu sinh tốt nghiệp.",
-    "requirementsEn": "Verify with trạng thái học thuật qua cổng Proxi.id bằng student ID or university email (.edu)."
+    "requirementsEn": "Verify trạng thái học thuật qua cổng Proxi.id bằng thẻ sinh viên hoặc email trường."
   },
   {
     "id": "b135",
@@ -2696,9 +2696,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Linode (Akamai) Cloud Credit",
-    "valueEn": "Free $100 Cloud Credits sử dụng trong 60 ngày",
-    "descriptionEn": "Akamai Cloud (trước đây là Linode) cung cấp $100 tín dụng đám mây free cho students, students để triển khai cloud VPS, lưu trữ dữ liệu và thử nghiệm các dự án lập trình.",
-    "requirementsEn": "Register with tài khoản mới trên trang chính thức của Akamai Cloud và Verify with phương thức thanh toán hợp lệ."
+    "valueEn": "Miễn phí $100 Cloud Credits sử dụng trong 60 ngày",
+    "descriptionEn": "Akamai Cloud (trước đây là Linode) cung cấp $100 tín dụng đám mây miễn phí cho học sinh, sinh viên để triển khai cloud VPS, lưu trữ dữ liệu và thử nghiệm các dự án lập trình.",
+    "requirementsEn": "Register tài khoản mới trên trang chính thức của Akamai Cloud và xác thực phương thức thanh toán hợp lệ."
   },
   {
     "id": "b136",
@@ -2716,9 +2716,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Linear Project Manager",
-    "valueEn": "Free Linear Premium Workspace",
-    "descriptionEn": "Công cụ quản lý dự án và theo dõi bug (issue tracker) chuyên nghiệp chuẩn Agile for các nhóm phát triển phần mềm học tập.",
-    "requirementsEn": "Register with workspace Linear bằng địa chỉ email sinh viên trường học."
+    "valueEn": "Miễn Phí Linear Premium Workspace",
+    "descriptionEn": "Công cụ quản lý dự án và theo dõi bug (issue tracker) chuyên nghiệp chuẩn Agile dành cho các nhóm phát triển phần mềm học tập.",
+    "requirementsEn": "Register workspace Linear bằng địa chỉ email sinh viên trường học."
   },
   {
     "id": "b137",
@@ -2736,9 +2736,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Lucidchart for Education",
-    "valueEn": "Free gói Educational nâng cao",
+    "valueEn": "Miễn phí gói Educational nâng cao",
     "descriptionEn": "Công cụ vẽ sơ đồ tư duy, lưu đồ thuật toán và bảng trắng cộng tác trực quan hàng đầu, hỗ trợ đắc lực cho học tập, làm bài tập nhóm.",
-    "requirementsEn": "Register with và Verify with thông qua university email (.edu) .edu."
+    "requirementsEn": "Register và xác thực thông qua email trường .edu."
   },
   {
     "id": "b138",
@@ -2756,9 +2756,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Skillshare Student Plan",
-    "valueEn": "Discount 50% Membership",
+    "valueEn": "Off Giá 50% Membership",
     "descriptionEn": "Học tập các kỹ năng thực tế từ các chuyên gia thiết kế, nhiếp ảnh, kinh doanh trực tuyến.",
-    "requirementsEn": "Register with bằng educational email (.edu) hợp lệ."
+    "requirementsEn": "Register bằng email đuôi giáo dục hợp lệ."
   },
   {
     "id": "b139",
@@ -2776,8 +2776,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Loom Screen Recorder",
-    "valueEn": "Off Đến 75% Gói Loom Education",
-    "descriptionEn": "Nền tảng ghi màn hình và gửi video tin nhắn nhanh giúp students thuyết trình bài tập hoặc giao tiếp nhóm từ xa hiệu quả.",
+    "valueEn": "Off Up to 75% Gói Loom Education",
+    "descriptionEn": "Nền tảng ghi màn hình và gửi video tin nhắn nhanh giúp sinh viên thuyết trình bài tập hoặc giao tiếp nhóm từ xa hiệu quả.",
     "requirementsEn": "Xác minh thông qua Atlassian Portal / Goodstack bằng email đuôi nhà trường."
   },
   {
@@ -2796,9 +2796,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Replit Core Student Discount",
-    "valueEn": "Off 50% Gói Replit Core",
-    "descriptionEn": "Cho phép students truy cập công cụ lập trình đám mây Replit Core và Replit Agent (sử dụng AI) với chi phí special deal discount 50% trong 6 tháng đầu.",
-    "requirementsEn": "Register with bằng university email (.edu) học và liên kết tài khoản github học tập."
+    "valueEn": "50% Off Gói Replit Core",
+    "descriptionEn": "Cho phép sinh viên truy cập công cụ lập trình đám mây Replit Core và Replit Agent (sử dụng AI) với chi phí ưu đãi giảm giá 50% trong 6 tháng đầu.",
+    "requirementsEn": "Register bằng email trường học và liên kết tài khoản github học tập."
   },
   {
     "id": "b141",
@@ -2817,8 +2817,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Roam Research Scholars Program",
     "valueEn": "Discount 50% phí dịch vụ hàng tháng",
-    "descriptionEn": "Công cụ ghi chú liên kết mạng lưới tư duy (bi-directional linking) hàng đầu for học thuật và nghiên cứu khoa học.",
-    "requirementsEn": "Nộp đơn Register with chương trình học giả (dành cho người dưới 22 tuổi or nghiên cứu viên)."
+    "descriptionEn": "Công cụ ghi chú liên kết mạng lưới tư duy (bi-directional linking) hàng đầu dành cho học thuật và nghiên cứu khoa học.",
+    "requirementsEn": "Nộp đơn đăng ký chương trình học giả (dành cho người dưới 22 tuổi hoặc nghiên cứu viên)."
   },
   {
     "id": "b142",
@@ -2836,9 +2836,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Trello Classroom License & Premium",
-    "valueEn": "Free Classroom License hoặc Off 75% Premium",
-    "descriptionEn": "Trello cung cấp công cụ quản lý dự án trực quan dựa trên phương pháp Kanban, hỗ trợ tối ưu hóa quy trình làm việc nhóm cho students, students và faculty.",
-    "requirementsEn": "Register with yêu cầu Classroom License qua cổng Atlassian và Verify with thông tin học tập qua tổ chức Verify with Percent."
+    "valueEn": "Miễn phí Classroom License hoặc giảm 75% Premium",
+    "descriptionEn": "Trello cung cấp công cụ quản lý dự án trực quan dựa trên phương pháp Kanban, hỗ trợ tối ưu hóa quy trình làm việc nhóm cho học sinh, sinh viên và giảng viên.",
+    "requirementsEn": "Register yêu cầu Classroom License qua cổng Atlassian và xác thực thông tin học tập qua tổ chức xác thực Percent."
   },
   {
     "id": "b143",
@@ -2856,8 +2856,8 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Vé xe buýt TP.HCM dành cho HSSV",
-    "valueEn": "Đồng giá vé lượt 3.000đ hoặc Free một số tuyến",
-    "descriptionEn": "Chương trình trợ giá vé xe buýt công cộng của TP.HCM tailored for đối tượng students, students giúp giảm thiểu chi phí đi lại hàng ngày. Đặc biệt free một số tuyến trợ giá năm 2026.",
+    "valueEn": "Đồng giá vé lượt 3.000đ hoặc miễn phí một số tuyến",
+    "descriptionEn": "Chương trình trợ giá vé xe buýt công cộng của TP.HCM dành riêng cho đối tượng học sinh, sinh viên giúp giảm thiểu chi phí đi lại hàng ngày. Đặc biệt miễn phí một số tuyến trợ giá năm 2026.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên còn hiệu lực trực tiếp cho tiếp viên khi lên xe buýt tại TP.HCM để mua vé xe buýt đồng giá ưu đãi."
   },
   {
@@ -2876,9 +2876,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Duolingo Schools / Classroom",
-    "valueEn": "Đặc Quyền Super Duolingo Free",
-    "descriptionEn": "Học ngoại ngữ không quảng cáo, vô hạn lượt thử thách qua việc tham gia vào account lớp học Duolingo Classroom.",
-    "requirementsEn": "Register with lớp học do giáo viên/giảng viên tạo lập bằng mã tham gia (Class code)."
+    "valueEn": "Đặc Quyền Super Duolingo Miễn Phí",
+    "descriptionEn": "Học ngoại ngữ không quảng cáo, vô hạn lượt thử thách qua việc tham gia vào tài khoản lớp học Duolingo Classroom.",
+    "requirementsEn": "Register lớp học do giáo viên/giảng viên tạo lập bằng mã tham gia (Class code)."
   },
   {
     "id": "b145",
@@ -2897,8 +2897,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Scribd Student Subscription",
     "valueEn": "Off Phí Thuê Bao ($4.99/tháng)",
-    "descriptionEn": "Gói special deal Scribd/Everand để truy cập không giới hạn hàng triệu cuốn sách điện tử, tài liệu nghiên cứu học thuật, slide và audiobook.",
-    "requirementsEn": "Verify with trạng thái sinh viên qua cổng SheerID."
+    "descriptionEn": "Gói ưu đãi Scribd/Everand để truy cập không giới hạn hàng triệu cuốn sách điện tử, tài liệu nghiên cứu học thuật, slide và audiobook.",
+    "requirementsEn": "Verify trạng thái sinh viên qua cổng SheerID."
   },
   {
     "id": "b146",
@@ -2916,9 +2916,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Overleaf Student Plan",
-    "valueEn": "Discount Gói LaTeX Collaborator",
+    "valueEn": "Off Giá Gói LaTeX Collaborator",
     "descriptionEn": "Trình soạn thảo văn bản LaTeX cộng tác trực tuyến chuyên nghiệp cho các tài liệu khoa học, luận văn và bài nghiên cứu, hỗ trợ đồng bộ GitHub.",
-    "requirementsEn": "Register with với university email (.edu) .edu or cung cấp minh chứng học tập."
+    "requirementsEn": "Register với email trường .edu hoặc cung cấp minh chứng học tập."
   },
   {
     "id": "b147",
@@ -2936,9 +2936,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "MockFlow Education",
-    "valueEn": "Off 50% giá các gói dịch vụ",
+    "valueEn": "50% Off giá các gói dịch vụ",
     "descriptionEn": "Công cụ vẽ wireframe nhanh và lập kế hoạch UI/UX cho trang web và ứng dụng di động.",
-    "requirementsEn": "Verify with trạng thái học tập qua cổng giáo dục MockFlow sử dụng university email (.edu) học."
+    "requirementsEn": "Verify trạng thái học tập qua cổng giáo dục MockFlow sử dụng email trường học."
   },
   {
     "id": "b148",
@@ -2956,9 +2956,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Intellect Premium Program",
-    "valueEn": "Free 1 Năm App Tâm Lý",
-    "descriptionEn": "Ứng dụng chăm sóc sức khỏe tinh thần hàng đầu. Giảm stress, cải thiện giấc ngủ và phát triển bản thân.",
-    "requirementsEn": "Tài khoản Register with bằng email đuôi trường liên kết đối tác."
+    "valueEn": "Miễn Phí 1 Năm App Tâm Lý",
+    "descriptionEn": "Ứng dụng chăm sóc sức khỏe tinh thần hàng đầu. Off stress, cải thiện giấc ngủ và phát triển bản thân.",
+    "requirementsEn": "Tài khoản đăng ký bằng email đuôi trường liên kết đối tác."
   },
   {
     "id": "b149",
@@ -2976,9 +2976,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "BeStudent Commuting Pack",
-    "valueEn": "Off 20% beBike & beCar",
-    "descriptionEn": "Gói khuyến mãi di chuyển hàng tuần tailored for students các universities/Cao đẳng.",
-    "requirementsEn": "Register with tham gia câu lạc bộ sinh viên BeStudent trực tiếp trên ứng dụng di động Be bằng cách chụp ảnh student ID để nhận gói coupon di chuyển hàng tuần."
+    "valueEn": "20% Off beBike & beCar",
+    "descriptionEn": "Gói khuyến mãi di chuyển hàng tuần dành riêng cho sinh viên các trường Đại học/Cao đẳng.",
+    "requirementsEn": "Register tham gia câu lạc bộ sinh viên BeStudent trực tiếp trên ứng dụng di động Be bằng cách chụp ảnh thẻ sinh viên để nhận gói coupon di chuyển hàng tuần."
   },
   {
     "id": "b150",
@@ -2996,9 +2996,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "NordVPN Student Discount",
-    "valueEn": "Discount Đến 60-70% + Tháng Free",
-    "descriptionEn": "special deal discount đặc biệt cho dịch vụ mạng riêng ảo (VPN) bảo mật hàng đầu NordVPN, hỗ trợ học tập an toàn.",
-    "requirementsEn": "Xác minh qua cổng Youth Discount, Student Beans or SheerID bằng student ID/university email (.edu)."
+    "valueEn": "Off Giá Up to 60-70% + Tháng Free",
+    "descriptionEn": "Ưu đãi giảm giá đặc biệt cho dịch vụ mạng riêng ảo (VPN) bảo mật hàng đầu NordVPN, hỗ trợ học tập an toàn.",
+    "requirementsEn": "Xác minh qua cổng Youth Discount, Student Beans hoặc SheerID bằng thẻ sinh viên/university email (.edu)."
   },
   {
     "id": "b151",
@@ -3016,9 +3016,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Lenovo Student Store",
-    "valueEn": "Discount Thêm Tới 10% Thiết Bị",
+    "valueEn": "Off Giá Thêm Tới 10% Thiết Bị",
     "descriptionEn": "Đặc quyền giá tốt cho các dòng máy Lenovo ThinkPad, Yoga, IdeaPad và Legion phục vụ mục đích học tập và làm việc.",
-    "requirementsEn": "Xác minh qua cổng ID.me or UNiDAYS khi thanh toán trong giỏ hàng."
+    "requirementsEn": "Xác minh qua cổng ID.me hoặc UNiDAYS khi thanh toán trong giỏ hàng."
   },
   {
     "id": "b152",
@@ -3036,9 +3036,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "ASUS Store Student",
-    "valueEn": "Special Deal Giá Giáo Dục Zenbook & ROG",
-    "descriptionEn": "ASUS Education Store discount cho các dòng laptop Zenbook, Vivobook và ROG phục vụ for students.",
-    "requirementsEn": "Register with thành viên ASUS bằng email sinh viên trường học."
+    "valueEn": "Ưu Đãi Giá Giáo Dục Zenbook & ROG",
+    "descriptionEn": "ASUS Education Store giảm giá cho các dòng laptop Zenbook, Vivobook và ROG phục vụ cho học sinh sinh viên.",
+    "requirementsEn": "Register thành viên ASUS bằng email sinh viên trường học."
   },
   {
     "id": "b153",
@@ -3058,7 +3058,7 @@ export const BENEFITS_DATA = [
     "titleEn": "ExpressVPN Student Discount",
     "valueEn": "Off tới 80% + Tặng thêm 3-4 tháng free",
     "descriptionEn": "Dịch vụ mạng riêng ảo (VPN) bảo mật, ẩn danh và tốc độ cao hàng đầu thế giới giúp truy cập tài nguyên học tập an toàn.",
-    "requirementsEn": "Xác minh bằng email giáo dục qua cổng liên kết Student Beans or UNiDAYS."
+    "requirementsEn": "Xác minh bằng email giáo dục qua cổng liên kết Student Beans hoặc UNiDAYS."
   },
   {
     "id": "b154",
@@ -3077,8 +3077,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Rosetta Stone Student Discount",
     "valueEn": "Discount đến 50% học ngoại ngữ",
-    "descriptionEn": "Ứng dụng học ngoại ngữ theo phương pháp giao tiếp tự nhiên discount sâu các gói đăng ký dài hạn hoặc trọn đời for students.",
-    "requirementsEn": "Verify with trạng thái học sinh sinh viên qua cổng đối tác Student Beans."
+    "descriptionEn": "Ứng dụng học ngoại ngữ theo phương pháp giao tiếp tự nhiên giảm giá sâu các gói đăng ký dài hạn hoặc trọn đời cho sinh viên.",
+    "requirementsEn": "Verify trạng thái học sinh sinh viên qua cổng đối tác Student Beans."
   },
   {
     "id": "b155",
@@ -3096,9 +3096,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Obsidian Sync/Publish",
-    "valueEn": "Off 40% Dịch Vụ Đồng Bộ",
-    "descriptionEn": "Giúp students đồng bộ hóa ghi chú bảo mật Obsidian Sync và xuất bản ghi chú cá nhân lên website cá nhân với chi phí học tập.",
-    "requirementsEn": "Register with qua email .edu or gửi minh chứng học tập khác tới hỗ trợ của Obsidian."
+    "valueEn": "40% Off Dịch Vụ Đồng Bộ",
+    "descriptionEn": "Giúp sinh viên đồng bộ hóa ghi chú bảo mật Obsidian Sync và xuất bản ghi chú cá nhân lên website cá nhân với chi phí học tập.",
+    "requirementsEn": "Register qua email .edu hoặc gửi minh chứng học tập khác tới hỗ trợ của Obsidian."
   },
   {
     "id": "b156",
@@ -3116,9 +3116,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Vultr Student Cloud Credits",
-    "valueEn": "Free $50–$100 tín dụng đám mây Vultr VPS",
-    "descriptionEn": "Tín dụng đám mây free for students để khởi tạo VPS, máy chủ đám mây, GPU và các giải pháp lưu trữ dữ liệu thông qua liên kết với các chương trình học tập hoặc GitHub Student Pack.",
-    "requirementsEn": "Đăng nhập bằng tài khoản GitHub Student Developer Pack để lấy mã coupon or liên kết kích hoạt của Vultr."
+    "valueEn": "Miễn phí $50–$100 tín dụng đám mây Vultr VPS",
+    "descriptionEn": "Tín dụng đám mây miễn phí cho sinh viên để khởi tạo VPS, máy chủ đám mây, GPU và các giải pháp lưu trữ dữ liệu thông qua liên kết với các chương trình học tập hoặc GitHub Student Pack.",
+    "requirementsEn": "Đăng nhập bằng tài khoản GitHub Student Developer Pack để lấy mã coupon hoặc liên kết kích hoạt của Vultr."
   },
   {
     "id": "b157",
@@ -3136,9 +3136,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Deezer Student Premium",
-    "valueEn": "Discount 50% Gói Premium",
+    "valueEn": "Off Giá 50% Gói Premium",
     "descriptionEn": "Dịch vụ nghe nhạc trực tuyến chất lượng cao với hơn 90 triệu bài hát và các gợi ý âm nhạc cá nhân hóa Flow.",
-    "requirementsEn": "Verify with tài khoản UNiDAYS bằng student ID or email giáo dục."
+    "requirementsEn": "Verify tài khoản UNiDAYS bằng thẻ sinh viên hoặc email giáo dục."
   },
   {
     "id": "b158",
@@ -3156,9 +3156,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "MUBI Cinema Student",
-    "valueEn": "Discount 40% Hàng Tháng",
+    "valueEn": "Off Giá 40% Hàng Tháng",
     "descriptionEn": "Nền tảng xem phim điện ảnh nghệ thuật (indie, classic, award-winning) tuyển chọn chất lượng cao.",
-    "requirementsEn": "Register with qua mubi.com/student bằng địa chỉ university email (.edu) học hợp lệ."
+    "requirementsEn": "Register qua mubi.com/student bằng địa chỉ email trường học hợp lệ."
   },
   {
     "id": "b159",
@@ -3177,8 +3177,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Hulu Student Discount",
     "valueEn": "Gói Hulu (With Ads) Chỉ $1.99/tháng",
-    "descriptionEn": "Nền tảng xem phim, chương trình truyền hình và anime trực tuyến với mức giá cực kỳ special deal for students (giảm 75% so với giá gốc).",
-    "requirementsEn": "Verify with qua SheerID (yêu cầu học sinh tại trường đại học/cao đẳng)."
+    "descriptionEn": "Nền tảng xem phim, chương trình truyền hình và anime trực tuyến với mức giá cực kỳ ưu đãi cho sinh viên (giảm 75% so với giá gốc).",
+    "requirementsEn": "Verify qua SheerID (yêu cầu học sinh tại trường đại học/cao đẳng)."
   },
   {
     "id": "b160",
@@ -3196,9 +3196,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Tower Git Client",
-    "valueEn": "License Tower Pro Free",
-    "descriptionEn": "Một trong những ứng dụng giao diện Git (Git GUI) mạnh mẽ và trực quan nhất for macOS và Windows.",
-    "requirementsEn": "Kích hoạt thông qua GitHub Student Developer Pack or Register with bằng email .edu."
+    "valueEn": "Bản Quyền Tower Pro Miễn Phí",
+    "descriptionEn": "Một trong những ứng dụng giao diện Git (Git GUI) mạnh mẽ và trực quan nhất dành cho macOS và Windows.",
+    "requirementsEn": "Kích hoạt thông qua GitHub Student Developer Pack hoặc đăng ký bằng email .edu."
   },
   {
     "id": "b161",
@@ -3216,8 +3216,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Tidal Student Music",
-    "valueEn": "Discount 50% Hifi Lossless",
-    "descriptionEn": "Dịch vụ phát nhạc trực tuyến chất lượng âm thanh Hi-Fi lossless chuẩn studio for người nghe nhạc khó tính.",
+    "valueEn": "Off Giá 50% Hifi Lossless",
+    "descriptionEn": "Dịch vụ phát nhạc trực tuyến chất lượng âm thanh Hi-Fi lossless chuẩn studio dành cho người nghe nhạc khó tính.",
     "requirementsEn": "Xác minh thông qua cổng SheerID bằng tài liệu minh chứng học tập."
   },
   {
@@ -3237,8 +3237,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Hanoi Student Monthly Bus Pass",
     "valueEn": "Vé tháng 1 tuyến 70K, liên tuyến 140K",
-    "descriptionEn": "Giảm 50% giá vé tháng xe buýt cho HSSV tại Hà Nội (mức giá thường là 140.000đ/1 tuyến và 280.000đ/liên tuyến).",
-    "requirementsEn": "Đến trực tiếp điểm làm thẻ xe buýt tháng của Transerco Hà Nội, nộp thẻ học sinh/sinh viên để được áp dụng gói vé tháng ưu đãi một tuyến or liên tuyến."
+    "descriptionEn": "Off 50% giá vé tháng xe buýt cho HSSV tại Hà Nội (mức giá thường là 140.000đ/1 tuyến và 280.000đ/liên tuyến).",
+    "requirementsEn": "Đến trực tiếp điểm làm thẻ xe buýt tháng của Transerco Hà Nội, nộp thẻ học sinh/sinh viên để được áp dụng gói vé tháng ưu đãi một tuyến hoặc liên tuyến."
   },
   {
     "id": "b163",
@@ -3256,9 +3256,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Calm Sleep & Meditation",
-    "valueEn": "Off 60% Gói Premium",
+    "valueEn": "60% Off Gói Premium",
     "descriptionEn": "Ứng dụng chăm sóc sức khỏe tinh thần, hỗ trợ giấc ngủ và chánh niệm với kho nhạc thư giãn và câu chuyện kể đêm khuya.",
-    "requirementsEn": "Verify with trạng thái sinh viên thông qua Student Beans or Amazon Prime Student."
+    "requirementsEn": "Verify trạng thái sinh viên thông qua Student Beans hoặc Amazon Prime Student."
   },
   {
     "id": "b164",
@@ -3278,7 +3278,7 @@ export const BENEFITS_DATA = [
     "titleEn": "Apple Music & TV+ Bundle",
     "valueEn": "Off Phí 50% + Tặng Kèm Apple TV+",
     "descriptionEn": "Nghe nhạc chất lượng cao không giới hạn và xem các chương trình phim độc quyền từ Apple TV+.",
-    "requirementsEn": "Verify with tài khoản UNiDAYS thông qua student ID or university email (.edu)."
+    "requirementsEn": "Verify tài khoản UNiDAYS thông qua thẻ sinh viên hoặc email trường."
   },
   {
     "id": "b165",
@@ -3296,9 +3296,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Adidas Student Offer",
-    "valueEn": "Discount 15% Trực Tuyến",
-    "descriptionEn": "Nhận mã discount 15% khi mua sắm tất cả các sản phẩm thời trang và giày thể thao Adidas.",
-    "requirementsEn": "Verify with thẻ học sinh/sinh viên qua hệ thống UNiDAYS."
+    "valueEn": "Off Giá 15% Trực Tuyến",
+    "descriptionEn": "Nhận mã giảm giá 15% khi mua sắm tất cả các sản phẩm thời trang và giày thể thao Adidas.",
+    "requirementsEn": "Verify thẻ học sinh/sinh viên qua hệ thống UNiDAYS."
   },
   {
     "id": "b166",
@@ -3316,9 +3316,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Bootstrap Studio Student License",
-    "valueEn": "License Free Cho Student",
+    "valueEn": "Bản Quyền Miễn Phí Cho Sinh Viên",
     "descriptionEn": "Phần mềm thiết kế giao diện web responsive chuyên nghiệp kéo thả, tự động sinh code sạch sử dụng framework Bootstrap.",
-    "requirementsEn": "Register with qua cổng Bootstrap Studio Education bằng university email (.edu) or student ID."
+    "requirementsEn": "Register qua cổng Bootstrap Studio Education bằng email trường hoặc thẻ sinh viên."
   },
   {
     "id": "b167",
@@ -3336,9 +3336,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Evernote Student Discount",
-    "valueEn": "Discount 50% Evernote Personal",
-    "descriptionEn": "discount 50% dịch vụ ghi chú và quản lý công việc học tập chuyên nghiệp Evernote Personal để lưu bài giảng, tài liệu nghiên cứu.",
-    "requirementsEn": "Verify with trạng thái học sinh sinh viên thông qua cổng UNiDAYS."
+    "valueEn": "Off Giá 50% Evernote Personal",
+    "descriptionEn": "Discount 50% dịch vụ ghi chú và quản lý công việc học tập chuyên nghiệp Evernote Personal để lưu bài giảng, tài liệu nghiên cứu.",
+    "requirementsEn": "Verify trạng thái học sinh sinh viên thông qua cổng UNiDAYS."
   },
   {
     "id": "b168",
@@ -3376,9 +3376,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Proton Unlimited Student",
-    "valueEn": "Off 50% Gói Proton Unlimited",
+    "valueEn": "50% Off Gói Proton Unlimited",
     "descriptionEn": "Truy cập vào toàn bộ bộ dịch vụ bảo mật cao cấp bao gồm Proton Mail, Proton VPN, Proton Drive, Proton Calendar và Proton Pass với 500GB lưu trữ.",
-    "requirementsEn": "Verify with tình trạng sinh viên qua hệ thống Student Beans."
+    "requirementsEn": "Verify tình trạng sinh viên qua hệ thống Student Beans."
   },
   {
     "id": "b170",
@@ -3396,9 +3396,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Dashlane Premium for Students",
-    "valueEn": "Free 1 năm Dashlane Premium",
-    "descriptionEn": "Trình quản lý mật khẩu an toàn, cho phép students lưu trữ mật khẩu không giới hạn và tự động điền thông tin đăng nhập trên nhiều thiết bị.",
-    "requirementsEn": "Register with và Verify with qua email sinh viên .edu."
+    "valueEn": "Miễn phí 1 năm Dashlane Premium",
+    "descriptionEn": "Trình quản lý mật khẩu an toàn, cho phép sinh viên lưu trữ mật khẩu không giới hạn và tự động điền thông tin đăng nhập trên nhiều thiết bị.",
+    "requirementsEn": "Register và xác thực qua email sinh viên .edu."
   },
   {
     "id": "b171",
@@ -3417,8 +3417,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Peacock Student Discount",
     "valueEn": "Peacock Premium Chỉ $5.99/tháng",
-    "descriptionEn": "Dịch vụ phát trực tuyến của NBCUniversal với nhiều bộ phim độc quyền và các trận đấu thể thao trực tiếp special deal đặc biệt for students.",
-    "requirementsEn": "Verify with tình trạng sinh viên qua SheerID."
+    "descriptionEn": "Dịch vụ phát trực tuyến của NBCUniversal với nhiều bộ phim độc quyền và các trận đấu thể thao trực tiếp ưu đãi đặc biệt cho sinh viên.",
+    "requirementsEn": "Verify tình trạng sinh viên qua SheerID."
   },
   {
     "id": "b172",
@@ -3436,9 +3436,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "SoundCloud Go+ Student Plan",
-    "valueEn": "Off 50% Gói Premium Music",
+    "valueEn": "50% Off Gói Premium Music",
     "descriptionEn": "Nền tảng phân phối âm nhạc trực tuyến lớn nhất thế giới, cho phép nghe nhạc không quảng cáo, tải nhạc ngoại tuyến chất lượng cao.",
-    "requirementsEn": "Verify with thông qua cổng SheerID."
+    "requirementsEn": "Verify thông qua cổng SheerID."
   },
   {
     "id": "b173",
@@ -3456,9 +3456,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Craft.do Education Plan",
-    "valueEn": "Free gói Pro hoàn chỉnh",
+    "valueEn": "Miễn phí gói Pro hoàn chỉnh",
     "descriptionEn": "Công cụ ghi chú, soạn thảo tài liệu đẹp mắt và quản lý tài liệu cá nhân hỗ trợ AI cực mạnh mẽ.",
-    "requirementsEn": "Register with tài khoản mới or đổi email tài khoản hiện tại sang university email (.edu) học để tự động kích hoạt."
+    "requirementsEn": "Register tài khoản mới hoặc đổi email tài khoản hiện tại sang email trường học để tự động kích hoạt."
   },
   {
     "id": "b174",
@@ -3477,8 +3477,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Harvard Business Review Student",
     "valueEn": "Discount 50% gói Digital/Print",
-    "descriptionEn": "Tạp chí quản trị kinh doanh uy tín hàng đầu thế giới discount một nửa phí đăng ký thuê bao for students và giới học thuật.",
-    "requirementsEn": "Register with bằng địa chỉ educational email (.edu) (.edu) or cung cấp minh chứng học tập."
+    "descriptionEn": "Tạp chí quản trị kinh doanh uy tín hàng đầu thế giới giảm giá một nửa phí đăng ký thuê bao dành cho sinh viên và giới học thuật.",
+    "requirementsEn": "Register bằng địa chỉ email đuôi giáo dục (.edu) hoặc cung cấp minh chứng học tập."
   },
   {
     "id": "b175",
@@ -3498,7 +3498,7 @@ export const BENEFITS_DATA = [
     "titleEn": "LeetCode Premium Student Discount",
     "valueEn": "Discount gói Premium hàng năm còn $99/năm",
     "descriptionEn": "LeetCode Premium cung cấp quyền truy cập vào kho câu hỏi lập trình lớn nhất thế giới, giải thích chi tiết, trình biên dịch nhanh hơn, và các câu hỏi phỏng vấn thực tế từ các tập đoàn công nghệ lớn.",
-    "requirementsEn": "Register with tham gia sự kiện 'Back-to-School' bằng email của trường đại học (.edu) khi đạt tối thiểu 50 người Register with cùng trường."
+    "requirementsEn": "Register tham gia sự kiện 'Back-to-School' bằng email của trường đại học (.edu) khi đạt tối thiểu 50 người đăng ký cùng trường."
   },
   {
     "id": "b176",
@@ -3516,9 +3516,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "GitKraken Client Pro",
-    "valueEn": "Free License GitKraken Pro",
+    "valueEn": "Miễn Phí Bản Quyền GitKraken Pro",
     "descriptionEn": "Giao diện đồ họa (GUI) quản lý Git trực quan và mạnh mẽ nhất hiện nay. Phiên bản Pro giúp quản lý repo lớn và tích hợp mượt mà.",
-    "requirementsEn": "Register with thông qua GitHub Student Developer Pack."
+    "requirementsEn": "Register thông qua GitHub Student Developer Pack."
   },
   {
     "id": "b177",
@@ -3536,9 +3536,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Parallels Desktop for Students",
-    "valueEn": "Discount 50% License Hằng Năm",
-    "descriptionEn": "Phần mềm giả lập chạy hệ điều hành Windows song song trên máy Mac mượt mà không cần reboot for học tập và đồ họa.",
-    "requirementsEn": "Verify with trạng thái học tập qua cổng OnTheHub or university email (.edu) để nhận license key giảm giá 50%."
+    "valueEn": "Off Giá 50% Bản Quyền Hằng Năm",
+    "descriptionEn": "Phần mềm giả lập chạy hệ điều hành Windows song song trên máy Mac mượt mà không cần reboot dành cho học tập và đồ họa.",
+    "requirementsEn": "Verify trạng thái học tập qua cổng OnTheHub hoặc email trường để nhận license key giảm giá 50%."
   },
   {
     "id": "b178",
@@ -3556,8 +3556,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Nike Student Discount",
-    "valueEn": "Discount 10% Đơn Hàng",
-    "descriptionEn": "special deal trực tiếp 10% khi mua sắm các sản phẩm giày, quần áo thể thao Nike chính hãng trực tuyến.",
+    "valueEn": "Off Giá 10% Đơn Hàng",
+    "descriptionEn": "Ưu đãi trực tiếp 10% khi mua sắm các sản phẩm giày, quần áo thể thao Nike chính hãng trực tuyến.",
     "requirementsEn": "Xác minh trạng thái sinh viên thông qua cổng SheerID."
   },
   {
@@ -3576,7 +3576,7 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Domino's Pizza Student Deal",
-    "valueEn": "Special Deal Discount 30%",
+    "valueEn": "Ưu Đãi Off Giá 30%",
     "descriptionEn": "Đặt bánh pizza Domino cỡ vừa và lớn với mức chiết khấu 30% cho các buổi tụ họp học nhóm.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên khi mua pizza trực tiếp tại cửa hàng Domino's Pizza Việt Nam để nhận combo giảm giá đặc biệt."
   },
@@ -3596,9 +3596,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Amtrak Train Discount",
-    "valueEn": "Discount 15% Vé Tàu Hoả",
-    "descriptionEn": "Tiết kiệm chi phí đi lại bằng tàu hoả trên khắp nước Mỹ cho students, students từ 17 đến 25 tuổi.",
-    "requirementsEn": "Đặt vé trước ít nhất 1 ngày và xuất trình student ID hợp lệ khi soát vé trên tàu."
+    "valueEn": "Off Giá 15% Vé Tàu Hoả",
+    "descriptionEn": "Tiết kiệm chi phí đi lại bằng tàu hoả trên khắp nước Mỹ cho học sinh, sinh viên từ 17 đến 25 tuổi.",
+    "requirementsEn": "Đặt vé trước ít nhất 1 ngày và xuất trình thẻ sinh viên hợp lệ khi soát vé trên tàu."
   },
   {
     "id": "b181",
@@ -3616,9 +3616,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Logitech Student Store",
-    "valueEn": "Discount 25% Chuột & Bàn Phím",
+    "valueEn": "Off Giá 25% Chuột & Bàn Phím",
     "descriptionEn": "Tiết kiệm chi phí khi mua chuột, bàn phím, tai nghe, webcam và thiết bị ngoại vi phục vụ học tập và giải trí của Logitech.",
-    "requirementsEn": "Verify with qua tài khoản UNiDAYS or Student Beans."
+    "requirementsEn": "Verify qua tài khoản UNiDAYS hoặc Student Beans."
   },
   {
     "id": "b182",
@@ -3636,9 +3636,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Paramount+ Student Offer",
-    "valueEn": "Discount 50% Mọi Gói Cước",
-    "descriptionEn": "Nền tảng xem phim trực tuyến hàng đầu của Mỹ với kho phim bom tấn đồ sộ và các trận đấu thể thao trực tiếp, giảm nửa giá for students.",
-    "requirementsEn": "Verify with tình trạng sinh viên qua SheerID."
+    "valueEn": "Off Giá 50% Mọi Gói Cước",
+    "descriptionEn": "Nền tảng xem phim trực tuyến hàng đầu của Mỹ với kho phim bom tấn đồ sộ và các trận đấu thể thao trực tiếp, giảm nửa giá cho sinh viên.",
+    "requirementsEn": "Verify tình trạng sinh viên qua SheerID."
   },
   {
     "id": "b183",
@@ -3657,8 +3657,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Expedia Student Discount",
     "valueEn": "Off từ 8% đến 10% đặt phòng khách sạn",
-    "descriptionEn": "Mã discount độc quyền for students khi đặt dịch vụ lưu trú khách sạn trên toàn thế giới qua nền tảng Expedia.",
-    "requirementsEn": "Verify with trạng thái sinh viên qua ID.me or cổng Student Beans."
+    "descriptionEn": "Mã giảm giá độc quyền cho sinh viên khi đặt dịch vụ lưu trú khách sạn trên toàn thế giới qua nền tảng Expedia.",
+    "requirementsEn": "Verify trạng thái sinh viên qua ID.me hoặc cổng Student Beans."
   },
   {
     "id": "b184",
@@ -3676,9 +3676,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": ".TECH Domains for Students",
-    "valueEn": "Free đăng ký tên miền .tech 1 năm & SSL",
-    "descriptionEn": ".TECH Domains hợp tác với các chương trình giáo dục như GitHub Student Pack để cung cấp free 1 năm đăng ký tên miền .tech cho students, students xây dựng trang web cá nhân.",
-    "requirementsEn": "Đăng nhập bằng tài khoản GitHub Student Developer Pack để lấy mã giảm giá or liên kết kích hoạt."
+    "valueEn": "Miễn phí đăng ký tên miền .tech 1 năm & SSL",
+    "descriptionEn": ".TECH Domains hợp tác với các chương trình giáo dục như GitHub Student Pack để cung cấp miễn phí 1 năm đăng ký tên miền .tech cho học sinh, sinh viên xây dựng trang web cá nhân.",
+    "requirementsEn": "Đăng nhập bằng tài khoản GitHub Student Developer Pack để lấy mã giảm giá hoặc liên kết kích hoạt."
   },
   {
     "id": "b185",
@@ -3696,9 +3696,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Bitbucket Cloud Academic Plan",
-    "valueEn": "Free gói Academic không giới hạn cộng tác viên",
-    "descriptionEn": "Atlassian cung cấp gói Bitbucket Cloud Academic free không giới hạn số lượng cộng tác viên cho các kho chứa mã nguồn cá nhân for students, students và faculty.",
-    "requirementsEn": "Register with tài khoản Bitbucket bằng email học thuật (.edu) or liên kết thông qua cổng phần mềm giáo dục của trường."
+    "valueEn": "Miễn phí gói Academic không giới hạn cộng tác viên",
+    "descriptionEn": "Atlassian cung cấp gói Bitbucket Cloud Academic miễn phí không giới hạn số lượng cộng tác viên cho các kho chứa mã nguồn cá nhân dành cho học sinh, sinh viên và giảng viên.",
+    "requirementsEn": "Register tài khoản Bitbucket bằng email học thuật (.edu) hoặc liên kết thông qua cổng phần mềm giáo dục của trường."
   },
   {
     "id": "b186",
@@ -3716,9 +3716,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Shodan Academic Membership",
-    "valueEn": "Nâng Cấp Member Trọn Đời Free",
-    "descriptionEn": "Công cụ tìm kiếm các thiết bị kết nối internet for nhà nghiên cứu bảo mật và students công nghệ thông tin học tập.",
-    "requirementsEn": "Register with tài khoản Shodan bằng email đại học/học thuật để tự động kích hoạt nâng cấp Academic Membership trọn đời."
+    "valueEn": "Nâng Cấp Member Trọn Đời Miễn Phí",
+    "descriptionEn": "Công cụ tìm kiếm các thiết bị kết nối internet dành cho nhà nghiên cứu bảo mật và sinh viên công nghệ thông tin học tập.",
+    "requirementsEn": "Register tài khoản Shodan bằng email đại học/học thuật để tự động kích hoạt nâng cấp Academic Membership trọn đời."
   },
   {
     "id": "b187",
@@ -3736,9 +3736,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Flinto for Mac",
-    "valueEn": "Off 50% giá License phần mềm",
+    "valueEn": "50% Off giá bản quyền phần mềm",
     "descriptionEn": "Ứng dụng thiết kế mẫu thử UI/UX mạnh mẽ trên macOS, chuyên hỗ trợ tạo các hiệu ứng chuyển cảnh (transitions) mượt mà.",
-    "requirementsEn": "Gửi hình ảnh student ID or thời khóa biểu học tập học kỳ hiện tại qua trang mua hàng giáo dục của Flinto."
+    "requirementsEn": "Gửi hình ảnh thẻ sinh viên hoặc thời khóa biểu học tập học kỳ hiện tại qua trang mua hàng giáo dục của Flinto."
   },
   {
     "id": "b188",
@@ -3756,9 +3756,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Readwise Reader Student",
-    "valueEn": "Discount 50% Mọi Gói Thuê Bao",
-    "descriptionEn": "Giải pháp lưu trữ, đồng bộ hóa và ôn tập tự động các phần highlight từ sách (Kindle), bài báo, và tài liệu đọc trực tuyến cho students, students.",
-    "requirementsEn": "Gửi email Register with tới hello@readwise.io bằng university email (.edu) học or gửi minh chứng học tập."
+    "valueEn": "Off Giá 50% Mọi Gói Thuê Bao",
+    "descriptionEn": "Giải pháp lưu trữ, đồng bộ hóa và ôn tập tự động các phần highlight từ sách (Kindle), bài báo, và tài liệu đọc trực tuyến cho học sinh, sinh viên.",
+    "requirementsEn": "Gửi email đăng ký tới hello@readwise.io bằng university email (.edu) học hoặc gửi minh chứng học tập."
   },
   {
     "id": "b189",
@@ -3777,8 +3777,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "VinaPhone YOLO100M Student Pack",
     "valueEn": "1GB data/ngày & Free YouTube/TikTok/FB",
-    "descriptionEn": "Gói data for giới trẻ và HSSV với dung lượng lớn cùng đặc quyền free data tốc độ cao khi lướt TikTok, xem YouTube và Facebook.",
-    "requirementsEn": "Mang CCCD kèm thẻ học sinh/sinh viên còn hiệu lực đến các điểm giao dịch của VinaPhone toàn quốc để Register with sim sinh viên chính chủ."
+    "descriptionEn": "Gói data dành cho giới trẻ và HSSV với dung lượng lớn cùng đặc quyền miễn phí data tốc độ cao khi lướt TikTok, xem YouTube và Facebook.",
+    "requirementsEn": "Mang CCCD kèm thẻ học sinh/sinh viên còn hiệu lực đến các điểm giao dịch của VinaPhone toàn quốc để đăng ký sim sinh viên chính chủ."
   },
   {
     "id": "b190",
@@ -3797,8 +3797,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "MobiFone MXH100 Combo",
     "valueEn": "1GB data/ngày & Free Social Media",
-    "descriptionEn": "Gói cước combo tích hợp data tốc độ cao và free data truy cập không giới hạn cho các nền tảng mạng xã hội và giải trí phổ biến nhất của students.",
-    "requirementsEn": "Register with chính chủ sim sinh viên tại các cửa hàng giao dịch MobiFone toàn quốc bằng cách xuất trình CCCD và student ID."
+    "descriptionEn": "Gói cước combo tích hợp data tốc độ cao và miễn phí data truy cập không giới hạn cho các nền tảng mạng xã hội và giải trí phổ biến nhất của sinh viên.",
+    "requirementsEn": "Register chính chủ sim sinh viên tại các cửa hàng giao dịch MobiFone toàn quốc bằng cách xuất trình CCCD và thẻ sinh viên."
   },
   {
     "id": "b191",
@@ -3816,8 +3816,8 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "HCMC Student Bus Ticket",
-    "valueEn": "Vé lượt 3K hoặc Free trọn gói",
-    "descriptionEn": "discount vé lẻ từ 6-7K xuống còn 3.000đ for students. Đặc biệt từ 01/07/2026 đến 31/12/2026 được 100% free khi đi xe buýt trợ giá tại TP.HCM.",
+    "valueEn": "Vé lượt 3K hoặc miễn phí trọn gói",
+    "descriptionEn": "Discount vé lẻ từ 6-7K xuống còn 3.000đ cho sinh viên. Đặc biệt từ 01/07/2026 đến 31/12/2026 được miễn phí 100% khi đi xe buýt trợ giá tại TP.HCM.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên khi lên xe buýt tại TP.HCM để mua vé lượt đồng giá ưu đãi trực tiếp từ nhân viên bán vé."
   },
   {
@@ -3838,7 +3838,7 @@ export const BENEFITS_DATA = [
     "titleEn": "ClickUp Academic Discount",
     "valueEn": "Discount đặc biệt cho gói trả phí",
     "descriptionEn": "Hệ thống quản lý công việc và dự án học tập 'tất cả trong một', giúp theo dõi tiến độ đồ án nhóm và học tập cá nhân hiệu quả.",
-    "requirementsEn": "Điền đơn Register with chương trình học thuật trực tiếp trên trang chủ ClickUp."
+    "requirementsEn": "Điền đơn đăng ký chương trình học thuật trực tiếp trên trang chủ ClickUp."
   },
   {
     "id": "b193",
@@ -3858,7 +3858,7 @@ export const BENEFITS_DATA = [
     "titleEn": "CyberGhost Student Discount",
     "valueEn": "Off tới 84% + Tặng thêm tháng free",
     "descriptionEn": "Giải pháp VPN tốc độ cao, giao diện thân thiện với các máy chủ tối ưu hóa riêng cho việc nghiên cứu và truy cập web an toàn.",
-    "requirementsEn": "Verify with tư cách sinh viên thông qua Student Beans or UNiDAYS."
+    "requirementsEn": "Verify tư cách sinh viên thông qua Student Beans hoặc UNiDAYS."
   },
   {
     "id": "b194",
@@ -3876,9 +3876,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "VUS Student Study Support",
-    "valueEn": "Scholarship bán phần & Trả góp học phí 0%",
-    "descriptionEn": "special deal giảm học phí các khóa tiếng Anh giao tiếp hoặc IELTS và trả góp học phí lãi suất 0% qua ngân hàng liên kết.",
-    "requirementsEn": "Liên hệ tư vấn viên tại các cơ sở Anh văn Hội Việt Mỹ (VUS) và xuất trình student ID để được áp dụng giảm học phí or tặng học bổng."
+    "valueEn": "Học bổng bán phần & Trả góp học phí 0%",
+    "descriptionEn": "Ưu đãi giảm học phí các khóa tiếng Anh giao tiếp hoặc IELTS và trả góp học phí lãi suất 0% qua ngân hàng liên kết.",
+    "requirementsEn": "Liên hệ tư vấn viên tại các cơ sở Anh văn Hội Việt Mỹ (VUS) và xuất trình thẻ sinh viên để được áp dụng giảm học phí hoặc tặng học bổng."
   },
   {
     "id": "b195",
@@ -3897,7 +3897,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Levi's Student Discount",
     "valueEn": "Discount 15% khi mua sắm online",
-    "descriptionEn": "Thương hiệu quần jean biểu tượng Levi's discount 15% cho tất cả đơn hàng trực tuyến của students, students.",
+    "descriptionEn": "Thương hiệu quần jean biểu tượng Levi's giảm giá 15% cho tất cả đơn hàng trực tuyến của học sinh, sinh viên.",
     "requirementsEn": "Xác minh trạng thái sinh viên qua cổng SheerID để nhận mã giảm giá một lần."
   },
   {
@@ -3916,9 +3916,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Klook Travel Activities",
-    "valueEn": "Discount Đến 18% Đặt Tour & Vé",
-    "descriptionEn": "Nền tảng đặt vé vui chơi, tour du lịch, phương tiện di chuyển và sim thẻ tiện lợi for students đi trải nghiệm.",
-    "requirementsEn": "Xác minh qua Student Beans or UNiDAYS tùy theo khu vực địa lý."
+    "valueEn": "Off Giá Up to 18% Đặt Tour & Vé",
+    "descriptionEn": "Nền tảng đặt vé vui chơi, tour du lịch, phương tiện di chuyển và sim thẻ tiện lợi cho sinh viên đi trải nghiệm.",
+    "requirementsEn": "Xác minh qua Student Beans hoặc UNiDAYS tùy theo khu vực địa lý."
   },
   {
     "id": "b197",
@@ -3936,9 +3936,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Cacoo Education Plan",
-    "valueEn": "Off 50% gói dịch vụ nhóm (Team Plan)",
+    "valueEn": "50% Off gói dịch vụ nhóm (Team Plan)",
     "descriptionEn": "Phần mềm thiết kế sơ đồ, wireframe và mindmap cộng tác thời gian thực trực tuyến cho học tập nhóm.",
-    "requirementsEn": "Register with trực tiếp qua trang Cacoo dành cho giáo dục."
+    "requirementsEn": "Register trực tiếp qua trang Cacoo dành cho giáo dục."
   },
   {
     "id": "b198",
@@ -3956,9 +3956,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "MindMeister for Education",
-    "valueEn": "Off 50% chi phí các gói trả phí",
+    "valueEn": "50% Off chi phí các gói trả phí",
     "descriptionEn": "Công cụ vẽ sơ đồ tư duy trực tuyến hỗ trợ cộng tác thời gian thực và trình bày ý tưởng học thuật chuyên nghiệp.",
-    "requirementsEn": "Register with tài khoản cơ bản rồi gửi yêu cầu nâng cấp kèm minh chứng học tập qua cổng hỗ trợ."
+    "requirementsEn": "Register tài khoản cơ bản rồi gửi yêu cầu nâng cấp kèm minh chứng học tập qua cổng hỗ trợ."
   },
   {
     "id": "b199",
@@ -3978,7 +3978,7 @@ export const BENEFITS_DATA = [
     "titleEn": "Raycast Pro Student Program",
     "valueEn": "Discount 50% gói Raycast Pro",
     "descriptionEn": "Công cụ launcher siêu tốc trên macOS tích hợp công cụ viết, tìm kiếm thông tin bằng AI và phím tắt cực mạnh.",
-    "requirementsEn": "Nộp biểu mẫu Register with chương trình sinh viên với thông tin email và bằng chứng đang theo học."
+    "requirementsEn": "Nộp biểu mẫu đăng ký chương trình sinh viên với thông tin email và bằng chứng đang theo học."
   },
   {
     "id": "b200",
@@ -3997,8 +3997,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Viettel GIC90N Student Package",
     "valueEn": "1GB data/ngày & Free TikTok/FB",
-    "descriptionEn": "Gói cước đặc quyền mới tailored for students students từ 14–22 tuổi. free data tốc độ cao khi truy cập Facebook, TikTok, Messenger và đọc sách Mydio.",
-    "requirementsEn": "Mang theo thẻ học sinh/sinh viên (từ 14 đến 22 tuổi) kèm CCCD đến cửa hàng Viettel để Register with sim chính chủ or đổi gói cước qua app MyViettel."
+    "descriptionEn": "Gói cước đặc quyền mới dành riêng cho học sinh sinh viên từ 14–22 tuổi. Miễn phí data tốc độ cao khi truy cập Facebook, TikTok, Messenger và đọc sách Mydio.",
+    "requirementsEn": "Mang theo thẻ học sinh/sinh viên (từ 14 đến 22 tuổi) kèm CCCD đến cửa hàng Viettel để đăng ký sim chính chủ hoặc đổi gói cước qua app MyViettel."
   },
   {
     "id": "b201",
@@ -4017,8 +4017,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Under Armour Student Discount",
     "valueEn": "Discount 15%–20% đồ thể thao",
-    "descriptionEn": "Thương hiệu thời trang thể thao hiệu năng cao Under Armour discount lên tới 20% for students.",
-    "requirementsEn": "Verify with tài khoản sinh viên qua UNiDAYS để nhận mã giảm giá."
+    "descriptionEn": "Thương hiệu thời trang thể thao hiệu năng cao Under Armour giảm giá lên tới 20% cho học sinh sinh viên.",
+    "requirementsEn": "Verify tài khoản sinh viên qua UNiDAYS để nhận mã giảm giá."
   },
   {
     "id": "b202",
@@ -4038,7 +4038,7 @@ export const BENEFITS_DATA = [
     "titleEn": "Scrintal for Education",
     "valueEn": "Discount 30% gói dịch vụ Pro",
     "descriptionEn": "Công cụ ghi chép dạng thẻ kết hợp bảng trắng kỹ thuật số (visual board) giúp nghiên cứu tài liệu dễ dàng.",
-    "requirementsEn": "Register with và thanh toán tài khoản bằng email đuôi nhà trường đại học or cao đẳng."
+    "requirementsEn": "Register và thanh toán tài khoản bằng email đuôi nhà trường đại học hoặc cao đẳng."
   },
   {
     "id": "b203",
@@ -4056,8 +4056,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Babbel Language Learning",
-    "valueEn": "Discount 65% Cho Học Ngoại Ngữ",
-    "descriptionEn": "Học tiếng Anh, tiếng Tây Ban Nha, tiếng Pháp... với phương pháp phản xạ khoa học và special deal tới 65%.",
+    "valueEn": "Off Giá 65% Cho Học Ngoại Ngữ",
+    "descriptionEn": "Học tiếng Anh, tiếng Tây Ban Nha, tiếng Pháp... với phương pháp phản xạ khoa học và ưu đãi tới 65%.",
     "requirementsEn": "Xác minh tư cách học sinh sinh viên qua dịch vụ đối tác."
   },
   {
@@ -4076,9 +4076,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Phuc Long Tea & Coffee Student Offer",
-    "valueEn": "Discount 10% Hóa Đơn",
-    "descriptionEn": "special deal trực tiếp cho các thức uống trà sữa, trà đào, cafe nổi tiếng của Phúc Long tại cửa hàng.",
-    "requirementsEn": "Xuất trình thẻ học sinh/sinh viên chính chủ tại quầy thanh toán của Phúc Long khi mua đồ uống để nhận ưu đãi combo or giảm giá theo chương trình."
+    "valueEn": "Off Giá 10% Hóa Đơn",
+    "descriptionEn": "Ưu đãi trực tiếp cho các thức uống trà sữa, trà đào, cafe nổi tiếng của Phúc Long tại cửa hàng.",
+    "requirementsEn": "Xuất trình thẻ học sinh/sinh viên chính chủ tại quầy thanh toán của Phúc Long khi mua đồ uống để nhận ưu đãi combo hoặc giảm giá theo chương trình."
   },
   {
     "id": "b205",
@@ -4096,9 +4096,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Grammarly Writing Assistant",
-    "valueEn": "Discount 20% Gói Grammarly Pro",
+    "valueEn": "Off Giá 20% Gói Grammarly Pro",
     "descriptionEn": "Trợ lý viết tiếng Anh bằng AI giúp sửa lỗi ngữ pháp, tối ưu hóa câu từ và cải thiện phong cách viết học thuật chuyên nghiệp.",
-    "requirementsEn": "Verify with tình trạng sinh viên qua SheerID or email giáo dục (.edu)."
+    "requirementsEn": "Verify tình trạng sinh viên qua SheerID hoặc email giáo dục (.edu)."
   },
   {
     "id": "b206",
@@ -4116,9 +4116,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Bamboo Airways Student Promo",
-    "valueEn": "Vé Special Deal từ 99,000 VND",
-    "descriptionEn": "Hãng hỗ trợ students thông qua các chương trình khuyến mãi mùa tựu trường (tháng 8-9) với giá vé rẻ hoặc tặng dặm thưởng tích lũy hội viên Bamboo Club.",
-    "requirementsEn": "Chọn hạng vé HSSV khi đặt vé trực tuyến or mua vé tại phòng vé chính thức của Bamboo Airways, xuất trình student ID khi làm thủ tục bay."
+    "valueEn": "Vé ưu đãi từ 99,000 VND",
+    "descriptionEn": "Hãng hỗ trợ sinh viên thông qua các chương trình khuyến mãi mùa tựu trường (tháng 8-9) với giá vé rẻ hoặc tặng dặm thưởng tích lũy hội viên Bamboo Club.",
+    "requirementsEn": "Chọn hạng vé HSSV khi đặt vé trực tuyến hoặc mua vé tại phòng vé chính thức của Bamboo Airways, xuất trình thẻ sinh viên khi làm thủ tục bay."
   },
   {
     "id": "b207",
@@ -4136,9 +4136,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "FlixBus Intercity Discount",
-    "valueEn": "Discount 10% - 15% Vé Xe Khách",
-    "descriptionEn": "Dịch vụ xe khách liên tỉnh giá rẻ tại Châu Âu và Mỹ, giúp students di chuyển tiết kiệm giữa các thành phố học tập hoặc đi du lịch.",
-    "requirementsEn": "Verify with qua hệ thống UNiDAYS, Student Beans or thẻ ISIC."
+    "valueEn": "Off Giá 10% - 15% Vé Xe Khách",
+    "descriptionEn": "Dịch vụ xe khách liên tỉnh giá rẻ tại Châu Âu và Mỹ, giúp sinh viên di chuyển tiết kiệm giữa các thành phố học tập hoặc đi du lịch.",
+    "requirementsEn": "Verify qua hệ thống UNiDAYS, Student Beans hoặc thẻ ISIC."
   },
   {
     "id": "b208",
@@ -4156,9 +4156,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "TablePlus Student License",
-    "valueEn": "Off 50% License phần mềm",
+    "valueEn": "50% Off bản quyền phần mềm",
     "descriptionEn": "Công cụ quản lý cơ sở dữ liệu (SQL & NoSQL) giao diện native mượt mà và cực nhanh cho nhà phát triển trên macOS/Windows.",
-    "requirementsEn": "Gửi email yêu cầu đến đội ngũ hỗ trợ của TablePlus bằng university email (.edu) học kèm student ID."
+    "requirementsEn": "Gửi email yêu cầu đến đội ngũ hỗ trợ của TablePlus bằng university email (.edu) học kèm thẻ sinh viên."
   },
   {
     "id": "b209",
@@ -4176,9 +4176,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Vé tàu hỏa Đường sắt Việt Nam (VNR)",
-    "valueEn": "Off 10% giá vé tàu trên tất cả đoàn tàu khách",
-    "descriptionEn": "Tổng công ty Đường sắt Việt Nam áp dụng chính sách giảm 10% giá vé tàu hỏa trên tất cả các tuyến cho students, students quanh năm.",
-    "requirementsEn": "Mua vé trực tiếp tại ga tàu or đặt trực tuyến qua website dsvn.vn (chọn đối tượng Sinh viên), xuất trình student ID chính chủ kèm giấy tờ tùy thân khi lên tàu."
+    "valueEn": "10% Off giá vé tàu trên tất cả đoàn tàu khách",
+    "descriptionEn": "Tổng công ty Đường sắt Việt Nam áp dụng chính sách giảm 10% giá vé tàu hỏa trên tất cả các tuyến cho học sinh, sinh viên quanh năm.",
+    "requirementsEn": "Mua vé trực tiếp tại ga tàu hoặc đặt trực tuyến qua website dsvn.vn (chọn đối tượng Sinh viên), xuất trình thẻ sinh viên chính chủ kèm giấy tờ tùy thân khi lên tàu."
   },
   {
     "id": "b210",
@@ -4197,8 +4197,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Hoàng Hà Mobile HSSV (Hoàng Hà Edu)",
     "valueEn": "Discount đặc quyền & Trả góp 0%",
-    "descriptionEn": "Đặc quyền discount trực tiếp cho thiết bị công nghệ học tập for HSSV từ 14-22 tuổi, cùng thủ tục trả góp 0% lãi suất đơn giản.",
-    "requirementsEn": "Mang student ID còn hiệu lực và CCCD qua hệ thống cửa hàng Hoàng Hà Mobile để Register with chương trình Hoàng Hà Edu và nhận ưu đãi giảm giá."
+    "descriptionEn": "Đặc quyền giảm giá trực tiếp cho thiết bị công nghệ học tập dành cho HSSV từ 14-22 tuổi, cùng thủ tục trả góp 0% lãi suất đơn giản.",
+    "requirementsEn": "Mang thẻ sinh viên còn hiệu lực và CCCD qua hệ thống cửa hàng Hoàng Hà Mobile để đăng ký chương trình Hoàng Hà Edu và nhận ưu đãi giảm giá."
   },
   {
     "id": "b211",
@@ -4217,7 +4217,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "ASOS Student Discount",
     "valueEn": "Discount 10% đơn hàng thời trang",
-    "descriptionEn": "Trang mua sắm thời trang quốc tế lớn nhất for giới trẻ giảm 10% cho mọi đơn hàng thời trang của students.",
+    "descriptionEn": "Trang mua sắm thời trang quốc tế lớn nhất dành cho giới trẻ giảm 10% cho mọi đơn hàng thời trang của sinh viên.",
     "requirementsEn": "Xác minh tư cách sinh viên thông qua cổng SheerID tích hợp trên website ASOS."
   },
   {
@@ -4237,7 +4237,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Ray-Ban Student Discount",
     "valueEn": "Discount 20% kính mắt chính hãng",
-    "descriptionEn": "Thương hiệu kính mắt Ray-Ban giảm 20% for students khi mua các sản phẩm kính chính hãng trực tuyến.",
+    "descriptionEn": "Thương hiệu kính mắt Ray-Ban giảm 20% cho sinh viên khi mua các sản phẩm kính chính hãng trực tuyến.",
     "requirementsEn": "Xác minh tư cách học sinh sinh viên qua hệ thống UNiDAYS."
   },
   {
@@ -4256,9 +4256,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "MasterClass Online Lessons",
-    "valueEn": "Discount 15% Thuê Bao Năm",
+    "valueEn": "Off Giá 15% Thuê Bao Năm",
     "descriptionEn": "Nền tảng học trực tuyến với các bài giảng từ những chuyên gia, nghệ sĩ, doanh nhân nổi tiếng nhất thế giới trong nhiều lĩnh vực.",
-    "requirementsEn": "Xác minh tình trạng học tập thông qua Student Beans or UNiDAYS."
+    "requirementsEn": "Xác minh tình trạng học tập thông qua Student Beans hoặc UNiDAYS."
   },
   {
     "id": "b214",
@@ -4276,9 +4276,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "WolframAlpha Pro Student",
-    "valueEn": "Discount 30% Bản Pro",
+    "valueEn": "Off Giá 30% Bản Pro",
     "descriptionEn": "Công cụ tính toán tri thức thông minh giải các bài toán toán học, khoa học, phân tích dữ liệu chuyên sâu và hiển thị lời giải từng bước.",
-    "requirementsEn": "Xác minh qua cổng Student Beans or UNiDAYS."
+    "requirementsEn": "Xác minh qua cổng Student Beans hoặc UNiDAYS."
   },
   {
     "id": "b215",
@@ -4297,8 +4297,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Cinestar C'Student Member",
     "valueEn": "Vé Xem Phim Đồng Giá Từ 45K - 49K",
-    "descriptionEn": "special deal giá vé xem phim 2D đồng giá cực tốt cho HSSV và thành viên U22 tại tất cả hệ thống rạp Cinestar toàn quốc.",
-    "requirementsEn": "Xuất trình thẻ học sinh/sinh viên or căn cước công dân (dưới 22 tuổi) tại quầy vé khi thanh toán trực tiếp."
+    "descriptionEn": "Ưu đãi giá vé xem phim 2D đồng giá cực tốt cho HSSV và thành viên U22 tại tất cả hệ thống rạp Cinestar toàn quốc.",
+    "requirementsEn": "Xuất trình thẻ học sinh/sinh viên hoặc căn cước công dân (dưới 22 tuổi) tại quầy vé khi thanh toán trực tiếp."
   },
   {
     "id": "b216",
@@ -4316,9 +4316,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Nova Editor (by Panic)",
-    "valueEn": "Off 25% License phần mềm macOS",
-    "descriptionEn": "Trình soạn thảo code native tuyệt đẹp, hiệu năng cao và đầy đủ tính năng tailored for hệ điều hành macOS từ hãng Panic.",
-    "requirementsEn": "Gửi liên hệ or email bằng hòm thư giáo dục của trường học để nhận mã giảm giá."
+    "valueEn": "25% Off bản quyền phần mềm macOS",
+    "descriptionEn": "Trình soạn thảo code native tuyệt đẹp, hiệu năng cao và đầy đủ tính năng dành riêng cho hệ điều hành macOS từ hãng Panic.",
+    "requirementsEn": "Gửi liên hệ hoặc email bằng hòm thư giáo dục của trường học để nhận mã giảm giá."
   },
   {
     "id": "b217",
@@ -4337,7 +4337,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Di Động Việt Student Deal",
     "valueEn": "Off thêm 100K - 1.000K",
-    "descriptionEn": "special deal discount trực tiếp bổ sung for students khi mua điện thoại Android, iPhone, iPad hoặc MacBook bên cạnh các special deal sẵn có.",
+    "descriptionEn": "Ưu đãi giảm giá trực tiếp bổ sung cho sinh viên khi mua điện thoại Android, iPhone, iPad hoặc MacBook bên cạnh các ưu đãi sẵn có.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên và CCCD tại các cửa hàng Di Động Việt để được giảm giá trực tiếp khi mua điện thoại, phụ kiện công nghệ."
   },
   {
@@ -4357,8 +4357,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "The Pizza Company Student Combo",
     "valueEn": "Mua 1 Tặng 1 Thứ 3 & Thứ 4",
-    "descriptionEn": "Chương trình Mua 1 Tặng 1 pizza cỡ vừa/lớn giúp các nhóm students tiết kiệm chi phí ăn uống họp nhóm hoặc liên hoan.",
-    "requirementsEn": "Xuất trình student ID/học sinh trực tiếp tại cửa hàng The Pizza Company để áp dụng menu combo HSSV đồng giá cực kỳ ưu đãi."
+    "descriptionEn": "Chương trình Mua 1 Tặng 1 pizza cỡ vừa/lớn giúp các nhóm sinh viên tiết kiệm chi phí ăn uống họp nhóm hoặc liên hoan.",
+    "requirementsEn": "Xuất trình thẻ sinh viên/học sinh trực tiếp tại cửa hàng The Pizza Company để áp dụng menu combo HSSV đồng giá cực kỳ ưu đãi."
   },
   {
     "id": "b219",
@@ -4377,8 +4377,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Hostelworld Student Discount",
     "valueEn": "Discount 7% cho mọi đặt phòng hostel",
-    "descriptionEn": "Nền tảng tìm kiếm và đặt phòng hostel du lịch bụi lớn nhất for giới trẻ và students toàn cầu.",
-    "requirementsEn": "Verify with trạng thái học tập thông qua Student Beans, UNiDAYS or mã giảm giá từ thẻ ISIC."
+    "descriptionEn": "Nền tảng tìm kiếm và đặt phòng hostel du lịch bụi lớn nhất dành cho giới trẻ và sinh viên toàn cầu.",
+    "requirementsEn": "Verify trạng thái học tập thông qua Student Beans, UNiDAYS hoặc mã giảm giá từ thẻ ISIC."
   },
   {
     "id": "b220",
@@ -4397,7 +4397,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Dr. Martens Student Discount",
     "valueEn": "Discount 10%–15% giày da/boots",
-    "descriptionEn": "Hãng giày da Dr. Martens discount for students khi mua các sản phẩm giày bốt cổ điển chính hãng online.",
+    "descriptionEn": "Hãng giày da Dr. Martens giảm giá cho sinh viên khi mua các sản phẩm giày bốt cổ điển chính hãng online.",
     "requirementsEn": "Xác minh và lấy mã ưu đãi thông qua cổng đối tác UNiDAYS."
   },
   {
@@ -4417,8 +4417,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Hostinger Student Discount",
     "valueEn": "Discount thêm 10%–25% trên giá khuyến mãi gốc",
-    "descriptionEn": "Hostinger discount thêm 10% for students trên giá đã giảm của các gói hosting chất lượng cao (Shared, Cloud, VPS Hosting) kèm theo tên miền free.",
-    "requirementsEn": "Verify with trạng thái sinh viên thông qua tài khoản Student Beans để nhận mã giảm giá đặc biệt."
+    "descriptionEn": "Hostinger giảm giá thêm 10% cho sinh viên trên giá đã giảm của các gói hosting chất lượng cao (Shared, Cloud, VPS Hosting) kèm theo tên miền miễn phí.",
+    "requirementsEn": "Verify trạng thái sinh viên thông qua tài khoản Student Beans để nhận mã giảm giá đặc biệt."
   },
   {
     "id": "b222",
@@ -4436,9 +4436,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "RoboForm Password Manager",
-    "valueEn": "Free 1 Năm Bản Pro",
+    "valueEn": "Miễn Phí 1 Năm Bản Pro",
     "descriptionEn": "Ứng dụng quản lý mật khẩu an toàn, tự động điền thông tin và đồng bộ hóa trên mọi thiết bị.",
-    "requirementsEn": "Verify with trạng thái sinh viên bằng email đuôi trường học."
+    "requirementsEn": "Verify trạng thái sinh viên bằng email đuôi trường học."
   },
   {
     "id": "b223",
@@ -4456,9 +4456,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Setapp Suite for Mac & iOS",
-    "valueEn": "Discount 20% Thuê Bao Năm",
-    "descriptionEn": "Nền tảng đăng ký thuê bao trọn gói hơn 240+ ứng dụng chất lượng cao for macOS và iOS (bao gồm CleanMyMac, Ulysses...).",
-    "requirementsEn": "Register with tài khoản Setapp bằng địa chỉ email sinh viên (.edu)."
+    "valueEn": "Off Giá 20% Thuê Bao Năm",
+    "descriptionEn": "Nền tảng đăng ký thuê bao trọn gói hơn 240+ ứng dụng chất lượng cao dành cho macOS và iOS (bao gồm CleanMyMac, Ulysses...).",
+    "requirementsEn": "Register tài khoản Setapp bằng địa chỉ email sinh viên (.edu)."
   },
   {
     "id": "b224",
@@ -4476,9 +4476,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "XMind Education Plan",
-    "valueEn": "Off 40% giá mua License",
+    "valueEn": "40% Off giá mua bản quyền",
     "descriptionEn": "Phần mềm thiết kế sơ đồ tư duy và lập bản đồ ý tưởng đa nền tảng phổ biến bậc nhất thế giới.",
-    "requirementsEn": "Register with mua bản quyền giáo dục bằng cách tải lên student ID or biên lai đóng học phí."
+    "requirementsEn": "Register mua bản quyền giáo dục bằng cách tải lên thẻ sinh viên hoặc biên lai đóng học phí."
   },
   {
     "id": "b225",
@@ -4497,8 +4497,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Viettel GIC70N Student Pack",
     "valueEn": "1GB data/ngày & Free Mydio",
-    "descriptionEn": "Gói cước tiết kiệm tailored for students students từ 14–22 tuổi, cung cấp 1GB data/ngày cùng dịch vụ đọc sách Mydio free.",
-    "requirementsEn": "Register with chính chủ sim sinh viên tại các cửa hàng Viettel trên toàn quốc bằng cách cung cấp student ID và CCCD."
+    "descriptionEn": "Gói cước tiết kiệm dành riêng cho học sinh sinh viên từ 14–22 tuổi, cung cấp 1GB data/ngày cùng dịch vụ đọc sách Mydio miễn phí.",
+    "requirementsEn": "Register chính chủ sim sinh viên tại các cửa hàng Viettel trên toàn quốc bằng cách cung cấp thẻ sinh viên và CCCD."
   },
   {
     "id": "b226",
@@ -4518,7 +4518,7 @@ export const BENEFITS_DATA = [
     "titleEn": "Perlego Student Library Discount",
     "valueEn": "Discount 25% gói đọc sách học thuật",
     "descriptionEn": "Perlego là thư viện học thuật trực tuyến cung cấp quyền truy cập không giới hạn vào hơn 1 triệu đầu sách giáo trình, tài liệu tham khảo khoa học và sách học thuật từ các nhà xuất bản lớn.",
-    "requirementsEn": "Verify with trạng thái sinh viên thông qua tài khoản Student Beans or UNiDAYS để nhận mã giảm giá."
+    "requirementsEn": "Verify trạng thái sinh viên thông qua tài khoản Student Beans hoặc UNiDAYS để nhận mã giảm giá."
   },
   {
     "id": "b227",
@@ -4537,7 +4537,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Converse Student Discount",
     "valueEn": "Discount 15% đơn hàng giày",
-    "descriptionEn": "Thương hiệu giày Converse discount 15% cho các đơn hàng giày sneaker và phụ kiện trực tuyến của students.",
+    "descriptionEn": "Thương hiệu giày Converse giảm giá 15% cho các đơn hàng giày sneaker và phụ kiện trực tuyến của sinh viên.",
     "requirementsEn": "Xác minh thông tin học sinh sinh viên qua cổng SheerID để nhận mã promo code."
   },
   {
@@ -4557,8 +4557,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Puma Student Discount",
     "valueEn": "Discount 10%–20% giày thể thao",
-    "descriptionEn": "Hãng giày thể thao Puma discount trực tiếp for students khi mua sắm quần áo và giày sneaker trực tuyến.",
-    "requirementsEn": "Đăng nhập và Verify with tài khoản qua cổng UNiDAYS or Student Beans."
+    "descriptionEn": "Hãng giày thể thao Puma giảm giá trực tiếp cho sinh viên khi mua sắm quần áo và giày sneaker trực tuyến.",
+    "requirementsEn": "Đăng nhập và xác thực tài khoản qua cổng UNiDAYS hoặc Student Beans."
   },
   {
     "id": "b229",
@@ -4577,8 +4577,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "New Balance Student Discount",
     "valueEn": "Discount 10%–15% giày sneaker",
-    "descriptionEn": "Thương hiệu giày New Balance discount for students khi mua các sản phẩm giày chạy bộ và sneaker nguyên giá.",
-    "requirementsEn": "Verify with tài khoản học sinh sinh viên qua UNiDAYS or Student Beans tùy khu vực."
+    "descriptionEn": "Thương hiệu giày New Balance giảm giá cho sinh viên khi mua các sản phẩm giày chạy bộ và sneaker nguyên giá.",
+    "requirementsEn": "Verify tài khoản học sinh sinh viên qua UNiDAYS hoặc Student Beans tùy khu vực."
   },
   {
     "id": "b230",
@@ -4597,8 +4597,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Booking.com Student Deals",
     "valueEn": "Hoàn Tiền 4% + Đặc Quyền Genius",
-    "descriptionEn": "Nền tảng đặt phòng khách sạn, homestay và vé máy bay lớn nhất thế giới với các đặc quyền phòng nghỉ giá rẻ for students.",
-    "requirementsEn": "Truy cập thông qua link liên kết của cổng Student Beans or UNiDAYS."
+    "descriptionEn": "Nền tảng đặt phòng khách sạn, homestay và vé máy bay lớn nhất thế giới với các đặc quyền phòng nghỉ giá rẻ cho sinh viên.",
+    "requirementsEn": "Truy cập thông qua link liên kết của cổng Student Beans hoặc UNiDAYS."
   },
   {
     "id": "b231",
@@ -4616,8 +4616,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "United Airlines Young Traveler",
-    "valueEn": "Off 5% giá vé máy bay",
-    "descriptionEn": "special deal discount vé cho hành khách trẻ tuổi đặt chỗ qua ứng dụng di động của United Airlines.",
+    "valueEn": "5% Off giá vé máy bay",
+    "descriptionEn": "Ưu đãi giảm giá vé cho hành khách trẻ tuổi đặt chỗ qua ứng dụng di động của United Airlines.",
     "requirementsEn": "Yêu cầu là thành viên MileagePlus từ 18 đến 23 tuổi và thực hiện đặt vé trực tiếp trên App United."
   },
   {
@@ -4636,7 +4636,7 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Pizza Hut Vietnam Group Student Deal",
-    "valueEn": "Off 40% combo nhóm & BOGO",
+    "valueEn": "40% Off combo nhóm & BOGO",
     "descriptionEn": "Combo nhóm cho HSSV giảm đến 40%, cùng chương trình Mua 1 Tặng 1 pizza cỡ vừa/lớn vào ngày thường.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên khi gọi món trực tiếp tại nhà hàng Pizza Hut để áp dụng ưu đãi giảm giá combo sinh viên."
   },
@@ -4658,7 +4658,7 @@ export const BENEFITS_DATA = [
     "titleEn": "The New Gym Student Membership",
     "valueEn": "Chỉ từ 299K/tháng, không hợp đồng",
     "descriptionEn": "Gói tập gym giá cực rẻ không phát sinh phí ẩn, không bắt đóng trước cả năm, tập luyện linh hoạt.",
-    "requirementsEn": "Mang theo thẻ học sinh/sinh viên khi Register with gói tập trực tiếp tại các cơ sở của The New Gym để được giảm giá phí hội viên tháng."
+    "requirementsEn": "Mang theo thẻ học sinh/sinh viên khi đăng ký gói tập trực tiếp tại các cơ sở của The New Gym để được giảm giá phí hội viên tháng."
   },
   {
     "id": "b234",
@@ -4678,7 +4678,7 @@ export const BENEFITS_DATA = [
     "titleEn": "Generator Hostels Student Discount",
     "valueEn": "Discount 10% khi đặt phòng trực tiếp",
     "descriptionEn": "Chuỗi nhà nghỉ (hostel) mang phong cách thiết kế nghệ thuật cao cấp tại các thành phố lớn tại Âu Mỹ.",
-    "requirementsEn": "Nhập mã thẻ ISIC và thông tin Verify with khi tiến hành đặt phòng trên staygenerator.com."
+    "requirementsEn": "Nhập mã thẻ ISIC và thông tin xác thực khi tiến hành đặt phòng trên staygenerator.com."
   },
   {
     "id": "b235",
@@ -4698,7 +4698,7 @@ export const BENEFITS_DATA = [
     "titleEn": "National Express Student Discount",
     "valueEn": "Off từ 10% - 20% giá vé xe khách liên tỉnh",
     "descriptionEn": "Hãng xe khách đường dài lớn nhất Vương Quốc Anh kết nối các thành phố lớn và sân bay tiện lợi.",
-    "requirementsEn": "Verify with thông qua tài khoản UNiDAYS, Student Beans or TOTUM khi tiến hành đặt vé online."
+    "requirementsEn": "Verify thông qua tài khoản UNiDAYS, Student Beans hoặc TOTUM khi tiến hành đặt vé online."
   },
   {
     "id": "b236",
@@ -4716,9 +4716,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "CleanMyMac Education Discount",
-    "valueEn": "Discount 30% License phần mềm tối ưu",
+    "valueEn": "Discount 30% bản quyền phần mềm tối ưu",
     "descriptionEn": "Công cụ dọn dẹp hệ thống, tối ưu hóa bộ nhớ và bảo vệ macOS khỏi phần mềm độc hại chính hãng MacPaw.",
-    "requirementsEn": "Verify with email sinh viên đuôi trường học or gửi thư trực tiếp cho education@macpaw.com."
+    "requirementsEn": "Verify email sinh viên đuôi trường học hoặc gửi thư trực tiếp cho education@macpaw.com."
   },
   {
     "id": "b237",
@@ -4737,8 +4737,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "H&M Student Offer",
     "valueEn": "Discount 10% đơn hàng online",
-    "descriptionEn": "Hãng thời trang Thụy Điển H&M discount 10% trực tiếp trên hóa đơn mua sắm trực tuyến cho các sản phẩm nguyên giá.",
-    "requirementsEn": "Verify with tài khoản học sinh sinh viên qua UNiDAYS or Student Beans để lấy mã."
+    "descriptionEn": "Hãng thời trang Thụy Điển H&M giảm giá 10% trực tiếp trên hóa đơn mua sắm trực tuyến cho các sản phẩm nguyên giá.",
+    "requirementsEn": "Verify tài khoản học sinh sinh viên qua UNiDAYS hoặc Student Beans để lấy mã."
   },
   {
     "id": "b238",
@@ -4757,7 +4757,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Gymshark Student Discount",
     "valueEn": "Discount 10% đồ thể thao gym",
-    "descriptionEn": "Thương hiệu đồ thể thao Gymshark discount 10% for students trang bị quần áo tập luyện thể thao chất lượng cao.",
+    "descriptionEn": "Thương hiệu đồ thể thao Gymshark giảm giá 10% cho sinh viên trang bị quần áo tập luyện thể thao chất lượng cao.",
     "requirementsEn": "Đăng nhập và xác minh trạng thái sinh viên qua hệ thống Student Beans."
   },
   {
@@ -4777,8 +4777,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Crocs Student Discount",
     "valueEn": "Discount 15%–20% giày Crocs",
-    "descriptionEn": "Thương hiệu dép Crocs discount for students khi mua các dòng sản phẩm giày dép clog nhựa và sticker Jibbitz trực tuyến.",
-    "requirementsEn": "Xác minh thông tin học sinh sinh viên qua UNiDAYS, Student Beans or ID.me."
+    "descriptionEn": "Thương hiệu dép Crocs giảm giá cho sinh viên khi mua các dòng sản phẩm giày dép clog nhựa và sticker Jibbitz trực tuyến.",
+    "requirementsEn": "Xác minh thông tin học sinh sinh viên qua UNiDAYS, Student Beans hoặc ID.me."
   },
   {
     "id": "b240",
@@ -4797,7 +4797,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Beta Cinemas (Vietnam)",
     "valueEn": "Vé xem phim đồng giá từ 40,000 VND",
-    "descriptionEn": "Chương trình special deal vé xem phim 2D/3D đồng giá cực rẻ tailored for students, students dưới 22 tuổi tại tất cả các cụm rạp Beta Cinemas trên toàn quốc.",
+    "descriptionEn": "Chương trình ưu đãi vé xem phim 2D/3D đồng giá cực rẻ dành riêng cho học sinh, sinh viên dưới 22 tuổi tại tất cả các cụm rạp Beta Cinemas trên toàn quốc.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên kèm CCCD tại quầy vé Beta Cinemas để mua vé xem phim đồng giá U22 (áp dụng cả ngày thường)."
   },
   {
@@ -4817,7 +4817,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "BHD Star Cineplex (Vietnam)",
     "valueEn": "Vé U22 từ 48,000 VND",
-    "descriptionEn": "special deal giá vé xem phim đặc biệt for thành viên U22 (dưới 22 tuổi) áp dụng cho các suất chiếu hàng ngày.",
+    "descriptionEn": "Ưu đãi giá vé xem phim đặc biệt dành cho thành viên U22 (dưới 22 tuổi) áp dụng cho các suất chiếu hàng ngày.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên chính chủ tại quầy vé BHD Star để nhận ưu đãi giá vé xem phim thành viên U22."
   },
   {
@@ -4837,7 +4837,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Galaxy Cinema (Vietnam)",
     "valueEn": "Vé U22 đồng giá từ 45,000 VND",
-    "descriptionEn": "Áp dụng giá vé U22 special deal cho students, students từ 13 đến 22 tuổi vào các ngày trong tuần (Thứ 2, Thứ 4, Thứ 5).",
+    "descriptionEn": "Áp dụng giá vé U22 ưu đãi cho học sinh, sinh viên từ 13 đến 22 tuổi vào các ngày trong tuần (Thứ 2, Thứ 4, Thứ 5).",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên tại quầy vé Galaxy Cinema để áp dụng chương trình ưu đãi giá vé xem phim đồng giá U22."
   },
   {
@@ -4856,9 +4856,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Keeper Security Student",
-    "valueEn": "Off 50% dịch vụ lưu trữ mật khẩu Unlimited",
-    "descriptionEn": "Trình quản lý mật khẩu an toàn và mã hóa dữ liệu cá nhân hàng đầu thế giới for students.",
-    "requirementsEn": "Verify with thông qua cổng đối tác Student Beans."
+    "valueEn": "50% Off dịch vụ lưu trữ mật khẩu Unlimited",
+    "descriptionEn": "Trình quản lý mật khẩu an toàn và mã hóa dữ liệu cá nhân hàng đầu thế giới dành cho sinh viên.",
+    "requirementsEn": "Verify thông qua cổng đối tác Student Beans."
   },
   {
     "id": "b244",
@@ -4877,8 +4877,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "IIG Việt Nam TOEIC/TOEFL Registration",
     "valueEn": "Off lệ phí thi & Tiết kiệm đến 450K",
-    "descriptionEn": "special deal lệ phí thi chứng chỉ tiếng Anh quốc tế TOEIC và TOEFL ITP tailored for students hệ chính quy.",
-    "requirementsEn": "Register with dự thi TOEIC/TOEFL trực tuyến qua website IIG và tải lên student ID còn hiệu lực để được áp dụng lệ phí thi ưu đãi cho sinh viên."
+    "descriptionEn": "Ưu đãi lệ phí thi chứng chỉ tiếng Anh quốc tế TOEIC và TOEFL ITP dành riêng cho sinh viên hệ chính quy.",
+    "requirementsEn": "Register dự thi TOEIC/TOEFL trực tuyến qua website IIG và tải lên thẻ sinh viên còn hiệu lực để được áp dụng lệ phí thi ưu đãi cho sinh viên."
   },
   {
     "id": "b245",
@@ -4896,9 +4896,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Ulysses writing app",
-    "valueEn": "Gói Student Special Deal đặc biệt $10.99/6 tháng",
+    "valueEn": "Gói sinh viên ưu đãi đặc biệt $10.99/6 tháng",
     "descriptionEn": "Ứng dụng viết văn, ghi chép và soạn thảo tài liệu khoa học tinh gọn, tập trung cao cho hệ sinh thái Apple.",
-    "requirementsEn": "Verify with physical student ID card or giấy tờ học tập trực tiếp từ giao diện ứng dụng."
+    "requirementsEn": "Verify thẻ sinh viên cứng hoặc giấy tờ học tập trực tiếp từ giao diện ứng dụng."
   },
   {
     "id": "b246",
@@ -4917,8 +4917,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Vans Student Discount",
     "valueEn": "Discount 10%–15% giày Vans",
-    "descriptionEn": "Thương hiệu giày Vans discount trực tuyến for students mua sắm giày sneaker trượt ván và balo học tập.",
-    "requirementsEn": "Xác minh trạng thái sinh viên qua SheerID (US) or UNiDAYS/Student Beans (UK/Global)."
+    "descriptionEn": "Thương hiệu giày Vans giảm giá trực tuyến cho sinh viên mua sắm giày sneaker trượt ván và balo học tập.",
+    "requirementsEn": "Xác minh trạng thái sinh viên qua SheerID (US) hoặc UNiDAYS/Student Beans (UK/Global)."
   },
   {
     "id": "b247",
@@ -4937,8 +4937,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Champion Student Discount",
     "valueEn": "Discount 10%–20% quần áo",
-    "descriptionEn": "Thương hiệu thời trang thể thao Champion discount for students khi mua sắm các mẫu áo hoodie, áo phông online.",
-    "requirementsEn": "Xác minh tư cách sinh viên thông qua UNiDAYS, Student Beans or ID.me."
+    "descriptionEn": "Thương hiệu thời trang thể thao Champion giảm giá cho sinh viên khi mua sắm các mẫu áo hoodie, áo phông online.",
+    "requirementsEn": "Xác minh tư cách sinh viên thông qua UNiDAYS, Student Beans hoặc ID.me."
   },
   {
     "id": "b248",
@@ -4957,7 +4957,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Cake by VPBank Student Card",
     "valueEn": "Free Cake Mastercard & Cashback",
-    "descriptionEn": "Ngân hàng số free phát hành và duy trì thẻ, liên kết sâu với Be Group hoàn tiền di chuyển và mua sắm online for students.",
+    "descriptionEn": "Ngân hàng số miễn phí phát hành và duy trì thẻ, liên kết sâu với Be Group hoàn tiền di chuyển và mua sắm online cho sinh viên.",
     "requirementsEn": "Tải ứng dụng Cake by VPBank, thực hiện mở tài khoản trực tuyến (eKYC) bằng CCCD và chọn loại tài khoản/thẻ liên kết dành cho sinh viên."
   },
   {
@@ -4976,8 +4976,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "AeroPress Coffee Student",
-    "valueEn": "Discount 10% Cho Máy Pha Cafe",
-    "descriptionEn": "Nhận special deal 10% để tự chuẩn bị những ly cafe Aeropress sạch và đậm vị ngay tại ký túc xá.",
+    "valueEn": "Off Giá 10% Cho Máy Pha Cafe",
+    "descriptionEn": "Nhận ưu đãi 10% để tự chuẩn bị những ly cafe Aeropress sạch và đậm vị ngay tại ký túc xá.",
     "requirementsEn": "Xác minh tư cách học sinh sinh viên qua dịch vụ đối tác."
   },
   {
@@ -4996,9 +4996,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Namecheap NC.ME (Namecheap for Education)",
-    "valueEn": "Free tên miền .me trong 1 năm & SSL",
-    "descriptionEn": "Chương trình NC.ME cung cấp free một tên miền .me trong vòng 1 năm và chứng chỉ bảo mật SSL free for students để phát triển thương hiệu cá nhân hoặc làm blog, portfolio.",
-    "requirementsEn": "Register with trực tiếp bằng university email (.edu) (.edu) or kết nối qua GitHub Student Developer Pack."
+    "valueEn": "Miễn phí tên miền .me trong 1 năm & SSL",
+    "descriptionEn": "Chương trình NC.ME cung cấp miễn phí một tên miền .me trong vòng 1 năm và chứng chỉ bảo mật SSL miễn phí cho sinh viên để phát triển thương hiệu cá nhân hoặc làm blog, portfolio.",
+    "requirementsEn": "Register trực tiếp bằng email trường (.edu) hoặc kết nối qua GitHub Student Developer Pack."
   },
   {
     "id": "b251",
@@ -5016,9 +5016,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "RapidAPI Client (formerly Paw)",
-    "valueEn": "Off 30% License cá nhân",
+    "valueEn": "30% Off bản quyền cá nhân",
     "descriptionEn": "Công cụ thiết kế, kiểm thử và tương tác API REST/GraphQL chuyên nghiệp và trực quan trên hệ điều hành macOS.",
-    "requirementsEn": "Register with trực tuyến và tải lên minh chứng Register with học tập or student ID."
+    "requirementsEn": "Register trực tuyến và tải lên minh chứng đăng ký học tập hoặc thẻ sinh viên."
   },
   {
     "id": "b252",
@@ -5037,7 +5037,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Popeyes Vietnam Student Combo",
     "valueEn": "Combo Siêu No từ 89K",
-    "descriptionEn": "Combo gà rán/burger kèm nước ngọt cùng special deal Mua 1 Tặng 1 for students đặt online hoặc tại cửa hàng vào Thứ 4 hàng tuần.",
+    "descriptionEn": "Combo gà rán/burger kèm nước ngọt cùng ưu đãi Mua 1 Tặng 1 dành cho sinh viên đặt online hoặc tại cửa hàng vào Thứ 4 hàng tuần.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên còn hiệu lực tại quầy thu ngân của Popeyes khi đặt hàng để áp dụng combo gà rán sinh viên giá rẻ."
   },
   {
@@ -5056,9 +5056,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "iMazing Education Program",
-    "valueEn": "Discount 30% License phần mềm",
+    "valueEn": "Discount 30% bản quyền phần mềm",
     "descriptionEn": "Công cụ quản lý thiết bị iOS (iPhone, iPad) chuyên nghiệp thay thế iTunes, hỗ trợ sao lưu, chuyển dữ liệu và quản lý file tối ưu.",
-    "requirementsEn": "Verify with học sinh qua cổng SheerID, Student Beans or UNiDAYS trực tiếp tại trang cửa hàng."
+    "requirementsEn": "Verify học sinh qua cổng SheerID, Student Beans hoặc UNiDAYS trực tiếp tại trang cửa hàng."
   },
   {
     "id": "b254",
@@ -5076,8 +5076,8 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Name.com Education Domain Program",
-    "valueEn": "Free đăng ký tên miền 1 năm & SSL Free",
-    "descriptionEn": "Name.com hợp tác với GitHub Education cung cấp for students một tên miền free trong 1 năm đầu tiên (như .live, .studio, .software, .rocks, .ninja) đi kèm chứng chỉ bảo mật SSL free.",
+    "valueEn": "Miễn phí đăng ký tên miền 1 năm & SSL miễn phí",
+    "descriptionEn": "Name.com hợp tác với GitHub Education cung cấp cho sinh viên một tên miền miễn phí trong 1 năm đầu tiên (như .live, .studio, .software, .rocks, .ninja) đi kèm chứng chỉ bảo mật SSL miễn phí.",
     "requirementsEn": "Đăng nhập bằng tài khoản GitHub học sinh/sinh viên đã được phê duyệt trong GitHub Student Developer Pack."
   },
   {
@@ -5096,7 +5096,7 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Morgen Calendar Pro Discount",
-    "valueEn": "Off 25% trọn đời gói Morgen Pro",
+    "valueEn": "25% Off trọn đời gói Morgen Pro",
     "descriptionEn": "Công cụ tổng hợp lịch trình từ nhiều nguồn lịch, hỗ trợ time-blocking và quản lý công việc học tập hiệu quả.",
     "requirementsEn": "Liên hệ đội ngũ hỗ trợ của Morgen bằng email đuôi trường học để được áp dụng mã giảm giá."
   },
@@ -5116,7 +5116,7 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "CleanMyMac X Student Discount",
-    "valueEn": "Discount 30% License Tiêu Chuẩn",
+    "valueEn": "Off Giá 30% Bản Quyền Tiêu Chuẩn",
     "descriptionEn": "Công cụ tối ưu hóa, dọn dẹp hệ thống và bảo mật tốt nhất cho hệ điều hành macOS của hãng MacPaw giúp máy tính chạy mượt mà.",
     "requirementsEn": "Gửi địa chỉ email sinh viên (.edu) qua trang ưu đãi của MacPaw để nhận mã giảm giá 30% trực tiếp."
   },
@@ -5137,7 +5137,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Texas Chicken Student Deal",
     "valueEn": "Combo 45K & Refill nước ngọt",
-    "descriptionEn": "Combo gà rán giòn rụm với đặc quyền uống refill nước ngọt không giới hạn, rất được students ưa chuộng.",
+    "descriptionEn": "Combo gà rán giòn rụm với đặc quyền uống refill nước ngọt không giới hạn, rất được sinh viên ưa chuộng.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên khi mua hàng trực tiếp tại quầy thanh toán của Texas Chicken để nhận ưu đãi giảm giá combo gà rán."
   },
   {
@@ -5157,8 +5157,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "MobiFone MA30 Education Pack",
     "valueEn": "Free VIP mobiEdu & mobiStudy",
-    "descriptionEn": "Gói cước giáo dục tặng account VIP học tập trên cổng mobiEdu/mobiStudy và 100% free data khi truy cập học trực tuyến trên các nền tảng này.",
-    "requirementsEn": "Register with gói cước trực tuyến trên trang mobiedu.vn or qua tin nhắn điện thoại bằng tài khoản thuê bao học sinh/sinh viên."
+    "descriptionEn": "Gói cước giáo dục tặng tài khoản VIP học tập trên cổng mobiEdu/mobiStudy và miễn phí 100% data khi truy cập học trực tuyến trên các nền tảng này.",
+    "requirementsEn": "Register gói cước trực tuyến trên trang mobiedu.vn hoặc qua tin nhắn điện thoại bằng tài khoản thuê bao học sinh/sinh viên."
   },
   {
     "id": "b259",
@@ -5177,8 +5177,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "TNEX Digital Bank Student",
     "valueEn": "5 Không trọn đời & Quản lý chi tiêu",
-    "descriptionEn": "Ngân hàng số bảo trợ bởi MSB 100% free trọn đời (không phí chuyển tiền, rút tiền, thường niên, duy trì, ẩn) kèm công cụ quản lý chi tiêu.",
-    "requirementsEn": "Register with mở tài khoản ngân hàng số TNEX trực tiếp trên app điện thoại bằng CCCD và chọn gói ưu đãi thẻ dành cho sinh viên."
+    "descriptionEn": "Ngân hàng số bảo trợ bởi MSB miễn phí 100% trọn đời (không phí chuyển tiền, rút tiền, thường niên, duy trì, ẩn) kèm công cụ quản lý chi tiêu.",
+    "requirementsEn": "Register mở tài khoản ngân hàng số TNEX trực tiếp trên app điện thoại bằng CCCD và chọn gói ưu đãi thẻ dành cho sinh viên."
   },
   {
     "id": "b260",
@@ -5197,7 +5197,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Timo Digital Bank Spend Pots",
     "valueEn": "Free Debit Card & Hũ chi tiêu",
-    "descriptionEn": "Ngân hàng số free chuyển tiền và rút tiền tại tất cả ATM toàn quốc, hỗ trợ tính năng chia tiền Hũ chi tiêu quản lý tài chính.",
+    "descriptionEn": "Ngân hàng số miễn phí chuyển tiền và rút tiền tại tất cả ATM toàn quốc, hỗ trợ tính năng chia tiền Hũ chi tiêu quản lý tài chính.",
     "requirementsEn": "Mở tài khoản Timo trực tuyến qua app bằng CCCD (eKYC) và nhận thẻ Timo ATM miễn phí ship để tham gia các ưu đãi chiết khấu học tập."
   },
   {
@@ -5217,8 +5217,8 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Medium Student Membership",
     "valueEn": "Discount 25% gói Monthly/Annual",
-    "descriptionEn": "Nền tảng chia sẻ kiến thức, bài viết chuyên sâu về công nghệ, thiết kế và khoa học discount 25% phí thành viên for students.",
-    "requirementsEn": "Register with và Verify with tài khoản thông qua cổng liên kết UNiDAYS."
+    "descriptionEn": "Nền tảng chia sẻ kiến thức, bài viết chuyên sâu về công nghệ, thiết kế và khoa học giảm giá 25% phí thành viên cho sinh viên.",
+    "requirementsEn": "Register và xác thực tài khoản thông qua cổng liên kết UNiDAYS."
   },
   {
     "id": "b262",
@@ -5236,9 +5236,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Shopee Sinh Viên (Shopee Student Club)",
-    "valueEn": "Free 12 Tháng Gói Shopee VIP",
-    "descriptionEn": "Gói hội viên độc quyền for students giúp nhận voucher freeship hằng ngày, discount độc quyền 9/9, 11/11 và Canva Pro free 3 tháng.",
-    "requirementsEn": "Verify with bằng university email (.edu) học (.edu.vn) và nhập mã OTP trực tiếp trên trang chủ Shopee Sinh Viên tại ứng dụng Shopee di động."
+    "valueEn": "Miễn Phí 12 Tháng Gói Shopee VIP",
+    "descriptionEn": "Gói hội viên độc quyền cho học sinh sinh viên giúp nhận voucher freeship hằng ngày, giảm giá độc quyền 9/9, 11/11 và Canva Pro miễn phí 3 tháng.",
+    "requirementsEn": "Verify bằng email trường học (.edu.vn) và nhập mã OTP trực tiếp trên trang chủ Shopee Sinh Viên tại ứng dụng Shopee di động."
   },
   {
     "id": "b263",
@@ -5256,9 +5256,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "AlgoExpert Discount",
-    "valueEn": "Off 10% + Luyện tập 20 câu hỏi free",
+    "valueEn": "10% Off + Luyện tập 20 câu hỏi free",
     "descriptionEn": "Nền tảng luyện thi thuật toán, thiết kế hệ thống và phỏng vấn lập trình viên hàng đầu hiện nay.",
-    "requirementsEn": "Verify with thông qua cổng kết nối GitHub Student Developer Pack."
+    "requirementsEn": "Verify thông qua cổng kết nối GitHub Student Developer Pack."
   },
   {
     "id": "b264",
@@ -5276,9 +5276,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": false,
     "titleEn": "Mockplus for Students",
-    "valueEn": "Free 1 tháng gói Pro cao cấp",
+    "valueEn": "Miễn phí 1 tháng gói Pro cao cấp",
     "descriptionEn": "Nền tảng thiết kế giao diện UI/UX và cộng tác trực tuyến cho các nhà thiết kế và lập trình viên.",
-    "requirementsEn": "Điền thông tin vào mẫu Register with chương trình giáo dục Mockplus bằng email giáo dục."
+    "requirementsEn": "Điền thông tin vào mẫu đăng ký chương trình giáo dục Mockplus bằng email giáo dục."
   },
   {
     "id": "b265",
@@ -5317,7 +5317,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Lotteria Việt Nam Combo HSSV",
     "valueEn": "Off 20-30% cho set ăn",
-    "descriptionEn": "Set combo đặc quyền gồm burger/gà rán + khoai tây + nước ngọt với mức giá giảm hấp dẫn for students.",
+    "descriptionEn": "Set combo đặc quyền gồm burger/gà rán + khoai tây + nước ngọt với mức giá giảm hấp dẫn cho sinh viên.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên tại quầy thu ngân của Lotteria để mua các combo gà rán HSSV đồng giá siêu tiết kiệm."
   },
   {
@@ -5336,9 +5336,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "TickTick Task Manager",
-    "valueEn": "Off 25% Gói Premium Năm",
+    "valueEn": "25% Off Gói Premium Năm",
     "descriptionEn": "Ứng dụng quản lý công việc và lịch trình học tập (To-do list), tích hợp đồng hồ cà chua (Pomodoro) và theo dõi thói quen.",
-    "requirementsEn": "Register with qua trang TickTick Education bằng university email (.edu) học."
+    "requirementsEn": "Register qua trang TickTick Education bằng email trường học."
   },
   {
     "id": "b268",
@@ -5356,9 +5356,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Bear App Markdown Notes",
-    "valueEn": "Discount 30% Gói Bear Pro",
-    "descriptionEn": "Ứng dụng ghi chú tối giản, đẹp mắt đạt giải thưởng thiết kế của Apple for macOS và iOS, hỗ trợ định dạng Markdown.",
-    "requirementsEn": "Liên hệ bộ phận hỗ trợ khách hàng của Bear và cung cấp university email (.edu) or student ID."
+    "valueEn": "Off Giá 30% Gói Bear Pro",
+    "descriptionEn": "Ứng dụng ghi chú tối giản, đẹp mắt đạt giải thưởng thiết kế của Apple dành cho macOS và iOS, hỗ trợ định dạng Markdown.",
+    "requirementsEn": "Liên hệ bộ phận hỗ trợ khách hàng của Bear và cung cấp university email (.edu) hoặc thẻ sinh viên."
   },
   {
     "id": "b269",
@@ -5378,7 +5378,7 @@ export const BENEFITS_DATA = [
     "titleEn": "Surfshark Student Discount",
     "valueEn": "Off thêm 15% trên các gói khuyến mãi",
     "descriptionEn": "Dịch vụ VPN bảo mật mạnh mẽ hỗ trợ số lượng thiết bị kết nối không giới hạn cùng tính năng chặn quảng cáo thông minh.",
-    "requirementsEn": "Đăng nhập và Verify with tài khoản qua cổng Student Beans."
+    "requirementsEn": "Đăng nhập và xác thực tài khoản qua cổng Student Beans."
   },
   {
     "id": "b270",
@@ -5456,8 +5456,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Đầm Sen Cultural Park Discount",
-    "valueEn": "Off 50% giá vé trọn gói",
-    "descriptionEn": "discount vé trọn gói vui chơi giải trí tại Đầm Sen Khô hoặc Đầm Sen Nước vào dịp hè và tựu trường.",
+    "valueEn": "50% Off giá vé trọn gói",
+    "descriptionEn": "Discount vé trọn gói vui chơi giải trí tại Đầm Sen Khô hoặc Đầm Sen Nước vào dịp hè và tựu trường.",
     "requirementsEn": "Mua vé vào cổng trực tiếp tại quầy vé Công viên nước Đầm Sen và xuất trình thẻ học sinh/sinh viên chính chủ để được giảm giá vé."
   },
   {
@@ -5476,8 +5476,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Suối Tiên Theme Park Offer",
-    "valueEn": "Vé trọn gói Student từ 180K",
-    "descriptionEn": "special deal giá vé vào cổng và tham gia các trò chơi giải trí tại khu du lịch văn hóa Suối Tiên TP.HCM.",
+    "valueEn": "Vé trọn gói sinh viên từ 180K",
+    "descriptionEn": "Ưu đãi giá vé vào cổng và tham gia các trò chơi giải trí tại khu du lịch văn hóa Suối Tiên TP.HCM.",
     "requirementsEn": "Mua vé vào cổng trực tiếp tại quầy vé Khu du lịch Suối Tiên và xuất trình thẻ học sinh/sinh viên còn hạn để nhận ưu đãi giảm giá vé."
   },
   {
@@ -5497,7 +5497,7 @@ export const BENEFITS_DATA = [
     "isHot": false,
     "titleEn": "Goodnotes 6 Student Plan",
     "valueEn": "Discount 10% gói thuê bao năm",
-    "descriptionEn": "Ứng dụng ghi chú viết tay kỹ thuật số nổi tiếng trên iOS/iPadOS discount 10% cho gói thuê bao năm Goodnotes 6.",
+    "descriptionEn": "Ứng dụng ghi chú viết tay kỹ thuật số nổi tiếng trên iOS/iPadOS giảm giá 10% cho gói thuê bao năm Goodnotes 6.",
     "requirementsEn": "Xác minh trạng thái học sinh sinh viên thông qua cổng Student Beans."
   },
   {
@@ -5516,8 +5516,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Dinh Độc Lập Student Ticket",
-    "valueEn": "Off 50% giá vé (chỉ 20K)",
-    "descriptionEn": "special deal giảm một nửa giá vé vào cổng tham quan di tích lịch sử Dinh Độc Lập nổi tiếng tại trung tâm Quận 1, TP.HCM.",
+    "valueEn": "50% Off giá vé (chỉ 20K)",
+    "descriptionEn": "Ưu đãi giảm một nửa giá vé vào cổng tham quan di tích lịch sử Dinh Độc Lập nổi tiếng tại trung tâm Quận 1, TP.HCM.",
     "requirementsEn": "Mua vé tham quan trực tiếp tại quầy bán vé của Dinh Độc Lập và xuất trình thẻ học sinh/sinh viên để giảm 50% giá vé vào cổng."
   },
   {
@@ -5536,8 +5536,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "War Remnants Museum Ticket",
-    "valueEn": "Off 50% giá vé (chỉ 20K)",
-    "descriptionEn": "Giảm một nửa giá vé vào cổng tham quan Bảo tàng Chứng tích Chiến tranh tại TP.HCM for students.",
+    "valueEn": "50% Off giá vé (chỉ 20K)",
+    "descriptionEn": "Off một nửa giá vé vào cổng tham quan Bảo tàng Chứng tích Chiến tranh tại TP.HCM cho sinh viên.",
     "requirementsEn": "Mua vé vào cổng trực tiếp tại quầy vé và xuất trình thẻ học sinh/sinh viên để được áp dụng mức giảm giá vé tham quan theo quy định."
   },
   {
@@ -5556,9 +5556,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Vietnam National Museum of Fine Arts",
-    "valueEn": "Off 50% giá vé (chỉ 20K)",
-    "descriptionEn": "Giảm 50% vé vào cửa tham quan di sản mỹ thuật tại Bảo tàng Mỹ thuật Việt Nam ở Hà Nội.",
-    "requirementsEn": "Mua vé tham quan trực tiếp tại quầy vé Bảo tàng Mỹ thuật Việt Nam và xuất trình student ID để nhận mức giảm giá vé."
+    "valueEn": "50% Off giá vé (chỉ 20K)",
+    "descriptionEn": "Off 50% vé vào cửa tham quan di sản mỹ thuật tại Bảo tàng Mỹ thuật Việt Nam ở Hà Nội.",
+    "requirementsEn": "Mua vé tham quan trực tiếp tại quầy vé Bảo tàng Mỹ thuật Việt Nam và xuất trình thẻ sinh viên để nhận mức giảm giá vé."
   },
   {
     "id": "b279",
@@ -5576,8 +5576,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Bảo tàng Dân tộc học Ticket",
-    "valueEn": "Off 50% giá vé (chỉ 20K)",
-    "descriptionEn": "Giảm 50% giá vé vào cổng tham quan khám phá văn hóa các dân tộc tại Bảo tàng Dân tộc học ở Hà Nội.",
+    "valueEn": "50% Off giá vé (chỉ 20K)",
+    "descriptionEn": "Off 50% giá vé vào cổng tham quan khám phá văn hóa các dân tộc tại Bảo tàng Dân tộc học ở Hà Nội.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên tại quầy bán vé của Bảo tàng Dân tộc học Việt Nam để mua vé tham quan với giá ưu đãi."
   },
   {
@@ -5596,8 +5596,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Bảo tàng Phụ nữ Việt Nam Ticket",
-    "valueEn": "Off 50% giá vé (chỉ 20K)",
-    "descriptionEn": "Giảm một nửa giá vé vào cửa tham quan Bảo tàng Phụ nữ Việt Nam tại Hà Nội.",
+    "valueEn": "50% Off giá vé (chỉ 20K)",
+    "descriptionEn": "Off một nửa giá vé vào cửa tham quan Bảo tàng Phụ nữ Việt Nam tại Hà Nội.",
     "requirementsEn": "Mua vé trực tiếp tại quầy vé Bảo tàng Phụ nữ Việt Nam và xuất trình thẻ học sinh/sinh viên để nhận chiết khấu giảm giá vé."
   },
   {
@@ -5616,8 +5616,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Văn Miếu Quốc Tử Giám Ticket",
-    "valueEn": "Off 50% giá vé (chỉ 15K)",
-    "descriptionEn": "Giảm một nửa giá vé vào cổng tham quan quần thể di tích Văn Miếu Quốc Tử Giám ở Hà Nội.",
+    "valueEn": "50% Off giá vé (chỉ 15K)",
+    "descriptionEn": "Off một nửa giá vé vào cổng tham quan quần thể di tích Văn Miếu Quốc Tử Giám ở Hà Nội.",
     "requirementsEn": "Xuất trình thẻ học sinh/sinh viên và CCCD trực tiếp tại quầy bán vé của di tích Văn Miếu Quốc Tử Giám để được giảm 50% giá vé vào cổng."
   },
   {
@@ -5636,8 +5636,8 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Hoàng thành Thăng Long Ticket",
-    "valueEn": "Off 50% giá vé (chỉ 15K)",
-    "descriptionEn": "Giảm 50% giá vé vào cổng tham quan khu di sản văn hóa thế giới Hoàng thành Thăng Long tại Hà Nội.",
+    "valueEn": "50% Off giá vé (chỉ 15K)",
+    "descriptionEn": "Off 50% giá vé vào cổng tham quan khu di sản văn hóa thế giới Hoàng thành Thăng Long tại Hà Nội.",
     "requirementsEn": "Mua vé tham quan trực tiếp tại quầy bán vé khu di sản Hoàng thành Thăng Long và xuất trình thẻ học sinh/sinh viên để được giảm 50% giá vé."
   },
   {
@@ -5657,8 +5657,8 @@ export const BENEFITS_DATA = [
     "isHot": true,
     "titleEn": "Apple Back to School 2026 — Việt Nam",
     "valueEn": "Tặng kèm bộ 4 AirTag (2nd gen) khi mua Mac/iPad",
-    "descriptionEn": "Chương trình Back to School 2026 vừa ra mắt tại Việt Nam từ 16/7/2026. Khi mua MacBook Air, MacBook Pro, iPad Air hoặc iPad Pro qua Apple Education Store, students được tặng kèm bộ 4 AirTag thế hệ 2 (trị giá ~1.6 triệu VNĐ) completely free. special deal chạy đến 27/8/2026.",
-    "requirementsEn": "Mua qua Apple Education Store bằng địa chỉ email đại học or Verify with qua UNiDAYS. Áp dụng cho sinh viên, phụ huynh mua cho con và giảng viên đang dạy học. Chương trình kết thúc 27/8/2026."
+    "descriptionEn": "Chương trình Back to School 2026 vừa ra mắt tại Việt Nam từ 16/7/2026. Khi mua MacBook Air, MacBook Pro, iPad Air hoặc iPad Pro qua Apple Education Store, sinh viên được tặng kèm bộ 4 AirTag thế hệ 2 (trị giá ~1.6 triệu VNĐ) hoàn toàn miễn phí. Ưu đãi chạy đến 27/8/2026.",
+    "requirementsEn": "Mua qua Apple Education Store bằng địa chỉ email đại học hoặc xác thực qua UNiDAYS. Áp dụng cho sinh viên, phụ huynh mua cho con và giảng viên đang dạy học. Chương trình kết thúc 27/8/2026."
   },
   {
     "id": "b284",
@@ -5676,9 +5676,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": true,
     "titleEn": "Notion AI Add-on for Students",
-    "valueEn": "Off 50% phí Notion AI (add-on riêng)",
-    "descriptionEn": "Ngoài gói Notion Plus free (đã có trong dữ liệu), students còn được giảm thêm 50% phí tính năng Notion AI — trợ lý viết lách, tóm tắt tài liệu và brainstorm tích hợp sẵn trong workspace. Đây là add-on tính phí riêng chưa bao gồm trong gói Plus.",
-    "requirementsEn": "Verify with university email (.edu) học (.edu) qua trang Notion for Education để kích hoạt miễn phí Notion Plus. Sau đó mua add-on Notion AI trong settings workspace để hưởng giảm giá 50%."
+    "valueEn": "50% Off phí Notion AI (add-on riêng)",
+    "descriptionEn": "Ngoài gói Notion Plus miễn phí (đã có trong dữ liệu), sinh viên còn được giảm thêm 50% phí tính năng Notion AI — trợ lý viết lách, tóm tắt tài liệu và brainstorm tích hợp sẵn trong workspace. Đây là add-on tính phí riêng chưa bao gồm trong gói Plus.",
+    "requirementsEn": "Verify email trường học (.edu) qua trang Notion for Education để kích hoạt miễn phí Notion Plus. Sau đó mua add-on Notion AI trong settings workspace để hưởng giảm giá 50%."
   },
   {
     "id": "b285",
@@ -5697,8 +5697,8 @@ export const BENEFITS_DATA = [
     "isHot": true,
     "titleEn": "Grammarly Pro Student Discount",
     "valueEn": "Off 25–40% gói Grammarly Pro năm",
-    "descriptionEn": "Công cụ kiểm tra ngữ pháp, sửa văn phong và hỗ trợ viết học thuật dùng AI hàng đầu thế giới. students được giảm 25% qua UNiDAYS, 20% qua Student Beans hoặc tới 40% qua SheerID. Một số trường có license free cho toàn trường.",
-    "requirementsEn": "Verify with tài khoản UNiDAYS or Student Beans bằng student ID để nhận mã giảm giá. Ngoài ra có thể Verify with qua SheerID (support.grammarly.com) để nhận ưu đãi 40%."
+    "descriptionEn": "Công cụ kiểm tra ngữ pháp, sửa văn phong và hỗ trợ viết học thuật dùng AI hàng đầu thế giới. Sinh viên được giảm 25% qua UNiDAYS, 20% qua Student Beans hoặc tới 40% qua SheerID. Một số trường có license miễn phí cho toàn trường.",
+    "requirementsEn": "Verify tài khoản UNiDAYS hoặc Student Beans bằng thẻ sinh viên để nhận mã giảm giá. Ngoài ra có thể xác thực qua SheerID (support.grammarly.com) để nhận ưu đãi 40%."
   },
   {
     "id": "b286",
@@ -5716,9 +5716,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": true,
     "titleEn": "QuillBot Writing Suite Student",
-    "valueEn": "Off 25% gói Premium hàng năm",
-    "descriptionEn": "Nền tảng viết học thuật 7-in-1 gồm paraphrase AI, kiểm tra ngữ pháp, tóm tắt văn bản, tạo trích dẫn tự động và ghi chú nghiên cứu — được hàng triệu students trên thế giới tin dùng để viết luận và bài báo.",
-    "requirementsEn": "Verify with tài khoản UNiDAYS bằng student ID tại trang UNiDAYS đối tác QuillBot để lấy mã giảm 25%. Áp dụng cho gói Premium hàng năm và gói 6 tháng."
+    "valueEn": "25% Off gói Premium hàng năm",
+    "descriptionEn": "Nền tảng viết học thuật 7-in-1 gồm paraphrase AI, kiểm tra ngữ pháp, tóm tắt văn bản, tạo trích dẫn tự động và ghi chú nghiên cứu — được hàng triệu sinh viên trên thế giới tin dùng để viết luận và bài báo.",
+    "requirementsEn": "Verify tài khoản UNiDAYS bằng thẻ sinh viên tại trang UNiDAYS đối tác QuillBot để lấy mã giảm 25%. Áp dụng cho gói Premium hàng năm và gói 6 tháng."
   },
   {
     "id": "b287",
@@ -5736,9 +5736,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": true,
     "titleEn": "Babbel Student Language Learning",
-    "valueEn": "Off 65% gói 3 tháng (chỉ ~$5/tháng)",
-    "descriptionEn": "Ứng dụng học ngôn ngữ số 1 thế giới với hơn 10 triệu người dùng. Babbel dạy hội thoại thực tế qua các bài học 10–15 phút được xây dựng bởi hơn 150 chuyên gia ngôn ngữ. students nhận special deal 65% cho gói 3 tháng đầu qua UNiDAYS.",
-    "requirementsEn": "Create account with UNiDAYS và Verify with student ID để nhận link giảm 65% (gói 3 tháng) or 50%+ cho gói 12 tháng. Sinh viên quốc tế cũng có thể Verify with qua Student Beans."
+    "valueEn": "65% Off gói 3 tháng (chỉ ~$5/tháng)",
+    "descriptionEn": "Ứng dụng học ngôn ngữ số 1 thế giới với hơn 10 triệu người dùng. Babbel dạy hội thoại thực tế qua các bài học 10–15 phút được xây dựng bởi hơn 150 chuyên gia ngôn ngữ. Sinh viên nhận ưu đãi 65% cho gói 3 tháng đầu qua UNiDAYS.",
+    "requirementsEn": "Create account UNiDAYS và xác thực thẻ sinh viên để nhận link giảm 65% (gói 3 tháng) hoặc 50%+ cho gói 12 tháng. Sinh viên quốc tế cũng có thể xác thực qua Student Beans."
   },
   {
     "id": "b288",
@@ -5756,9 +5756,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Otter.ai Pro Student & Teacher Program",
-    "valueEn": "Off 20% gói Pro (~$6.66/tháng)",
-    "descriptionEn": "Công cụ ghi chép và phiên âm bài giảng tự động bằng AI theo thời gian thực. Otter.ai giúp students ghi âm toàn bộ bài giảng, tự tạo tóm tắt, highlight từ khóa và tìm kiếm theo nội dung sau khi học xong.",
-    "requirementsEn": "Register with tài khoản Otter.ai bằng university email (.edu) học (.edu) và Verify with trạng thái sinh viên/giảng viên qua trang Help Center của Otter.ai. Giảm giá áp dụng cho gói Pro hàng tháng và hàng năm."
+    "valueEn": "20% Off gói Pro (~$6.66/tháng)",
+    "descriptionEn": "Công cụ ghi chép và phiên âm bài giảng tự động bằng AI theo thời gian thực. Otter.ai giúp sinh viên ghi âm toàn bộ bài giảng, tự tạo tóm tắt, highlight từ khóa và tìm kiếm theo nội dung sau khi học xong.",
+    "requirementsEn": "Đăng ký tài khoản Otter.ai bằng email trường học (.edu) và xác thực trạng thái sinh viên/giảng viên qua trang Help Center của Otter.ai. Discount áp dụng cho gói Pro hàng tháng và hàng năm."
   },
   {
     "id": "b289",
@@ -5776,9 +5776,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Wordtune AI Writing Assistant",
-    "valueEn": "Off 30% gói Advanced/Unlimited",
-    "descriptionEn": "Công cụ viết lại câu và đoạn văn bằng AI được thiết kế bởi các giáo sư, giúp students diễn đạt ý tưởng rõ ràng hơn, viết lại luận điểm và hoàn thiện bài viết học thuật nhanh hơn mà vẫn giữ nguyên ý nghĩa gốc.",
-    "requirementsEn": "Verify with tài khoản UNiDAYS bằng student ID tại trang UNiDAYS đối tác Wordtune, or liên hệ trực tiếp đội hỗ trợ Wordtune bằng university email (.edu) để nhận mã 30% off."
+    "valueEn": "30% Off gói Advanced/Unlimited",
+    "descriptionEn": "Công cụ viết lại câu và đoạn văn bằng AI được thiết kế bởi các giáo sư, giúp sinh viên diễn đạt ý tưởng rõ ràng hơn, viết lại luận điểm và hoàn thiện bài viết học thuật nhanh hơn mà vẫn giữ nguyên ý nghĩa gốc.",
+    "requirementsEn": "Verify tài khoản UNiDAYS bằng thẻ sinh viên tại trang UNiDAYS đối tác Wordtune, hoặc liên hệ trực tiếp đội hỗ trợ Wordtune bằng email trường để nhận mã 30% off."
   },
   {
     "id": "b290",
@@ -5796,9 +5796,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Evernote Advanced Student Discount",
-    "valueEn": "Off 40% gói Evernote Advanced năm",
+    "valueEn": "40% Off gói Evernote Advanced năm",
     "descriptionEn": "Evernote Advanced cung cấp đồng bộ không giới hạn thiết bị, tìm kiếm nội dung trong ảnh và PDF, lịch kết nối sự kiện và upload không giới hạn — lý tưởng để tổ chức tài liệu học tập toàn diện.",
-    "requirementsEn": "Verify with tài khoản UNiDAYS và truy cập trang ưu đãi Evernote trên UNiDAYS để nhận mã giảm 40% cho gói Advanced hàng năm. Chỉ áp dụng cho người dùng mới chưa có gói trả phí."
+    "requirementsEn": "Verify tài khoản UNiDAYS và truy cập trang ưu đãi Evernote trên UNiDAYS để nhận mã giảm 40% cho gói Advanced hàng năm. Chỉ áp dụng cho người dùng mới chưa có gói trả phí."
   },
   {
     "id": "b291",
@@ -5816,9 +5816,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Medium Student Membership",
-    "valueEn": "Off 25% gói Medium Membership 1 năm",
-    "descriptionEn": "Truy cập không giới hạn hàng triệu bài viết chuyên sâu về công nghệ, khởi nghiệp, khoa học và kỹ năng mềm từ các chuyên gia và nhà báo hàng đầu trên Medium. Phù hợp for students muốn cập nhật kiến thức thực tế ngoài giáo trình.",
-    "requirementsEn": "Verify with tài khoản UNiDAYS bằng student ID và truy cập trang Medium trên UNiDAYS để lấy mã giảm 25% cho gói membership 1 năm đầu tiên."
+    "valueEn": "25% Off gói Medium Membership 1 năm",
+    "descriptionEn": "Truy cập không giới hạn hàng triệu bài viết chuyên sâu về công nghệ, khởi nghiệp, khoa học và kỹ năng mềm từ các chuyên gia và nhà báo hàng đầu trên Medium. Phù hợp cho sinh viên muốn cập nhật kiến thức thực tế ngoài giáo trình.",
+    "requirementsEn": "Verify tài khoản UNiDAYS bằng thẻ sinh viên và truy cập trang Medium trên UNiDAYS để lấy mã giảm 25% cho gói membership 1 năm đầu tiên."
   },
   {
     "id": "b292",
@@ -5836,9 +5836,9 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": true,
     "titleEn": "Knowt AI Flashcard & Study Tool",
-    "valueEn": "Free toàn bộ — Thay thế Quizlet không giới hạn",
-    "descriptionEn": "Ứng dụng học tập AI thế hệ mới #1 thay thế Quizlet, completely free. Knowt tự động tạo flashcard từ ghi chú, PDF bài giảng hoặc video bài học chỉ trong 30 giây. Có Spaced Repetition, chế độ Learn và tính năng hỏi đáp AI (Kai) tích hợp.",
-    "requirementsEn": "Register with tài khoản miễn phí tại knowt.com bằng email bất kỳ. Không cần Verify with sinh viên, không giới hạn số lượng flashcard và bộ thẻ. Tham gia bằng mã lớp học từ giảng viên để dùng tính năng classroom."
+    "valueEn": "Miễn phí toàn bộ — Thay thế Quizlet không giới hạn",
+    "descriptionEn": "Ứng dụng học tập AI thế hệ mới #1 thay thế Quizlet, hoàn toàn miễn phí. Knowt tự động tạo flashcard từ ghi chú, PDF bài giảng hoặc video bài học chỉ trong 30 giây. Có Spaced Repetition, chế độ Learn và tính năng hỏi đáp AI (Kai) tích hợp.",
+    "requirementsEn": "Register tài khoản miễn phí tại knowt.com bằng email bất kỳ. Không cần xác thực sinh viên, không giới hạn số lượng flashcard và bộ thẻ. Tham gia bằng mã lớp học từ giảng viên để dùng tính năng classroom."
   },
   {
     "id": "b293",
@@ -5856,9 +5856,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": false,
     "titleEn": "Krater AI — Multi-model Student Bundle",
-    "valueEn": "Off 15% thêm (~$6.38/tháng) — 350+ AI models",
-    "descriptionEn": "Krater AI gộp 350+ mô hình AI bao gồm GPT-5.5, Claude Sonnet/Opus 4.6, Gemini 3.1 Pro, các model hình ảnh, video, giọng nói vào 1 gói duy nhất. students nhận thêm 15% discount không cần xác thực, không cần email trường — áp dụng tự động khi thanh toán.",
-    "requirementsEn": "Truy cập trang krater.ai/students và nhấn nút 'Claim Discount' — mã giảm 15% được áp dụng tự động vào giỏ hàng, không cần nhập university email (.edu) hay Verify with student ID."
+    "valueEn": "15% Off thêm (~$6.38/tháng) — 350+ AI models",
+    "descriptionEn": "Krater AI gộp 350+ mô hình AI bao gồm GPT-5.5, Claude Sonnet/Opus 4.6, Gemini 3.1 Pro, các model hình ảnh, video, giọng nói vào 1 gói duy nhất. Sinh viên nhận thêm 15% giảm giá không cần xác thực, không cần university email (.edu) — áp dụng tự động khi thanh toán.",
+    "requirementsEn": "Truy cập trang krater.ai/students và nhấn nút 'Claim Discount' — mã giảm 15% được áp dụng tự động vào giỏ hàng, không cần nhập university email (.edu) hay xác thực thẻ sinh viên."
   },
   {
     "id": "b294",
@@ -5876,9 +5876,9 @@ export const BENEFITS_DATA = [
     "dealType": "discount",
     "isHot": true,
     "titleEn": "Decree 179 — Học bổng ngành STEM chiến lược",
-    "valueEn": "3.7–5.5 triệu VNĐ/tháng Scholarship ngân sách nhà nước",
-    "descriptionEn": "Nghị định 179/2026/NĐ-CP (hiệu lực từ tháng 7/2026) quy định học bổng ngân sách nhà nước hàng tháng for students tài năng: ngành vi mạch bán dẫn/khoa học cơ bản nhận 4.2 triệu/tháng, ngành kỹ thuật chiến lược nhận 3.7 triệu/tháng, nhóm tài năng đặc biệt nhận 5.5 triệu/tháng.",
-    "requirementsEn": "Register with nguyện vọng vào các ngành vi mạch bán dẫn, khoa học cơ bản or công nghệ chiến lược theo danh mục được Bộ GD&ĐT phê duyệt theo Nghị định 179/2026. Nộp hồ sơ xin học bổng qua cổng tuyển sinh của trường sau khi nhập học."
+    "valueEn": "3.7–5.5 triệu VNĐ/tháng học bổng ngân sách nhà nước",
+    "descriptionEn": "Nghị định 179/2026/NĐ-CP (hiệu lực từ tháng 7/2026) quy định học bổng ngân sách nhà nước hàng tháng cho sinh viên tài năng: ngành vi mạch bán dẫn/khoa học cơ bản nhận 4.2 triệu/tháng, ngành kỹ thuật chiến lược nhận 3.7 triệu/tháng, nhóm tài năng đặc biệt nhận 5.5 triệu/tháng.",
+    "requirementsEn": "Register nguyện vọng vào các ngành vi mạch bán dẫn, khoa học cơ bản hoặc công nghệ chiến lược theo danh mục được Bộ GD&ĐT phê duyệt theo Nghị định 179/2026. Nộp hồ sơ xin học bổng qua cổng tuyển sinh của trường sau khi nhập học."
   },
   {
     "id": "b295",
@@ -5896,8 +5896,8 @@ export const BENEFITS_DATA = [
     "dealType": "free",
     "isHot": true,
     "titleEn": "Sách giáo khoa miễn phí 2026–2027",
-    "valueEn": "Free 100% sách giáo khoa năm học 2026–2027",
-    "descriptionEn": "Từ năm học 2026–2027, TP.HCM, Đà Nẵng (Hoa Vang), Quảng Ninh và Cà Mau là 4 địa phương đầu tiên cả nước cung cấp free toàn bộ sách giáo khoa cho students. Tiết kiệm từ 500.000–2.000.000 VNĐ/năm học.",
-    "requirementsEn": "Học sinh đang theo học tại các trường công lập tại TP.HCM, Đà Nẵng (Hoa Vang), Quảng Ninh or Cà Mau Register with nhận sách miễn phí qua trường vào đầu năm học 2026–2027."
+    "valueEn": "Miễn phí 100% sách giáo khoa năm học 2026–2027",
+    "descriptionEn": "Từ năm học 2026–2027, TP.HCM, Đà Nẵng (Hoa Vang), Quảng Ninh và Cà Mau là 4 địa phương đầu tiên cả nước cung cấp miễn phí toàn bộ sách giáo khoa cho học sinh. Tiết kiệm từ 500.000–2.000.000 VNĐ/năm học.",
+    "requirementsEn": "Học sinh đang theo học tại các trường công lập tại TP.HCM, Đà Nẵng (Hoa Vang), Quảng Ninh hoặc Cà Mau đăng ký nhận sách miễn phí qua trường vào đầu năm học 2026–2027."
   }
 ];
