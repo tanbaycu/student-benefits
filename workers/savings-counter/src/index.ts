@@ -114,6 +114,32 @@ export class SavingsCounter {
       return Response.json({ globalSavings: this.globalSavings });
     }
 
+    // ── REST: POST /submit ──────────────────────────────────────────────
+    if (path === "/submit" && request.method === "POST") {
+      try {
+        const body = await request.json<{ brandName?: string; brandUrl?: string }>();
+        const submissions = (await this.state.storage.get<any[]>("submissions")) ?? [];
+        const newEntry = {
+          id: "sub_" + Date.now(),
+          brandName: body.brandName || "N/A",
+          brandUrl: body.brandUrl || "",
+          submittedAt: new Date().toISOString(),
+        };
+        submissions.unshift(newEntry);
+        // Persist top 100 latest user contributions
+        await this.state.storage.put("submissions", submissions.slice(0, 100));
+        return Response.json({ success: true, message: "Submitted successfully to public ledger", entry: newEntry });
+      } catch {
+        return Response.json({ success: false, error: "Invalid payload" }, { status: 400 });
+      }
+    }
+
+    // ── REST: GET /submissions ──────────────────────────────────────────────
+    if (path === "/submissions" && request.method === "GET") {
+      const submissions = (await this.state.storage.get<any[]>("submissions")) ?? [];
+      return Response.json({ count: submissions.length, submissions });
+    }
+
     return new Response("Not found", { status: 404 });
   }
 

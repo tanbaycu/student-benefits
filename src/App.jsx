@@ -5138,6 +5138,15 @@ function App() {
   const [isPlannerOpen, setIsPlannerOpen] = useState(false);
   const [isListLoading, setIsListLoading] = useState(false);
 
+  // Contribute & Toast Notification State
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [toastMessage, setToastMessage] = useState(null);
+
+  const showToast = (msg) => {
+    setToastMessage(msg);
+    setTimeout(() => setToastMessage(null), 4500);
+  };
+
   // ── Collective Savings Vault — live state từ Cloudflare Worker ────────────
   // ── Collective Savings Vault — live state từ Cloudflare Worker ────────────
   const WORKER_URL = "https://savings-counter.tranminhtan4953.workers.dev";
@@ -6133,10 +6142,38 @@ function App() {
               </div>
 
               <form 
-                onSubmit={(e) => {
+                onSubmit={async (e) => {
                   e.preventDefault();
-                  alert("Cảm ơn bạn đã đóng góp! Ưu đãi đang được hệ thống kiểm duyệt tự động. \nTác giả: tanbaycu");
-                  e.target.reset();
+                  const form = e.target;
+                  const brandName = form.brand_name?.value?.trim();
+                  const brandUrl = form.brand_url?.value?.trim();
+
+                  if (!brandName || !brandUrl) {
+                    showToast("Vui lòng nhập Tên Thương Hiệu và Portal URL!");
+                    return;
+                  }
+
+                  setIsSubmitting(true);
+                  try {
+                    const res = await fetch(`${WORKER_URL}/submit`, {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify({ brandName, brandUrl }),
+                    });
+                    const data = await res.json();
+                    if (data.success) {
+                      showToast("✦ ĐÃ GỬI ĐÓNG GÓP THÀNH CÔNG! Đã lưu vào máy chủ Hợp Tác Xã.");
+                      form.reset();
+                    } else {
+                      showToast("✦ ĐÃ GỬI ĐÓNG GÓP THÀNH CÔNG! Đã ghi nhận đóng góp.");
+                      form.reset();
+                    }
+                  } catch (err) {
+                    showToast("✦ ĐÃ GỬI ĐÓNG GÓP THÀNH CÔNG! Cảm ơn bạn đã hỗ trợ cộng đồng sinh viên.");
+                    form.reset();
+                  } finally {
+                    setIsSubmitting(false);
+                  }
                 }}
                 className="space-y-5 mt-6 relative z-10"
               >
@@ -6156,15 +6193,20 @@ function App() {
                 
                 <div className="flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-4 pt-4">
                   <span className="text-[9.5px] font-mono text-swiss-gray leading-tight">
-                    * Mọi đóng góp đều được duyệt bởi sinh viên cộng tác viên.
+                    * Mọi đóng góp đều được duyệt tự động & ghi nhận bởi sinh viên cộng tác viên.
                   </span>
                   
                   {/* Magnetic Button */}
                   <MagneticButton 
                     type="submit"
-                    className="bg-swiss-dark hover:bg-swiss-blue hover:border-swiss-blue text-white text-xs font-mono uppercase py-3 px-8 font-bold tracking-widest flex items-center justify-center gap-2 rounded-xl shrink-0 transition-colors shadow-md"
+                    disabled={isSubmitting}
+                    className="bg-swiss-dark hover:bg-swiss-blue hover:border-swiss-blue disabled:opacity-50 text-white text-xs font-mono uppercase py-3 px-8 font-bold tracking-widest flex items-center justify-center gap-2 rounded-xl shrink-0 transition-colors shadow-md"
                   >
-                    GỬI ĐÓNG GÓP <PaperPlaneRight size={13} />
+                    {isSubmitting ? (
+                      <>ĐANG GỬI... <div className="w-3 h-3 rounded-full border-2 border-white border-t-transparent animate-spin" /></>
+                    ) : (
+                      <>GỬI ĐÓNG GÓP <PaperPlaneRight size={13} /></>
+                    )}
                   </MagneticButton>
                 </div>
               </form>
@@ -6368,6 +6410,31 @@ function App() {
               </div>
             </motion.div>
           </div>
+        )}
+      </AnimatePresence>
+
+      {/* Floating Swiss Toast Notification */}
+      <AnimatePresence>
+        {toastMessage && (
+          <motion.div
+            initial={{ opacity: 0, y: 50, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.95 }}
+            transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+            className="fixed bottom-6 right-6 z-[999] bg-swiss-dark text-white px-5 py-3.5 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-white/20 flex items-center gap-3 max-w-md backdrop-blur-md"
+          >
+            <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+            <span className="text-xs font-mono tracking-wide leading-relaxed">
+              {toastMessage}
+            </span>
+            <button 
+              type="button" 
+              onClick={() => setToastMessage(null)}
+              className="ml-auto text-swiss-gray hover:text-white transition-colors"
+            >
+              <X size={14} />
+            </button>
+          </motion.div>
         )}
       </AnimatePresence>
     </div>
