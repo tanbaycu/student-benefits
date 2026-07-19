@@ -139,7 +139,8 @@ const PRESET_BUNDLES = [
     name: "DEV & CS STACK",
     icon: Code,
     color: "bg-swiss-blue text-white",
-    description: "Bộ công cụ lập trình đỉnh cao dành cho sinh viên IT & Khoa Học Máy Tính",
+    descriptionVi: "Bộ công cụ lập trình đỉnh cao dành cho sinh viên IT & Khoa Học Máy Tính",
+    descriptionEn: "Ultimate programming toolkit for IT & Computer Science students",
     matchKeywords: ["github", "jetbrains", "kiro", "cursor", "supabase", "termius", "mongodb", "postman"]
   },
   {
@@ -147,7 +148,8 @@ const PRESET_BUNDLES = [
     name: "CREATIVE & DESIGN",
     icon: PaintBrush,
     color: "bg-swiss-red text-white",
-    description: "Combo sáng tạo cho sinh viên ngành Thiết Kế Đồ Họa, UI/UX và Truyền Thông",
+    descriptionVi: "Combo sáng tạo cho sinh viên ngành Thiết Kế Đồ Họa, UI/UX và Truyền Thông",
+    descriptionEn: "Creative suite for Graphic Design, UI/UX, and Media students",
     matchKeywords: ["figma", "canva", "adobe", "spline", "axure", "craft", "sketch"]
   },
   {
@@ -155,7 +157,8 @@ const PRESET_BUNDLES = [
     name: "BUSINESS & FINTECH",
     icon: Briefcase,
     color: "bg-swiss-dark text-white",
-    description: "Gói công cụ ghi chú, kế toán và tài chính chuyên nghiệp cho sinh viên Kinh Tế",
+    descriptionVi: "Gói công cụ ghi chú, kế toán và tài chính chuyên nghiệp cho sinh viên Kinh Tế",
+    descriptionEn: "Professional productivity, accounting, and finance tools for Business students",
     matchKeywords: ["notion", "quickbooks", "microsoft", "financial times", "tableplus", "grammarly"]
   },
   {
@@ -163,7 +166,8 @@ const PRESET_BUNDLES = [
     name: "LIFESTYLE & TRAVEL",
     icon: Heart,
     color: "bg-emerald-600 text-white",
-    description: "Ưu đãi giải trí, phim ảnh, di chuyển và F&B hàng ngày cho sinh viên Việt Nam",
+    descriptionVi: "Ưu đãi giải trí, phim ảnh, di chuyển và F&B hàng ngày cho sinh viên Việt Nam",
+    descriptionEn: "Daily entertainment, movies, transit, and F&B perks for students",
     matchKeywords: ["spotify", "youtube", "apple music", "grabstudent", "vietnam airlines", "cinestar"]
   }
 ];
@@ -815,15 +819,11 @@ function App() {
 
   // Community Tips Stack State
   const initialTips = [
-    { id: 1, name: "Minh Anh", school: "ĐHQG", tip: "Nên dùng email trường để đăng ký JetBrains và GitHub trước khi tốt nghiệp, bạn được cộng tới 1 năm Pro miễn phí." },
-    { id: 2, name: "Thành Đạt", school: "Bách Khoa", tip: "Voucher GrabStudent liên kết thẳng với bản đồ di chuyển, kích hoạt bằng ảnh chụp thẻ sinh viên chỉ mất 5 phút." },
-    { id: 3, name: "Khánh Linh", school: "FTU", tip: "Figma Pro Education yêu cầu upload thẻ học sinh, hãy chụp rõ logo trường và hạn dùng để được duyệt nhanh nhất." },
-    { id: 4, name: "Quốc Bảo", school: "UIT", tip: "Đăng ký GitHub Student Pack qua email trường, bạn sẽ được tặng luôn gói v0.dev Pro và Canva Pro để làm bài tập lớn cực kỳ xịn sò." },
-    { id: 5, name: "Hoàng Nam", school: "ĐH Bách Khoa", tip: "Vé tàu hỏa VNR được giảm 10% quanh năm. Lúc mua vé trực tuyến nhớ nhập mã số thẻ sinh viên và mang theo thẻ + CCCD khi ra ga check-in." },
-    { id: 6, name: "Hải Yến", school: "ĐH Y Dược HCMC", tip: "Nên đi cạo vôi răng và nhổ răng khôn tại Nha khoa Parkway hoặc Nha khoa Kim, họ giảm đến 50% cho sinh viên và được trả góp niềng răng 0%." },
-    { id: 7, name: "Minh Huy", school: "ĐH FPT", tip: "Cursor Pro đã ngưng cấp tự động qua mail .edu, tuy nhiên hãy tham gia các sự kiện on-campus hoặc webinar do Cursor tổ chức để lấy code Pro 1 năm free nhé!" },
-    { id: 8, name: "Hồng Vân", school: "ĐH Sư Phạm", tip: "Khi đăng ký thi TOEIC/TOEFL tại IIG để nhận giảm giá đến 450k, nhớ mang theo thẻ sinh viên chính quy có dấu giáp lai rõ ràng và còn thời hạn." },
-    { id: 9, name: "Thảo Vy", school: "ĐH Ngoại Thương", tip: "Dùng email trường đăng ký Notion Pro và Notion Education Plan miễn phí. Lưu trữ tài liệu học tập, slide bài giảng không giới hạn dung lượng luôn." }
+    { id: 1, name: "Minh Anh", school: "ĐHQG / VNU", tipVi: "Nên dùng email trường để đăng ký JetBrains và GitHub trước khi tốt nghiệp, bạn được cộng tới 1 năm Pro miễn phí.", tipEn: "Use your university email for JetBrains and GitHub before graduation to get 1 year of free Pro access." },
+    { id: 2, name: "Thành Đạt", school: "Bách Khoa / HCMUT", tipVi: "Voucher GrabStudent liên kết thẳng với bản đồ di chuyển, kích hoạt bằng ảnh chụp thẻ sinh viên chỉ mất 5 phút.", tipEn: "GrabStudent vouchers link directly to your map, taking only 5 minutes to verify with your student ID photo." },
+    { id: 3, name: "Khánh Linh", school: "FTU", tipVi: "Figma Pro Education yêu cầu upload thẻ học sinh, hãy chụp rõ logo trường và hạn dùng để được duyệt nhanh nhất.", tipEn: "Figma Pro Education requires uploading your student ID. Ensure school logo and valid date are clear for fastest approval." },
+    { id: 4, name: "Quốc Bảo", school: "UIT", tipVi: "Đăng ký GitHub Student Pack qua email trường, bạn sẽ được tặng luôn gói v0.dev Pro và Canva Pro để làm bài tập lớn cực kỳ xịn sò.", tipEn: "Claim GitHub Student Pack with school email to instantly get free v0.dev Pro and Canva Pro for coursework." },
+    { id: 5, name: "Hoàng Nam", school: "ĐH Bách Khoa", tipVi: "Vé tàu hỏa VNR được giảm 10% quanh năm. Lúc mua vé trực tuyến nhớ nhập mã số thẻ sinh viên và mang theo thẻ + CCCD khi ra ga check-in.", tipEn: "Vietnam Railways offers 10% discount year-round for students. Enter your student ID online and present your physical card at check-in." }
   ];
   const [tips, setTips] = useState(initialTips);
 
@@ -1306,7 +1306,7 @@ function App() {
                         )}
                       </h4>
                       <p className="text-xs font-sans text-swiss-gray leading-relaxed mt-1.5 line-clamp-2 min-h-[2.4rem]">
-                        {bundle.description}
+                        {lang === 'en' ? bundle.descriptionEn : bundle.descriptionVi}
                       </p>
                     </div>
 
@@ -1561,7 +1561,7 @@ function App() {
                         <div className="flex items-start gap-2 bg-swiss-light/60 p-2.5 border border-swiss-border">
                           <IdentificationCard size={15} className="text-swiss-dark mt-0.5 shrink-0" />
                           <div className="text-[10px] font-sans text-swiss-gray leading-tight">
-                            <strong className="text-swiss-dark font-mono block mb-0.5">XÁC THỰC:</strong>
+                            <strong className="text-swiss-dark font-mono block mb-0.5">{t.verifyLabel}</strong>
                             {benefit.requirements}
                           </div>
                         </div>
@@ -1569,10 +1569,10 @@ function App() {
                         <div className="flex justify-between items-center text-[10px] font-mono text-swiss-gray">
                           <span className="flex items-center gap-1">
                             <Clock size={12} />
-                            {timeAgo(benefit.updatedDate)}
+                            {timeAgo(benefit.updatedDate, lang)}
                           </span>
                           <span className="font-bold text-swiss-dark">
-                            TIẾT KIỆM: ~{formatMoney(benefit.savings, currency)}/năm
+                            {t.savingsLabel} ~{formatMoney(benefit.savings, currency)}{t.perYear}
                           </span>
                         </div>
                       </div>
@@ -1586,7 +1586,7 @@ function App() {
                         rel="noreferrer"
                         className="swiss-pressable py-3 flex items-center justify-center gap-1.5 hover:bg-swiss-light text-swiss-dark hover:text-swiss-blue active:scale-98"
                       >
-                        Truy cập <ArrowUpRight size={13} />
+                        {t.visitButton} <ArrowUpRight size={13} />
                       </a>
                       <button
                         type="button"
@@ -1598,9 +1598,9 @@ function App() {
                         }`}
                       >
                         {isInPlan ? (
-                          <>Bỏ chọn <Trash size={13} /></>
+                          <>{t.removeFromKit} <Trash size={13} /></>
                         ) : (
-                          <>Lưu vào Kit <Plus size={13} /></>
+                          <>{t.addToKit} <Plus size={13} /></>
                         )}
                       </button>
                     </div>
@@ -1923,7 +1923,7 @@ function App() {
                         }`}
                       >
                         <p className="text-xs text-swiss-dark font-sans leading-relaxed flex-1 flex items-center">
-                          "{tip.tip}"
+                          "{lang === 'en' ? (tip.tipEn || tip.tipVi) : (tip.tipVi || tip.tip)}"
                         </p>
                         <div className="border-t border-dashed border-swiss-border pt-3 mt-3 flex justify-between items-center">
                           <span className="font-mono text-[9px] text-swiss-gray uppercase tracking-wider font-bold">
@@ -1931,7 +1931,7 @@ function App() {
                           </span>
                           {isTop && (
                             <span className="text-[8px] font-mono text-swiss-blue bg-swiss-blue/10 px-1.5 py-0.5 uppercase tracking-widest animate-pulse font-bold rounded">
-                              Bấm để xoay
+                              {t.flipInstruction}
                             </span>
                           )}
                         </div>

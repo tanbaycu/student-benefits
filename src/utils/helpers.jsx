@@ -129,18 +129,26 @@ export function timeAgo(dateStr, lang = 'vi') {
   return `${diffYears} năm trước`;
 }
 
-// Helper tự động chuyển đổi thông tin thẻ ưu đãi sang Tiếng Anh / Tiếng Việt mượt mà
+// Helper tự động chuyển đổi 100% thông tin thẻ ưu đãi sang Tiếng Anh khi lang === 'en'
 export function getBenefitLocalized(benefit, lang = 'vi') {
   if (!benefit) return benefit;
   if (lang !== 'en') return benefit;
 
-  // Nếu đã có thuộc tính tiếng Anh riêng
+  // Title
   const title = benefit.titleEn || benefit.title;
-  
+
+  // Value translation map
   let value = benefit.valueEn || benefit.value;
   if (!benefit.valueEn && value) {
     value = value
       .replace(/Miễn phí bản quyền/gi, 'Free Educational License')
+      .replace(/Bản quyền SOLIDWORKS Design Standard/gi, 'SOLIDWORKS Design Standard License')
+      .replace(/Ưu đãi nâng cấp Cursor Pro qua sự kiện trường học/gi, 'Cursor Pro Free Upgrade via School Events')
+      .replace(/Quyền truy cập tổ chức đại học \(GPT-4o\)/gi, 'University Org Access (GPT-4o)')
+      .replace(/Quyền truy cập tổ chức đại học/gi, 'University Organization Access')
+      .replace(/Ưu đãi discount 60%/gi, '60% Off Student Discount')
+      .replace(/Tài khoản Pro Free 100%/gi, '100% Free Pro Account')
+      .replace(/Free Developer Tools & Copilot/gi, 'Free Developer Tools & Copilot')
       .replace(/miễn phí/gi, 'Free')
       .replace(/gia hạn hàng năm/gi, 'annual renewal')
       .replace(/1 năm/gi, '1 Year')
@@ -151,9 +159,19 @@ export function getBenefitLocalized(benefit, lang = 'vi') {
       .replace(/tháng/gi, 'month');
   }
 
+  // Description translation map
   let description = benefit.descriptionEn || benefit.description;
   if (!benefit.descriptionEn && description) {
     description = description
+      .replace(/Nền tảng phần mềm CAD, CAM, CAE và PCB dựa trên đám mây chuyên nghiệp dành cho thiết kế và sản xuất sản phẩm, mô hình hóa 3D trực quan và giả lập\./gi, 'Professional cloud-based CAD, CAM, CAE, and PCB software platform for product design, 3D modeling, and simulation.')
+      .replace(/Bản quyền MATLAB & Simulink free nếu trường có Campus-Wide License\. Nếu không, mua bản Student giá \$119\/năm kèm MATLAB Online free 20 giờ\/tháng\./gi, 'Free MATLAB & Simulink license if your university has Campus-Wide License. Otherwise, Student tier is $119/yr including 20 hrs/mo free MATLAB Online.')
+      .replace(/Sở hữu toàn bộ Toolkit sáng tạo bao gồm Photoshop, Illustrator, Premiere Pro và Lightroom với chi phí cực thấp\./gi, 'Get complete creative suite including Photoshop, Illustrator, Premiere Pro, and Lightroom at low student rates.')
+      .replace(/License phần mềm thiết kế 3D CAD chuẩn công nghiệp free từ 01\/07\/2026 cho students\. Bản Premium giá deal \$60\/năm kèm voucher thi chứng chỉ CSWA\/CSWP\./gi, 'Industry-standard 3D CAD software license free from July 2026 for students. Premium tier at $60/yr includes CSWA/CSWP cert vouchers.')
+      .replace(/Trình soạn thảo mã nguồn tích hợp AI hàng đầu thế giới hiện nay\. Hãng cung cấp mã nâng cấp Pro free thông qua các sự kiện on-campus và sự kiện trực tuyến chính thức mùa tự trường\./gi, 'World-leading AI code editor. Pro upgrade codes provided free via campus events and back-to-school webinars.')
+      .replace(/Anthropic cung cấp chương trình Claude for Education dành cho các trường đại học\/cao đẳng để tích hợp sâu vào hệ thống, cho phép students, giảng viên truy cập Claude phục vụ học tập\/nghiên cứu\./gi, 'Anthropic provides Claude for Education to universities/colleges, allowing students and faculty deep access for coursework and research.')
+      .replace(/Phiên bản ChatGPT được thiết kế riêng cho các trường đại học với bảo mật dữ liệu cấp doanh nghiệp, giới hạn tin nhắn cao hơn, hỗ trợ tạo GPTs tùy chỉnh\./gi, 'Enterprise-grade ChatGPT tailored for universities with strict data privacy, higher usage limits, and custom GPT creation.')
+      .replace(/Truy cập các công cụ lập trình tốt nhất thế giới bao gồm GitHub Copilot, Canva Pro, Namecheap hoàn toàn free\./gi, 'Access world-best developer tools including GitHub Copilot, Canva Pro, Namecheap 100% free.')
+      .replace(/Công cụ thiết kế UI\/UX và làm việc nhóm chuẩn công nghiệp\. Nhận đầy đủ tính năng thiết kế Kế Pro để làm đồ án\./gi, 'Industry-standard UI/UX design tool. Get full Pro features for academic projects.')
       .replace(/Nền tảng phần mềm/gi, 'Software platform')
       .replace(/chuyên nghiệp dành cho/gi, 'professional for')
       .replace(/học sinh sinh viên/gi, 'students')
@@ -167,9 +185,19 @@ export function getBenefitLocalized(benefit, lang = 'vi') {
       .replace(/Gói dịch vụ/gi, 'Service plan');
   }
 
+  // Requirements translation map
   let requirements = benefit.requirementsEn || benefit.requirements;
   if (!benefit.requirementsEn && requirements) {
     requirements = requirements
+      .replace(/Tạo tài khoản Autodesk bằng email trường học và xác thực trạng thái sinh viên qua hệ thống SheerID\./gi, 'Create Autodesk account with university (.edu) email and verify student status via SheerID system.')
+      .replace(/Register with tài khoản MathWorks bằng email trường \(\.edu\) hoặc xác minh tư cách sinh viên\./gi, 'Register with MathWorks account using university (.edu) email or student verification.')
+      .replace(/student ID hoặc email đuôi giáo dục khi Register with\./gi, 'Register with student ID or educational email address.')
+      .replace(/Register with qua cổng SolidWorks Student với email \.edu hoặc student ID\./gi, 'Register via SolidWorks Student portal with .edu email or student ID.')
+      .replace(/Register with tham gia các sự kiện on-campus hoặc webinar giáo dục do Cursor tổ chức\./gi, 'Register by attending on-campus events or educational webinars hosted by Cursor.')
+      .replace(/Đăng nhập Single Sign-On \(SSO\) qua cổng thông tin hoặc email của trường đại học đối tác\./gi, 'Log in via university Single Sign-On (SSO) portal or partner school email.')
+      .replace(/Đăng nhập bằng email trường do trường học liên kết đối tác cung cấp\./gi, 'Log in using university email issued by partner institution.')
+      .replace(/Email trường \(\.edu\) hoặc student ID\/giấy xác nhận nhập học\./gi, 'University (.edu) email or student ID / enrollment verification letter.')
+      .replace(/student ID cùng tài liệu học tập có đóng dấu của trường\./gi, 'Student ID along with stamped academic documentation.')
       .replace(/Tạo tài khoản/gi, 'Create account with')
       .replace(/email trường học/gi, 'university email (.edu)')
       .replace(/xác thực trạng thái sinh viên/gi, 'verify student status')
