@@ -1,4 +1,5 @@
 import { BENEFITS_DATA } from './data/benefitsData'
+import { translations } from './data/i18n'
 import { useState, useEffect, useRef, useMemo } from 'react'
 import { motion, AnimatePresence, useMotionValue, useTransform, useSpring } from 'motion/react'
 import { 
@@ -551,6 +552,9 @@ function App() {
   const [isMuted, setIsMuted] = useState(false);
   const [isCmdPaletteOpen, setIsCmdPaletteOpen] = useState(false);
   const [cmdQuery, setCmdQuery] = useState('');
+
+  // Global i18n Translation object
+  const t = useMemo(() => translations[lang] || translations.vi, [lang]);
 
   // Synchronize SoundFX muted state
   useEffect(() => {
@@ -1151,7 +1155,7 @@ function App() {
             </motion.div>
 
             <p className="text-base text-swiss-gray leading-relaxed font-sans max-w-sm">
-              Cổng thông tin tối giản tập hợp toàn bộ các lợi ích trực tuyến và offline của sinh viên trên toàn thế giới. Không cần thủ tục phức tạp, <strong className="text-swiss-dark">chỉ cần bạn có thẻ sinh viên hoặc email trường</strong> là đủ điều kiện nhận ưu đãi lập tức.
+              {t.heroDesc}
             </p>
           </div>
 
@@ -1160,7 +1164,7 @@ function App() {
               href="#explore"
               className="swiss-pressable-sm group inline-flex items-center gap-3 text-sm font-mono uppercase tracking-widest text-swiss-dark font-bold hover:text-swiss-blue active:scale-98"
             >
-              Xem tất cả quyền lợi
+              {t.exploreButton}
               <span className="p-2 border border-swiss-dark group-hover:border-swiss-blue group-hover:bg-swiss-blue group-hover:text-white transition-all duration-200 rounded-full">
                 <ArrowDown size={14} className="group-hover:translate-y-0.5 transition-transform" />
               </span>
@@ -1208,14 +1212,14 @@ function App() {
             </span>
             <input 
               type="text" 
-              placeholder="Tìm kiếm bằng tên, mô tả hoặc yêu cầu xác thực..."
+              placeholder={t.searchPlaceholder}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full bg-white border border-swiss-border pl-10 pr-4 py-2.5 text-sm font-sans focus:outline-none focus:border-swiss-dark focus:ring-1 focus:ring-swiss-dark transition-all placeholder:text-swiss-gray/60 rounded-full"
             />
           </div>
           <div className="font-mono text-xs text-swiss-gray flex items-center justify-between border border-swiss-border bg-white px-5 py-2.5 gap-4 rounded-full">
-            <span>DỮ LIỆU ĐANG LỌC: <strong>{filteredBenefits.length}</strong> / <strong>{BENEFITS_DATA.length}</strong> CODES</span>
+            <span>{t.filteringData} <strong>{filteredBenefits.length}</strong> / <strong>{BENEFITS_DATA.length}</strong> {t.codesCount}</span>
           </div>
         </div>
 
@@ -1231,17 +1235,17 @@ function App() {
               </div>
               <div>
                 <h3 className="font-roboto font-black text-sm sm:text-base uppercase tracking-widest text-swiss-dark leading-tight">
-                  ✦ SMART PRESET BUNDLES / COMBO 1-CLICK THEO NGÀNH HỌC
+                  {t.bundlesTitle}
                 </h3>
                 <span className="text-[10px] font-mono text-swiss-gray uppercase tracking-wider block mt-0.5">
-                  Tối ưu bộ công cụ học tập & làm việc trọn gói theo chuyên ngành
+                  {t.bundlesSubtitle}
                 </span>
               </div>
             </div>
 
             <div className="flex items-center gap-2 text-[10.5px] font-mono text-swiss-gray bg-swiss-light/80 px-3.5 py-1.5 rounded-full border border-swiss-border shrink-0">
               <Sparkle size={12} className="text-swiss-red" />
-              <span>Nhấp nút bên dưới để nạp trọn bộ vào Kit tiết kiệm</span>
+              <span>{t.bundlesHelp}</span>
             </div>
           </div>
 
@@ -1280,16 +1284,16 @@ function App() {
                         </span>
                         <div className="flex flex-col">
                           <span className="text-[9px] font-mono uppercase tracking-widest text-swiss-gray font-bold">
-                            SLOT BUNDLE
+                            {t.slotBundle}
                           </span>
                           <span className="text-xs font-mono font-black text-swiss-dark">
-                            {matched.length} ƯU ĐÃI
+                            {matched.length} {t.codesCountLabel}
                           </span>
                         </div>
                       </div>
 
                       <span className="text-xs font-mono font-black text-swiss-blue bg-swiss-blue/10 px-3 py-1 rounded-full border border-swiss-blue/20 shrink-0">
-                        {formatMoney(totalSavings, currency)}/năm
+                        {formatMoney(totalSavings, currency)}{t.perYear}
                       </span>
                     </div>
 
@@ -1309,7 +1313,7 @@ function App() {
                     {/* Sample Brands Tags Grid */}
                     <div className="space-y-1.5 pt-1">
                       <span className="text-[8.5px] font-mono uppercase tracking-widest text-swiss-gray/80 font-bold block">
-                        ỨNG DỤNG TIÊU BIỂU TRONG GÓI:
+                        {t.typicalApps}
                       </span>
                       <div className="flex flex-wrap gap-1.5">
                         {sampleBrands.map((bName, idx) => (
@@ -1323,7 +1327,7 @@ function App() {
                         ))}
                         {matched.length > 4 && (
                           <span className="text-[9.5px] font-mono text-swiss-gray bg-swiss-light/50 px-2 py-0.5 rounded-md font-bold">
-                            +{matched.length - 4} khác
+                            +{matched.length - 4} {t.otherApps || 'khác'}
                           </span>
                         )}
                       </div>
@@ -1346,17 +1350,17 @@ function App() {
                       {isFullyApplied ? (
                         <>
                           <CheckCircle size={15} className="text-white shrink-0" />
-                          <span>TRỌN BỘ ĐÃ TRONG KIT</span>
+                          <span>{t.fullyInKit}</span>
                         </>
                       ) : appliedCount > 0 ? (
                         <>
                           <Plus size={15} className="text-yellow-400 shrink-0" />
-                          <span>THÊM {matched.length - appliedCount} MỤC CÒN LẠI</span>
+                          <span>{t.addRemaining.replace('{count}', matched.length - appliedCount)}</span>
                         </>
                       ) : (
                         <>
                           <Lightning size={15} className="text-yellow-400 shrink-0" />
-                          <span>KÍCH HOẠT COMBO</span>
+                          <span>{t.activateCombo}</span>
                         </>
                       )}
                     </button>
@@ -1370,10 +1374,14 @@ function App() {
         {/* Filter Themes Grid */}
         <div className="mb-8">
           <div className="text-[10px] font-mono uppercase tracking-widest text-swiss-gray mb-3">
-            [01] THEO CHỦ ĐỀ ƯU ĐÃI (THEME)
+            {t.themeTitle}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 border border-swiss-border divide-y md:divide-y-0 md:divide-x divide-swiss-border bg-white">
-            {themes.map((theme) => (
+            {[
+              { id: "Theme 1", name: t.theme01 },
+              { id: "Theme 2", name: t.theme02 },
+              { id: "Theme 3", name: t.theme03 }
+            ].map((theme) => (
               <button
                 key={theme.id}
                 type="button"
@@ -1393,21 +1401,25 @@ function App() {
         {/* Filter Locations / Scope Grid */}
         <div className="mb-6">
           <div className="text-[10px] font-mono uppercase tracking-widest text-swiss-gray mb-3">
-            [02] THEO ĐỊA LÝ / PHẠM VI ÁP DỤNG
+            {t.scopeTitle}
           </div>
           <div className="grid grid-cols-3 border border-swiss-border divide-x divide-swiss-border bg-white max-w-xl">
-            {locations.map((loc) => (
+            {[
+              { key: "All", label: t.scopeAll },
+              { key: "Global", label: t.scopeGlobal },
+              { key: "Vietnam", label: t.scopeVietnam }
+            ].map(({ key, label }) => (
               <button
-                key={loc}
+                key={key}
                 type="button"
-                onClick={() => handleLocationChange(loc)}
-                className={`swiss-pressable-sm px-1.5 xs:px-3 py-2 sm:py-2.5 text-center text-[10px] xs:text-xs font-mono uppercase tracking-wider ${
-                  selectedLocation === loc 
+                onClick={() => handleLocationChange(key)}
+                className={`swiss-pressable-sm px-1.5 xs:px-3 py-2 sm:py-2.5 text-center text-[10px] xs:text-xs font-mono uppercase tracking-wider font-bold transition-all ${
+                  selectedLocation === key 
                     ? 'bg-swiss-dark text-white' 
                     : 'text-swiss-dark hover:bg-swiss-light'
                 }`}
               >
-                {loc}
+                {label}
               </button>
             ))}
           </div>
@@ -1416,13 +1428,13 @@ function App() {
         {/* Filter Deal Type */}
         <div className="mb-12">
           <div className="text-[10px] font-mono uppercase tracking-widest text-swiss-gray mb-3">
-            [03] THEO LOẠI ƯU ĐÃI
+            {t.dealTypeTitle}
           </div>
           <div className="flex gap-2 flex-wrap">
             {[
-              { key: "All",      label: "Tất cả",          icon: "◈" },
-              { key: "free",     label: "FREE — Miễn phí", icon: "✦" },
-              { key: "discount", label: "DISCOUNT — Giảm giá", icon: "%" },
+              { key: "All",      label: t.dealAll,      icon: "◈" },
+              { key: "free",     label: t.dealFree,     icon: "✦" },
+              { key: "discount", label: t.dealDiscount, icon: "%" },
             ].map(({ key, label, icon }) => (
               <button
                 key={key}
@@ -1459,8 +1471,8 @@ function App() {
         {/* Benefits Grid */}
         <div>
           <div className="text-[10px] font-mono uppercase tracking-widest text-swiss-gray mb-6 flex justify-between items-center border-b border-swiss-border pb-2">
-            <span>[04] DANH SÁCH CHI TIẾT ƯU ĐÃI ({filteredBenefits.length} MỤC - TRANG {currentPage} / {totalPages || 1})</span>
-            <span>CẬP NHẬT TỰ ĐỘNG 24/7</span>
+            <span>{t.listTitle} ({filteredBenefits.length} {t.codesCountLabel} - {t.pageLabel} {currentPage} / {totalPages || 1})</span>
+            <span>{t.autoUpdated}</span>
           </div>
 
           {isListLoading ? (
@@ -1698,7 +1710,7 @@ function App() {
             ✦ THE STUDENT COOPERATIVE
           </span>
           <h2 className="font-roboto font-black text-3xl md:text-5xl uppercase tracking-tighter text-swiss-dark mb-12">
-            HỢP TÁC XÃ TIẾT KIỆM SINH VIÊN
+            {t.coopTitle}
           </h2>
           
           <div className="grid grid-cols-12 gap-8 items-stretch">
@@ -1711,7 +1723,7 @@ function App() {
               <div className="space-y-4 relative z-10">
                 <div className="flex items-center justify-between gap-2">
                   <div className="flex items-center gap-2 text-swiss-gray font-mono text-[10.2px] uppercase tracking-[0.2em]">
-                    <Users size={16} className="text-swiss-blue" /> COLLECTIVE SAVINGS VAULT
+                    <Users size={16} className="text-swiss-blue" /> {t.vaultTitle}
                   </div>
                   {/* Live / Reconnecting / Simulated badge */}
                   <span className={`flex items-center gap-1.5 text-[9px] font-mono uppercase tracking-wider px-2 py-0.5 rounded-full border ${
@@ -1732,7 +1744,7 @@ function App() {
                   </span>
                 </div>
                 <p className="text-xs text-swiss-gray leading-relaxed font-sans max-w-md">
-                  Tổng lượng tài chính trọn đời tích lũy dự kiến từ toàn bộ các thành viên tham gia cấu hình Kit. Dữ liệu live từ máy chủ giáo dục.
+                  {t.vaultDesc}
                 </p>
               </div>
 
@@ -1767,7 +1779,7 @@ function App() {
                 </div>
                 <div className="flex items-center gap-3 mt-2 flex-wrap">
                   <span className="text-[9.5px] font-mono text-swiss-gray uppercase tracking-widest">
-                    {connectedUsers} người trực tuyến
+                    {connectedUsers} {t.onlineCount}
                   </span>
                   {/* WS status dot */}
                   <span className={`inline-flex items-center gap-1 text-[9px] font-mono uppercase tracking-wider ${
@@ -1796,10 +1808,10 @@ function App() {
               
               <div className="space-y-4">
                 <div className="text-[10.5px] font-mono uppercase tracking-[0.2em] text-swiss-dark border-b-2 border-swiss-dark pb-2 font-bold flex items-center gap-2">
-                  <PaperPlaneRight size={14} className="text-swiss-red" /> ✦ SUBMIT BENEFITS / THE PUBLIC LEDGER
+                  <PaperPlaneRight size={14} className="text-swiss-red" /> {t.submitTitle}
                 </div>
                 <p className="text-xs text-swiss-gray leading-relaxed font-sans">
-                  Hãy trở thành một phần của mạng lưới. Đóng góp các ưu đãi giáo dục mới phát hiện để chúng tôi cập nhật vào cơ sở dữ liệu chung 24/7.
+                  {t.submitDesc}
                 </p>
               </div>
 
@@ -1830,7 +1842,7 @@ function App() {
                       showToast("✦ ĐÃ GỬI ĐÓNG GÓP THÀNH CÔNG! Đã ghi nhận đóng góp.");
                       form.reset();
                     }
-                  } catch (err) {
+                  } catch {
                     showToast("✦ ĐÃ GỬI ĐÓNG GÓP THÀNH CÔNG! Cảm ơn bạn đã hỗ trợ cộng đồng sinh viên.");
                     form.reset();
                   } finally {
@@ -1841,21 +1853,21 @@ function App() {
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <CustomInput 
-                    label="TÊN THƯƠNG HIỆU" 
+                    label={t.brandNameLabel} 
                     id="brand_name" 
-                    placeholder="Ví dụ: JetBrains, Spotify..." 
+                    placeholder={t.brandPlaceholder} 
                   />
                   <CustomInput 
-                    label="PORTAL HỌC TẬP (URL)" 
+                    label={t.brandUrlLabel} 
                     id="brand_url" 
                     type="url"
-                    placeholder="https://..." 
+                    placeholder={t.urlPlaceholder} 
                   />
                 </div>
                 
                 <div className="flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-4 pt-4">
                   <span className="text-[9.5px] font-mono text-swiss-gray leading-tight">
-                    * Mọi đóng góp đều được duyệt tự động & ghi nhận bởi sinh viên cộng tác viên.
+                    {t.submitNote}
                   </span>
                   
                   {/* Magnetic Button */}
@@ -1865,9 +1877,9 @@ function App() {
                     className="bg-swiss-dark hover:bg-swiss-blue hover:border-swiss-blue disabled:opacity-50 text-white text-xs font-mono uppercase py-3 px-8 font-bold tracking-widest flex items-center justify-center gap-2 rounded-xl shrink-0 transition-colors shadow-md"
                   >
                     {isSubmitting ? (
-                      <>ĐANG GỬI... <div className="w-3 h-3 rounded-full border-2 border-white border-t-transparent animate-spin" /></>
+                      <>{t.sendingBtn} <div className="w-3 h-3 rounded-full border-2 border-white border-t-transparent animate-spin" /></>
                     ) : (
-                      <>GỬI ĐÓNG GÓP <PaperPlaneRight size={13} /></>
+                      <>{t.submitBtn} <PaperPlaneRight size={13} /></>
                     )}
                   </MagneticButton>
                 </div>
@@ -1878,10 +1890,10 @@ function App() {
             <div className="col-span-12 bg-swiss-light/40 border border-swiss-border p-8 flex flex-col md:flex-row items-center justify-between gap-8 rounded-2xl shadow-sm mt-4">
               <div className="md:max-w-sm space-y-3 shrink-0">
                 <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-swiss-dark border-b border-swiss-border pb-1 font-bold flex items-center gap-1.5">
-                  <Chat size={14} className="text-swiss-blue" /> [TIPS] CHIA SẺ TRẢI NGHIỆM CỦA SINH VIÊN
+                  <Chat size={14} className="text-swiss-blue" /> {t.tipsTitle}
                 </div>
                 <p className="text-xs text-swiss-gray leading-relaxed font-sans">
-                  Nhấp vào thẻ để xoay chuyển và đọc những kinh nghiệm claim mã giảm giá của các sinh viên đi trước.
+                  {t.tipsDesc}
                 </p>
               </div>
 
