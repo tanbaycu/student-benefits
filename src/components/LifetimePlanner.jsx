@@ -102,13 +102,13 @@ export function LifetimePlanner({
                       TỔNG TÍCH LŨY DỰ KIẾN
                     </div>
                     <div className="font-roboto font-black text-4xl tracking-tighter text-white">
-                      ${totalLifetimeSavings.toLocaleString()}
+                      {formatMoney(totalLifetimeSavings, currency)}
                     </div>
                   </div>
                   
                   <div className="space-y-1.5 relative z-10 mt-4">
                     <div className="flex justify-between text-[9px] font-mono text-swiss-gray">
-                      <span>MỤC TIÊU TIẾT KIỆM (${customSavingsGoal})</span>
+                      <span>MỤC TIÊU TIẾT KIỆM ({formatMoney(customSavingsGoal, currency)})</span>
                       <span>{progressPercentage.toFixed(0)}%</span>
                     </div>
                     <div className="w-full bg-neutral-800 h-1 rounded-full overflow-hidden">
@@ -162,7 +162,7 @@ export function LifetimePlanner({
                             : 'bg-white hover:bg-swiss-light border-swiss-border text-swiss-gray'
                         }`}
                       >
-                        ${val}
+                        {formatMoney(val, currency)}
                       </button>
                     ))}
                   </div>
@@ -175,7 +175,7 @@ export function LifetimePlanner({
                 <div className="flex-1 flex flex-col lg:overflow-hidden">
                   <div className="text-[10px] font-mono uppercase tracking-widest text-swiss-dark border-b border-swiss-border pb-2 mb-4 font-bold flex justify-between">
                     <span>[C] CHI TIẾT ƯU ĐÃI ĐÃ LƯU ({myPlan.length})</span>
-                    <span>ƯỚC TÍNH: ~${totalYearlySavings}/NĂM</span>
+                    <span>ƯỚC TÍNH: ~{formatMoney(totalYearlySavings, currency)}/NĂM</span>
                   </div>
 
                   {myPlan.length === 0 ? (
@@ -225,7 +225,7 @@ export function LifetimePlanner({
                             <div>
                               <label className="block text-[8px] font-mono text-swiss-gray uppercase mb-1">TIẾT KIỆM TÍCH LŨY:</label>
                               <div className="text-xs font-mono text-swiss-dark pt-1 font-bold">
-                                ${item.savings * (item.targetYear || 1)}
+                                {formatMoney(item.savings * (item.targetYear || 1), currency)}
                               </div>
                             </div>
                           </div>
