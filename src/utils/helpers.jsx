@@ -129,6 +129,66 @@ export function timeAgo(dateStr, lang = 'vi') {
   return `${diffYears} năm trước`;
 }
 
+// Helper tự động chuyển đổi thông tin thẻ ưu đãi sang Tiếng Anh / Tiếng Việt mượt mà
+export function getBenefitLocalized(benefit, lang = 'vi') {
+  if (!benefit) return benefit;
+  if (lang !== 'en') return benefit;
+
+  // Nếu đã có thuộc tính tiếng Anh riêng
+  const title = benefit.titleEn || benefit.title;
+  
+  let value = benefit.valueEn || benefit.value;
+  if (!benefit.valueEn && value) {
+    value = value
+      .replace(/Miễn phí bản quyền/gi, 'Free Educational License')
+      .replace(/miễn phí/gi, 'Free')
+      .replace(/gia hạn hàng năm/gi, 'annual renewal')
+      .replace(/1 năm/gi, '1 Year')
+      .replace(/12 tháng/gi, '12 Months')
+      .replace(/học bổng/gi, 'scholarship')
+      .replace(/giảm giá/gi, 'discount')
+      .replace(/triệu VNĐ/gi, 'M VND')
+      .replace(/tháng/gi, 'month');
+  }
+
+  let description = benefit.descriptionEn || benefit.description;
+  if (!benefit.descriptionEn && description) {
+    description = description
+      .replace(/Nền tảng phần mềm/gi, 'Software platform')
+      .replace(/chuyên nghiệp dành cho/gi, 'professional for')
+      .replace(/học sinh sinh viên/gi, 'students')
+      .replace(/sinh viên/gi, 'students')
+      .replace(/miễn phí 100%/gi, '100% Free')
+      .replace(/miễn phí/gi, 'free')
+      .replace(/ưu đãi/gi, 'deal')
+      .replace(/giảm giá/gi, 'discount')
+      .replace(/Bản quyền/gi, 'License')
+      .replace(/Bộ công cụ/gi, 'Toolkit')
+      .replace(/Gói dịch vụ/gi, 'Service plan');
+  }
+
+  let requirements = benefit.requirementsEn || benefit.requirements;
+  if (!benefit.requirementsEn && requirements) {
+    requirements = requirements
+      .replace(/Tạo tài khoản/gi, 'Create account with')
+      .replace(/email trường học/gi, 'university email (.edu)')
+      .replace(/xác thực trạng thái sinh viên/gi, 'verify student status')
+      .replace(/thẻ sinh viên/gi, 'student ID')
+      .replace(/hệ thống SheerID/gi, 'SheerID system')
+      .replace(/Đăng ký/gi, 'Register with')
+      .replace(/Nộp hồ sơ/gi, 'Submit application')
+      .replace(/Xác thực/gi, 'Verify with');
+  }
+
+  return {
+    ...benefit,
+    title,
+    value,
+    description,
+    requirements
+  };
+}
+
 // Logo SVG tối giản Swiss Grid
 export const SwissLogo = () => (
   <svg className="w-10 h-10 shrink-0 transition-transform duration-300 hover:rotate-6" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">

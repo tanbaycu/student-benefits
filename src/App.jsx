@@ -47,6 +47,7 @@ import {
   Bootstrap5
 } from 'developer-icons'
 import { LifetimePlanner } from './components/LifetimePlanner'
+import { getBenefitLocalized } from './utils/helpers.jsx'
 
 // Web Audio API Synthesizer — âm thanh tương tác Tactile 0-byte asset
 class SoundFX {
@@ -1034,6 +1035,24 @@ function App() {
             <span className="hidden lg:inline">Ctrl + K</span>
           </button>
 
+          {/* Bilingual Language Switcher Button (VI / EN) */}
+          <button
+            type="button"
+            onClick={() => {
+              SoundFX.playClick();
+              const nextLang = lang === 'vi' ? 'en' : 'vi';
+              setLang(nextLang);
+              setIsListLoading(true);
+              setTimeout(() => setIsListLoading(false), 450);
+              showToast(nextLang === 'en' ? '✦ SWITCHED LANGUAGE TO ENGLISH (GLOBAL SCOPE)' : '✦ ĐÃ CHUYỂN NGÔN NGỮ SANG TIẾNG VIỆT (VIETNAM SCOPE)');
+            }}
+            title="Đổi ngôn ngữ VI ↔ EN"
+            className="flex items-center gap-1 bg-white hover:bg-swiss-light border border-swiss-border px-2.5 py-1.5 rounded-full text-[10px] font-mono text-swiss-dark font-bold tracking-wider transition-all shadow-2xs"
+          >
+            <Globe size={13} className="text-swiss-red" />
+            <span>{lang.toUpperCase()}</span>
+          </button>
+
           {/* Multi-Currency Toggle Button (USD / VNĐ) */}
           <button
             type="button"
@@ -1463,7 +1482,8 @@ function App() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {paginatedBenefits.map((benefit, index) => {
+              {paginatedBenefits.map((rawBenefit, index) => {
+                const benefit = getBenefitLocalized(rawBenefit, lang);
                 const globalIndex = (currentPage - 1) * ITEMS_PER_PAGE + index;
                 const isInPlan = myPlan.some(item => item.id === benefit.id);
                 return (
