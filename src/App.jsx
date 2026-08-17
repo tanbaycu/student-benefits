@@ -998,7 +998,7 @@ function App() {
               STUDENT BENEFITS
             </span>
             <span className="text-[8px] font-mono text-swiss-gray uppercase tracking-widest leading-none mt-1.5 hidden sm:block">
-              by tanbaycu · 2026/27
+              by tanbaycu · CẬP NHẬT 17/08/2026
             </span>
           </div>
         </div>
@@ -1171,7 +1171,7 @@ function App() {
           <div className="flex items-center gap-2.5 shrink-0 border-r-0 md:border-r border-swiss-border pr-0 md:pr-4">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse inline-block"></span>
             <span className="font-mono text-xs font-black uppercase text-swiss-dark tracking-wider">
-              ✦ LIVE PACKAGE SPECIFICATIONS:
+              ✦ CẬP NHẬT 17/08/2026 · BACK TO SCHOOL 2026:
             </span>
           </div>
           
@@ -1938,10 +1938,10 @@ function App() {
 
           {/* Credits footer */}
           <div className="mt-20 pt-6 border-t border-swiss-border flex flex-col sm:flex-row justify-between items-center gap-4 text-mono text-[10px] text-swiss-gray pb-8">
-            <div>PROJECT LIFETIME / CREATOR: tanbaycu © 2026</div>
+            <div>PROJECT LIFETIME / CREATOR: tanbaycu © 2026 · CẬP NHẬT: 17/08/2026</div>
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span>
-              SYSTEM RUNNING 24/7/365
+              SYSTEM LIVE & VERIFIED: 17/08/2026
             </div>
           </div>
         </section>
