@@ -139,9 +139,9 @@ const PRESET_BUNDLES = [
     name: "DEV & CS STACK",
     icon: Code,
     color: "bg-swiss-blue text-white",
-    descriptionVi: "Bộ công cụ lập trình đỉnh cao dành cho sinh viên IT & Khoa Học Máy Tính",
+    descriptionVi: "Bộ công cụ lập trình & AI đỉnh cao dành cho sinh viên IT & Khoa Học Máy Tính",
     descriptionEn: "Ultimate programming toolkit for IT & Computer Science students",
-    matchKeywords: ["github", "jetbrains", "kiro", "cursor", "supabase", "termius", "mongodb", "postman"]
+    matchKeywords: ["github", "jetbrains", "gemini", "clerk", "termius", "mongodb", "postman", "heroku", "azure"]
   },
   {
     id: "bundle_design",
@@ -150,25 +150,25 @@ const PRESET_BUNDLES = [
     color: "bg-swiss-red text-white",
     descriptionVi: "Combo sáng tạo cho sinh viên ngành Thiết Kế Đồ Họa, UI/UX và Truyền Thông",
     descriptionEn: "Creative suite for Graphic Design, UI/UX, and Media students",
-    matchKeywords: ["figma", "canva", "adobe", "spline", "axure", "craft", "sketch"]
+    matchKeywords: ["figma", "canva", "affinity", "adobe", "spline", "axure", "craft", "sketch"]
   },
   {
     id: "bundle_business",
     name: "BUSINESS & FINTECH",
     icon: Briefcase,
     color: "bg-swiss-dark text-white",
-    descriptionVi: "Gói công cụ ghi chú, kế toán và tài chính chuyên nghiệp cho sinh viên Kinh Tế",
+    descriptionVi: "Gói công cụ ghi chú, nghiên cứu và tài chính chuyên nghiệp cho sinh viên Kinh Tế",
     descriptionEn: "Professional productivity, accounting, and finance tools for Business students",
-    matchKeywords: ["notion", "quickbooks", "microsoft", "financial times", "tableplus", "grammarly"]
+    matchKeywords: ["notion", "quickbooks", "microsoft 365", "financial times", "tableplus", "grammarly", "consensus"]
   },
   {
     id: "bundle_life",
     name: "LIFESTYLE & TRAVEL",
     icon: Heart,
     color: "bg-emerald-600 text-white",
-    descriptionVi: "Ưu đãi giải trí, phim ảnh, di chuyển và F&B hàng ngày cho sinh viên Việt Nam",
+    descriptionVi: "Ưu đãi giải trí, vé tàu Tết, di chuyển và F&B thiết thực cho sinh viên Việt Nam",
     descriptionEn: "Daily entertainment, movies, transit, and F&B perks for students",
-    matchKeywords: ["spotify", "youtube", "apple music", "grabstudent", "vietnam airlines", "cinestar"]
+    matchKeywords: ["spotify", "youtube premium", "apple music", "grabunlimited", "xanh sm", "vietnam airlines", "đường sắt", "cgv"]
   }
 ];
 
@@ -253,7 +253,7 @@ function BrandIcon({ title, link }) {
   if (nameLower.includes("microsoft") && !nameLower.includes("azure")) {
     return <div className="w-7 h-7 flex items-center justify-center shrink-0 bg-white rounded p-0.5"><Microsoft className="w-full h-full" /></div>;
   }
-  if (nameLower.includes("canva")) {
+  if (nameLower.includes("canva") && !nameLower.includes("affinity")) {
     return <div className="w-7 h-7 flex items-center justify-center shrink-0 bg-white rounded p-0.5"><Canva className="w-full h-full" /></div>;
   }
   if (nameLower.includes("bootstrap")) {
@@ -270,17 +270,17 @@ function BrandIcon({ title, link }) {
     if (domain.includes("github.com")) domain = "github.com";
     else if (domain.includes("figma.com")) domain = "figma.com";
     else if (domain.includes("mathworks.com")) domain = "mathworks.com"; 
-    else if (domain.includes("fpt-arena.edu.vn")) domain = "fpt.com.vn"; // Map sang fpt.com.vn để lấy logo cam chuẩn của FPT
-    else if (domain.includes("starbucks.vn")) domain = "starbucks.com"; // Map sang starbucks.com để lấy logo Starbucks toàn cầu xanh lá chuẩn
-    else if (domain.includes("phuc-long.com.vn")) domain = "phuclong.com.vn";
+    else if (domain.includes("fptarena.edu.vn")) domain = "fpt.com.vn";
+    else if (domain.includes("texaschicken.com.vn")) domain = "texaschicken.com";
+    else if (domain.includes("kfcvietnam.com.vn")) domain = "kfc.com";
     else if (domain.includes("be.com.vn")) domain = "be.com.vn";
-    else if (domain.includes("xanhsm.com")) domain = "vinfast.com"; // Xanh SM dùng VinFast
+    else if (domain.includes("xanhsm.com")) domain = "vinfast.com";
     else if (domain.includes("cgv.vn")) domain = "cgv.co.kr";
     else if (domain.includes("dominos.vn")) domain = "dominos.com";
     else if (domain.includes("lottecinemavn.com")) domain = "lotte.co.kr";
-    else if (domain.includes("schools.duolingo.com")) domain = "duolingo.com";
+    else if (nameLower.includes("pluralsight")) domain = "pluralsight.com";
     else if (domain.includes("visualstudio.microsoft.com")) domain = "microsoft.com";
-    else if (domain.includes("accessnyt.com")) domain = "nytimes.com"; // Map sang nytimes.com để lấy logo The New York Times chuẩn
+    else if (domain.includes("accessnyt.com")) domain = "nytimes.com";
   } catch (e) {
     domain = "";
   }
@@ -325,33 +325,30 @@ function BrandIcon({ title, link }) {
 // BENEFITS_DATA imported from ./data/benefitsData.js
 
 const REALTIME_ACTIVITIES = [
-  "GitHub Pack: Tặng Canva Pro 12 tháng + Namecheap 1 năm domain free",
-  "JetBrains Pack: Bản quyền miễn phí 15 IDEs lập trình học tập",
-  "Figma Pack: Sở hữu 100% miễn phí gói thiết kế chuyên nghiệp Figma Pro",
-  "Spotify Premium: Ưu đãi giảm giá 50% chi phí âm nhạc trọn gói",
-  "v0.dev Pro: Kích hoạt thành công gói tài khoản Pro AI Education",
-  "Samsung Campus: Đã xác thực giảm giá 30% cho laptop Galaxy Book",
-  "GrabStudent HCMC: 10 vouchers di chuyển giảm 20% đã kích hoạt",
-  "BeStudent Hanoi: Làm mới thành công gói ưu đãi di chuyển xe điện beBike",
-  "Xanh SM Vietnam: Hỗ trợ 15% taxi điện VinFast cho sinh viên Bách Khoa",
-  "Coursera Pack: Miễn phí 1 chứng chỉ khóa học cấp bởi các trường ĐH danh tiếng",
-  "Vietnam Railways: Đã xuất vé tàu SE4 giảm 10% cho sinh viên ĐH Công Nghiệp",
-  "CellphoneS S-Student: Kích hoạt giảm thêm 5% cho iPad Air M2 của tân sinh viên",
-  "Nha khoa Parkway: Đã duyệt gói trả góp 0% chỉnh nha Invisalign cho sinh viên Ngoại Thương",
-  "IIG Việt Nam: Đã giảm 450k lệ phí đăng ký thi TOEIC 4 kỹ năng",
-  "HCMC Bus System: Đã quét 250 lượt vé bus 3K định danh bằng MultiGo hôm nay",
+  "Đường Sắt VN: Mở bán vé tàu Tết Đinh Mùi 2027 giảm tới 20% cho sinh viên",
+  "Google Gemini Student: Hạn chót 31/12 nhận 12 tháng Google AI Plus miễn phí",
+  "Adobe CC Pro: Sale Black Friday giảm 77% còn $15.99/tháng đến 27/11/2026",
+  "CellphoneS Black Fire-Day: Cộng dồn giảm thêm 5%–10% đặc quyền S-Student",
+  "Coursera Plus: Giảm 40% gói năm dịp Black Friday còn $239/năm (đến 30/11)",
+  "GitHub Student Pack: Miễn phí GitHub Copilot Student + Clerk Pro ($240/năm)",
+  "JetBrains Pack: Bản quyền miễn phí trọn bộ 15 IDEs lập trình học tập",
+  "Figma Education: Sở hữu 100% miễn phí gói chuyên nghiệp Figma Pro qua SheerID",
+  "Spotify Premium: Ưu đãi giảm giá 50% gói nghe nhạc không quảng cáo",
+  "v0 for Students: Kích hoạt miễn phí 1 năm quyền lợi v0 Premium (v0.app)",
+  "Xanh SM Green Student: Giảm 15% không giới hạn lượt đi xe điện cho sinh viên",
+  "GrabUnlimited Student: Kích hoạt gói đặc quyền di chuyển & giao đồ ăn 1.000đ",
+  "Vé Xe Buýt TP.HCM: Miễn phí 100% toàn bộ 134 tuyến buýt đến 31/12/2026",
+  "Metro Tuyến Số 1 TP.HCM: Vé tháng HSSV ưu đãi 50% chỉ 150.000đ/tháng",
+  "DataCamp Black Friday: Giảm 60% gói năm còn $132 hoặc 3 tháng Free qua GitHub Pack",
+  "FAHASA Tri Ân 20/11 & Black Friday: Giảm tới 50% sách, Manga và máy tính Casio",
+  "ZaloPay Học Phí: Miễn 100% phí giao dịch + Nhập mã GIAODUC26 giảm trực tiếp",
+  "Thế Giới Di Động Uni Pass: Giảm thêm tới 10% cộng dồn mùa sale Black Friday",
+  "Affinity by Canva: Miễn phí 100% Designer, Photo, Publisher + Mở khóa Canva AI",
+  "ElevenLabs Student: Tặng miễn phí 1 năm ứng dụng đọc tài liệu ElevenReader Ultra",
   "TablePlus Pro: Bản quyền học tập giảm giá 50% vừa cấp cho sinh viên UIT",
-  "Spline 3D Pro: Kích hoạt thành công gói tài khoản Pro thiết kế 3D Education",
-  "VUS IELTS: Đã ghi nhận học bổng bán phần cho học viên chuẩn bị du học",
-  "Craft.do Notes: Đã cấp quyền sử dụng miễn phí tài khoản Craft Pro",
-  "KFC Việt Nam: Đã phục vụ 180 combo gà rán Nanban HSSV buổi trưa nay",
-  "Dinh Độc Lập: Đã xuất 45 vé tham quan di tích lịch sử giảm 50% cho thẻ sinh viên",
-  "GrabStudent Pack: Ưu đãi 20% các chuyến đi Grab và giao đồ ăn hàng tháng",
-  "Apple Back to School VN: Đã tặng 4-pack AirTag 2nd gen cho sinh viên mua MacBook Pro",
-  "Grammarly Pro: Kích hoạt giảm 40% qua SheerID cho sinh viên ĐH Hà Nội",
-  "Knowt AI: Tạo tự động 120 flashcard từ file PDF bài giảng Xác suất thống kê",
-  "Babbel Student: Kích hoạt giảm 65% gói 3 tháng ngôn ngữ Nhật cho sinh viên HUTECH",
-  "Decree 179: Đã xác nhận học bổng 4.2tr/tháng cho sinh viên ngành vi mạch bán dẫn"
+  "IIG Việt Nam: Ưu đãi giảm lệ phí đăng ký thi chứng chỉ TOEIC quốc tế",
+  "Grammarly Pro: Kích hoạt giảm tới 40% qua SheerID cho sinh viên ĐH Hà Nội",
+  "Nghị Định 179: Học bổng 3,7 – 5,5 triệu/tháng cho sinh viên ngành vi mạch bán dẫn"
 ];
 
 // Phân nhóm Theme lớn cho các ưu đãi học tập/di chuyển/tech
@@ -598,12 +595,12 @@ function App() {
   };
 
   // Helper: Apply Preset Bundle to Kit (1-Click Preset)
+  // Khớp chính xác theo tiêu đề thương hiệu để tránh khớp nhầm từ khóa trong phần mô tả
   const applyPresetBundle = (bundle) => {
     SoundFX.playSuccess();
     const matched = BENEFITS_DATA.filter(b => {
       const title = (b.title || '').toLowerCase();
-      const desc = (b.description || '').toLowerCase();
-      return bundle.matchKeywords.some(kw => title.includes(kw) || desc.includes(kw));
+      return bundle.matchKeywords.some(kw => title.includes(kw));
     });
 
     if (matched.length === 0) return;
@@ -832,7 +829,7 @@ function App() {
     { id: 1, name: "Minh Anh", school: "ĐHQG / VNU", tipVi: "Nên dùng email trường để đăng ký JetBrains và GitHub trước khi tốt nghiệp, bạn được cộng tới 1 năm Pro miễn phí.", tipEn: "Use your university email for JetBrains and GitHub before graduation to get 1 year of free Pro access." },
     { id: 2, name: "Thành Đạt", school: "Bách Khoa / HCMUT", tipVi: "Voucher GrabStudent liên kết thẳng với bản đồ di chuyển, kích hoạt bằng ảnh chụp thẻ sinh viên chỉ mất 5 phút.", tipEn: "GrabStudent vouchers link directly to your map, taking only 5 minutes to verify with your student ID photo." },
     { id: 3, name: "Khánh Linh", school: "FTU", tipVi: "Figma Pro Education yêu cầu upload thẻ học sinh, hãy chụp rõ logo trường và hạn dùng để được duyệt nhanh nhất.", tipEn: "Figma Pro Education requires uploading your student ID. Ensure school logo and valid date are clear for fastest approval." },
-    { id: 4, name: "Quốc Bảo", school: "UIT", tipVi: "Đăng ký GitHub Student Pack qua email trường, bạn sẽ được tặng luôn gói v0.dev Pro và Canva Pro để làm bài tập lớn cực kỳ xịn sò.", tipEn: "Claim GitHub Student Pack with school email to instantly get free v0.dev Pro and Canva Pro for coursework." },
+    { id: 4, name: "Quốc Bảo", school: "UIT", tipVi: "Đăng ký GitHub Student Pack qua email trường, bạn mở khóa ngay GitHub Copilot Student, Clerk Pro ($240) và Heroku ($312) làm đồ án cực xịn.", tipEn: "Claim GitHub Student Pack with school email to instantly get GitHub Copilot Student, Clerk Pro, and Heroku credits." },
     { id: 5, name: "Hoàng Nam", school: "ĐH Bách Khoa", tipVi: "Vé tàu hỏa VNR được giảm 10% quanh năm. Lúc mua vé trực tuyến nhớ nhập mã số thẻ sinh viên và mang theo thẻ + CCCD khi ra ga check-in.", tipEn: "Vietnam Railways offers 10% discount year-round for students. Enter your student ID online and present your physical card at check-in." }
   ];
   const [tips, setTips] = useState(initialTips);
@@ -848,9 +845,9 @@ function App() {
 
   // Realtime Live feed activity state
   const [activities, setActivities] = useState([
-    "GitHub Pack: Tặng Canva Pro 12 tháng + Namecheap 1 năm domain free",
-    "JetBrains Pack: Bản quyền miễn phí 15 IDEs lập trình học tập",
-    "Figma Pack: Sở hữu 100% miễn phí gói thiết kế chuyên nghiệp Figma Pro"
+    "Đường Sắt VN: Mở bán vé tàu Tết Đinh Mùi 2027 giảm tới 20% cho sinh viên",
+    "Google Gemini Student: Hạn chót 31/12 nhận 12 tháng Google AI Plus miễn phí",
+    "Adobe CC Pro: Sale Black Friday giảm 77% còn $15.99/tháng đến 27/11/2026"
   ]);
 
   useEffect(() => {
@@ -998,7 +995,7 @@ function App() {
               STUDENT BENEFITS
             </span>
             <span className="text-[8px] font-mono text-swiss-gray uppercase tracking-widest leading-none mt-1.5 hidden sm:block">
-              by tanbaycu · CẬP NHẬT 03/09/2026
+              by tanbaycu · CẬP NHẬT 17/11/2026
             </span>
           </div>
         </div>
@@ -1171,7 +1168,7 @@ function App() {
           <div className="flex items-center gap-2.5 shrink-0 border-r-0 md:border-r border-swiss-border pr-0 md:pr-4">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse inline-block"></span>
             <span className="font-mono text-xs font-black uppercase text-swiss-dark tracking-wider">
-              ✦ CẬP NHẬT 03/09/2026 · NĂM HỌC MỚI 2026–2027 & GOOGLE GEMINI:
+              ✦ CẬP NHẬT 17/11/2026 · VÉ TÀU TẾT 2027, 20/11 & BLACK FRIDAY:
             </span>
           </div>
           
@@ -1247,8 +1244,7 @@ function App() {
               const IconComp = bundle.icon;
               const matched = BENEFITS_DATA.filter(b => {
                 const title = (b.title || '').toLowerCase();
-                const desc = (b.description || '').toLowerCase();
-                return bundle.matchKeywords.some(kw => title.includes(kw) || desc.includes(kw));
+                return bundle.matchKeywords.some(kw => title.includes(kw));
               });
               const totalSavings = matched.reduce((sum, item) => sum + (item.savings || 0), 0);
               const sampleBrands = Array.from(new Set(matched.map(m => m.title.split(" ")[0]))).slice(0, 4);
@@ -1938,10 +1934,10 @@ function App() {
 
           {/* Credits footer */}
           <div className="mt-20 pt-6 border-t border-swiss-border flex flex-col sm:flex-row justify-between items-center gap-4 text-mono text-[10px] text-swiss-gray pb-8">
-            <div>PROJECT LIFETIME / CREATOR: tanbaycu © 2026 · CẬP NHẬT: 03/09/2026</div>
+            <div>PROJECT LIFETIME / CREATOR: tanbaycu © 2026 · CẬP NHẬT: 17/11/2026</div>
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span>
-              SYSTEM LIVE & VERIFIED: 03/09/2026
+              SYSTEM LIVE & VERIFIED: 17/11/2026
             </div>
           </div>
         </section>
@@ -1963,6 +1959,7 @@ function App() {
         progressPercentage={progressPercentage}
         setIsExportModalOpen={setIsExportModalOpen}
         setMyPlan={setMyPlan}
+        currency={currency}
       />
 
       {/* 6. Custom Modal Export */}
@@ -2012,7 +2009,7 @@ function App() {
               <div className="grid grid-cols-2 gap-4 border border-swiss-dark bg-swiss-light/40 p-4 font-mono text-xs rounded-xl">
                 <div>
                   <span className="text-swiss-gray uppercase block text-[9px]">Tổng tiết kiệm trọn đời:</span>
-                  <strong className="text-swiss-dark text-2xl font-roboto font-black">${totalLifetimeSavings.toLocaleString()}</strong>
+                  <strong className="text-swiss-dark text-2xl font-roboto font-black">{formatMoney(totalLifetimeSavings, currency)}</strong>
                 </div>
                 <div>
                   <span className="text-swiss-gray uppercase block text-[9px]">Số năm áp dụng:</span>
@@ -2041,7 +2038,7 @@ function App() {
                     </div>
                     <div className="text-right font-mono shrink-0">
                       <span className="text-[10px] text-swiss-gray block">{item.targetYear || 1} năm</span>
-                      <span className="font-bold text-swiss-blue">${item.savings * (item.targetYear || 1)}</span>
+                      <span className="font-bold text-swiss-blue">{formatMoney(item.savings * (item.targetYear || 1), currency)}</span>
                     </div>
                   </div>
                 ))}
